@@ -34,3 +34,10 @@ Abstraction away from English
                         :ARG3 (m5 / most)
                         :ARG5 p2))))
 ```
+
+```lisp
+(c1 / zeichnen-01
+    :ARG0 (c0 / du)
+    :ARG1 (c3 / Schaf)
+    :ARG2 (c2 / ich))
+```
