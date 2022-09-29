@@ -1,6 +1,6 @@
 # DeAMR
-Annotation guidelines for German AMR
-WIP in vsc
+Annotation guidelines for German AMR.
+(WIP in vsc)
 
 ```lisp
 (m / mean-01
