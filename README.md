@@ -1,6 +1,8 @@
 # DeAMR
 Annotation guidelines for German AMR
+WIP in vsc
 
+```lisp
 (m / mean-01
       :ARG1 (a / admire-01)
       :ARG2 (r / regard-01
@@ -27,3 +29,4 @@ Annotation guidelines for German AMR
                               :ARG1 m6)
                         :ARG3 (m5 / most)
                         :ARG5 p2))))
+```
