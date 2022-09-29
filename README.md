@@ -1,6 +1,8 @@
 # DeAMR
 Annotation guidelines for German AMR.
 
+**September 1, 2022**
+
 (WIP in vsc)
 
 Abstraction away from English
