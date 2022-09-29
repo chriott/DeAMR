@@ -4,7 +4,7 @@ Annotation guidelines for German AMR.
 (WIP in vsc)
 
 Abstraction away from English
-------------------------
+-----------------------------
 
 ```lisp
 (m / mean-01
