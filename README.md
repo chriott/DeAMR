@@ -62,8 +62,17 @@ We are using the German verb senses from the Universal PropBank project https://
 Annotation Guidelines
 ====================
 
+Special/Dashed entities/relations + functional relations
+--------------------------------------------------------
+
+WIP
+
+For the other special roles in English, such as have-degree-91 and quant-91, we will use these English terms.
+
 Modality 
 --------
 
 Reference: Note the presence of deber and poder in the list of words which appear in AnCora with other senses. Though meanings of deber and poder do appear in AnCora, we establish additional senses to mark modality. These modals take the same :ARG1 structure as do their English modal equivalents– recommend-01 and possible-01, respectively. These modals take the verb senses deber-03 and poder-04.
+
+AMR represents syntactic modals with concepts like possible-01, likely-01, obligate-01, permit-01, recommend-01, prefer-01, etc.:
 
