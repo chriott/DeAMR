@@ -45,3 +45,8 @@ Abstraction away from English
     :ARG1 (c3 / Schaf)
     :ARG2 (c2 / ich))
 ```
+
+Verb Senses
+-----------
+We are using the German verb senses from the Universal PropBank project https://universalpropositions.github.io. (German PropBank catalogue http://alanakbik.github.io/UniversalPropositions_German/index.html) If a sense of a word or a verb itself does not appear in the Universal German PropBank lexicon, we define its sense number in a table of verbs and senses. See below the growing list of verbs and senses which do not appear in Universal German PropBank, with the corresponding English translation.
+
