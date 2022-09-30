@@ -80,11 +80,11 @@ AMR represents syntactic modals with concepts like possible-01, likely-01, oblig
 
 dürfen → may/permit-01 → erlauben-01
 
-können → can/possible-01 → ermöglichen-01
+können → can/possible-01 → ermöglichen-01 (?)
 
 sollen → should/recommend-01 →  empfehlen-01 
 
-müssen → must/obligate-01(?) → verpflichten-01
+müssen → must/obligate-01 → verpflichten-01
 
 mögen → to like/likely-01 → mögen-01
 
