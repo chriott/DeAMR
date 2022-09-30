@@ -69,6 +69,8 @@ WIP
 
 For the other special roles in English, such as have-degree-91 and quant-91, we will use these English terms.
 
+For reasons of compatibility (?).
+
 Modality 
 --------
 
