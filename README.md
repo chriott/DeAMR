@@ -4,6 +4,7 @@ Annotation guidelines for German AMR.
 **September 1, 2022**
 
 (WIP in vsc)
+Reference CAMR+ Spanish AMR
 
 Abstraction away from English
 -----------------------------
