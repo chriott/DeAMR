@@ -62,3 +62,8 @@ We are using the German verb senses from the Universal PropBank project https://
 Annotation Guidelines
 ====================
 
+Modality 
+--------
+
+Reference: Note the presence of deber and poder in the list of words which appear in AnCora with other senses. Though meanings of deber and poder do appear in AnCora, we establish additional senses to mark modality. These modals take the same :ARG1 structure as do their English modal equivalents– recommend-01 and possible-01, respectively. These modals take the verb senses deber-03 and poder-04.
+
