@@ -8,7 +8,7 @@ Annotation guidelines for German AMR.
 Reference CAMR+ Spanish AMR
 
 **Table of Contents**
-- [Introduction]
+- [Introduction](#introduction)
    - [Abstraction away from English](#Abstraction-away-from-English)
    - [Verb Senses](#verb-senses)
 - [Annotation Guidelines](#annotation-guidelines)
