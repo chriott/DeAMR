@@ -9,6 +9,7 @@ Reference CAMR+ Spanish AMR
 
 **Table of Contents**
 - [Abstraction away from English](#Abstraction-away-from-English)
+- [Verb Senses](#verb-senses)
 
 Abstraction away from English
 ====================
