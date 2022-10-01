@@ -107,6 +107,6 @@ English modal verb     |     AMR verb frame       | German modal verb   | German
 Modal particles
 ---------------
 
-Relation       | Reification           | Domain  | Range   | Example
----------------|-----------------------|---------|---------|-------------------------
-`:accompanier` | `accompany-01`        | `:ARG0` | `:ARG1` | “she's with him”
+Modal particle     | Context           | Annotation   
+-------------------|-------------------|----------------------------------
+`doch`, `halt`, `schon` | Komm doch her! (“Come here!”) | `:mode emphasis`
