@@ -90,5 +90,23 @@ mögen → to like/likely-01 → mögen-01
 
 wollen → want/prefer-01 → wollen-01
 
+English modal verb     |     AMR verb frame       | German modal verb   | German AMR   | Example
+---------------|-----------------------|---------|---------|-------------------------
+`may` | `permit-01`        | `dürfen` | `erlauben-01` | “she's with him”
 
 
+
+
+
+
+
+
+
+
+
+Modal particles
+---------------
+
+Relation       | Reification           | Domain  | Range   | Example
+---------------|-----------------------|---------|---------|-------------------------
+`:accompanier` | `accompany-01`        | `:ARG0` | `:ARG1` | “she's with him”
