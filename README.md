@@ -168,25 +168,27 @@ Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitz
 Compounds
 ---------
 
-Compound annotation:
+In German, there are many different ways of combining different word classes into new words. If you want to annotate a compound, try and follow this approach:
 
-1.
-```
-Look up German PropBank and see if the compound word exists (e.g. “nachgesehen-01”)
-
-Yes: use this as your annotation
-No: continue below
-
+1. Look up German PropBank and see if the compound word exists (e.g. “nachgesehen-01”)
 ```
 
-2.
-```
-Evaluate whether the compound is lexicalized or not (productive vs. nonproductive; intuition rather than rigid rules to account for changes in language)
+If yes: use this as your annotation
+Else: Continue below
 
-Nonproductive intuition: use the lexicalized word as your annotation (without numbers)
-Productive intuition: Lift semantic head up to the top node of the compound subgraph and try to find a fitting non-core role for the modifier component;
-no fitting non-core role, alternatively use :mod
 ```
+
+2. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules when a word combination is productive or nonproductive.
+
+```
+
+Nonproductive intuition: use the lexicalized word as your annotation (without numbers).
+
+Productive intuition: Lift the semantic head up to the top node of the compound subgraph and try to find a fitting non-core role for the modifier component;
+if there is no adequate non-core role, use :mod.
+```
+
+Noun+noun
 
 ```lisp
 (c3 / ähneln-01
@@ -196,4 +198,16 @@ no fitting non-core role, alternatively use :mod
              :location (c4 / Kamin)))
 ```
 > Vulkanische Ausbrüche sind wie Kaminfeuer
+
+```lisp
+(d / zeichnen-01
+      :ARG0 (i / ich)
+      :ARG1 (m / Maulkorb
+            :poss (s / Schaf
+                        :poss y))
+      :ARG2 (y / du))
+```
+> Ich zeichne dir einen Maulkorb für dein Schaf.
+
+
 
