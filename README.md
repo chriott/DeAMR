@@ -98,15 +98,21 @@ English modal verb     |     AMR verb frame       | German modal verb   | German
 
 
 
-
-
-
-
-
-
 Modal particles
 ---------------
 
 Modal particle     | Context           | Annotation   
 -------------------|-------------------|----------------------------------
-`doch`, `halt`, `schon` | Komm doch her! (“Come here!”) | `:mode emphasis`
+`doch`, `halt`, `schon` | Komm doch! (“Come!”) | `:mode emphasis`
+
+```lisp
+(c1 / zeichnen-01
+    :mode emphasis
+    :ARG0 (c0 / du)
+    :ARG1 (c3 / Schaf)
+    :ARG2 (c2 / ich))
+```
+> Zeichne mir halt ein Schaf.
+>
+> Zeichne mir doch ein Schaf.
+>
