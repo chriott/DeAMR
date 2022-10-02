@@ -80,7 +80,7 @@ AMR represents syntactic modals with concepts like possible-01, likely-01, oblig
 
 dürfen → may/permit-01 → erlauben-01
 
-können → can/possible-01 → ermöglichen-01 (?)
+können → can/possible-01 → können-01 (?)
 
 sollen → should/recommend-01 →  empfehlen-01 
 
@@ -88,11 +88,16 @@ müssen → must/obligate-01 → verpflichten-01
 
 mögen → to like/likely-01 → mögen-01
 
-wollen → want/prefer-01 → wollen-01
+wollen → want/prefer-01 → bevorzuge-01, wollen-01
 
 English modal verb     |     PropBank       | German modal verb   | German PropBank   | Example
----------------|-----------------------|---------|---------|-------------------------
-`may` | `permit-01`, `possible-01`        | `dürfen` | `erlauben-01` | “He may go” / "Er darf gehen"
+-----------------------|--------------------|---------------------|-------------------|---------
+`may`                  | `permit-01`, `possible-01` (?) | `dürfen`| `erlauben-01`     | “They may go” / "Sie dürfen gehen"
+`can`                  | `possible-01`      | `können`            | `ermöglichen-01`(?)  | “He can swim” / "Er kann schwimmen"
+`should`               | `recommend-01`     | `sollen`            | `empfehlen-01`    | “They should come” / "Sie sollten kommen"
+`must`                 | `obligate-01`      | `müssen`            | `verpflichten-01` | “He must read” / "Er muss lesen"
+`want`                 | `prefer-01`        | `wollen`, `möchten` | `bevorzugen-01`   | “He wants to eat” / "Er will essen"
+
 
 ```lisp
 (c1 / erlauben-01
@@ -100,7 +105,6 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
                 :ARG1 (c2 / Junge)))
 ```
 > Der Junge darf gehen.
-
 
 
 
