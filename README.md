@@ -10,8 +10,11 @@ Reference CAMR+ Spanish AMR
    - [Abstraction away from English](#Abstraction-away-from-English)
    - [Verb Senses](#verb-senses)
 - [Annotation Guidelines](#annotation-guidelines)
+   - [Compounds](#compounds)
+   - [Degree](#degree)
    - [Modality](#modality)
    - [Modal particles](#modal-particles) 
+
 
 Introduction
 ====================
