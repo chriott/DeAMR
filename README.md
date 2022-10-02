@@ -76,19 +76,7 @@ Modality
 
 Reference: Note the presence of deber and poder in the list of words which appear in AnCora with other senses. Though meanings of deber and poder do appear in AnCora, we establish additional senses to mark modality. These modals take the same :ARG1 structure as do their English modal equivalents– recommend-01 and possible-01, respectively. These modals take the verb senses deber-03 and poder-04.
 
-AMR represents syntactic modals with concepts like possible-01, likely-01, obligate-01, permit-01, recommend-01, prefer-01, etc.:
-
-dürfen → may/permit-01 → erlauben-01
-
-können → can/possible-01 → können-01 (?)
-
-sollen → should/recommend-01 →  empfehlen-01 
-
-müssen → must/obligate-01 → verpflichten-01
-
-mögen → to like/likely-01 → mögen-01
-
-wollen → want/prefer-01 → bevorzuge-01, wollen-01
+AMR represents syntactic modals with concepts like possible-01, likely-01, obligate-01, permit-01, recommend-01, prefer-01, etc. Here is a conversion table of DeAMR capturing equivalent modal semantics.
 
 English modal verb     |     PropBank       | German modal verb   | German PropBank   | Example
 -----------------------|--------------------|---------------------|-------------------|---------
