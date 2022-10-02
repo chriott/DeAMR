@@ -12,6 +12,8 @@ Reference CAMR+ Spanish AMR
    - [Abstraction away from English](#Abstraction-away-from-English)
    - [Verb Senses](#verb-senses)
 - [Annotation Guidelines](#annotation-guidelines)
+   - [Modality](#modality)
+   - [Modal particles](#modal-particles) 
 
 Introduction
 ====================
