@@ -128,9 +128,16 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 Modal particles
 ---------------
 
-Modal particle     | Context           | Annotation   
--------------------|-------------------|----------------------------------
-`doch`, `halt`, `schon` | Mach doch das Fenster zu! | `:mode emphasis`
+In German, there exists a large set of particles. Modal particles are annotated in a way that captures the semantic of the - sometimes opaque - interaction between the particle itself and the grammatical moods. Here is a table that illuminates different possible contexts and the corresponding annotation:
+
+Modal particle          | Context                                          | Annotation   
+------------------------|--------------------------------------------------|----------------------------------
+`doch`, `halt`, `schon` | "Man weiß halt nie", "Hör mal zu!"               | `:mode emphasis`
+`doch`, `aber`, `wohl`, `eben`, `halt`, `ja` | "Ich habe schon nachgesehen", "Es wird wohl regnen"  | `:mode assertive`
+`aber`, `doch`, `schon` | "Du bist aber schnell!"                          | `:mode surprised`
+`aber`                  | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
+
+
 
 ```lisp
 (c1 / zeichnen-01
