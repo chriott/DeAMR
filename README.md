@@ -1,5 +1,5 @@
 # DeAMR
-Annotation guidelines DeAMR (German AMR)
+Annotation guidelines DeAMR (German AMR) are in alignment to the AMR guidelines. The existing guidelines on Chinese AMR (CAMR) and Spanish AMR were used in reference.
 
 (WIP in vsc)
 
