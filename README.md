@@ -1,7 +1,5 @@
 # DeAMR
-Annotation guidelines for German AMR.
-
-**September 1, 2022**
+Annotation guidelines DeAMR (German AMR)
 
 (WIP in vsc)
 
@@ -92,10 +90,16 @@ mögen → to like/likely-01 → mögen-01
 
 wollen → want/prefer-01 → wollen-01
 
-English modal verb     |     AMR verb frame       | German modal verb   | German AMR   | Example
+English modal verb     |     PropBank       | German modal verb   | German PropBank   | Example
 ---------------|-----------------------|---------|---------|-------------------------
-`may` | `permit-01`        | `dürfen` | `erlauben-01` | “she's with him”
+`may` | `permit-01`, `possible-01`        | `dürfen` | `erlauben-01` | “He may go” / "Er darf gehen"
 
+```lisp
+(c1 / erlauben-01
+     :ARG1 (c0 / gehen-01
+                :ARG1 (c2 / Junge)))
+```
+> Der Junge darf gehen.
 
 
 
@@ -105,7 +109,7 @@ Modal particles
 
 Modal particle     | Context           | Annotation   
 -------------------|-------------------|----------------------------------
-`doch`, `halt`, `schon` | Komm doch! (“Come!”) | `:mode emphasis`
+`doch`, `halt`, `schon` | Mach doch das Fenster zu! | `:mode emphasis`
 
 ```lisp
 (c1 / zeichnen-01
