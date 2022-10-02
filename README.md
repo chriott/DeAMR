@@ -149,4 +149,18 @@ Modal particle          | Context                                          | Ann
 > Zeichne mir halt ein Schaf.
 >
 > Zeichne mir doch ein Schaf.
->
+
+Degree
+------
+
+Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. You use the same frame `have-degree-91` but match the German attributes and the degree itself.
+
+```lisp
+Have-degree-91
+Arg1: domain, entity characterized by attribute (e.g. Hund)
+Arg2: attribute (e.g. klein)
+Arg3: degree itself (e.g. mehr, weniger, gleich, am-meisten, am-wenigsten, genug, mal)
+Arg4: compared-to (e.g. (wie die) Katze)
+Arg5: superlative: reference to superset
+Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitzen)
+```
