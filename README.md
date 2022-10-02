@@ -176,7 +176,7 @@ In German, there are many different ways of combining different word classes int
 1. Look up German PropBank and see if the compound word exists (e.g. “nachgesehen-01”)
 ```
 
-If yes: use this as your annotation
+If exists: use this as your annotation
 Else: Continue below
 
 ```
@@ -185,10 +185,11 @@ Else: Continue below
 
 ```
 
-Nonproductive intuition: use the lexicalized word as your annotation (without numbers).
+If Nonproductive intuition: use the lexicalized word as your annotation (without numbers).
 
-Productive intuition: Lift the semantic head up to the top node of the compound subgraph and try to find a fitting non-core role for the modifier component;
+Elif Productive intuition: Lift the semantic head up to the top node of the compound subgraph and try to find a fitting non-core role for the modifier component;
 if there is no adequate non-core role, use :mod.
+
 ```
 
 Noun+noun
