@@ -213,5 +213,10 @@ Noun+noun
 ```
 > Ich zeichne dir einen Maulkorb für dein Schaf.
 
+Participle constructions
+------------------------
 
+Adjectives evoking verb frame
+-----------------------------
+One of AMRs slogans is to prefer a verb frame when it is possible.
 
