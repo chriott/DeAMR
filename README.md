@@ -164,3 +164,35 @@ Arg4: compared-to (e.g. (wie die) Katze)
 Arg5: superlative: reference to superset
 Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitzen)
 ```
+
+Compounds
+---------
+
+Compound annotation:
+
+1.
+Look up German PropBank and see if the compound word exists (e.g. “nachgesehen-01”)
+
+```
+Yes: use this as your annotation
+No: continue below
+
+```
+2.
+Evaluate whether the compound is lexicalized or not (productive vs. nonproductive; intuition rather than rigid rules to account for changes in language)
+
+```
+Nonproductive intuition: use the lexicalized word as your annotation (without numbers)
+Productive intuition: Lift semantic head up to the top node of the compound subgraph and try to find a fitting non-core role for the modifier component;
+no fitting non-core role, alternatively use :mod
+```
+
+```lisp
+(c3 / ähneln-01
+   :ARG1 (c0 / ausbrechen-02
+             :ARG1 (c1 / Vulkan))
+   :ARG2 (c2 / Feuer
+             :location (c4 / Kamin)))
+```
+> Vulkanische Ausbrüche sind wie Kaminfeuer
+
