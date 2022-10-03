@@ -21,10 +21,12 @@ Introduction
 
 ```lisp
 (c1 / zeichnen-01
+    :mode expressive
     :ARG0 (c0 / du)
     :ARG1 (c3 / Schaf)
     :ARG2 (c2 / ich))
 ```
+> Zeichne mir ein Schaf!
 
 Verb Senses
 -----------
