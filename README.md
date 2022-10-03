@@ -34,7 +34,7 @@ I am using the German frame set from the [Universal PropBank](https://universalp
 
 The Universal German PropBank is still in development and incomplete. Therefore, if a German frame for a concept should be missing, e.g. "zufrieden", one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for "zufrieden" use "[content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html)". A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/).
 
-Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be used when annotating. For example: 
+Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame leaning on the original PropBank and without numbers. For example: 
 
 ```lisp
 (c2 / stammen-01
