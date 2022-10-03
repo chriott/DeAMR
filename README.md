@@ -1,5 +1,5 @@
 # DeAMR
-Annotation guidelines DeAMR (German AMR) are in alignment to the AMR guidelines. The existing guidelines on Chinese AMR (CAMR) and Spanish AMR were used in reference.
+Annotation guidelines DeAMR (German AMR) try to be in alignment with the official AMR guidelines.
 
 (WIP in vsc)
 
@@ -181,14 +181,13 @@ Else: Continue below
 
 ```
 
-2. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules when a word combination is productive or nonproductive.
+2. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules when a word combination is either productive or nonproductive.
 
 ```
 
-If Nonproductive intuition: use the lexicalized word as your annotation (without numbers).
+If word combination nonproductive: use the whole word as it is in your annotation (without numbers).
 
-Elif Productive intuition: Lift the semantic head up to the top node of the compound subgraph and try to find a fitting non-core role for the modifier component;
-if there is no adequate non-core role, use :mod.
+Elif word combination productive: Lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component; if there is no adequate semantic role, use :mod.
 
 ```
 
@@ -213,8 +212,7 @@ Noun+noun
 ```
 > Ich zeichne dir einen Maulkorb für dein Schaf.
 
-Participle constructions
-------------------------
+
 
 Adjectives evoking verb frame
 -----------------------------
