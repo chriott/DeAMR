@@ -204,12 +204,3 @@ Modal particle          | Context                                          | Ann
 >
 > Zeichne mir doch ein Schaf.
 
-
-Special/Dashed entities/relations + functional relations
---------------------------------------------------------
-
-WIP
-
-For the other special roles in English, such as have-degree-91 and quant-91, we will use these English terms.
-
-
