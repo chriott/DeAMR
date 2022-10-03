@@ -130,9 +130,7 @@ Noun+noun
 Modality 
 --------
 
-Reference: Note the presence of deber and poder in the list of words which appear in AnCora with other senses. Though meanings of deber and poder do appear in AnCora, we establish additional senses to mark modality. These modals take the same :ARG1 structure as do their English modal equivalents– recommend-01 and possible-01, respectively. These modals take the verb senses deber-03 and poder-04.
-
-AMR represents syntactic modals with concepts like possible-01, likely-01, obligate-01, permit-01, recommend-01, prefer-01, etc. Here is a conversion table of DeAMR capturing equivalent modal semantics.
+AMR represents syntactic modals with concepts like possible-01, likely-01, obligate-01, permit-01, recommend-01, prefer-01, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
 
 English modal verb     |     PropBank       | German modal verb   | German PropBank   | Example
 -----------------------|--------------------|---------------------|-------------------|---------
@@ -184,7 +182,7 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 Modal particles
 ---------------
 
-In German, there exists a large set of particles. Modal particles are annotated in a way that captures the semantic of the - sometimes opaque - interaction between the particle itself and the grammatical moods. Here is a table that illuminates different possible contexts and the corresponding annotation:
+In German, there exists a large set of particles. The subset called modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible contexts and the corresponding annotation:
 
 Modal particle          | Context                                          | Annotation   
 ------------------------|--------------------------------------------------|----------------------------------
