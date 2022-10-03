@@ -60,7 +60,7 @@ Abstraction away from English
 
 Verb Senses
 -----------
-I am using the German frame set from the Universal PropBank project https://universalpropositions.github.io and their searchable [German PropBank catalogue]( http://alanakbik.github.io/UniversalPropositions_German/index.html).
+I am using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
 The Universal German PropBank is still in development and incomplete. Therefore, if a German frame for a concept should be missing, e.g. "zufrieden", one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for "zufrieden" use "[content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html)".
 
