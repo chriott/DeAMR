@@ -62,6 +62,8 @@ Verb Senses
 -----------
 We are using the German verb senses from the Universal PropBank project https://universalpropositions.github.io. (German PropBank catalogue http://alanakbik.github.io/UniversalPropositions_German/index.html) If a sense of a word or a verb itself does not appear in the Universal German PropBank lexicon, we define its sense number in a table of verbs and senses. See below the growing list of verbs and senses which do not appear in Universal German PropBank, with the corresponding English translation.
 
+The Universal German PropBank is still in development and incomplete. Hence, if a required German frame for a concept should be missing, e.g. "zufrieden", one workaround could be to use German concept without numbers and find an equivalent English frame to align the argument structure, e.g. for zufrieden use [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html).
+
 Annotation Guidelines
 ====================
 
