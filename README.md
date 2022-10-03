@@ -45,7 +45,7 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 ```
 > Wo kommst du her, kleiner Mann?
 
-"Herkommen" does not exist in the German PropBank. "Stammen-01" holds a compatible semantic meaning and argument structure so it can serve as a good alterantive. 
+"Herkommen" does not exist in the German PropBank. "Stammen-01" holds a compatible semantic meaning and argument structure so it represents a good alterantive.
 
 Annotation Guidelines
 ====================
