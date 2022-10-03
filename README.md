@@ -19,38 +19,6 @@ Reference CAMR+ Spanish AMR
 Introduction
 ====================
 
-Abstraction away from English
-----------------------------
-
-```lisp
-(m / mean-01
-      :ARG1 (a / admire-01)
-      :ARG2 (r / regard-01
-            :ARG0 (y / you)
-            :ARG1 (i / i)
-            :ARG2 (m6 / man
-                  :ARG1-of (h2 / have-degree-91
-                        :ARG2 (h / handsome)
-                        :ARG3 (m2 / most)
-                        :ARG5 (p2 / planet
-                              :mod (t / this)))
-                  :ARG1-of (h3 / have-degree-91
-                        :ARG2 (w2 / well-09
-                              :ARG1 (d / dress-01
-                                    :ARG1 m6))
-                        :ARG3 (m3 / most)
-                        :ARG5 p2)
-                  :ARG1-of (h4 / have-degree-91
-                        :ARG2 (r2 / rich)
-                        :ARG3 (m4 / most)
-                        :ARG5 p2)
-                  :ARG1-of (h5 / have-degree-91
-                        :ARG2 (i2 / intelligent-01
-                              :ARG1 m6)
-                        :ARG3 (m5 / most)
-                        :ARG5 p2))))
-```
-
 ```lisp
 (c1 / zeichnen-01
     :ARG0 (c0 / du)
@@ -67,14 +35,82 @@ The Universal German PropBank is still in development and incomplete. Therefore,
 Annotation Guidelines
 ====================
 
-Special/Dashed entities/relations + functional relations
---------------------------------------------------------
+Adjectives evoking verb frame
+-----------------------------
+One of AMRs slogans is to prefer a verb frame when it is possible.
 
-WIP
+```lisp
+(c0 / entgegnen-01
+    :ARG0 (c1 / Prinz
+              :mod (c2 / klein))
+    :ARG1 (c4 / ermöglichen-01
+              :polarity (a5 / -)
+              :manner (c6 / anders)
+              :ARG0 c1)
+    :manner (c7 / verwirren-01
+                :mod (c8 / ganz)))
+```
+> "Ich kann aber nicht anders", entgegnete der kleine Prinz ganz verwirrt.
 
-For the other special roles in English, such as have-degree-91 and quant-91, we will use these English terms.
 
-For reasons of compatibility (?).
+Degree
+------
+
+Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. You use the same frame `have-degree-91` but match the German attributes and the degree itself.
+
+```lisp
+Have-degree-91
+Arg1: domain, entity characterized by attribute (e.g. Hund)
+Arg2: attribute (e.g. klein)
+Arg3: degree itself (e.g. mehr, weniger, gleich, am-meisten, am-wenigsten, genug, mal)
+Arg4: compared-to (e.g. (wie die) Katze)
+Arg5: superlative: reference to superset
+Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitzen)
+```
+
+Compounds
+---------
+
+In German, there are many different ways of combining different word classes into new words. If you want to annotate a compound, try and follow this approach:
+
+1. Look up German PropBank and see if the compound word exists (e.g. “nachgesehen-01”)
+```
+
+If exists: use this as your annotation
+Else: Continue below
+
+```
+
+2. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules when a word combination is either productive or nonproductive.
+
+```
+
+If word combination nonproductive: use the whole word as it is in your annotation (without numbers).
+
+Elif word combination productive: Lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component; if there is no adequate semantic role, use :mod.
+
+```
+
+Noun+noun
+
+```lisp
+(c3 / ähneln-01
+   :ARG1 (c0 / ausbrechen-02
+             :ARG1 (c1 / Vulkan))
+   :ARG2 (c2 / Feuer
+             :location (c4 / Kamin)))
+```
+> Vulkanische Ausbrüche sind wie Kaminfeuer
+
+```lisp
+(d / zeichnen-01
+      :ARG0 (i / ich)
+      :ARG1 (m / Maulkorb
+            :poss (s / Schaf
+                        :poss y))
+      :ARG2 (y / du))
+```
+> Ich zeichne dir einen Maulkorb für dein Schaf.
 
 Modality 
 --------
@@ -155,68 +191,12 @@ Modal particle          | Context                                          | Ann
 >
 > Zeichne mir doch ein Schaf.
 
-Degree
-------
 
-Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. You use the same frame `have-degree-91` but match the German attributes and the degree itself.
+Special/Dashed entities/relations + functional relations
+--------------------------------------------------------
 
-```lisp
-Have-degree-91
-Arg1: domain, entity characterized by attribute (e.g. Hund)
-Arg2: attribute (e.g. klein)
-Arg3: degree itself (e.g. mehr, weniger, gleich, am-meisten, am-wenigsten, genug, mal)
-Arg4: compared-to (e.g. (wie die) Katze)
-Arg5: superlative: reference to superset
-Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitzen)
-```
+WIP
 
-Compounds
----------
+For the other special roles in English, such as have-degree-91 and quant-91, we will use these English terms.
 
-In German, there are many different ways of combining different word classes into new words. If you want to annotate a compound, try and follow this approach:
-
-1. Look up German PropBank and see if the compound word exists (e.g. “nachgesehen-01”)
-```
-
-If exists: use this as your annotation
-Else: Continue below
-
-```
-
-2. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules when a word combination is either productive or nonproductive.
-
-```
-
-If word combination nonproductive: use the whole word as it is in your annotation (without numbers).
-
-Elif word combination productive: Lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component; if there is no adequate semantic role, use :mod.
-
-```
-
-Noun+noun
-
-```lisp
-(c3 / ähneln-01
-   :ARG1 (c0 / ausbrechen-02
-             :ARG1 (c1 / Vulkan))
-   :ARG2 (c2 / Feuer
-             :location (c4 / Kamin)))
-```
-> Vulkanische Ausbrüche sind wie Kaminfeuer
-
-```lisp
-(d / zeichnen-01
-      :ARG0 (i / ich)
-      :ARG1 (m / Maulkorb
-            :poss (s / Schaf
-                        :poss y))
-      :ARG2 (y / du))
-```
-> Ich zeichne dir einen Maulkorb für dein Schaf.
-
-
-
-Adjectives evoking verb frame
------------------------------
-One of AMRs slogans is to prefer a verb frame when it is possible.
 
