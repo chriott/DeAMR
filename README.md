@@ -1,5 +1,5 @@
 # DeAMR (WIP)
-These are the annotation guidelines for DeAMR (German AMR), which try to be in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md).
+These are the annotation guidelines for DeAMR (German AMR), which aim to work in alignment to the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md).
 
 (WIP in vsc)
 
@@ -24,9 +24,10 @@ Introduction
     :mode expressive
     :ARG0 (c0 / du)
     :ARG1 (c3 / Schaf)
-    :ARG2 (c2 / ich))
+    :ARG2 (c2 / ich)
+    :location (c4 / Papier))
 ```
-> Zeichne mir ein Schaf!
+> Zeichne mir ein Schaf auf Papier!
 
 Verb Senses
 -----------
@@ -184,6 +185,7 @@ Modal particles
 
 In German, there exists a large set of particles. The subset called modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible contexts and the corresponding annotation:
 
+
 Modal particle          | Context                                          | Annotation   
 ------------------------|--------------------------------------------------|----------------------------------
 `doch`, `halt`, `schon` | "Man weiß halt nie", "Hör mal zu!"               | `:mode emphasis`
@@ -203,4 +205,6 @@ Modal particle          | Context                                          | Ann
 > Zeichne mir halt ein Schaf.
 >
 > Zeichne mir doch ein Schaf.
+
+
 
