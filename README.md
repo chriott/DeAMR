@@ -182,15 +182,16 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 Modal particles
 ---------------
 
-In German, there exists a large set of particles. The subset called modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible contexts and the corresponding annotation:
+German has a large set of different particles. The subset of modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible contexts and the corresponding annotation:
 
 
 Modal particle          | Context                                          | Annotation   
 ------------------------|--------------------------------------------------|----------------------------------
-`doch`, `halt`, `schon` | "Man weiß halt nie", "Hör mal zu!"               | `:mode emphasis`
-`doch`, `aber`, `wohl`, `eben`, `halt`, `ja` | "Ich habe schon nachgesehen", "Es wird wohl regnen"  | `:mode assertive`
+`doch`, `halt`, `ja` | "Man weiß halt nie."                             | `:mode emphasising`
+`doch`, `aber`, `wohl`, `eben`, `halt`, `ja` | "Ich habe schon nachgesehen.", "Es wird wohl regnen.", "Das ist schon richtig."  | `:mode confirming`
 `aber`, `doch`, `schon` | "Du bist aber schnell!"                          | `:mode surprised`
 `aber`, `doch`, `schon` | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
+`eigentlich`, `doch`, `denn`, `bloß`, `auch`, `etwa` | "Kannst du eigentlich Gitarre spielen?"                        | `:mode confirmation-seeking`
 `auch`, `bloß`, `doch`, `eben`, `einfach`, `halt`, `mal`, `nur`, `schon`, `ruhig`| "Mach bloß das Fenster zu!"   | `:mode imperative`
 
 
