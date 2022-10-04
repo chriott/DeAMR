@@ -190,7 +190,7 @@ Modal particle          | Context                                          | Ann
 `doch`, `halt`, `schon` | "Man weiß halt nie", "Hör mal zu!"               | `:mode emphasis`
 `doch`, `aber`, `wohl`, `eben`, `halt`, `ja` | "Ich habe schon nachgesehen", "Es wird wohl regnen"  | `:mode assertive`
 `aber`, `doch`, `schon` | "Du bist aber schnell!"                          | `:mode surprised`
-`aber`                  | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
+`aber`, `doch`, `schon` | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
 `auch`, `bloß`, `doch`, `eben`, `einfach`, `halt`, `mal`, `nur`, `schon`, `ruhig`| "Mach bloß das Fenster zu!"   | `:mode imperative`
 
 
@@ -204,6 +204,16 @@ Modal particle          | Context                                          | Ann
 > Zeichne mir halt ein Schaf.
 >
 > Zeichne mir doch ein Schaf.
+
+```lisp
+(c1 / zumachen-01
+    :mode imperative
+    :ARG0 (c0 / du)
+    :ARG1 (c3 / Fenster))
+```
+> Mach bloß das Fenster zu!
+> 
+> Mach doch das Fenster zu!
 
 References WIP
 ==============
