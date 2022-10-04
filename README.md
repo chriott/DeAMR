@@ -191,7 +191,7 @@ Modal particle          | Context                                          | Ann
 `doch`, `aber`, `wohl`, `eben`, `halt`, `ja` | "Ich habe schon nachgesehen", "Es wird wohl regnen"  | `:mode assertive`
 `aber`, `doch`, `schon` | "Du bist aber schnell!"                          | `:mode surprised`
 `aber`                  | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
-`auch`,`bloß`, `doch`,`eben`,`einfach`,`halt`,`mal`,`nur`, `schon`, `ruhig`| "Mach bloß das Fenster zu!"   | `:mode imperative`
+`auch`, `bloß`, `doch`, `eben`, `einfach`, `halt`, `mal`, `nur`, `schon`, `ruhig`| "Mach bloß das Fenster zu!"   | `:mode imperative`
 
 
 ```lisp
