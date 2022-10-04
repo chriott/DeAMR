@@ -208,5 +208,9 @@ Modal particle          | Context                                          | Ann
 References
 ==========
 
-Reference CAMR+Spanish AMR
+# "Annotating the Little Prince with Chinese AMRs" ( Bin Li, YuanWen, Lijun Bu,Weiguang Qu, Nianwen Xue.) LAW-2016, Aug 11, 2016, Berlin, Germany.
+
+# CAMR Guidelines [v1.2](https://www.cs.brandeis.edu/~clp/camr/res/CAMR_GL_v1.2.pdf)
+
+# Spanish AMR
 
