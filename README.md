@@ -187,10 +187,10 @@ German has a large set of different particles. The subset of modal particles are
 
 Modal particle          | Context                                          | Annotation   
 ------------------------|--------------------------------------------------|----------------------------------
-`doch`, `halt`, `ja` | "Man weiß halt nie."                             | `:mode emphasising`
+`doch`, `halt`, `ja`, `eben`, `wohl` | "Man weiß halt nie.", "Das ist doch falsch."                             | `:mode conclusive`
 `doch`, `aber`, `wohl`, `eben`, `halt`, `ja` | "Ich habe schon nachgesehen.", "Es wird wohl regnen.", "Das ist schon richtig."  | `:mode confirming`
-`aber`, `doch`, `schon` | "Du bist aber schnell!"                          | `:mode surprised`
-`aber`, `doch`, `schon` | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
+`aber`, `doch`, `schon`, `ja`, `auch` | "Du bist aber schnell!"                          | `:mode surprised`
+`aber`, `doch`, `schon`, `ja`, `auch` | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
 `eigentlich`, `doch`, `denn`, `bloß`, `auch`, `etwa` | "Kannst du eigentlich Gitarre spielen?"                        | `:mode confirmation-seeking`
 `auch`, `bloß`, `doch`, `eben`, `einfach`, `halt`, `mal`, `nur`, `schon`, `ruhig`| "Mach bloß das Fenster zu!"   | `:mode imperative`
 
