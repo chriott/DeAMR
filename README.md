@@ -3,8 +3,6 @@ These are the annotation guidelines for DeAMR (German AMR), which aim to work in
 
 (WIP in vsc)
 
-Reference CAMR+ Spanish AMR
-
 **Table of Contents**
 - [Introduction](#introduction)
    - [Abstraction away from English](#Abstraction-away-from-English)
@@ -14,6 +12,7 @@ Reference CAMR+ Spanish AMR
    - [Degree](#degree)
    - [Modality](#modality)
    - [Modal particles](#modal-particles) 
+- [References](#references)
 
 
 Introduction
@@ -206,5 +205,8 @@ Modal particle          | Context                                          | Ann
 >
 > Zeichne mir doch ein Schaf.
 
+References
+==========
 
+Reference CAMR+Spanish AMR
 
