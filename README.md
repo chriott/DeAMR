@@ -106,7 +106,7 @@ Elif word combination productive: Lift the semantic head up to the top node of t
 
 ```
 
-Noun+noun
+The following examples should provide an intuition:
 
 ```lisp
 (c3 / ähneln-01
