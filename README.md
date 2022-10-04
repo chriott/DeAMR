@@ -1,5 +1,5 @@
 # DeAMR (WIP)
-These are the annotation guidelines for DeAMR (German AMR), which aim to work in alignment to the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md).
+These are the annotation guidelines for DeAMR (German AMR), which aim to work in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md).
 
 (WIP in vsc)
 
