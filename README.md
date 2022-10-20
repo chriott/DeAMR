@@ -18,15 +18,17 @@ These are the annotation guidelines for DeAMR (German AMR), which aim to work in
 Introduction
 ====================
 
+<img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=50% height=50%>
+
 ```lisp
 (c1 / zeichnen-01
-    :mode expressive
+    :mode imperative
     :ARG0 (c0 / du)
     :ARG1 (c3 / Schaf)
-    :ARG2 (c2 / ich)
-    :location (c4 / Papier))
+              :mod (c4 / weiß)
+    :ARG2 (c2 / ich))
 ```
-> Zeichne mir ein Schaf auf Papier!
+> Zeichne mir ein weißes Schaf!
 
 Verb Senses
 -----------
