@@ -1,7 +1,6 @@
-# DeAMR (WIP)
-These are the annotation guidelines for DeAMR (German AMR), which aim to work in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md).
+# DeAMR 1.0 (WIP)
+The following are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The aim is to extend its functionality so that German linguistic phenomena can be sufficiently mapped into AMR form.
 
-(WIP in vsc)
 
 **Table of Contents**
 - [Introduction](#introduction)
@@ -18,7 +17,9 @@ These are the annotation guidelines for DeAMR (German AMR), which aim to work in
 Introduction
 ====================
 
-<img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=50% height=50%>
+<p align="center">
+<img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=60% height=100%>
+</p>
 
 ```lisp
 (c1 / zeichnen-01
@@ -32,11 +33,11 @@ Introduction
 
 Verb Senses
 -----------
-I am using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
+DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
-The Universal German PropBank is still in development and incomplete. Therefore, if a German frame for a concept should be missing, e.g. "zufrieden", one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for "zufrieden" use "[content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html)". A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/).
+The Universal German PropBank is still in development and incomplete. Meanwhile, if a German frame for a concept should be missing, e.g. *zufrieden*, one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use *[content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html)*. A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/).
 
-Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame leaning on the original PropBank and without numbers. For example: 
+Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred in to creating a new frame leaning on the original PropBank and without numbers. For example: 
 
 ```lisp
 (c2 / stammen-01
@@ -48,6 +49,9 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 > Wo kommst du her, kleiner Mann?
 
 "Herkommen" does not exist in the German PropBank. "Stammen-01" holds a compatible semantic meaning and argument structure so it represents a good alterantive.
+
+\***
+
 
 Annotation Guidelines
 ====================
@@ -69,14 +73,15 @@ One of AMRs slogans is to prefer a verb frame whenever it is possible.
 ```
 > "Ich kann aber nicht anders", entgegnete der kleine Prinz ganz verwirrt.
 
-Here, the adverb "verwirrt" evokes the verb frame "verwirren-01" and thus should be used in the annotation.
+Here, the adverb *verwirrt* evokes the verb frame *verwirren-01* and thus should be used in the annotation.
 
 Degree
 ------
+***
 
 Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. You use the same frame `have-degree-91` but match the German attributes and the degree itself.
 
-```lisp
+```
 Have-degree-91
 Arg1: domain, entity characterized by attribute (e.g. Hund)
 Arg2: attribute (e.g. klein)
@@ -88,24 +93,25 @@ Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitz
 
 Compounds
 ---------
+***
 
-In German, there are many different ways of combining different word classes into new words. If you want to annotate a compound, try and follow this approach:
+In German, there are multiple ways of combining different word classes into new words. If you want to annotate such a compound, follow this approach:
 
-1. Look up German PropBank and see if the compound word exists (e.g. “nachgesehen-01”)
+I. Look up German PropBank and see if the compound word exists (e.g. "nachgesehen-01")
 ```
 
-If exists: use this as your annotation
-Else: Continue below
-
-```
-
-2. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules when a word combination is either productive or nonproductive.
+if exists: use this as your annotation
+else: continue below
 
 ```
 
-If word combination nonproductive: use the whole word as it is in your annotation (without numbers).
+II. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules to determine wheter a word combination is productive or nonproductive.
 
-Elif word combination productive: Lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component; if there is no adequate semantic role, use :mod.
+```
+
+if word combination nonproductive: use the whole word as it is in your annotation (without numbers).
+
+elif word combination productive: lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component; if there is no adequate semantic role, use :mod.
 
 ```
 
@@ -120,6 +126,8 @@ The following examples should provide an intuition:
 ```
 > Vulkanische Ausbrüche sind wie Kaminfeuer
 
+*Feuer* occurs in a set of different compounds (Artilleriefeuer, Lagerfeuer, Martinsfeuer, Fegefeuer, Grillfeuer, etc.) and therefore seems to be productive. According to the guidelines, we lift the semantic head *Feuer* up and match it with a fitting semantic role *:location* for the modifier *Kamin*.
+
 ```lisp
 (d / zeichnen-01
       :ARG0 (i / ich)
@@ -130,8 +138,12 @@ The following examples should provide an intuition:
 ```
 > Ich zeichne dir einen Maulkorb für dein Schaf.
 
+"Maulkorb" could be declared as a more lexicalized word and thus not split up by semantic roles.
+
 Modality 
 --------
+***
+
 
 AMR represents syntactic modals with concepts like possible-01, likely-01, obligate-01, permit-01, recommend-01, prefer-01, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
 
@@ -181,9 +193,10 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 > 
 > Er möchte essen.
 
-
 Modal particles
 ---------------
+***
+
 
 German has a large set of different particles. The subset of modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible contexts and the corresponding annotation:
 
