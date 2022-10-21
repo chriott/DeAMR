@@ -52,9 +52,9 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 Annotation Guidelines
 ====================
 
-Adjectives evoking verb frame
+Adjectives/Adverbs evoking a verb frame
 -----------------------------
-One of AMRs slogans is to prefer a verb frame when it is possible.
+One of AMRs slogans is to prefer a verb frame whenever it is possible.
 
 ```lisp
 (c0 / entgegnen-01
@@ -69,6 +69,7 @@ One of AMRs slogans is to prefer a verb frame when it is possible.
 ```
 > "Ich kann aber nicht anders", entgegnete der kleine Prinz ganz verwirrt.
 
+Here, the adverb "verwirrt" evokes the verb frame "verwirren-01" and thus should be used in the annotation.
 
 Degree
 ------
