@@ -35,9 +35,9 @@ Verb Senses
 -----------
 DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
-The Universal German PropBank is still in development and incomplete. Meanwhile, if a German frame for a concept should be missing, e.g. *zufrieden*, one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use *[content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html)*. A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/).
+The Universal German PropBank is still in development and incomplete. Meanwhile, if a German frame for a concept should be missing, e.g. *zufrieden*, one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use `[content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html)`. A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
-Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred in to creating a new frame leaning on the original PropBank and without numbers. For example: 
+Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame. For example: 
 
 ```lisp
 (c2 / stammen-01
@@ -48,7 +48,7 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 ```
 > Wo kommst du her, kleiner Mann?
 
-"Herkommen" does not exist in the German PropBank. "Stammen-01" holds a compatible semantic meaning and argument structure so it represents a good alterantive.
+"Herkommen" does not exist in the German PropBank. `stammen-01` holds a compatible semantic meaning and argument structure so it represents a good alterantive.
 
 \***
 
@@ -73,7 +73,7 @@ One of AMRs slogans is to prefer a verb frame whenever it is possible.
 ```
 > "Ich kann aber nicht anders", entgegnete der kleine Prinz ganz verwirrt.
 
-Here, the adverb *verwirrt* evokes the verb frame *verwirren-01* and thus should be used in the annotation.
+Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and thus should be used in the annotation.
 
 Degree
 ------
@@ -126,7 +126,7 @@ The following examples should provide an intuition:
 ```
 > Vulkanische Ausbrüche sind wie Kaminfeuer
 
-*Feuer* occurs in a set of different compounds (Artilleriefeuer, Lagerfeuer, Martinsfeuer, Fegefeuer, Grillfeuer, etc.) and therefore seems to be productive. According to the guidelines, we lift the semantic head *Feuer* up and match it with a fitting semantic role *:location* for the modifier *Kamin*.
+`Feuer` occurs in a set of different compounds (Artilleriefeuer, Lagerfeuer, Martinsfeuer, Fegefeuer, Grillfeuer, etc.) and therefore seems to be productive. According to the guidelines, we lift the semantic head `Feuer` up and match it with a fitting semantic role `:location` for the modifier `Kamin`.
 
 ```lisp
 (d / zeichnen-01
@@ -145,7 +145,7 @@ Modality
 ***
 
 
-AMR represents syntactic modals with concepts like possible-01, likely-01, obligate-01, permit-01, recommend-01, prefer-01, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
+AMR represents syntactic modals with concepts like `possible-01`, `likely-01`, `obligate-01`, `permit-01`, `recommend-01`, `prefer-01`, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
 
 English modal verb     |     PropBank       | German modal verb   | German PropBank   | Example
 -----------------------|--------------------|---------------------|-------------------|---------
