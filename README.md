@@ -35,7 +35,7 @@ Verb Senses
 -----------
 DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
-The Universal German PropBank is still in development and incomplete. Meanwhile, if a German frame for a concept should be missing, e.g. *zufrieden*, one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use `[content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html)`. A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
+The Universal German PropBank is still in development and incomplete. Meanwhile, if a German frame for a concept should be missing, e.g. *zufrieden*, one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html). A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
 Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame. For example: 
 
@@ -149,8 +149,8 @@ AMR represents syntactic modals with concepts like `possible-01`, `likely-01`, `
 
 English modal verb     |     PropBank       | German modal verb   | German PropBank   | Example
 -----------------------|--------------------|---------------------|-------------------|---------
-`may`                  | `permit-01`, `possible-01` (?) | `dürfen`| `erlauben-01`     | “They may go” / "Sie dürfen gehen"
-`can`                  | `possible-01`      | `können`            | `ermöglichen-01`(?)  | “He can swim” / "Er kann schwimmen"
+`may`                  | `permit-01`, `possible-01` | `dürfen`| `erlauben-01`, `befähigen-01`     | “They may go” / "Sie dürfen gehen"
+`can`                  | `possible-01`      | `können`            | `ermöglichen-01`, `können-01`  | “He can swim” / "Er kann schwimmen"
 `should`               | `recommend-01`     | `sollen`            | `empfehlen-01`    | “They should come” / "Sie sollten kommen"
 `must`                 | `obligate-01`      | `müssen`            | `verpflichten-01` | “He must read” / "Er muss lesen"
 `want`                 | `prefer-01`        | `wollen`, `möchten` | `bevorzugen-01`   | “He wants to eat” / "Er will essen"
