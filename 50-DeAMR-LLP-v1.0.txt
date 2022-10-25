@@ -36,16 +36,16 @@
 (c0 / lustig
     :domain (c1 / das))
 
-# ::snt Von welchem Planeten bist du denn her ?
+# ::snt Von welchem Planeten stammst du ?
 (c2 / stammen-01
     :ARG1 (c4 / du)
     :ARG2 (c5 / Planet
               :location (c3 / amr-unknown)))
 
-# ::snt Wo kommst du her, kleiner Mann ?
+# ::snt Wo kommst du her, kleiner Kerl ?
 (c2 / stammen-01
     :ARG1 (c3 / du
-              :mod (c5 / Mann
+              :mod (c5 / Kerl
                        :degree (c6 / klein)))
     :ARG2 (c4 / amr-unknown))
 
