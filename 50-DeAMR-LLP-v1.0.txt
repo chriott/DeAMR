@@ -169,7 +169,7 @@
     :polite +
     :ARG1 (c1 / ich))
 
-# ::snt Mach dich auf den Weg ! (M)
+# ::snt Mach dich auf den Weg !
 (c0 / gehen-01
     :mode imperative
     :ARG0 (c1 / du)
@@ -186,7 +186,7 @@
                  :op2 (c5 / lernen-01
                           :ARG0 c1)))
 
-# ::snt Alle Menschen sind Untertanen. (M)
+# ::snt Alle Menschen sind Untertanen.
 (c7 / Untertan
     :domain (c6 / Mensch
                 :mod (c8 / alle)))
@@ -223,7 +223,6 @@
     :manner (c7 / verwirren-01
                 :mod (c8 / ganz)))
 
-# ::id 50-amr-selection-parallel.86 ::save-date 25/10/2022 18:30:16 ::annotator 1
 # ::snt Ich hatte eine lange Reise und habe nicht geschlafen ...
 (c0 / und
     :op1 (c3 / reisen-01
@@ -257,7 +256,7 @@
               :polarity (c6 / amr-unknown))
     :manner (c5 / zurückhalten-01))
 
-# ::snt "Nein" , sagte der König .
+# ::snt " Nein " , sagte der König .
 (c0 / sagen-01
     :ARG0 (c1 / König)
     :ARG1 (c2 / nein))
@@ -425,7 +424,7 @@
     :ARG0 (c1 / Experte)
     :ARG1 (c2 / Ding))
 
-# ::snt Gib mir zu trinken ...
+# ::snt Gib mir zu trinken .
 (c3 / geben-01
     :mode imperative
     :ARG1 (c2 / trinken-01)
