@@ -189,7 +189,7 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
      :ARG1 (c0 / essen-01
                 :ARG1 (c2 / er)))
 ```
-> Er will lesen.
+> Er will essen.
 > 
 > Er möchte essen.
 

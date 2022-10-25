@@ -1,0 +1,433 @@
+# ::snt So könnt ihr euch vorstellen , wie überrascht ich war , als ich bei Sonnenaufgang von einer leisen , lustigen Stimme geweckt wurde .
+(c31 / cause-01
+     :ARG1 (c30 / können-01
+                :ARG1 (c28 / vorstellen-01
+                           :ARG0 (c32 / sie)
+                           :ARG1 (c33 / überraschen-01
+                                      :ARG0 (c35 / wecken-01
+                                                 :ARG0 (c39 / Stimme
+                                                            :mod (c37 / leise)
+                                                            :mod (c38 / lustig))
+                                                 :ARG1 (c34 / ich))
+                                      :time (c40 / Sonnenaufgang)))))
+
+# ::snt Er antwortete mir : " Das macht nichts . "
+(c0 / antworten-01
+    :ARG0 (c1 / er)
+    :ARG1 (c2 / ich)
+    :ARG2 (c3 / machen-01
+              :ARG0 (c5 / das)
+              :ARG1 (c4 / nichts)))
+
+# ::snt Zeichne mir ein Schaf .
+(c1 / zeichnen-01
+    :ARG0 (c0 / du)
+    :ARG1 (c3 / Schaf)
+    :ARG2 (c2 / ich))
+
+# ::snt Da, wo ich lebe, ist alles sehr klein .
+(c0 / klein
+    :domain (c2 / alles)
+    :degree (c3 / sehr)
+    :location (c1 / leben-01
+                  :ARG0 (c4 / ich)))
+
+# ::snt Das ist lustig !
+(c0 / lustig
+    :domain (c1 / das))
+
+# ::snt Von welchem Planeten bist du denn her ?
+(c2 / stammen-01
+    :ARG1 (c4 / du)
+    :ARG2 (c5 / Planet
+              :location (c3 / amr-unknown)))
+
+# ::snt Wo kommst du her, kleiner Mann ?
+(c2 / stammen-01
+    :ARG1 (c3 / du
+              :mod (c5 / Mann
+                       :degree (c6 / klein)))
+    :ARG2 (c4 / amr-unknown))
+
+# ::snt Wenn ein Astronom einen von ihnen entdeckt , so gibt er ihm eine Nummer anstelle eines Namens .
+(c15 / have-condition-91
+     :ARG1 (c6 / geben-01
+               :ARG0 (c4 / Astronom)
+               :ARG1 (c17 / instead-of-91
+                          :ARG1 (c7 / Nummer)
+                          :ARG2 (c8 / Name)))
+     :ARG2 (c5 / entdecken-01
+               :ARG0 c4
+               :ARG1 (c13 / Ding
+                          :quant 1
+                          :ARG1-of (c18 / include-91
+                                        :ARG2 (c19 / ihnen)))))
+
+# ::snt Kinder müssen mit Erwachsenen nachsichtig sein .
+# ::align c0/0 c1/3
+(c2 / verpflichten-01
+    :ARG1 (c3 / nachvollziehen-01
+              :ARG0 (c0 / Kind)
+              :ARG1 (c1 / Erwachsener)))
+
+# ::snt Aber wir , die das Leben verstehen , lachen natürlich über Zahlen !
+(c0 / contrast-01
+    :ARG0 (c5 / wir
+              :ARG0-of (c4 / verstehen-01
+                           :ARG1 (c1 / Leben)))
+    :ARG2 (c3 / lachen-01
+              :ARG0 c5
+              :ARG2 (c2 / Zahl)))
+
+# ::snt Es ist traurig einen Freund zu vergessen .
+(c6 / trauern-01
+    :ARG1 (c8 / vergessen-01
+              :ARG1 (c9 / Person
+                        :ARG0-of (c10 / have-rel-role-91
+                                      :ARG2 (c11 / Freund)))))
+
+# ::snt Not every one has had a friend .
+(c0 / haben-01
+    :polarity -
+    :ARG0 (c4 / jeder)
+    :ARG1 (c2 / Person
+              :ARG0-of (c3 / have-rel-role-91
+                           :ARG1 c4
+                           :ARG2 (c1 / Freund))))
+
+# ::snt Aber ich bin nicht sicher , ob ich es schaffe .
+(c3 / contrast-01
+    :ARG2 (c2 / versichern-01
+              :polarity -
+              :ARG2 (c0 / schaffen-02
+                        :ARG0 (c1 / ich))))
+
+# ::snt Aber der kleine Prinz antwortete nicht .
+(c0 / contrast-01
+    :ARG2 (c3 / antworten-01
+              :polarity -
+              :ARG0 (c1 / Prinz
+                        :mod (c2 / klein))))
+
+# ::snt Ich war sehr besorgt , denn langsam schien mir meine Panne doch sehr ernst und das zur Neige gehende Trinkwasser ließ mich das Schlimmste befürchten . (M)
+(c3 / sorgen-01
+    :ARG0 (c4 / und
+              :op1 (c8 / scheinen-01
+                       :ARG0 (c2 / Panne
+                                 :poss (c5 / ich))
+                       :ARG1 c5
+                       :mod (c9 / langsam)
+                       :mod (c10 / ernst
+                                 :degree (c6 / sehr)))
+              :op2 (c17 / cause-01
+                        :ARG0 (c19 / Trinkwasser
+                                   :ARG0-of (c18 / entleeren-01
+                                                 :time (c20 / bald)))
+                        :ARG1 (c11 / befürchten-01
+                                   :ARG0 c5
+                                   :ARG1 (c12 / Ding
+                                              :ARG1-of (c14 / have-degree-91
+                                                            :ARG2 (c15 / schlimm)
+                                                            :ARG3 (c16 / am-meisten)))))))
+
+# ::snt " Es ist bald Zeit zum Frühstücken " , fügte sie kurz darauf hinzu . 
+(c1 / hinzufügen-02
+    :ARG0 (c2 / sie)
+    :ARG1 (c6 / Zeit
+              :purpose (c7 / frühstücken-01)
+              :time (c8 / bald))
+    :time (c3 / darauf
+              :degree (c4 / kurz)))
+
+# ::snt Aber er sagte sich : Man weiß ja nie !
+(c0 / contrast-01
+    :ARG2 (c2 / sagen-01
+              :ARG0 (c1 / er)
+              :ARG1 (c3 / wissen-01
+                        :polarity -
+                        :ARG0 (c4 / man)
+                        :time (c6 / jemals))
+              :ARG2 c1))
+
+# ::snt Vulkanische Ausbrüche sind so wie Kaminfeuer .
+(c3 / ähneln-01
+    :ARG1 (c0 / ausbrechen-02
+              :ARG1 (c1 / Vulkan))
+    :ARG2 (c2 / Feuer
+              :location (c4 / Kamin)))
+
+# ::snt Er dachte , er würde nie wiederkommen .
+(c0 / denken-01
+    :ARG0 (c1 / er)
+    :ARG1 (c2 / wiederkommen-01
+              :polarity -
+              :ARG1 c1
+              :time (c4 / jemals)))
+
+# ::snt Bitte verzeih mir .
+(c0 / verzeihen-01
+    :polite +
+    :ARG1 (c1 / ich))
+
+# ::snt Mach dich auf den Weg ! (M)
+(c0 / gehen-01
+    :mode imperative
+    :ARG0 (c1 / du)
+    :ARG3 (c3 / Weg))
+
+# ::snt So begann er , ihnen einen Besuch abzustatten, um sich zu beschäftigen und sich schlau zu machen . (M)
+(c0 / beginnen-01
+    :ARG0 (c1 / er)
+    :ARG1 (c2 / besuchen-01
+              :ARG1 (c3 / sie))
+    :purpose (c6 / und
+                 :op1 (c4 / beschäftigen-01
+                          :ARG0 c1)
+                 :op2 (c5 / lernen-01
+                          :ARG0 c1)))
+
+# ::snt Alle Menschen sind Untertanen. (M)
+(c7 / Untertan
+    :domain (c6 / Mensch
+                :mod (c8 / alle)))
+
+# ::snt Der kleine Prinz sah sich nach einem Sitzplatz um , doch der ganze Planet wurde von dem herrlichen Hermelinmantel bedeckt .
+(c5 / schauen-01
+    :ARG0 (c4 / Prinz
+              :mod (c9 / klein))
+    :ARG1 (c0 / Sitzplatz)
+    :concession (c7 / bedecken-01
+                    :ARG1 (c1 / Planet
+                              :mod (c8 / ganz))
+                    :ARG2 (c2 / Mantel
+                              :mod (c3 / Hermelin)
+                              :mod (c6 / herrlich))))
+
+# ::snt " Es ist ein grober Verstoß gegen die Etikette, in der Gegenwart eines Königs zu gähnen" , sagte der Monarch .
+(c2 / sagen-01
+    :ARG0 (c3 / Monarch)
+    :ARG1 (c4 / verstoßen-02
+              :ARG1 (c0 / Etikette
+                        :consist-of (c1 / gähnen-01
+                                        :location (c6 / König)))
+              :mod (c5 / grob)))
+
+# ::snt " Ich kann aber nicht anders " , entgegnete der kleine Prinz ganz verwirrt .
+(c0 / entgegnen-01
+    :ARG0 (c1 / Prinz
+              :mod (c2 / klein))
+    :ARG1 (c4 / ermöglichen-01
+              :polarity -
+              :manner (c6 / anders)
+              :ARG0 c1)
+    :manner (c7 / verwirren-01
+                :mod (c8 / ganz)))
+
+# ::id 50-amr-selection-parallel.86 ::save-date 25/10/2022 18:30:16 ::annotator 1
+# ::snt Ich hatte eine lange Reise und habe nicht geschlafen ...
+(c0 / und
+    :op1 (c3 / reisen-01
+             :ARG0 (c4 / ich)
+             :degree (c5 / lang))
+    :op2 (c2 / schlafen-01
+             :polarity -
+             :ARG0 c4))
+
+# ::snt Seit Jahren habe ich niemanden gähnen gesehen .
+(c3 / sehen-01
+    :polarity -
+    :ARG0 (c2 / ich)
+    :ARG1 (c1 / gähnen-01
+              :ARG0 (c5 / Person))
+    :time (c0 / Jahr
+              :mod (c8 / viel)))
+
+# ::snt Er war ein absoluter Monarch .
+(c0 / Monarch
+    :mod (c2 / absolut)
+    :domain (c1 / er))
+
+# ::snt " Darf ich mich setzen ? " , fragte der kleine Prinz zaghaft .
+(c1 / fragen-01
+    :ARG0 (c2 / Prinz
+              :mod (c3 / klein))
+    :ARG1 (c0 / erlauben-01
+              :ARG1 (c4 / setzen-03
+                        :ARG0 c2)
+              :polarity (c6 / amr-unknown))
+    :manner (c5 / zurückhalten-01))
+
+# ::snt "Nein" , sagte der König .
+(c0 / sagen-01
+    :ARG0 (c1 / König)
+    :ARG1 (c2 / nein))
+
+# ::snt Geh nicht .
+(c0 / gehen-01
+    :polarity (c3 / -)
+    :mode imperative
+    :ARG0 (c1 / du))
+
+# ::snt Aber es gibt doch niemanden , den man verurteilen könnte !
+(c1 / contrast-01
+    :ARG2 (c3 / existieren-01
+              :mode conclusive
+              :polarity -
+              :ARG1 (c5 / Person
+                        :ARG1-of (c0 / verurteilen-01))))
+
+# ::snt Es ist viel schwerer, über sich selbst zu richten , als über andere zu urteilen .
+(c2 / have-degree-91
+    :ARG1 (c1 / richten-01
+              :ARG0 (c4 / sich)
+              :ARG1 c4)
+    :ARG2 (c3 / schwer)
+    :ARG3 (c6 / viel)
+    :ARG4 (c0 / urteilen-01
+              :ARG1 (c5 / andere)))
+
+# ::snt Sie haben einen merkwürdigen Hut !
+(c2 / haben-01
+    :ARG0 (c3 / sie)
+    :ARG1 (c0 / Hut
+              :mod (c1 / merkwürdig)))
+
+# ::snt Eitle Menschen hören nur , wenn sie gelobt werden .
+(c2 / hören-01
+    :ARG0 (c0 / Mensch
+              :mod (c1 / eitel))
+    :condition (c3 / loben
+                   :ARG1 c0))
+
+# ::snt Verehren bedeutet , zuzugeben , dass ich der schönste , am besten gekleidete , reichste und intelligenteste Mensch auf dem Planeten bin .
+(c0 / bedeuten-01
+    :ARG1 (c3 / verehren-01)
+    :ARG2 (c5 / zugeben-01
+              :ARG1 (c6 / ich
+                        :ARG1-of (c4 / have-degree-91
+                                     :ARG2 (c8 / schön)
+                                     :ARG3 (c9 / am-meisten)
+                                     :ARG5 (c1 / Mensch
+                                               :location (c7 / Planet)))
+                        :ARG1-of (c10 / have-degree-91
+                                      :ARG2 (c12 / kleiden-01)
+                                      :ARG3 (c13 / am-besten)
+                                      :ARG5 c1)
+                        :ARG1-of (c11 / have-degree-91
+                                      :ARG2 (c14 / reich)
+                                      :ARG3 (c15 / am-meisten)
+                                      :ARG5 c1)
+                        :ARG1-of (c16 / have-degree-91
+                                      :ARG2 (c17 / intelligent)
+                                      :ARG3 (c18 / am-meisten)
+                                      :ARG5 c1))))
+
+# ::snt " Ich saufe " , antwortete finster der Säufer .
+(c1 / antworten-01
+    :ARG0 (c3 / Säufer)
+    :manner (c2 / finster)
+    :ARG1 (c0 / saufen-01
+              :ARG0 c3))
+
+# ::snt Der vierte Planet gehörte einem Geschäftsmann .
+(c0 / gehören-01
+    :ARG0 (c2 / Planet
+              :ord (c4 / ordinal-entity
+                       :value 4))
+    :ARG1 (c1 / Geschäftsmann))
+
+# ::snt Ich habe so viel Arbeit !
+(c2 / verpflichten-01
+    :ARG1 (c0 / arbeiten-01
+              :ARG0 (c1 / ich)
+              :degree (c3 / viel)))
+
+# ::snt Der Geschäftsmann verstand , dass er nicht darauf hoffen konnte , in Ruhe gelassen zu werden .
+(c0 / verstehen-01
+    :ARG0 (c1 / Geschäftsmann)
+    :ARG1 (c2 / hoffen-01
+              :polarity -
+              :ARG0 c1
+              :ARG1 (c4 / lassen-02)))
+
+# ::snt Wenn du einen Diamanten findest , der niemandem gehört , so gehört er dir .
+(c2 / gehören-01
+    :ARG0 (c0 / Diamant
+              :ARG0-of (c4 / gehören-01
+                           :polarity -
+                           :ARG0 (c6 / Person)))
+    :ARG1 (c3 / du)
+    :condition (c1 / finden-01
+                   :ARG0 c3
+                   :ARG1 c0))
+
+# ::snt Es gab gerade genug Platz für eine Straßenlaterne und einen Laternenanzünder .
+(c0 / have-quant-91
+    :ARG1 (c1 / Platz)
+    :ARG3 (c2 / genug
+              :mod (c3 / gerade))
+    :ARG6 (c4 / unterbringen-01
+              :ARG0 c1
+              :ARG1 (c5 / und
+                        :op1 (c6 / Straßenlaterne)
+                        :op2 (c7 / Laternenanzünder))))
+
+# ::snt Eine Anordnung ist eine Anordnung .
+# ::align c1/1 c2/4
+(c1 / Anordnung
+    :domain (c2 / Anordnung))
+
+# ::snt Wenn du dich ausruhen willst , läufst du ... und der Tag dauert so lange , wie du magst .
+(c6 / laufen-01
+    :ARG0 (c2 / du)
+    :time (c1 / bevorzugen-01
+              :ARG1 (c3 / ruhen-01
+                        :ARG0 c2))
+    :ARG0-of (c13 / cause-01
+                  :ARG1 (c4 / dauern-01
+                            :ARG0 (c5 / Tag)
+                            :ARG1 (c7 / temporal-quantity
+                                      :ARG1-of (c8 / have-quant-91
+                                                   :ARG3 (c10 / gleich)
+                                                   :ARG4 (c11 / temporal-quantity
+                                                              :ARG1-of (c12 / möchten-01
+                                                                            :ARG0 c2)))))))
+
+# ::snt Ich habe einen schrecklichen Beruf . 
+(c0 / berufen-01
+    :ARG1 (c2 / ich)
+    :mod (c1 / schrecklich))
+
+# ::snt Es ist zwecklos .
+(c4 / nutzen-01
+    :ARG1 (c1 / es)
+    :polarity -)
+
+# ::snt " Hier bin ich " , sagte die Stimme , " unter dem Apfelbaum . "
+(c1 / sagen-01
+    :ARG0 (c0 / Stimme)
+    :ARG1 (c3 / ich
+              :location (c4 / hier)
+              :location (c5 / unter
+                            :location (c2 / Apfelbaum))))
+
+# ::snt " Sie haben es aber eilig " , sagte der kleine Prinz .
+(c0 / sagen-01
+    :ARG0 (c3 / Prinz
+              :mod (c4 / klein))
+    :ARG1 (c1 / beeilen-01
+              :mode surprised
+              :ARG1 (c6 / sie)))
+
+# ::snt Experten haben das schon berechnet .
+(c0 / berechnen-01
+    :mode confirmation
+    :ARG0 (c1 / Experte)
+    :ARG1 (c2 / Ding))
+
+# ::snt Gib mir zu trinken ...
+(c3 / geben-01
+    :mode imperative
+    :ARG1 (c2 / trinken-01)
+    :ARG2 (c1 / ich))
+
