@@ -1,3 +1,4 @@
+# ::id lpp_de.1 ::annotator CO
 # ::snt So könnt ihr euch vorstellen , wie überrascht ich war , als ich bei Sonnenaufgang von einer leisen , lustigen Stimme geweckt wurde .
 (c31 / cause-01
      :ARG1 (c30 / können-01
@@ -11,6 +12,7 @@
                                                  :ARG1 (c34 / ich))
                                       :time (c40 / Sonnenaufgang)))))
 
+# ::id lpp_de.2 ::annotator CO
 # ::snt Er antwortete mir : " Das macht nichts . "
 (c0 / antworten-01
     :ARG0 (c1 / er)
@@ -19,12 +21,14 @@
               :ARG0 (c5 / das)
               :ARG1 (c4 / nichts)))
 
+# ::id lpp_de.3 ::annotator CO
 # ::snt Zeichne mir ein Schaf .
 (c1 / zeichnen-01
     :ARG0 (c0 / du)
     :ARG1 (c3 / Schaf)
     :ARG2 (c2 / ich))
 
+# ::id lpp_de.4 ::annotator CO
 # ::snt Da, wo ich lebe, ist alles sehr klein .
 (c0 / klein
     :domain (c2 / alles)
@@ -32,16 +36,19 @@
     :location (c1 / leben-01
                   :ARG0 (c4 / ich)))
 
+# ::id lpp_de.5 ::annotator CO
 # ::snt Das ist lustig !
 (c0 / lustig
     :domain (c1 / das))
 
+# ::id lpp_de.6 ::annotator CO
 # ::snt Von welchem Planeten stammst du ?
 (c2 / stammen-01
     :ARG1 (c4 / du)
     :ARG2 (c5 / Planet
               :location (c3 / amr-unknown)))
 
+# ::id lpp_de.7 ::annotator CO
 # ::snt Wo kommst du her, kleiner Kerl ?
 (c2 / stammen-01
     :ARG1 (c3 / du
@@ -49,6 +56,7 @@
                        :degree (c6 / klein)))
     :ARG2 (c4 / amr-unknown))
 
+# ::id lpp_de.8 ::annotator CO
 # ::snt Wenn ein Astronom einen von ihnen entdeckt , so gibt er ihm eine Nummer anstelle eines Namens .
 (c15 / have-condition-91
      :ARG1 (c6 / geben-01
@@ -63,6 +71,7 @@
                           :ARG1-of (c18 / include-91
                                         :ARG2 (c19 / ihnen)))))
 
+# ::id lpp_de.9 ::annotator CO
 # ::snt Kinder müssen mit Erwachsenen nachsichtig sein .
 # ::align c0/0 c1/3
 (c2 / verpflichten-01
@@ -70,6 +79,7 @@
               :ARG0 (c0 / Kind)
               :ARG1 (c1 / Erwachsener)))
 
+# ::id lpp_de.10 ::annotator CO
 # ::snt Aber wir , die das Leben verstehen , lachen natürlich über Zahlen !
 (c0 / contrast-01
     :ARG0 (c5 / wir
@@ -79,6 +89,7 @@
               :ARG0 c5
               :ARG2 (c2 / Zahl)))
 
+# ::id lpp_de.11 ::annotator CO
 # ::snt Es ist traurig einen Freund zu vergessen .
 (c6 / trauern-01
     :ARG1 (c8 / vergessen-01
@@ -86,6 +97,7 @@
                         :ARG0-of (c10 / have-rel-role-91
                                       :ARG2 (c11 / Freund)))))
 
+# ::id lpp_de.12 ::annotator CO
 # ::snt Not every one has had a friend .
 (c0 / haben-01
     :polarity -
@@ -95,6 +107,7 @@
                            :ARG1 c4
                            :ARG2 (c1 / Freund))))
 
+# ::id lpp_de.13 ::annotator CO
 # ::snt Aber ich bin nicht sicher , ob ich es schaffe .
 (c3 / contrast-01
     :ARG2 (c2 / versichern-01
@@ -102,6 +115,7 @@
               :ARG2 (c0 / schaffen-02
                         :ARG0 (c1 / ich))))
 
+# ::id lpp_de.14 ::annotator CO
 # ::snt Aber der kleine Prinz antwortete nicht .
 (c0 / contrast-01
     :ARG2 (c3 / antworten-01
@@ -109,6 +123,7 @@
               :ARG0 (c1 / Prinz
                         :mod (c2 / klein))))
 
+# ::id lpp_de.15 ::annotator CO
 # ::snt Ich war sehr besorgt , denn langsam schien mir meine Panne doch sehr ernst und das zur Neige gehende Trinkwasser ließ mich das Schlimmste befürchten . (M)
 (c3 / sorgen-01
     :ARG0 (c4 / und
@@ -130,6 +145,7 @@
                                                             :ARG2 (c15 / schlimm)
                                                             :ARG3 (c16 / am-meisten)))))))
 
+# ::id lpp_de.16 ::annotator CO
 # ::snt " Es ist bald Zeit zum Frühstücken " , fügte sie kurz darauf hinzu . 
 (c1 / hinzufügen-02
     :ARG0 (c2 / sie)
@@ -139,6 +155,7 @@
     :time (c3 / darauf
               :degree (c4 / kurz)))
 
+# ::id lpp_de.17 ::annotator CO
 # ::snt Aber er sagte sich : Man weiß ja nie !
 (c0 / contrast-01
     :ARG2 (c2 / sagen-01
@@ -149,6 +166,7 @@
                         :time (c6 / jemals))
               :ARG2 c1))
 
+# ::id lpp_de.18 ::annotator CO
 # ::snt Vulkanische Ausbrüche sind so wie Kaminfeuer .
 (c3 / ähneln-01
     :ARG1 (c0 / ausbrechen-02
@@ -156,6 +174,7 @@
     :ARG2 (c2 / Feuer
               :location (c4 / Kamin)))
 
+# ::id lpp_de.19 ::annotator CO
 # ::snt Er dachte , er würde nie wiederkommen .
 (c0 / denken-01
     :ARG0 (c1 / er)
@@ -164,18 +183,21 @@
               :ARG1 c1
               :time (c4 / jemals)))
 
+# ::id lpp_de.20 ::annotator CO
 # ::snt Bitte verzeih mir .
 (c0 / verzeihen-01
     :polite +
     :ARG1 (c1 / ich))
 
+# ::id lpp_de.21 ::annotator CO
 # ::snt Mach dich auf den Weg !
 (c0 / gehen-01
     :mode imperative
     :ARG0 (c1 / du)
     :ARG3 (c3 / Weg))
 
-# ::snt So begann er , ihnen einen Besuch abzustatten, um sich zu beschäftigen und sich schlau zu machen . (M)
+# ::id lpp_de.22 ::annotator CO
+# ::snt So begann er , ihnen einen Besuch abzustatten, um sich zu beschäftigen und sich schlau zu machen . 
 (c0 / beginnen-01
     :ARG0 (c1 / er)
     :ARG1 (c2 / besuchen-01
@@ -186,11 +208,13 @@
                  :op2 (c5 / lernen-01
                           :ARG0 c1)))
 
+# ::id lpp_de.23 ::annotator CO
 # ::snt Alle Menschen sind Untertanen.
 (c7 / Untertan
     :domain (c6 / Mensch
                 :mod (c8 / alle)))
 
+# ::id lpp_de.24 ::annotator CO
 # ::snt Der kleine Prinz sah sich nach einem Sitzplatz um , doch der ganze Planet wurde von dem herrlichen Hermelinmantel bedeckt .
 (c5 / schauen-01
     :ARG0 (c4 / Prinz
@@ -203,6 +227,7 @@
                               :mod (c3 / Hermelin)
                               :mod (c6 / herrlich))))
 
+# ::id lpp_de.25 ::annotator CO
 # ::snt " Es ist ein grober Verstoß gegen die Etikette, in der Gegenwart eines Königs zu gähnen" , sagte der Monarch .
 (c2 / sagen-01
     :ARG0 (c3 / Monarch)
@@ -212,6 +237,7 @@
                                         :location (c6 / König)))
               :mod (c5 / grob)))
 
+# ::id lpp_de.26 ::annotator CO
 # ::snt " Ich kann aber nicht anders " , entgegnete der kleine Prinz ganz verwirrt .
 (c0 / entgegnen-01
     :ARG0 (c1 / Prinz
@@ -223,6 +249,7 @@
     :manner (c7 / verwirren-01
                 :mod (c8 / ganz)))
 
+# ::id lpp_de.27 ::annotator CO
 # ::snt Ich hatte eine lange Reise und habe nicht geschlafen ...
 (c0 / und
     :op1 (c3 / reisen-01
@@ -232,6 +259,7 @@
              :polarity -
              :ARG0 c4))
 
+# ::id lpp_de.28 ::annotator CO
 # ::snt Seit Jahren habe ich niemanden gähnen gesehen .
 (c3 / sehen-01
     :polarity -
@@ -241,11 +269,13 @@
     :time (c0 / Jahr
               :mod (c8 / viel)))
 
+# ::id lpp_de.29 ::annotator CO
 # ::snt Er war ein absoluter Monarch .
 (c0 / Monarch
     :mod (c2 / absolut)
     :domain (c1 / er))
 
+# ::id lpp_de.30 ::annotator CO
 # ::snt " Darf ich mich setzen ? " , fragte der kleine Prinz zaghaft .
 (c1 / fragen-01
     :ARG0 (c2 / Prinz
@@ -256,17 +286,14 @@
               :polarity (c6 / amr-unknown))
     :manner (c5 / zurückhalten-01))
 
-# ::snt " Nein " , sagte der König .
-(c0 / sagen-01
-    :ARG0 (c1 / König)
-    :ARG1 (c2 / nein))
-
+# ::id lpp_de.31 ::annotator CO
 # ::snt Geh nicht .
 (c0 / gehen-01
     :polarity (c3 / -)
     :mode imperative
     :ARG0 (c1 / du))
 
+# ::id lpp_de.32 ::annotator CO
 # ::snt Aber es gibt doch niemanden , den man verurteilen könnte !
 (c1 / contrast-01
     :ARG2 (c3 / existieren-01
@@ -275,6 +302,7 @@
               :ARG1 (c5 / Person
                         :ARG1-of (c0 / verurteilen-01))))
 
+# ::id lpp_de.33 ::annotator CO
 # ::snt Es ist viel schwerer, über sich selbst zu richten , als über andere zu urteilen .
 (c2 / have-degree-91
     :ARG1 (c1 / richten-01
@@ -285,12 +313,14 @@
     :ARG4 (c0 / urteilen-01
               :ARG1 (c5 / andere)))
 
+# ::id lpp_de.34 ::annotator CO
 # ::snt Sie haben einen merkwürdigen Hut !
 (c2 / haben-01
     :ARG0 (c3 / sie)
     :ARG1 (c0 / Hut
               :mod (c1 / merkwürdig)))
 
+# ::id lpp_de.35 ::annotator CO
 # ::snt Eitle Menschen hören nur , wenn sie gelobt werden .
 (c2 / hören-01
     :ARG0 (c0 / Mensch
@@ -298,6 +328,7 @@
     :condition (c3 / loben
                    :ARG1 c0))
 
+# ::id lpp_de.36 ::annotator CO
 # ::snt Verehren bedeutet , zuzugeben , dass ich der schönste , am besten gekleidete , reichste und intelligenteste Mensch auf dem Planeten bin .
 (c0 / bedeuten-01
     :ARG1 (c3 / verehren-01)
@@ -321,6 +352,7 @@
                                       :ARG3 (c18 / am-meisten)
                                       :ARG5 c1))))
 
+# ::id lpp_de.37 ::annotator CO
 # ::snt " Ich saufe " , antwortete finster der Säufer .
 (c1 / antworten-01
     :ARG0 (c3 / Säufer)
@@ -328,6 +360,7 @@
     :ARG1 (c0 / saufen-01
               :ARG0 c3))
 
+# ::id lpp_de.38 ::annotator CO
 # ::snt Der vierte Planet gehörte einem Geschäftsmann .
 (c0 / gehören-01
     :ARG0 (c2 / Planet
@@ -335,12 +368,14 @@
                        :value 4))
     :ARG1 (c1 / Geschäftsmann))
 
+# ::id lpp_de.39 ::annotator CO
 # ::snt Ich habe so viel Arbeit !
 (c2 / verpflichten-01
     :ARG1 (c0 / arbeiten-01
               :ARG0 (c1 / ich)
               :degree (c3 / viel)))
 
+# ::id lpp_de.40 ::annotator CO
 # ::snt Der Geschäftsmann verstand , dass er nicht darauf hoffen konnte , in Ruhe gelassen zu werden .
 (c0 / verstehen-01
     :ARG0 (c1 / Geschäftsmann)
@@ -349,6 +384,7 @@
               :ARG0 c1
               :ARG1 (c4 / lassen-02)))
 
+# ::id lpp_de.41 ::annotator CO
 # ::snt Wenn du einen Diamanten findest , der niemandem gehört , so gehört er dir .
 (c2 / gehören-01
     :ARG0 (c0 / Diamant
@@ -360,6 +396,7 @@
                    :ARG0 c3
                    :ARG1 c0))
 
+# ::id lpp_de.42 ::annotator CO
 # ::snt Es gab gerade genug Platz für eine Straßenlaterne und einen Laternenanzünder .
 (c0 / have-quant-91
     :ARG1 (c1 / Platz)
@@ -371,11 +408,12 @@
                         :op1 (c6 / Straßenlaterne)
                         :op2 (c7 / Laternenanzünder))))
 
+# ::id lpp_de.43 ::annotator CO
 # ::snt Eine Anordnung ist eine Anordnung .
-# ::align c1/1 c2/4
 (c1 / Anordnung
     :domain (c2 / Anordnung))
 
+# ::id lpp_de.44 ::annotator CO
 # ::snt Wenn du dich ausruhen willst , läufst du ... und der Tag dauert so lange , wie du magst .
 (c6 / laufen-01
     :ARG0 (c2 / du)
@@ -392,16 +430,19 @@
                                                               :ARG1-of (c12 / möchten-01
                                                                             :ARG0 c2)))))))
 
+# ::id lpp_de.45 ::annotator CO
 # ::snt Ich habe einen schrecklichen Beruf . 
 (c0 / berufen-01
     :ARG1 (c2 / ich)
     :mod (c1 / schrecklich))
 
+# ::id lpp_de.46 ::annotator CO
 # ::snt Es ist zwecklos .
 (c4 / nutzen-01
     :ARG1 (c1 / es)
     :polarity -)
 
+# ::id lpp_de.47 ::annotator CO
 # ::snt " Hier bin ich " , sagte die Stimme , " unter dem Apfelbaum . "
 (c1 / sagen-01
     :ARG0 (c0 / Stimme)
@@ -410,6 +451,7 @@
               :location (c5 / unter
                             :location (c2 / Apfelbaum))))
 
+# ::id lpp_de.48 ::annotator CO
 # ::snt " Sie haben es aber eilig " , sagte der kleine Prinz .
 (c0 / sagen-01
     :ARG0 (c3 / Prinz
@@ -418,12 +460,14 @@
               :mode surprised
               :ARG1 (c6 / sie)))
 
+# ::id lpp_de.49 ::annotator CO
 # ::snt Experten haben das schon berechnet .
 (c0 / berechnen-01
     :mode confirmation
     :ARG0 (c1 / Experte)
     :ARG1 (c2 / Ding))
 
+# ::id lpp_de.50 ::annotator CO
 # ::snt Gib mir zu trinken .
 (c3 / geben-01
     :mode imperative
