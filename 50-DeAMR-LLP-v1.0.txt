@@ -8,9 +8,10 @@
                                       :ARG0 (c35 / wecken-01
                                                  :ARG0 (c39 / Stimme
                                                             :mod (c37 / leise)
-                                                            :mod (c38 / lustig))
-                                                 :ARG1 (c34 / ich))
-                                      :time (c40 / Sonnenaufgang)))))
+                                                            :mod (c38 / lustig)
+                                                            :ARG1 c34)
+                                                 :time (c40 / Sonnenaufgang))
+                                      :ARG1 (c34 / ich)))))
 
 # ::id lpp_de.2 ::annotator CO
 # ::snt Er antwortete mir : " Das macht nichts . "
