@@ -4,7 +4,6 @@ The following are the annotation guidelines for DeAMR (German AMR), which are bu
 
 **Table of Contents**
 - [Introduction](#introduction)
-   - [Abstraction away from English](#Abstraction-away-from-English)
    - [Verb Senses](#verb-senses)
 - [Annotation Guidelines](#annotation-guidelines)
    - [Compounds](#compounds)
