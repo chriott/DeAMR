@@ -9,7 +9,7 @@ The following are the annotation guidelines for DeAMR (German AMR), which are bu
 - [Annotation Guidelines](#annotation-guidelines)
    - [Compounds](#compounds)
    - [Degree](#degree)
-   - [Special dashed entities / relations](#special-dashed-entities-relations)
+   - [Special dashed entities / relations](#special-dashed-entities-and-relations)
    - [Modality](#modality)
    - [Modal particles](#modal-particles) 
 - [References](#references)
@@ -141,7 +141,7 @@ The following examples should provide an intuition:
 
 "Maulkorb" could be declared as a more lexicalized word and thus not split up by semantic roles.
 
-Special dashed entities / relations
+Special dashed entities and relations
 --------
 ***
 
