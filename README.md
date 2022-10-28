@@ -9,6 +9,7 @@ The following are the annotation guidelines for DeAMR (German AMR), which are bu
 - [Annotation Guidelines](#annotation-guidelines)
    - [Compounds](#compounds)
    - [Degree](#degree)
+   - [Special dashed entities / relations](#special-dashed-entities-relations)
    - [Modality](#modality)
    - [Modal particles](#modal-particles) 
 - [References](#references)
@@ -139,6 +140,12 @@ The following examples should provide an intuition:
 > Ich zeichne dir einen Maulkorb für dein Schaf.
 
 "Maulkorb" could be declared as a more lexicalized word and thus not split up by semantic roles.
+
+Special dashed entities / relations
+--------
+***
+
+For special and funtional roles (such as `have-degree-91`) DeAMR uses the English terms.
 
 Modality 
 --------
