@@ -1,5 +1,5 @@
-# DeAMR 1.0 (WIP)
-The following are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The aim is to extend its functionality so that German linguistic phenomena can be sufficiently mapped into AMR form.
+# DeAMR 1.0 (WIP 🚧)
+These are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The aim is to extend AMR's functionality so that German linguistic phenomena can be sufficiently mapped into AMR form.
 
 
 **Table of Contents**
@@ -7,6 +7,7 @@ The following are the annotation guidelines for DeAMR (German AMR), which are bu
    - [Verb Senses](#verb-senses)
 - [Annotation Guidelines](#annotation-guidelines)
    - [Compounds](#compounds)
+   - [Coordination and Clausal connectives](#Coordination-and-Clausal-connectives)
    - [Degree](#degree)
    - [Special dashed entities / relations](#special-dashed-entities-and-relations)
    - [Modality](#modality)
@@ -14,12 +15,17 @@ The following are the annotation guidelines for DeAMR (German AMR), which are bu
 - [References](#references)
 
 
-Introduction
+Introduction 🌱
 ====================
+## Abstract Meaning Representation 💭
+
+AMR is a semantic formalism that captures information on who is doing what to whom in a sentence. DeAMR is its German adaptation. AMR can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable and they are labeled with concepts:
 
 <p align="center">
 <img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=60% height=100%>
 </p>
+
+AMR and DeAMR lean heavily on PENMAN-notation, which is a way of representing a graph in a simple, tree-like form:
 
 ```lisp
 (c1 / zeichnen-01
@@ -31,7 +37,7 @@ Introduction
 ```
 > Zeichne mir ein weißes Schaf!
 
-Verb Senses
+Verb Senses 🔡
 -----------
 DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
@@ -53,11 +59,12 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 \***
 
 
-Annotation Guidelines
-====================
+# Annotation Guidelines 🗂️ 
 
-Adjectives/Adverbs evoking a verb frame
------------------------------
+This version of the DeAMR guidelines tries to provide the first pieces of a puzzle to cover the full range of linguistic phenomena of German.
+
+## Adjectives/Adverbs evoking a verb frame 🧩
+---
 One of AMRs slogans is to prefer a verb frame whenever it is possible.
 
 ```lisp
@@ -75,9 +82,8 @@ One of AMRs slogans is to prefer a verb frame whenever it is possible.
 
 Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and thus should be used in the annotation.
 
-Degree
-------
-***
+## Degree 🧩
+---
 
 Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. You use the same frame `have-degree-91` but match the German attributes and the degree itself.
 
@@ -91,7 +97,7 @@ Arg5: superlative: reference to superset
 Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitzen)
 ```
 
-Compounds
+Compounds 🧩
 ---------
 ***
 
@@ -140,13 +146,28 @@ The following examples should provide an intuition:
 
 "Maulkorb" could be declared as a more lexicalized word and thus not split up by semantic roles.
 
-Special dashed entities and relations
+Coordination and Clausal connectives 🧩
+--------
+
+Example ENG/DE | AMR | DeAMR
+--------|-----|------
+and/und     | and | und
+or/oder      | or  | oder
+but/aber     | `:contrast-01` | `:contrast-01`
+because/weil; due to/wegen; on account of/aufgrund von | `:cause-01` | `:cause-01`
+(in order) to/damit; so (that)/sodass | `:purpose` | `:purpose`
+if/wenn | `:condition` | `:condition`
+unless/außer | `:condition`, `:polarity` | `:condition`, `:polarity`
+altough/obwohl; despite/trotz | `:concession`| `:concession`
+
+
+Special dashed entities and relations 🧩
 --------
 ***
 
 For special and funtional roles (such as `have-degree-91`) DeAMR uses the English terms.
 
-Modality 
+Modality 🧩
 --------
 ***
 
@@ -199,7 +220,7 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 > 
 > Er möchte essen.
 
-Modal particles
+Modal particles 🧩
 ---------------
 ***
 
@@ -256,10 +277,11 @@ Modal particle          | Context                                          | Ann
 >
 > Ich fange schon an.
 
-References WIP
-==============
+# References 📚
 
-Bin Li, YuanWen, Lijun Bu,Weiguang Qu, Nianwen Xue. Annotating the Little Prince with Chinese AMRs. LAW-2016, Aug 11, 2016, Berlin, Germany.
+#Bin Li, YuanWen, Lijun Bu, Weiguang Qu and Nianwen Xue. Annotating the Little Prince with Chinese AMRs. LAW-2016, Aug 11, 2016, Berlin, Germany.
 
-CAMR Guidelines [v1.2](https://www.cs.brandeis.edu/~clp/camr/res/CAMR_GL_v1.2.pdf)
+#Nathan Schneider, Tim O'Gorman and Jeffrey Flanigang. [AMR Tutorial](https://github.com/nschneid/amr-tutorial/tree/master/slides) presented at NAACL 2015.
+
+#Nianwen Xue, Chuan Wang, Yuchen Zhang, Bin Li, Lijun Bu, Yuan Wen, Li Song, Rubing Dai, Junsheng Zhou and Weiguang Qu. CAMR Guidelines [v1.2](https://www.cs.brandeis.edu/~clp/camr/res/CAMR_GL_v1.2.pdf).
 
