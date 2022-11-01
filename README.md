@@ -35,6 +35,8 @@ AMR and DeAMR lean heavily on PENMAN-notation, which is a way of representing a 
               :mod (c4 / weiß)
     :ARG2 (c2 / ich))
 ```
+Both representations could be rendered into the German sentence: 
+
 > Zeichne mir ein weißes Schaf!
 
 Verb Senses 🔡
