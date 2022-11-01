@@ -3,16 +3,17 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 
 
 **Table of Contents**
-- [Introduction](#introduction)
-   - [Verb Senses](#verb-senses)
-- [Annotation Guidelines](#annotation-guidelines)
-   - [Compounds](#compounds)
-   - [Coordination and Clausal connectives](#Coordination-and-Clausal-connectives)
-   - [Degree](#degree)
-   - [Special dashed entities / relations](#special-dashed-entities-and-relations)
-   - [Modality](#modality)
-   - [Modal particles](#modal-particles) 
-- [References](#references)
+- [Introduction](#introduction-🌱)
+    - [Abstract Meaning Representation](#abstract-meaning-representation-amr-💭)
+    - [Verb Senses](#verb-senses-🔡)
+- [Annotation Guidelines](#annotation-guidelines-🗂️)
+    - [Compounds](#compounds-🧩)   
+    - [Coordination and Clausal connectives](#coordination-and-clausal-connectives-🧩)
+    - [Degree](#degree-🧩)
+    - [Special dashed entities / relations](#special-dashed-entities-and-relations-🧩)
+    - [Modality](#modality-🧩)
+    - [Modal particles](#modal-particles-🧩) 
+- [References](#references-📚)
 
 
 Introduction 🌱
