@@ -17,7 +17,8 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 
 Introduction 🌱
 ====================
-## Abstract Meaning Representation 💭
+Abstract Meaning Representation (AMR) 💭
+----
 
 AMR is a semantic formalism that captures information on who is doing what to whom in a sentence. DeAMR is its German adaptation. AMR can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable and they are labeled with concepts:
 
@@ -58,15 +59,14 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 
 "Herkommen" does not exist in the German PropBank. `stammen-01` holds a compatible semantic meaning and argument structure so it represents a good alterantive.
 
-\***
-
-
-# Annotation Guidelines 🗂️ 
+Annotation Guidelines 🗂️ 
+===
 
 This version of the DeAMR guidelines tries to provide the first pieces of a puzzle to cover the full range of linguistic phenomena of German.
 
-## Adjectives/Adverbs evoking a verb frame 🧩
+Adjectives/Adverbs evoking a verb frame 🧩
 ---
+
 One of AMRs slogans is to prefer a verb frame whenever it is possible.
 
 ```lisp
@@ -84,7 +84,7 @@ One of AMRs slogans is to prefer a verb frame whenever it is possible.
 
 Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and thus should be used in the annotation.
 
-## Degree 🧩
+Degree 🧩
 ---
 
 Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. You use the same frame `have-degree-91` but match the German attributes and the degree itself.
@@ -100,8 +100,7 @@ Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitz
 ```
 
 Compounds 🧩
----------
-***
+---
 
 In German, there are multiple ways of combining different word classes into new words. If you want to annotate such a compound, follow this approach:
 
@@ -149,7 +148,7 @@ The following examples should provide an intuition:
 "Maulkorb" could be declared as a more lexicalized word and thus not split up by semantic roles.
 
 Coordination and Clausal connectives 🧩
---------
+---
 
 Example ENG/DE | AMR | DeAMR
 --------|-----|------
@@ -164,15 +163,12 @@ altough/obwohl; despite/trotz | `:concession`| `:concession`
 
 
 Special dashed entities and relations 🧩
---------
-***
+---
 
 For special and funtional roles (such as `have-degree-91`) DeAMR uses the English terms.
 
 Modality 🧩
---------
-***
-
+---
 
 AMR represents syntactic modals with concepts like `possible-01`, `likely-01`, `obligate-01`, `permit-01`, `recommend-01`, `prefer-01`, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
 
@@ -223,9 +219,7 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 > Er möchte essen.
 
 Modal particles 🧩
----------------
-***
-
+---
 
 German has a large set of different particles. The subset of modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible contexts and the corresponding annotation:
 
