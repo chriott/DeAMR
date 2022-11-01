@@ -13,6 +13,7 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
     - [Special dashed entities / relations](#special-dashed-entities-and-relations-🧩)
     - [Modality](#modality-🧩)
     - [Modal particles](#modal-particles-🧩) 
+- [Limitations](#limitations-⛔)
 - [References](#references-📚)
 
 
@@ -63,7 +64,7 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 Annotation Guidelines 🗂️ 
 ===
 
-This version of the DeAMR guidelines tries to provide the first pieces of a puzzle to cover the full range of linguistic phenomena of German.
+This version of the DeAMR guidelines tries to provide the most important pieces of a puzzle to cover the full range of linguistic phenomena of German.
 
 Adjectives/Adverbs evoking a verb frame 🧩
 ---
