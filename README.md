@@ -64,7 +64,7 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 Annotation Guidelines 🗂️ 
 ===
 
-This version of the DeAMR guidelines tries to provide the most important pieces of a puzzle to cover the full range of linguistic phenomena of German.
+This version of the DeAMR guidelines provides a few important puzzle pieces to eventually cover the full range of linguistic phenomena of German.
 
 Adjectives/Adverbs evoking a verb frame 🧩
 ---
