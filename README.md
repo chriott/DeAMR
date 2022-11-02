@@ -22,13 +22,13 @@ Introduction 🌱
 Abstract Meaning Representation (AMR) 💭
 ----
 
-AMR is a semantic formalism that captures information on who is doing what to whom in a sentence. DeAMR is its German adaptation. AMR can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable and they are labeled with concepts:
+AMR is a semantic formalism that captures information on "who is doing what to whom" in a sentence. DeAMR is its German adaptation. AMR (and hence DeAMR) can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable and they are labeled with concepts:
 
 <p align="center">
 <img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=60% height=100%>
 </p>
 
-AMR and DeAMR lean heavily on PENMAN-notation, which is a way of representing a graph in a simple, tree-like form:
+AMR and DeAMR use PENMAN-notation, which is a way of representing a graph in a simple, tree-like form:
 
 ```lisp
 (c1 / zeichnen-01
@@ -46,9 +46,11 @@ Verb Senses 🔡
 -----------
 DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
-The Universal German PropBank is still in development and incomplete. Meanwhile, if a German frame for a concept should be missing, e.g. *zufrieden*, one workaround could be to use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html). A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
+The Universal German PropBank is still in development and incomplete. Meanwhile, if a German frame for a concept should be missing, e.g. *zufrieden*, we have to use a workaround: 
 
-Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame. For example: 
+1. Use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html). A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
+
+2. Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame. For example: 
 
 ```lisp
 (c2 / stammen-01
@@ -59,7 +61,7 @@ Sometimes, a missing German frame can be replaced with a similar existing German
 ```
 > Wo kommst du her, kleiner Mann?
 
-"Herkommen" does not exist in the German PropBank. `stammen-01` holds a compatible semantic meaning and argument structure so it represents a good alterantive.
+"Herkommen" does not exist in the German PropBank. `stammen-01` holds a compatible semantic meaning and argument structure so it represents a good alterantive at the moment.
 
 Annotation Guidelines 🗂️ 
 ===
@@ -69,7 +71,7 @@ This version of the DeAMR guidelines provides a few important puzzle pieces to e
 Adjectives/Adverbs evoking a verb frame 🧩
 ---
 
-One of AMRs slogans is to prefer a verb frame whenever it is possible.
+One "slogan" of AMR is to prefer a verb frame whenever it is possible.
 
 ```lisp
 (c0 / entgegnen-01
@@ -84,12 +86,14 @@ One of AMRs slogans is to prefer a verb frame whenever it is possible.
 ```
 > "Ich kann aber nicht anders", entgegnete der kleine Prinz ganz verwirrt.
 
-Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and thus should be used in the annotation.
+Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and thus should be used in the annotation. 
+
+Annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame, if there is one.
 
 Degree 🧩
 ---
 
-Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. You use the same frame `have-degree-91` but match the German attributes and the degree itself.
+Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. Use the same frame `have-degree-91` but match the German attributes and the degree itself.
 
 ```
 Have-degree-91
@@ -100,13 +104,26 @@ Arg4: compared-to (e.g. (wie die) Katze)
 Arg5: superlative: reference to superset
 Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitzen)
 ```
+Example:
+```lisp
+(c2 / have-degree-91
+    :ARG1 (c1 / richten-01
+              :ARG0 (c4 / sich)
+              :ARG1 c4)
+    :ARG2 (c3 / schwer)
+    :ARG3 (c6 / viel)
+    :ARG4 (c0 / urteilen-01
+              :ARG1 (c5 / andere)))
+```
+> Es ist viel schwerer, über sich selbst zu richten , als über andere zu urteilen .
+
 
 Compounds 🧩
 ---
 
-In German, there are multiple ways of combining different word classes into new words. If you want to annotate such a compound, follow this approach:
+In German, there are multiple ways of combining different word classes into new words. In order to reach a consensus on how to annotate compounds (and prevent too much individual variations), follow this "algorithm":
 
-I. Look up German PropBank and see if the compound word exists (e.g. "nachgesehen-01")
+I. Look up German PropBank and see if the compound word exists (e.g. `nachgesehen-01`)
 ```
 
 if exists: use this as your annotation
@@ -114,7 +131,7 @@ else: continue below
 
 ```
 
-II. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules to determine wheter a word combination is productive or nonproductive.
+II. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules to determine whether a word combination is productive or nonproductive.
 
 ```
 
@@ -167,7 +184,9 @@ altough/obwohl; despite/trotz | `:concession`| `:concession`
 Special dashed entities and relations 🧩
 ---
 
-For special and funtional roles (such as `have-degree-91`) DeAMR uses the English terms.
+At this point, DeAMR uses the English terms for "special" and functional roles (such as `have-degree-91`, `have-quant-91`, etc.). 
+
+For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
 Modality 🧩
 ---
@@ -223,7 +242,7 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 Modal particles 🧩
 ---
 
-German has a large set of different particles. The subset of modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible contexts and the corresponding annotation:
+German has a large set of different particles. The subset of modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible examples and their corresponding annotation:
 
 
 Modal particle          | Context                                          | Annotation   
