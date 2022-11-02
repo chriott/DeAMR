@@ -6,7 +6,7 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 **Table of Contents**
 - [Introduction](#introduction-🌱)
   - [Abstract Meaning Representation](#abstract-meaning-representation-amr-💭)
-  - [Verb Senses](#verb-senses-🔡)
+  - [Verb Senses](#verb-senses)
 - [Annotation Guidelines](#annotation-guidelines-🗂️)
   - [Adjectives/adverbs evoking a verb frame](#adjectivesadverbs-evoking-a-verb-frame-🧩)
   - [Compounds](#compounds-🧩)   
@@ -44,7 +44,7 @@ Both representations could be rendered into the German sentence:
 
 > Zeichne mir ein weißes Schaf!
 
-## Verb Senses 🔡
+## Verb Senses
 
 DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
