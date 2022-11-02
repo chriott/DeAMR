@@ -5,15 +5,16 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 
 **Table of Contents**
 - [Introduction](#introduction-🌱)
-    - [Abstract Meaning Representation](#abstract-meaning-representation-amr-💭)
-    - [Verb Senses](#verb-senses-🔡)
+  - [Abstract Meaning Representation](#abstract-meaning-representation-amr-💭)
+  - [Verb Senses](#verb-senses-🔡)
 - [Annotation Guidelines](#annotation-guidelines-🗂️)
-    - [Compounds](#compounds-🧩)   
-    - [Coordination and Clausal connectives](#coordination-and-clausal-connectives-🧩)
-    - [Degree](#degree-🧩)
-    - [Special dashed entities / relations](#special-dashed-entities-and-relations-🧩)
-    - [Modality](#modality-🧩)
-    - [Modal particles](#modal-particles-🧩) 
+  - [Adjectives/adverbs evoking a verb frame](#adjectivesadverbs-evoking-a-verb-frame-🧩)
+  - [Compounds](#compounds-🧩)   
+  - [Coordination and Clausal connectives](#coordination-and-clausal-connectives-🧩)
+  - [Degree](#degree-🧩)
+  - [Modality](#modality-🧩)
+  - [Modal particles](#modal-particles-🧩) 
+  - [Special dashed entities / relations](#special-dashed-entities-and-relations-🧩)
 - [Limitations](#limitations-⛔)
 - [References](#references-📚)
 
@@ -91,33 +92,6 @@ Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and thus should
 
 Annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame, if there is one.
 
-## Degree 🧩
-
-Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. Use the same frame `have-degree-91` but match the German attributes and the degree itself.
-
-```
-Have-degree-91
-Arg1: domain, entity characterized by attribute (e.g. Hund)
-Arg2: attribute (e.g. klein)
-Arg3: degree itself (e.g. mehr, weniger, gleich, am-meisten, am-wenigsten, genug, mal)
-Arg4: compared-to (e.g. (wie die) Katze)
-Arg5: superlative: reference to superset
-Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitzen)
-```
-Example:
-```lisp
-(c2 / have-degree-91
-    :ARG1 (c1 / richten-01
-              :ARG0 (c4 / sich)
-              :ARG1 c4)
-    :ARG2 (c3 / schwer)
-    :ARG3 (c6 / viel)
-    :ARG4 (c0 / urteilen-01
-              :ARG1 (c5 / andere)))
-```
-> Es ist viel schwerer, über sich selbst zu richten, als über andere zu urteilen.
-
-
 ## Compounds 🧩
 
 In German, there are multiple ways of combining different word classes into new words. In order to reach a consensus on how to annotate compounds (and prevent too much individual variations), follow this "algorithm":
@@ -178,12 +152,31 @@ if/wenn | `:condition` | `:condition`
 unless/außer | `:condition`, `:polarity` | `:condition`, `:polarity`
 altough/obwohl; despite/trotz | `:concession`| `:concession`
 
+## Degree 🧩
 
-## Special dashed entities and relations 🧩
+Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. Use the same frame `have-degree-91` but match the German attributes and the degree itself.
 
-At this point, DeAMR uses the English terms for "special" and functional roles (such as `have-degree-91`, `have-quant-91`, etc.). 
-
-For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
+```
+Have-degree-91
+Arg1: domain, entity characterized by attribute (e.g. Hund)
+Arg2: attribute (e.g. klein)
+Arg3: degree itself (e.g. mehr, weniger, gleich, am-meisten, am-wenigsten, genug, mal)
+Arg4: compared-to (e.g. (wie die) Katze)
+Arg5: superlative: reference to superset
+Arg6: reference, threshold of sufficiency (e.g. (klein genug) um im Auto zu sitzen)
+```
+Example:
+```lisp
+(c2 / have-degree-91
+    :ARG1 (c1 / richten-01
+              :ARG0 (c4 / sich)
+              :ARG1 c4)
+    :ARG2 (c3 / schwer)
+    :ARG3 (c6 / viel)
+    :ARG4 (c0 / urteilen-01
+              :ARG1 (c5 / andere)))
+```
+> Es ist viel schwerer, über sich selbst zu richten, als über andere zu urteilen.
 
 ## Modality 🧩
 
@@ -288,6 +281,12 @@ Modal particle          | Context                                          | Ann
 > Ich habe schon angefangen.
 >
 > Ich fange schon an.
+
+## Special dashed entities and relations 🧩
+
+At this point, DeAMR uses the English terms for "special" and functional roles (such as `have-degree-91`, `have-quant-91`, etc.). 
+
+For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
 # Limitations ⛔
 
