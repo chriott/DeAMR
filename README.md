@@ -239,7 +239,7 @@ Modal particle          | Context                                          | Ann
 `doch`, `aber`, `wohl`, `eben`, `halt`, `ja` | "Ich habe schon nachgesehen.", "Das ist schon richtig."  | `:mode confirming`
 `aber`, `doch`, `schon`, `ja`, `auch` | "Du bist aber schnell!"                          | `:mode surprised`
 `aber`, `doch`, `schon`, `ja`, `auch` | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
-`eigentlich`, `doch`, `denn`, `bloß`, `auch`, `etwa` | "Kannst du eigentlich Gitarre spielen?"                        | `:mode confirmation-seeking`
+`eigentlich`, `doch`, `denn`, `bloß`, `auch`, `etwa` | "Kannst du auch schimmen?"                        | `:mode confirmation-seeking`
 `auch`, `bloß`, `doch`, `eben`, `einfach`, `halt`, `mal`, `nur`, `schon`, `ruhig`| "Mach bloß das Fenster zu!"   | `:mode imperative`
 
 
