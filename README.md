@@ -4,24 +4,24 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 
 
 **Table of Contents**
-- [Introduction](#introduction-🌱)
-  - [Abstract Meaning Representation](#abstract-meaning-representation-amr-💭)
-  - [Verb Senses](#verb-senses-🔡)
-- [Annotation Guidelines](#annotation-guidelines-🗂️)
-  - [Adjectives/adverbs evoking a verb frame](#adjectivesadverbs-evoking-a-verb-frame-🧩)
-  - [Compounds](#compounds-🧩)   
-  - [Coordination and Clausal connectives](#coordination-and-clausal-connectives-🧩)
-  - [Degree](#degree-🧩)
-  - [Modality](#modality-🧩)
-  - [Modal particles](#modal-particles-🧩) 
-  - [Special dashed entities / relations](#special-dashed-entities-and-relations-🧩)
-- [Limitations](#limitations-⛔)
-- [References](#references-📚)
+- [Introduction](#introduction)
+  - [Abstract Meaning Representation](#abstract-meaning-representation-amr)
+  - [Verb Senses](#verb-senses)
+- [Annotation Guidelines](#annotation-guidelines)
+  - [Adjectives/adverbs evoking a verb frame](#adjectivesadverbs-evoking-a-verb-frame)
+  - [Compounds](#compounds)   
+  - [Coordination and Clausal connectives](#coordination-and-clausal-connectives)
+  - [Degree](#degree)
+  - [Modality](#modality)
+  - [Modal particles](#modal-particles) 
+  - [Special dashed entities / relations](#special-dashed-entities-and-relations)
+- [Limitations](#limitations)
+- [References](#references)
 
 
-# Introduction 🌱
+# Introduction 
 
-## Abstract Meaning Representation (AMR) 💭
+## Abstract Meaning Representation (AMR) 
 
 
 AMR is a semantic formalism that captures information on "who is doing what to whom" in a sentence. DeAMR is its German adaptation. AMR (and hence DeAMR) can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable and they are labeled with concepts:
@@ -44,7 +44,7 @@ Both representations could be rendered into the German sentence:
 
 > Zeichne mir ein weißes Schaf!
 
-## Verb Senses 🔡
+## Verb Senses 
 
 DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
@@ -65,12 +65,12 @@ The Universal German PropBank is still in development and incomplete. Meanwhile,
 
 "Herkommen" does not exist in the German PropBank. `stammen-01` holds a compatible semantic meaning and argument structure so it represents a good alterantive at the moment.
 
-# Annotation Guidelines 🗂️ 
+# Annotation Guidelines 
 
 
 This version of the DeAMR guidelines provides a few important puzzle pieces to eventually cover the full range of linguistic phenomena of German.
 
-## Adjectives/Adverbs evoking a verb frame 🧩
+## Adjectives/Adverbs evoking a verb frame 
 
 
 One "slogan" of AMR is to prefer a verb frame whenever it is possible.
@@ -92,7 +92,7 @@ Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and thus should
 
 Annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame, if there is one.
 
-## Compounds 🧩
+## Compounds
 
 In German, there are multiple ways of combining different word classes into new words. In order to reach a consensus on how to annotate compounds (and prevent too much individual variations), follow this "algorithm":
 
@@ -139,7 +139,7 @@ The following examples should provide an intuition:
 
 "Maulkorb" could be declared as a more lexicalized word and thus not split up by semantic roles.
 
-## Coordination and Clausal connectives 🧩
+## Coordination and Clausal connectives 
 
 Example ENG/DE | AMR | DeAMR
 --------|-----|------
@@ -178,7 +178,7 @@ Example:
 ```
 > Es ist viel schwerer, über sich selbst zu richten, als über andere zu urteilen.
 
-## Modality 🧩
+## Modality 
 
 AMR represents syntactic modals with concepts like `possible-01`, `likely-01`, `obligate-01`, `permit-01`, `recommend-01`, `prefer-01`, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
 
@@ -228,7 +228,7 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 > 
 > Er möchte essen.
 
-## Modal particles 🧩
+## Modal particles 
 
 German has a large set of different particles. The subset of modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible examples and their corresponding annotation:
 
@@ -282,15 +282,15 @@ Modal particle          | Context                                          | Ann
 >
 > Ich fange schon an.
 
-## Special dashed entities and relations 🧩
+## Special dashed entities and relations 
 
 At this point, DeAMR uses the English terms for "special" and functional roles (such as `have-degree-91`, `have-quant-91`, etc.). 
 
 For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
-# Limitations ⛔
+# Limitations 
 
-# References 📚
+# References 
 
 Bin Li, YuanWen, Lijun Bu, Weiguang Qu and Nianwen Xue. Annotating the Little Prince with Chinese AMRs. LAW-2016, Aug 11, 2016, Berlin, Germany.
 
