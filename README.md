@@ -152,7 +152,7 @@ if/wenn | `:condition` | `:condition`
 unless/außer | `:condition`, `:polarity` | `:condition`, `:polarity`
 altough/obwohl; despite/trotz | `:concession`| `:concession`
 
-## Degree 🧩
+## Degree
 
 Comparatives and superlatives are represented in DeAMR almost the same way as in AMR. Use the same frame `have-degree-91` but match the German attributes and the degree itself.
 
