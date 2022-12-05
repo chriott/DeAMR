@@ -128,16 +128,15 @@ The following examples should provide an intuition:
 `Feuer` occurs in a set of different compounds (Artilleriefeuer, Lagerfeuer, Martinsfeuer, Fegefeuer, Grillfeuer, etc.) and therefore seems to be productive. According to the guidelines, we lift the semantic head `Feuer` up and match it with a fitting semantic role `:location` for the modifier `Kamin`.
 
 ```lisp
-(d / zeichnen-01
-      :ARG0 (i / ich)
-      :ARG1 (m / Maulkorb
-            :poss (s / Schaf
-                        :poss y))
-      :ARG2 (y / du))
+(c1 / überwinden-01
+    :ARG1 (c0 / Schweinehund)
+    :location (c2 / innere)
+    :poss (c3 / du)
+    :mode (c4 / imperative))
 ```
-> Ich zeichne dir einen Maulkorb für dein Schaf.
+> Überwinde deinen inneren Schweinehund.
 
-"Maulkorb" could be declared as a more lexicalized word and thus not split up by semantic roles.
+The noun `Schweinehund` is lexicalized and means "more" than the sum of its parts.
 
 ## Coordination and Clausal connectives 
 
