@@ -129,10 +129,10 @@ The following examples should provide an intuition:
 
 ```lisp
 (c1 / überwinden-01
+    :mode imperative
     :ARG1 (c0 / Schweinehund)
     :location (c2 / innere)
-    :poss (c3 / du)
-    :mode (c4 / imperative))
+    :poss (c3 / du))
 ```
 > Überwinde deinen inneren Schweinehund.
 
