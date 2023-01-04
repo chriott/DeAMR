@@ -5,7 +5,7 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 
 **Table of Contents**
 - [Introduction](#introduction)
-  - [Abstract Meaning Representation](#abstract-meaning-representation-amr)
+  - [Abstract Meaning Representation](#abstract-meaning-representation)
   - [Verb Senses](#verb-senses)
 - [Annotation Guidelines](#annotation-guidelines)
   - [Adjectives/adverbs evoking a verb frame](#adjectivesadverbs-evoking-a-verb-frame)
@@ -21,10 +21,10 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 
 # Introduction 
 
-## Abstract Meaning Representation (AMR) 
+## Abstract Meaning Representation 
 
 
-AMR is a semantic formalism that captures information on "who is doing what to whom" in a sentence. DeAMR is its German adaptation. AMR (and hence DeAMR) can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable and they are labeled with concepts:
+AMR is a semantic formalism that captures information on "who is doing what to whom" in a sentence. DeAMR is its German adaptation. AMR (and hence DeAMR) can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable, and they are labeled with concepts:
 
 <p align="center">
 <img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=60% height=100%>
@@ -63,7 +63,7 @@ The Universal German PropBank is still in development and incomplete. Meanwhile,
 ```
 > Wo kommst du her, kleiner Mann?
 
-"Herkommen" does not exist in the German PropBank. `stammen-01` holds a compatible semantic meaning and argument structure so it represents a good alterantive at the moment.
+"Herkommen" does not exist in the German PropBank. `stammen-01` holds a compatible semantic meaning and argument structure, so it represents a good alterantive at the moment.
 
 # Annotation Guidelines 
 
@@ -140,16 +140,16 @@ The noun `Schweinehund` is lexicalized and means "more" than the sum of its part
 
 ## Coordination and Clausal connectives 
 
-Example ENG/DE | AMR | DeAMR
---------|-----|------
-and/und     | and | und
-or/oder      | or  | oder
-but/aber     | `:contrast-01` | `:contrast-01`
-because/weil; due to/wegen; on account of/aufgrund von | `:cause-01` | `:cause-01`
-(in order) to/damit; so (that)/sodass | `:purpose` | `:purpose`
-if/wenn | `:condition` | `:condition`
-unless/außer | `:condition`, `:polarity` | `:condition`, `:polarity`
-altough/obwohl; despite/trotz | `:concession`| `:concession`
+| Example ENG/DE                                         | AMR                        | DeAMR                      |
+|--------------------------------------------------------|----------------------------|----------------------------|
+ | and/und                                                | and                        | und                        |
+ | or/oder                                                | or                         | oder                       |
+ | but/aber                                               | `:contrast-01`             | `:contrast-01`             |
+ | because/weil; due to/wegen; on account of/aufgrund von | `:cause-01`                | `:cause-01`                |
+ | (in order) to/damit; so (that)/sodass                  | `:purpose`                 |  `:purpose`                |
+ | if/wenn                                                | `:condition`               |  `:condition`              |
+ | unless/außer                                           |  `:condition`, `:polarity` |  `:condition`, `:polarity` |
+ | altough/obwohl; despite/trotz                          | `:concession`              |  `:concession`             |
 
 ## Degree
 
@@ -181,14 +181,13 @@ Example:
 
 AMR represents syntactic modals with concepts like `possible-01`, `likely-01`, `obligate-01`, `permit-01`, `recommend-01`, `prefer-01`, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
 
-English modal verb     |     PropBank       | German modal verb   | German PropBank   | Example
------------------------|--------------------|---------------------|-------------------|---------
-`may`                  | `permit-01`, `possible-01` | `dürfen`| `erlauben-01`, `befähigen-01`     | “They may go” / "Sie dürfen gehen"
-`can`                  | `possible-01`      | `können`            | `ermöglichen-01`, `können-01`  | “He can swim” / "Er kann schwimmen"
-`should`               | `recommend-01`     | `sollen`            | `empfehlen-01`    | “They should come” / "Sie sollten kommen"
-`must`                 | `obligate-01`      | `müssen`            | `verpflichten-01` | “He must read” / "Er muss lesen"
-`want`                 | `prefer-01`        | `wollen`, `möchten` | `bevorzugen-01`   | “He wants to eat” / "Er will essen"
-
+| English modal verb | PropBank                   | German modal verb   | German PropBank               | Example                                   |
+|--------------------|----------------------------|---------------------|-------------------------------|-------------------------------------------|
+| `may`              | `permit-01`, `possible-01` | `dürfen`            | `erlauben-01`, `befähigen-01` | “They may go” / "Sie dürfen gehen"        |
+| `can`              | `possible-01`              | `können`            | `ermöglichen-01`, `können-01` | “He can swim” / "Er kann schwimmen"       |
+| `should`           | `recommend-01`             | `sollen`            | `empfehlen-01`                | “They should come” / "Sie sollten kommen" |
+| `must`             | `obligate-01`              | `müssen`            | `verpflichten-01`             | “He must read” / "Er muss lesen"          |
+| `want`             | `prefer-01`                | `wollen`, `möchten` | `bevorzugen-01`               | “He wants to eat” / "Er will essen"       |
 
 ```lisp
 (c1 / erlauben-01
@@ -232,15 +231,14 @@ English modal verb     |     PropBank       | German modal verb   | German PropB
 German has a large set of different particles. The subset of modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible examples and their corresponding annotation:
 
 
-Modal particle          | Context                                          | Annotation   
-------------------------|--------------------------------------------------|----------------------------------
-`doch`, `halt`, `ja`, `eben`, `wohl` | "Man weiß halt nie.", "Das ist doch falsch."                             | `:mode conclusive`
-`doch`, `aber`, `wohl`, `eben`, `halt`, `ja` | "Ich habe schon nachgesehen.", "Das ist schon richtig."  | `:mode confirming`
-`aber`, `doch`, `schon`, `ja`, `auch` | "Du bist aber schnell!"                          | `:mode surprised`
-`aber`, `doch`, `schon`, `ja`, `auch` | "Das machst du aber gut!"                        | `:mode sarcasm`, `:mode irony`
-`eigentlich`, `doch`, `denn`, `bloß`, `auch`, `etwa` | "Kannst du auch schimmen?"                        | `:mode confirmation-seeking`
-`auch`, `bloß`, `doch`, `eben`, `einfach`, `halt`, `mal`, `nur`, `schon`, `ruhig`| "Mach bloß das Fenster zu!"   | `:mode imperative`
-
+| Modal particle                                                                    | Context                                                 | Annotation                     |
+|-----------------------------------------------------------------------------------|---------------------------------------------------------|--------------------------------|
+| `doch`, `halt`, `ja`, `eben`, `wohl`                                              | "Man weiß halt nie.", "Das ist doch falsch."            | `:mode conclusive`             |
+| `doch`, `aber`, `wohl`, `eben`, `halt`, `ja`                                      | "Ich habe schon nachgesehen.", "Das ist schon richtig." | `:mode confirming`             |
+| `aber`, `doch`, `schon`, `ja`, `auch`                                             | "Du bist aber schnell!"                                 | `:mode surprised`              |
+| `aber`, `doch`, `schon`, `ja`, `auch`                                             | "Das machst du aber gut!"                               | `:mode sarcasm`, `:mode irony` |
+| `eigentlich`, `doch`, `denn`, `bloß`, `auch`, `etwa`                              | "Kannst du auch schimmen?"                              | `:mode confirmation-seeking`   |
+| `auch`, `bloß`, `doch`, `eben`, `einfach`, `halt`, `mal`, `nur`, `schon`, `ruhig` | "Mach bloß das Fenster zu!"                             | `:mode imperative`             |
 
 ```lisp
 (c1 / zeichnen-01
@@ -288,6 +286,8 @@ At this point, DeAMR uses the English terms for "special" and functional roles (
 For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
 # Limitations 
+
+WIP 🚧
 
 # References 
 
