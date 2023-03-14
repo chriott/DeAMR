@@ -27,7 +27,7 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 AMR is a semantic formalism that captures information on "who is doing what to whom" in a sentence. DeAMR is its German adaptation. AMR (and hence DeAMR) can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable, and they are labeled with concepts:
 
 <p align="center">
-<img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=60% height=100%>
+<img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=50% height=50%>
 </p>
 
 AMR and DeAMR use PENMAN-notation, which is a way of representing a graph in a simple, tree-like form:
@@ -97,7 +97,7 @@ Annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame,
 In German, there are multiple ways of combining different word classes into new words. In order to reach a consensus on how to annotate compounds (and prevent too much individual variations), follow this "algorithm":
 
 <p align="center">
-<img src="https://i.ibb.co/tPJnVJ1/Bildschirm-foto-2023-03-14-um-19-05-09.png" width=100% height=80%>
+<img src="https://i.ibb.co/tPJnVJ1/Bildschirm-foto-2023-03-14-um-19-05-09.png" width=60% height=60%>
 </p>
 
 I. Look up German PropBank and see if the compound word exists (e.g. `nachgesehen-01`)
@@ -186,7 +186,7 @@ Example:
 AMR represents syntactic modals with concepts like `possible-01`, `likely-01`, `obligate-01`, `permit-01`, `recommend-01`, `prefer-01`, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
 
 <p align="center">
-<img src="https://i.ibb.co/jb8YWxw/Bildschirm-foto-2023-03-14-um-19-04-20.png" width=100% height=80%>
+<img src="https://i.ibb.co/jb8YWxw/Bildschirm-foto-2023-03-14-um-19-04-20.png" width=60% height=60%>
 </p>
 
 | English modal verb | PropBank                   | German modal verb   | German PropBank               | Example                                   |
