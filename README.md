@@ -96,7 +96,9 @@ Annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame,
 
 In German, there are multiple ways of combining different word classes into new words. In order to reach a consensus on how to annotate compounds (and prevent too much individual variations), follow this "algorithm":
 
-[Compound annotation](https://ibb.co/HpHR5H9)
+<p align="center">
+<img src="https://i.ibb.co/tPJnVJ1/Bildschirm-foto-2023-03-14-um-19-05-09.png" width=100% height=80%>
+</p>
 
 I. Look up German PropBank and see if the compound word exists (e.g. `nachgesehen-01`)
 ```
@@ -182,6 +184,10 @@ Example:
 ## Modality 
 
 AMR represents syntactic modals with concepts like `possible-01`, `likely-01`, `obligate-01`, `permit-01`, `recommend-01`, `prefer-01`, etc. DeAMR tries to capture Modality in the same way using equivalent German frames:
+
+<p align="center">
+<img src="https://i.ibb.co/jb8YWxw/Bildschirm-foto-2023-03-14-um-19-04-20.png" width=100% height=80%>
+</p>
 
 | English modal verb | PropBank                   | German modal verb   | German PropBank               | Example                                   |
 |--------------------|----------------------------|---------------------|-------------------------------|-------------------------------------------|
