@@ -96,7 +96,7 @@ Annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame,
 
 In German, there are multiple ways of combining different word classes into new words. In order to reach a consensus on how to annotate compounds (and prevent too much individual variations), follow this "algorithm":
 
-![](https://ibb.co/HpHR5H9)
+[Compound annotation](https://ibb.co/HpHR5H9)
 
 I. Look up German PropBank and see if the compound word exists (e.g. `nachgesehen-01`)
 ```
