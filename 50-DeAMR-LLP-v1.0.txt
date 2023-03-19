@@ -54,7 +54,7 @@
 (c2 / stammen-01
     :ARG1 (c3 / du
               :mod (c5 / Kerl
-                       :degree (c6 / klein)))
+                       :degree (c6 / kleine)))
     :ARG2 (c4 / amr-unknown))
 
 # ::id lpp_de.8 ::annotator CO
@@ -121,7 +121,7 @@
     :ARG2 (c3 / antworten-01
               :polarity -
               :ARG0 (c1 / Prinz
-                        :mod (c2 / klein))))
+                        :mod (c2 / kleine))))
 
 # ::id lpp_de.15 ::annotator CO
 # ::snt Ich war sehr besorgt , denn langsam schien mir meine Panne doch sehr ernst und das zur Neige gehende Trinkwasser ließ mich das Schlimmste befürchten . (M)
@@ -222,10 +222,10 @@
     :ARG1 (c0 / Sitzplatz)
     :concession (c7 / bedecken-01
                     :ARG1 (c1 / Planet
-                              :mod (c8 / ganz))
+                              :mod (c8 / ganze))
                     :ARG2 (c2 / Mantel
                               :mod (c3 / Hermelin)
-                              :mod (c6 / herrlich))))
+                              :mod (c6 / herrliche))))
 
 # ::id lpp_de.25 ::annotator CO
 # ::snt " Es ist ein grober Verstoß gegen die Etikette, in der Gegenwart eines Königs zu gähnen" , sagte der Monarch .
@@ -235,7 +235,7 @@
               :ARG1 (c0 / Etikette
                         :consist-of (c1 / gähnen-01
                                         :location (c6 / König)))
-              :mod (c5 / grob)))
+              :mod (c5 / grober)))
 
 # ::id lpp_de.26 ::annotator CO
 # ::snt " Ich kann aber nicht anders " , entgegnete der kleine Prinz ganz verwirrt .
