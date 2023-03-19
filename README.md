@@ -1,6 +1,6 @@
 # DeAMR 1.0 (WIP 🚧)
 
-These are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The aim is to extend AMR's functionality so that German linguistic phenomena can be sufficiently mapped into AMR form.
+These are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The goals is to extend and specify the existing AMR framework, so that German phenomena can be sufficiently mapped into AMR form.
 
 
 **Table of Contents**
@@ -13,7 +13,8 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
   - [Coordination and Clausal connectives](#coordination-and-clausal-connectives)
   - [Degree](#degree)
   - [Modality](#modality)
-  - [Modal particles](#modal-particles) 
+  - [Modal particles](#modal-particles)
+  - [Nominative case for nouns, pronouns, adverbs and adjectives](#Nominative-case-for-nouns,-pronouns,-adverbs-and-adjectives)
   - [Special dashed entities / relations](#special-dashed-entities-and-relations)
 - [Limitations](#limitations)
 - [References](#references)
@@ -40,7 +41,7 @@ AMR and DeAMR use PENMAN-notation, which is a way of representing a graph in a s
               :mod (c4 / weiß)
     :ARG2 (c2 / ich))
 ```
-Both representations could be rendered into the German sentence: 
+Both of the above notations can be rendered into the German sentence: 
 
 > Zeichne mir ein weißes Schaf!
 
@@ -48,9 +49,9 @@ Both representations could be rendered into the German sentence:
 
 DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
-The Universal German PropBank is still in development and incomplete. Meanwhile, if a German frame for a concept should be missing, e.g. *zufrieden*, we have to use a workaround: 
+The Universal German PropBank is still in development and incomplete. At this point, if a German frame for a concept should be missing, e.g. *zufrieden*, we have to: 
 
-1. Use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html). A list of the original PropBank frames can be found [here](https://verbs.colorado.edu/propbank/framesets-english-aliases) and [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
+1. Use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html). A list of the original PropBank frames can be found [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
 2. Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame. For example: 
 
@@ -67,8 +68,7 @@ The Universal German PropBank is still in development and incomplete. Meanwhile,
 
 # Annotation Guidelines 
 
-
-This version of the DeAMR guidelines provides a few important puzzle pieces to eventually cover the full range of linguistic phenomena of German.
+This version of the DeAMR guidelines provides a few important specifications to eventually cover the full range of linguistic phenomena of German.
 
 ## Adjectives/Adverbs evoking a verb frame 
 
@@ -112,9 +112,9 @@ II. Evaluate if the respective compound is lexicalized or not. It might be bette
 
 ```
 
-if word combination nonproductive: use the whole word as it is in your annotation (without numbers).
+if word combination productive: lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component; if there is no adequate semantic role, use :mod.
+else: use the word as it is in your annotation (without numbers).
 
-elif word combination productive: lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component; if there is no adequate semantic role, use :mod.
 
 ```
 
@@ -130,17 +130,6 @@ The following examples should provide an intuition:
 > Vulkanische Ausbrüche sind wie Kaminfeuer
 
 `Feuer` occurs in a set of different compounds (Artilleriefeuer, Lagerfeuer, Martinsfeuer, Fegefeuer, Grillfeuer, etc.) and therefore seems to be productive. According to the guidelines, we lift the semantic head `Feuer` up and match it with a fitting semantic role `:location` for the modifier `Kamin`.
-
-```lisp
-(c1 / überwinden-01
-    :mode imperative
-    :ARG1 (c0 / Schweinehund)
-    :location (c2 / innere)
-    :poss (c3 / du))
-```
-> Überwinde deinen inneren Schweinehund.
-
-The noun `Schweinehund` is lexicalized and means "more" than the sum of its parts.
 
 ## Coordination and Clausal connectives 
 
@@ -287,15 +276,29 @@ German has a large set of different particles. The subset of modal particles are
 >
 > Ich fange schon an.
 
+## Nominative case for nouns, pronouns, adverbs and adjectives
+
+To ensure consistency, DeAMR uses a labeling convention for pronouns, adverbs, and adjectives.
+Specifically, DeAMR demands the nominative case for labeling these elements with respect to the
+word they agree with in the sentence. 
+
+```lisp
+(u / überwinden-01
+    :mode imperative
+    :ARG1 (s / Schweinehund)
+             :poss (d / du)}         
+             :mod (i / innere))     NOT: (i / inneren)
+```
+> Überwinde deinen inneren Schweinehund!
+
 ## Special dashed entities and relations 
 
-At this point, DeAMR uses the English terms for "special" and functional roles (such as `have-degree-91`, `have-quant-91`, etc.). 
+DeAMR wants to be consistent with the original guidelines to ensure that it can be easily compared and integrated with each other.
+Therefore, in agreement to other non-English AMR corpora, it maintain the role labels (e.g. `:ARGX`,
+`:location`, `:manner`), AMR-specific framesets (e.g. `be-located-at-91`, `have-degree-91`) and canonical entity types
+(e.g. `government-organization`, `political-party`) in English.
 
 For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
-
-# Limitations 
-
-WIP 🚧
 
 # References 
 
