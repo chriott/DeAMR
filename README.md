@@ -14,7 +14,7 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
   - [Degree](#degree)
   - [Modality](#modality)
   - [Modal particles](#modal-particles)
-  - [Nominative case for nouns, pronouns, adverbs and adjectives](#Nominative-case-for-nouns,-pronouns,-adverbs-and-adjectives)
+  - [Nominative case for nouns, pronouns, adverbs and adjectives](#nominative-case-for-nouns-pronouns-adverbs-and-adjectives)
   - [Special dashed entities / relations](#special-dashed-entities-and-relations)
 - [Limitations](#limitations)
 - [References](#references)
@@ -59,7 +59,7 @@ The Universal German PropBank is still in development and incomplete. At this po
 (c2 / stammen-01
     :ARG1 (c3 / du
               :mod (c5 / Mann
-                       :degree (c6 / klein)))
+                       :degree (c6 / kleine)))
     :ARG2 (c4 / amr-unknown))
 ```
 > Wo kommst du her, kleiner Mann?
@@ -78,7 +78,7 @@ One "slogan" of AMR is to prefer a verb frame whenever it is possible.
 ```lisp
 (c0 / entgegnen-01
     :ARG0 (c1 / Prinz
-              :mod (c2 / klein))
+              :mod (c2 / kleine))
     :ARG1 (c4 / ermöglichen-01
               :polarity (a5 / -)
               :manner (c6 / anders)
