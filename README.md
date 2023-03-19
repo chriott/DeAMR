@@ -230,7 +230,7 @@ German has a large set of different particles. The subset of modal particles are
 
 | Modal particle                                                                    | Context                                                 | Annotation                     |
 |-----------------------------------------------------------------------------------|---------------------------------------------------------|--------------------------------|
-| `doch`, `halt`, `ja`, `eben`, `wohl`                                              | "Man weiß halt nie.", "Das ist doch falsch."            | `:mode conclusive`             |
+| `doch`, `halt`, `ja`, `eben`, `wohl`                                              | "Man weiß halt nie.", "Das ist doch falsch."            | `:mode conclusive`, `:mode resigning`             |
 | `doch`, `aber`, `wohl`, `eben`, `halt`, `ja`                                      | "Ich habe schon nachgesehen.", "Das ist schon richtig." | `:mode confirming`             |
 | `aber`, `doch`, `schon`, `ja`, `auch`                                             | "Du bist aber schnell!"                                 | `:mode surprised`              |
 | `aber`, `doch`, `schon`, `ja`, `auch`                                             | "Das machst du aber gut!"                               | `:mode sarcasm`, `:mode irony` |
@@ -239,7 +239,7 @@ German has a large set of different particles. The subset of modal particles are
 
 ```lisp
 (c1 / zeichnen-01
-    :mode emphasis
+    :mode resigning
     :ARG0 (c0 / du)
     :ARG1 (c3 / Schaf)
     :ARG2 (c2 / ich))
@@ -250,7 +250,7 @@ German has a large set of different particles. The subset of modal particles are
 
 ```lisp
 (c1 / zumachen-01
-    :mode imperative
+    :mode confirmation-seeking
     :ARG0 (c0 / du)
     :ARG1 (c3 / Fenster))
 ```
