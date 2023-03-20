@@ -14,7 +14,7 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
   - [Degree](#degree)
   - [Modality](#modality)
   - [Modal particles](#modal-particles)
-  - [Nominative case for nouns, pronouns, adverbs and adjectives](#nominative-case-for-nouns-pronouns-adverbs-and-adjectives)
+  - [Nominative case for nouns, pronouns and adjectives](#nominative-case-for-nouns-pronouns-and-adjectives)
   - [Special dashed entities / relations](#special-dashed-entities-and-relations)
 - [Limitations](#limitations)
 - [References](#references)
@@ -276,7 +276,7 @@ German has a large set of different particles. The subset of modal particles are
 >
 > Ich fange schon an.
 
-## Nominative case for nouns, pronouns, adverbs and adjectives
+## Nominative case for nouns, pronouns and adjectives
 
 To ensure consistency, DeAMR uses a labeling convention for pronouns, adverbs, and adjectives.
 Specifically, DeAMR demands the nominative case for labeling these elements with respect to the
