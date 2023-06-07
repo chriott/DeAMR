@@ -30,7 +30,7 @@
     :ARG2 (i / ich))
 
 # ::id lpp_de.4 ::annotator CO
-# ::snt Da, wo ich lebe, ist alles sehr klein .
+# ::snt Da , wo ich lebe , ist alles sehr klein .
 (k / klein
     :domain (a / alles)
     :degree (s / sehr)
@@ -50,7 +50,7 @@
               :location (a / amr-unknown)))
 
 # ::id lpp_de.7 ::annotator CO
-# ::snt Wo kommst du her, kleiner Kerl ?
+# ::snt Wo kommst du her , kleiner Kerl ?
 (s / stammen-01
     :ARG1 (d / du
               :mod (k / Kerl
@@ -93,27 +93,27 @@
 # ::snt Es ist traurig einen Freund zu vergessen .
 (t / trauern-01
     :ARG1 (v / vergessen-01
-              :ARG1 (p / Person
+              :ARG1 (p / person
                         :ARG0-of (h / have-rel-role-91
                                       :ARG2 (f / Freund)))))
 
 # ::id lpp_de.12 ::annotator CO
-# ::snt Not every one has had a friend .
+# ::snt Nicht jeder hat einen Freund gehabt .
 (h / haben-01
     :polarity -
     :ARG0 (j / jeder)
     :ARG1 (p / Person
               :ARG0-of (h / have-rel-role-91
-                           :ARG1 j
                            :ARG2 (f / Freund))))
 
 # ::id lpp_de.13 ::annotator CO
 # ::snt Aber ich bin nicht sicher , ob ich es schaffe .
 (c / contrast-01
-    :ARG2 (v / versichern-01
+    :ARG2 (v / sicherstellen-01
               :polarity -
+              :ARG1 (i / ich)
               :ARG2 (s / schaffen-02
-                        :ARG0 (i / ich))))
+                        :ARG0 i)))
 
 # ::id lpp_de.14 ::annotator CO
 # ::snt Aber der kleine Prinz antwortete nicht .
@@ -124,7 +124,7 @@
                         :mod (k / kleine))))
 
 # ::id lpp_de.15 ::annotator CO
-# ::snt Ich war sehr besorgt , denn langsam schien mir meine Panne doch sehr ernst und das zur Neige gehende Trinkwasser ließ mich das Schlimmste befürchten . (M)
+# ::snt Ich war sehr besorgt , denn langsam schien mir meine Panne doch sehr ernst und das zur Neige gehende Trinkwasser ließ mich das Schlimmste befürchten .
 (s / sorgen-01
     :ARG0 (u / und
               :op1 (s2 / scheinen-01
@@ -432,45 +432,45 @@
 
 # ::id lpp_de.45 ::annotator CO
 # ::snt Ich habe einen schrecklichen Beruf . 
-(c0 / berufen-01
-    :ARG1 (c2 / ich)
-    :mod (c1 / schrecklich))
+(b / berufen-01
+    :ARG1 (i / ich)
+    :mod (s / schrecklich))
 
 # ::id lpp_de.46 ::annotator CO
 # ::snt Es ist zwecklos .
-(c4 / nutzen-01
-    :ARG1 (c1 / es)
+(n / nutzen-01
+    :ARG1 (e / es)
     :polarity -)
 
 # ::id lpp_de.47 ::annotator CO
 # ::snt " Hier bin ich " , sagte die Stimme , " unter dem Apfelbaum . "
-(c1 / sagen-01
-    :ARG0 (c0 / Stimme)
-    :ARG1 (c3 / ich
-              :location (c4 / hier)
-              :location (c5 / unter
-                            :location (c2 / Apfelbaum))))
+(s / sagen-01
+    :ARG0 (s2 / Stimme)
+    :ARG1 (i / ich
+              :location (h / hier)
+              :location (u / unter
+                            :location (a / Apfelbaum))))
 
 # ::id lpp_de.48 ::annotator CO
 # ::snt " Sie haben es aber eilig " , sagte der kleine Prinz .
-(c0 / sagen-01
-    :ARG0 (c3 / Prinz
-              :mod (c4 / klein))
-    :ARG1 (c1 / beeilen-01
+(s / sagen-01
+    :ARG0 (p / Prinz
+              :mod (k / klein))
+    :ARG1 (b / beeilen-01
               :mode surprised
-              :ARG1 (c6 / sie)))
+              :ARG1 (s2 / sie)))
 
 # ::id lpp_de.49 ::annotator CO
 # ::snt Experten haben das schon berechnet .
-(c0 / berechnen-01
+(b / berechnen-01
     :mode confirmation
-    :ARG0 (c1 / Experte)
-    :ARG1 (c2 / Ding))
+    :ARG0 (e / Experte)
+    :ARG1 (d / Ding))
 
 # ::id lpp_de.50 ::annotator CO
 # ::snt Gib mir zu trinken .
-(c3 / geben-01
+(g / geben-01
     :mode imperative
-    :ARG1 (c2 / trinken-01)
-    :ARG2 (c1 / ich))
+    :ARG1 (t / trinken-01)
+    :ARG2 (i / ich))
 
