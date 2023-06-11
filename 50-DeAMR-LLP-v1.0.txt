@@ -191,22 +191,22 @@
 
 # ::id lpp_de.21 ::annotator CO
 # ::snt Mach dich auf den Weg !
-(c0 / gehen-01
+(g / gehen-01
     :mode imperative
-    :ARG0 (c1 / du)
-    :ARG3 (c3 / Weg))
+    :ARG0 (d / du)
+    :ARG3 (w / Weg))
 
 # ::id lpp_de.22 ::annotator CO
 # ::snt So begann er , ihnen einen Besuch abzustatten, um sich zu beschäftigen und sich schlau zu machen . 
-(c0 / beginnen-01
-    :ARG0 (c1 / er)
-    :ARG1 (c2 / besuchen-01
-              :ARG1 (c3 / sie))
-    :purpose (c6 / und
-                 :op1 (c4 / beschäftigen-01
-                          :ARG0 c1)
-                 :op2 (c5 / lernen-01
-                          :ARG0 c1)))
+(b / beginnen-01
+    :ARG0 (e / er)
+    :ARG1 (b2 / besuchen-01
+              :ARG1 (s / sie))
+    :purpose (u / und
+                 :op1 (b3 / beschäftigen-01
+                          :ARG0 e)
+                 :op2 (l / lernen-01
+                          :ARG0 e)))
 
 # ::id lpp_de.23 ::annotator CO
 # ::snt Alle Menschen sind Untertanen.
@@ -216,12 +216,12 @@
 
 # ::id lpp_de.24 ::annotator CO
 # ::snt Der kleine Prinz sah sich nach einem Sitzplatz um , doch der ganze Planet wurde von dem herrlichen Hermelinmantel bedeckt .
-(c5 / schauen-01
-    :ARG0 (c4 / Prinz
-              :mod (c9 / klein))
-    :ARG1 (c0 / Sitzplatz)
-    :concession (c7 / bedecken-01
-                    :ARG1 (c1 / Planet
+(s / schauen-01
+    :ARG0 (p / Prinz
+              :mod (k / klein))
+    :ARG1 (s2 / Sitzplatz)
+    :concession (b / bedecken-01
+                    :ARG1 (p2 / Planet
                               :mod (c8 / ganze))
                     :ARG2 (c2 / Mantel
                               :mod (c3 / Hermelin)
@@ -229,206 +229,206 @@
 
 # ::id lpp_de.25 ::annotator CO
 # ::snt " Es ist ein grober Verstoß gegen die Etikette, in der Gegenwart eines Königs zu gähnen" , sagte der Monarch .
-(c2 / sagen-01
-    :ARG0 (c3 / Monarch)
-    :ARG1 (c4 / verstoßen-02
-              :ARG1 (c0 / Etikette
-                        :consist-of (c1 / gähnen-01
-                                        :location (c6 / König)))
-              :mod (c5 / grober)))
+(s / sagen-01
+    :ARG0 (m / Monarch)
+    :ARG1 (v / verstoßen-02
+              :ARG1 (e / Etikette
+                        :consist-of (g / gähnen-01
+                                        :location (k / König)))
+              :mod (g2 / grobe)))
 
 # ::id lpp_de.26 ::annotator CO
 # ::snt " Ich kann aber nicht anders " , entgegnete der kleine Prinz ganz verwirrt .
-(c0 / entgegnen-01
-    :ARG0 (c1 / Prinz
-              :mod (c2 / klein))
-    :ARG1 (c4 / ermöglichen-01
+(e / entgegnen-01
+    :ARG0 (p / Prinz
+              :mod (k / klein))
+    :ARG1 (e2 / ermöglichen-01
               :polarity -
-              :manner (c6 / anders)
-              :ARG0 c1)
-    :manner (c7 / verwirren-01
-                :mod (c8 / ganz)))
+              :manner (a / anders)
+              :ARG0 p)
+    :manner (v / verwirren-01
+                :mod (g / ganz)))
 
 # ::id lpp_de.27 ::annotator CO
 # ::snt Ich hatte eine lange Reise und habe nicht geschlafen ...
-(c0 / und
-    :op1 (c3 / reisen-01
-             :ARG0 (c4 / ich)
-             :degree (c5 / lang))
-    :op2 (c2 / schlafen-01
+(u / und
+    :op1 (r / reisen-01
+             :ARG0 (i / ich)
+             :degree (l / lang))
+    :op2 (s / schlafen-01
              :polarity -
-             :ARG0 c4))
+             :ARG0 i))
 
 # ::id lpp_de.28 ::annotator CO
 # ::snt Seit Jahren habe ich niemanden gähnen gesehen .
-(c3 / sehen-01
+(s / sehen-01
     :polarity -
-    :ARG0 (c2 / ich)
-    :ARG1 (c1 / gähnen-01
-              :ARG0 (c5 / Person))
-    :time (c0 / Jahr
-              :mod (c8 / viel)))
+    :ARG0 (i / ich)
+    :ARG1 (g / gähnen-01
+              :ARG0 (p / Person))
+    :time (j / Jahr
+              :mod (v / viel)))
 
 # ::id lpp_de.29 ::annotator CO
 # ::snt Er war ein absoluter Monarch .
-(c0 / Monarch
-    :mod (c2 / absolut)
-    :domain (c1 / er))
+(m / Monarch
+    :mod (a / absolut)
+    :domain (e / er))
 
 # ::id lpp_de.30 ::annotator CO
 # ::snt " Darf ich mich setzen ? " , fragte der kleine Prinz zaghaft .
-(c1 / fragen-01
-    :ARG0 (c2 / Prinz
+(f / fragen-01
+    :ARG0 (p / Prinz
               :mod (c3 / klein))
-    :ARG1 (c0 / erlauben-01
-              :ARG1 (c4 / setzen-03
-                        :ARG0 c2)
-              :polarity (c6 / amr-unknown))
-    :manner (c5 / zurückhalten-01))
+    :ARG1 (e / erlauben-01
+              :ARG1 (s / setzen-03
+                        :ARG0 p)
+              :polarity (a / amr-unknown))
+    :manner (z / zurückhalten-01))
 
 # ::id lpp_de.31 ::annotator CO
 # ::snt Geh nicht .
-(c0 / gehen-01
-    :polarity (c3 / -)
+(g / gehen-01
+    :polarity -
     :mode imperative
-    :ARG0 (c1 / du))
+    :ARG0 (d / du))
 
 # ::id lpp_de.32 ::annotator CO
 # ::snt Aber es gibt doch niemanden , den man verurteilen könnte !
-(c1 / contrast-01
-    :ARG2 (c3 / existieren-01
+(a / contrast-01
+    :ARG2 (e / existieren-01
               :mode conclusive
               :polarity -
-              :ARG1 (c5 / Person
-                        :ARG1-of (c0 / verurteilen-01))))
+              :ARG1 (p / Person
+                        :ARG1-of (v / verurteilen-01))))
 
 # ::id lpp_de.33 ::annotator CO
 # ::snt Es ist viel schwerer, über sich selbst zu richten , als über andere zu urteilen .
-(c2 / have-degree-91
-    :ARG1 (c1 / richten-01
-              :ARG0 (c4 / sich)
-              :ARG1 c4)
-    :ARG2 (c3 / schwer)
-    :ARG3 (c6 / viel)
-    :ARG4 (c0 / urteilen-01
-              :ARG1 (c5 / andere)))
+(h / have-degree-91
+    :ARG1 (r / richten-01
+              :ARG0 (s / sich)
+              :ARG1 s)
+    :ARG2 (s2 / schwer)
+    :ARG3 (v / viel)
+    :ARG4 (u / urteilen-01
+              :ARG1 (a / andere)))
 
 # ::id lpp_de.34 ::annotator CO
 # ::snt Sie haben einen merkwürdigen Hut !
-(c2 / haben-01
-    :ARG0 (c3 / sie)
-    :ARG1 (c0 / Hut
-              :mod (c1 / merkwürdig)))
+(h / haben-01
+    :ARG0 (s / sie)
+    :ARG1 (h / Hut
+              :mod (m / merkwürdig)))
 
 # ::id lpp_de.35 ::annotator CO
 # ::snt Eitle Menschen hören nur , wenn sie gelobt werden .
-(c2 / hören-01
-    :ARG0 (c0 / Mensch
-              :mod (c1 / eitel))
-    :condition (c3 / loben
-                   :ARG1 c0))
+(h / hören-01
+    :ARG0 (m / Mensch
+              :mod (e / eitel))
+    :condition (l / loben
+                   :ARG1 m))
 
 # ::id lpp_de.36 ::annotator CO
 # ::snt Verehren bedeutet , zuzugeben , dass ich der schönste , am besten gekleidete , reichste und intelligenteste Mensch auf dem Planeten bin .
-(c0 / bedeuten-01
-    :ARG1 (c3 / verehren-01)
-    :ARG2 (c5 / zugeben-01
-              :ARG1 (c6 / ich
-                        :ARG1-of (c4 / have-degree-91
-                                     :ARG2 (c8 / schön)
-                                     :ARG3 (c9 / am-meisten)
-                                     :ARG5 (c1 / Mensch
-                                               :location (c7 / Planet)))
-                        :ARG1-of (c10 / have-degree-91
-                                      :ARG2 (c12 / kleiden-01)
-                                      :ARG3 (c13 / am-besten)
-                                      :ARG5 c1)
-                        :ARG1-of (c11 / have-degree-91
-                                      :ARG2 (c14 / reich)
-                                      :ARG3 (c15 / am-meisten)
-                                      :ARG5 c1)
-                        :ARG1-of (c16 / have-degree-91
-                                      :ARG2 (c17 / intelligent)
-                                      :ARG3 (c18 / am-meisten)
-                                      :ARG5 c1))))
+(b / bedeuten-01
+    :ARG1 (v / verehren-01)
+    :ARG2 (z / zugeben-01
+              :ARG1 (i / ich
+                        :ARG1-of (h / have-degree-91
+                                     :ARG2 (s / schön)
+                                     :ARG3 (a / am-meisten)
+                                     :ARG5 (m / Mensch
+                                               :location (p / Planet)))
+                        :ARG1-of (h2 / have-degree-91
+                                      :ARG2 (k / kleiden-01)
+                                      :ARG3 (a2 / am-besten)
+                                      :ARG5 m)
+                        :ARG1-of (h3 / have-degree-91
+                                      :ARG2 (r / reich)
+                                      :ARG3 (a3 / am-meisten)
+                                      :ARG5 m)
+                        :ARG1-of (h4 / have-degree-91
+                                      :ARG2 (i2 / intelligent)
+                                      :ARG3 (a4 / am-meisten)
+                                      :ARG5 m))))
 
 # ::id lpp_de.37 ::annotator CO
 # ::snt " Ich saufe " , antwortete finster der Säufer .
-(c1 / antworten-01
-    :ARG0 (c3 / Säufer)
-    :manner (c2 / finster)
-    :ARG1 (c0 / saufen-01
-              :ARG0 c3))
+(a / antworten-01
+    :ARG0 (s / Säufer)
+    :manner (f / finster)
+    :ARG1 (s2 / saufen-01
+              :ARG0 s))
 
 # ::id lpp_de.38 ::annotator CO
 # ::snt Der vierte Planet gehörte einem Geschäftsmann .
-(c0 / gehören-01
-    :ARG0 (c2 / Planet
-              :ord (c4 / ordinal-entity
+(g / gehören-01
+    :ARG0 (p / Planet
+              :ord (o / ordinal-entity
                        :value 4))
-    :ARG1 (c1 / Geschäftsmann))
+    :ARG1 (g / Geschäftsmann))
 
 # ::id lpp_de.39 ::annotator CO
 # ::snt Ich habe so viel Arbeit !
-(c2 / verpflichten-01
-    :ARG1 (c0 / arbeiten-01
-              :ARG0 (c1 / ich)
-              :degree (c3 / viel)))
+(v / verpflichten-01
+    :ARG1 (a / arbeiten-01
+              :ARG0 (i / ich)
+              :degree (v2 / viel)))
 
 # ::id lpp_de.40 ::annotator CO
 # ::snt Der Geschäftsmann verstand , dass er nicht darauf hoffen konnte , in Ruhe gelassen zu werden .
-(c0 / verstehen-01
-    :ARG0 (c1 / Geschäftsmann)
-    :ARG1 (c2 / hoffen-01
+(v / verstehen-01
+    :ARG0 (g / Geschäftsmann)
+    :ARG1 (h / hoffen-01
               :polarity -
-              :ARG0 c1
-              :ARG1 (c4 / lassen-02)))
+              :ARG0 g
+              :ARG1 (l / lassen-02)))
 
 # ::id lpp_de.41 ::annotator CO
 # ::snt Wenn du einen Diamanten findest , der niemandem gehört , so gehört er dir .
-(c2 / gehören-01
-    :ARG0 (c0 / Diamant
-              :ARG0-of (c4 / gehören-01
+(g / gehören-01
+    :ARG0 (d / Diamant
+              :ARG0-of (g2 / gehören-01
                            :polarity -
-                           :ARG0 (c6 / Person)))
-    :ARG1 (c3 / du)
+                           :ARG0 (p / Person)))
+    :ARG1 (d2 / du)
     :condition (c1 / finden-01
-                   :ARG0 c3
-                   :ARG1 c0))
+                   :ARG0 d2
+                   :ARG1 d))
 
 # ::id lpp_de.42 ::annotator CO
 # ::snt Es gab gerade genug Platz für eine Straßenlaterne und einen Laternenanzünder .
-(c0 / have-quant-91
-    :ARG1 (c1 / Platz)
-    :ARG3 (c2 / genug
-              :mod (c3 / gerade))
-    :ARG6 (c4 / unterbringen-01
-              :ARG0 c1
-              :ARG1 (c5 / und
-                        :op1 (c6 / Straßenlaterne)
-                        :op2 (c7 / Laternenanzünder))))
+(h / have-quant-91
+    :ARG1 (p / Platz)
+    :ARG3 (g / genug
+              :mod (g2 / gerade))
+    :ARG6 (u / unterbringen-01
+              :ARG0 p
+              :ARG1 (u2 / und
+                        :op1 (s / Straßenlaterne)
+                        :op2 (l / Laternenanzünder))))
 
 # ::id lpp_de.43 ::annotator CO
 # ::snt Eine Anordnung ist eine Anordnung .
-(c1 / Anordnung
-    :domain (c2 / Anordnung))
+(a / Anordnung
+    :domain (a2 / Anordnung))
 
 # ::id lpp_de.44 ::annotator CO
 # ::snt Wenn du dich ausruhen willst , läufst du ... und der Tag dauert so lange , wie du magst .
-(c6 / laufen-01
-    :ARG0 (c2 / du)
-    :time (c1 / bevorzugen-01
-              :ARG1 (c3 / ruhen-01
-                        :ARG0 c2))
-    :ARG0-of (c13 / cause-01
-                  :ARG1 (c4 / dauern-01
-                            :ARG0 (c5 / Tag)
-                            :ARG1 (c7 / temporal-quantity
-                                      :ARG1-of (c8 / have-quant-91
-                                                   :ARG3 (c10 / gleich)
-                                                   :ARG4 (c11 / temporal-quantity
-                                                              :ARG1-of (c12 / möchten-01
-                                                                            :ARG0 c2)))))))
+(l / laufen-01
+    :ARG0 (d / du)
+    :time (b / bevorzugen-01
+              :ARG1 (r / ruhen-01
+                        :ARG0 d))
+    :ARG0-of (c / cause-01
+                  :ARG1 (d2 / dauern-01
+                            :ARG0 (t / Tag)
+                            :ARG1 (t2 / temporal-quantity
+                                      :ARG1-of (h / have-quant-91
+                                                   :ARG3 (g / gleich)
+                                                   :ARG4 (t3 / temporal-quantity
+                                                              :ARG1-of (m / möchten-01
+                                                                            :ARG0 d)))))))
 
 # ::id lpp_de.45 ::annotator CO
 # ::snt Ich habe einen schrecklichen Beruf . 
