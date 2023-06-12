@@ -449,7 +449,8 @@
     :ARG1 (i / ich
               :location (h / hier)
               :location (u / unter
-                            :location (a / Apfelbaum))))
+                            :location (b / Baum 
+                                          :mod (a / Apfel)))))
 
 # ::id lpp_de.48 ::annotator CO
 # ::snt " Sie haben es aber eilig " , sagte der kleine Prinz .
@@ -474,3 +475,57 @@
     :ARG1 (t / trinken-01)
     :ARG2 (i / ich))
 
+# ::id llp_de.51 ::annotator CO
+# ::snt Infolgedessen auch gute Samenkörner von guten Gewächsen und schlechte Samenkörner von schlechten Gewächsen .
+(i / infolge-01
+      :ARG2 (u / und
+            :op1 (k / Korn
+                  :mod (s / Samen)
+                  :ARG1-of (g / gut-02)
+                  :source (p / Gewaechs
+                        :ARG1-of (g2 / gut-02)))
+            :op2 (k2 / Korn
+                  :mod (s2 / Samen)
+                  :ARG1-of (s3 / schlecht-07)
+                  :source (p2 / Gewaechs
+                        :ARG1-of (s4 / schlecht-07)))))
+                        
+# ::id llp_de.52 ::annotator CO
+# ::snt Neben dem Brunnen stand die Ruiner einer alten Steinmauer
+(m / Mauer
+      :consist-of (s / Stein)
+      :mod (a / alte)
+      :ARG1-of (r / ruinieren-01)
+      :location (n / neben
+            :op1 (b / Brunnen)))
+   
+# ::id llp_de.52 ::annotator CO
+# ::snt Ich werde dir einen Maulkorb für dein Schaf zeichnen .
+(z / zeichen-01
+      :ARG0 (i / ich)
+      :ARG1 (k / Korb
+            :mod (m / Maul))
+      :ARG2 (d / du)
+      :beneficiary (s / Schaf
+                    :poss d))
+                    
+# ::id llp_de.53 ::annotator CO
+# ::snt Sie nehmen sich wichtig wie Affenbrotbäume .
+(n / nehmen-01
+      :ARG0 (s / sie)
+      :ARG1 (h / have-degree-91
+            :ARG1 s
+            :ARG2 (w / wichtig-01
+                    :ARG1 s)
+            :ARG3 (g / gleich)
+            :ARG4 (b / Baum
+                    :mod (a / Affenbrot))))
+
+# ::id llp_de.54 ::annotator CO
+# ::snt " Du lebst hier nicht , " sagte der Fuchs .
+(s / sagen-01
+  :ARG0 (f / Fuchs)
+  :ARG1 (l / leben-01
+          :ARG0 (d / du)
+          :location (h / hier
+                      :polarity -)))
