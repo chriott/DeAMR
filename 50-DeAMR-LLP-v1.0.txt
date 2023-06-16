@@ -522,10 +522,31 @@
                     :mod (a / Affenbrot))))
 
 # ::id llp_de.54 ::annotator CO
-# ::snt " Du lebst hier nicht , " sagte der Fuchs .
-(s / sagen-01
-  :ARG0 (f / Fuchs)
-  :ARG1 (l / leben-01
-          :ARG0 (d / du)
-          :location (h / hier
-                      :polarity -)))
+# ::snt Du musst zurück zu deiner Maschine .
+(v / verpflichten-01
+  :ARG1 (d / du)
+  :ARG2 (z / zurückkehren-01
+          :ARG1 d
+          :ARG4 (m / Maschine
+                  :poss d)))
+                 
+# ::id llp_de.55 ::annotator CO
+# ::snt Ich musste ja älter werden. 
+(v / verpflichten-01
+  :mode (c / conclusive)
+  :ARG1 (i / ich)
+  :ARG2 (a / altern-01
+          :ARG1 i))                   
+                      
+# ::id llp_de.56 ::annotator CO
+# ::snt Sie stellen sich vor, dass sie sehr viel Platz einnehmen .
+(v / vorstellen-01 
+    :ARG0 (s / sie) 
+    :ARG1 (e / einnehmen-01 
+             :ARG1 (p / Platz 
+                      :quant (v2 / viel 
+                                :mod (s2 / sehr))) 
+                                :ARG2 s))
+
+ä
+                      
