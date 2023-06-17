@@ -75,7 +75,7 @@
 # ::id lpp_de.9 ::annotator CO
 # ::snt Kinder müssen mit Erwachsenen nachsichtig sein .
 (v / verpflichten-01
-    :ARG1 (n / nachvollziehen-01
+    :ARG1 (n / nachsichtig-01
               :ARG0 (k / Kind)
               :ARG1 (e / Erwachsener)))
 
