@@ -548,4 +548,12 @@
                                 :mod (s2 / sehr))) 
                                 :ARG2 s))
 
+# ::id llp_de.57 ::annotator CO
+# ::snt " Du lebst hier nicht , " sagte der Fuchs .
+(s / sagen-01 
+    :ARG0 (f / Fuchs) 
+    :ARG1 (l / leben-01 
+              :polarity -
+              :ARG0 (d / du) 
+              :location (h / hier)))
                       
