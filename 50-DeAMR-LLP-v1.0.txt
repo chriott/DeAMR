@@ -449,8 +449,8 @@
     :ARG1 (i / ich
               :location (h / hier)
               :location (u / unter
-                            :location (b / Baum 
-                                          :mod (a / Apfel)))))
+                            :op1 (b / Baum 
+                                    :mod (a / Apfel)))))
 
 # ::id lpp_de.48 ::annotator CO
 # ::snt " Sie haben es aber eilig " , sagte der kleine Prinz .
@@ -548,5 +548,4 @@
                                 :mod (s2 / sehr))) 
                                 :ARG2 s))
 
-ä
                       
