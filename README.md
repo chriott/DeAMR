@@ -302,7 +302,7 @@ For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/
 
 # References 
 
-Bin Li, YuanWen, Lijun Bu, Weiguang Qu and Nianwen Xue. Annotating the Little Prince with Chinese AMRs. LAW-2016, Aug 11, 2016, Berlin, Germany.
+[Abstract Meaning Representation (AMR) 1.2.6 Specification](https://github.com/amrisi/amr-guidelines/blob/master/amr.md)
 
 Nathan Schneider, Tim O'Gorman and Jeffrey Flanigang. [AMR Tutorial](https://github.com/nschneid/amr-tutorial/tree/master/slides) presented at NAACL 2015.
 
