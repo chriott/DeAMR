@@ -25,6 +25,7 @@
 # ::id lpp_de.3 ::annotator CO
 # ::snt Zeichne mir ein Schaf .
 (z / zeichnen-01
+    :mode imperative
     :ARG0 (d / du)
     :ARG1 (s / Schaf)
     :ARG2 (i / ich))
@@ -38,8 +39,9 @@
                   :ARG0 (i / ich)))
 
 # ::id lpp_de.5 ::annotator CO
-# ::snt Das ist lustig !
+# ::snt Das ist ja lustig !
 (l / lustig
+    :mode surprised
     :domain (d / das))
 
 # ::id lpp_de.6 ::annotator CO
@@ -167,11 +169,11 @@
               :ARG2 e))
 
 # ::id lpp_de.18 ::annotator CO
-# ::snt Vulkanische Ausbrüche sind so wie Kaminfeuer .
-(a / aehneln-01
+# ::snt Vulkanische Ausbrüche sind so wie Kaminbrände .
+(a / ähneln-01
     :ARG1 (a2 / ausbrechen-02
               :ARG1 (v / Vulkan))
-    :ARG2 (f / Feuer
+    :ARG2 (f / Brand
               :location (k / Kamin)))
 
 # ::id lpp_de.19 ::annotator CO
@@ -250,7 +252,7 @@
                 :mod (g / ganz)))
 
 # ::id lpp_de.27 ::annotator CO
-# ::snt Ich hatte eine lange Reise und habe nicht geschlafen ...
+# ::snt Ich hatte eine lange Reise und habe nicht geschlafen .
 (u / und
     :op1 (r / reisen-01
              :ARG0 (i / ich)
@@ -414,7 +416,7 @@
     :domain (a2 / Anordnung))
 
 # ::id lpp_de.44 ::annotator CO
-# ::snt Wenn du dich ausruhen willst , läufst du ... und der Tag dauert so lange , wie du magst .
+# ::snt Wenn du dich ausruhen willst , läufst du , und der Tag dauert so lange , wie du magst .
 (l / laufen-01
     :ARG0 (d / du)
     :time (b / bevorzugen-01
@@ -456,7 +458,7 @@
 # ::snt " Sie haben es aber eilig " , sagte der kleine Prinz .
 (s / sagen-01
     :ARG0 (p / Prinz
-              :mod (k / klein))
+              :mod (k / kleine))
     :ARG1 (b / beeilen-01
               :mode surprised
               :ARG1 (s2 / sie)))
@@ -496,6 +498,7 @@
       :consist-of (s / Stein)
       :mod (a / alte)
       :ARG1-of (r / ruinieren-01)
+      :ARG0-of (s / stehen-01)
       :location (n / neben
             :op1 (b / Brunnen)))
    
@@ -556,4 +559,434 @@
               :polarity -
               :ARG0 (d / du) 
               :location (h / hier)))
-                      
+
+# ::id llp_de.58 ::annotator CO
+# ::snt Sie bewundern Zahlen , und das wird ihnen gefallen .
+(u / und 
+    :op1 (b / bewundern-01 
+            :ARG0 (s / Sie) 
+            :ARG1 (z / Zahlen)) 
+    :op2 (g / gefallen-01 
+            :ARG1 s 
+            :ARG2 (d / das)))
+
+# ::id llp_de.59 ::annotator CO
+# ::snt Ich gleiche doch wohl schon eher den Erwachsenen .
+(ä / ähneln-01
+      :mode conclusive
+      :ARG1 (i / ich)
+      :ARG2 (e / Ewachsener)
+      :degree (e2 / eher))
+
+# ::id llp_de.60 ::annotator CO
+# ::snt Der Boden des Planeten war voll davon .
+(b / bedecken-01
+      :ARG1 (b / Bodem
+            :poss (p / planet))
+      :ARG2 (t / davon))
+
+# ::id llp_de.61 ::annotator CO
+# ::snt Wenn man seine Morgentoilette beendet hat , muß man sich ebenso sorgfältig an die Toilette des Planeten machen .
+(m / machen-01
+      :ARG0 (m2 / man)
+      :ARG1 (t / Toilette
+            :poss (p / planet
+                  :poss p))
+      :manner (s / sorgfältig
+            :ARG1-of (h / have-degree-91
+                  :ARG3 (g / gleich)))
+      :time (b / beenden-01
+            :ARG0 m2
+            :ARG1 (t2 / Toilette
+                    :time (d / date-entity
+                        :dayperiod (m4 / morgen)
+                    :poss m2))))
+
+# ::id llp_de.62 ::annotator CO
+# ::snt Das ist eine zwar langweilige , aber leichte Arbeit .
+(c / contrast-01
+    :ARG1 (d / Ding 
+            :mod (z / zwar)
+            :domain (w / langweilige))
+    :ARG2 (e / arbeiten-01
+            :mod (l / leicht)))
+
+# ::id llp_de.63 ::annotator CO
+# ::snt Komm , lass uns einen Sonnenuntergang anschauen . 
+(u / und
+      :op1 (k / kommen-01 
+            :mode imperative
+            :ARG1 (d / du))
+      :op2 (s / lassen-01 
+            :mode imperative
+            :ARG0 (w / wir)
+            :ARG1 (a / anschauen-01
+                  :ARG0 w
+                  :ARG1 (u / untergehen-01
+                            :ARG0 (s / Sonne)))))
+
+# ::id llp_de.64 ::annotator CO
+# ::snt Die Sprache ist die Quelle der Mißverständnisse .
+(s / Sprache
+      :source (m / missverstehen-01))
+
+# ::id llp_de.65 ::annotator CO
+# ::snt Unglücklicherweise ist Frankreich viel zu weit weg.
+(g / glücklich 
+      :polarity -
+      :ARG2 (b / be-located-at-91
+            :ARG1 (c / country :name (n / name :op1 "France"))
+            :ARG2 (a / weg
+                  :ARG1-of (h / have-degree-91
+                        :ARG2 (f2 / weit)
+                        :ARG3 (t / viel)))))
+
+# ::id llp_de.66 ::annotator CO
+# ::snt " Aber ich bin mächtiger als der Finger eines Königs " , sagte die Schlange .
+(s / sagen-01
+      :ARG0 (s2 / Schlange)
+      :ARG1 (c / contrast-01
+            :ARG2 (h / have-degree-91
+                  :ARG1 (i / ich)
+                  :ARG2 (p / mächtig
+                        :ARG1 i)
+                  :ARG3 (m / mehr)
+                  :ARG4 (f / Finger
+                        :part-of (k / König)))))
+
+# ::id llp_de.67 ::annotator CO
+# ::snt Du hast nicht einmal Füße .
+(h / haben-01 
+      :polarity -
+      :ARG0 (d / du)
+      :ARG1 (f / Fuß)
+      :mod (e / einmal))
+
+# ::id llp_de.68 ::annotator CO
+# ::snt " Aber warum sprichst du immer in Rätseln ? "
+(c / contrast-01
+      :ARG2 (s / sprechen-01
+            :ARG0 (d / du)
+            :ARG1 (r / Rästel)
+            :time (i / immer)
+            :purpose (a / amr-unknown)))
+
+# ::id llp_de.69 ::annotator CO
+# ::snt Und sie schwiegen .
+(u / und
+  :op1 (s / schweigen-01
+         :domain (s2 / sie)))
+
+# ::id llp_de.70 ::annotator CO
+# Die Blume hatte eines Tages eine Karawane vorüberziehen sehen .
+(s / sehen-01
+      :ARG0 (b / Blume)
+      :ARG1 (v / vorbeizeihen-01
+            :ARG0 (k / Karawane))
+      :time (t / tag
+            :mod (e / ein)))
+
+# ::id llp_de.71 ::annotator CO
+# ::snt Es gibt , glaube ich , sechs oder sieben .
+(t / glauben-01
+  :ARG0 (i / ich)
+  :ARG1 (e / geben-02
+           :quant (o / or 
+                    :op1 6 
+                    :op2 7)))
+
+# ::id llp_de.72 ::annotator CO
+# ::snt Und den erloschenen Vulkan benutze er als Schemel .
+(u / und 
+  :op1 (b / benutzen-01
+         :ARG0 (e / er)
+         :ARG1 (v / Vulkan
+                 :mod (e2 / erloschene))
+         :ARG2 (s / Schemel)))
+
+# ::id llp_de.73 ::annotator CO
+# ::snt Er ist ganz trocken , voller Spitzen und ganz salzig .
+(u / und
+      :op1 (d / trocken
+            :ARG1 (e / es)
+            :mod (g / ganz))
+      :op2 (s / spitz
+            :mod (g2 / ganz)
+            :domain i)
+      :op3 (a4 / and
+            :op1 (f / salzig
+                  :domain i)))
+
+# ::id llp_de.74 ::annotator CO
+# ::snt Und den Menschen fehlt es an Phantasie .
+(u / und
+      :op1 (h / fehlen-01
+            :ARG0 (p / person)
+            :ARG1 (p2 / Phantasie 
+                      :polarity -)))
+
+# ::id llp_de.75 ::annotator CO
+# ::snt Die Weizenfelder erinnern mich an nichts .
+(s / erinnern-01
+  :ARG0 (f / Feld
+          :mod (w / Weizen))
+  :ARG1 (n / nichts)
+  :ARG2 (i / ich))
+
+# ::id llp_de.76 ::annotator CO
+# ::snt Für mich ist der Weizen zwecklos .
+(u / nutzen-01
+  :polarity -
+  :ARG0 (i / ich)
+  :ARG1 (w / Weizen))
+
+# ::id llp_de.77 ::annotator CO
+# ::snt Aber du darfst sie nicht vergessen .
+(c / contrast-01
+      :ARG2 (d / dürfen-01
+            :ARG1 (d / du)
+            :ARG2 (v / vergessen-01 
+                  :polarity -
+                  :ARG0 d
+                  :ARG1 (s / sie))))
+
+# ::id llp_de.78 ::annotator CO
+# ::snt Du bist zeitlebens für das verantwortlich , was du dir vertraut gemacht hast . 
+(v / verantworten-01
+      :ARG1 (d / du)
+      :ARG2 (m / machen-01
+            :ARG0 d
+            :ARG1 (d2 / Ding
+                  :ARG1-of (v2 / vertrauen-01
+                        :ARG0 d))
+            :extent (z / zeitlebens)))
+
+# ::id llp_de.79 ::annotator CO
+# ::snt Du bist für deine Rose verantwortlich .
+(r / verantworten-01
+      :ARG0 (d / du)
+      :ARG1 (r / Rose
+            :poss d))
+
+# ::id llp_de.80 ::annotator CO
+# ::snt " Ich sortiere die Reisenden nach Tausenderpaketen " , sagte der Weichensteller .
+(s / sagen-01
+  :ARG0 (s2 / Steller
+          :mod (w / Weiche))
+  :ARG1 (s3 / sortieren-01
+          :ARG0 s2
+          :ARG1 (p / person
+                  :ARG0-of (t / reisen-01))
+          :ARG2 (p / Paket
+                    :mod (t2 / tausender))))
+
+# ::id llp_de.81 ::annotator CO
+# ::snt Man schluckt jede Woche eine und spürt überhaupt kein Bedürfnis mehr , zu trinken .
+(c / cause-01
+      :ARG0 (s / schlucken-01
+            :ARG0 (m / man)
+            :ARG1 (p / Pille
+                    :quant 1)
+            :frequency (r / rate-entity-91
+                        :ARG2 (t / temporal-quantity 
+                                :quant 1
+                                :unit (w / Woche))))
+      :ARG1 (s2 / spüren-01 
+            :polarity -
+            :mod (ü / überhaupt)
+            :ARG0 m
+            :ARG1 (b / bedürfen-01
+                  :ARG1 (t2 / trinken-01))))
+
+# ::id llp_de.82 ::annotator CO
+# ::snt " Warum verkaufst du das ? " fragte der kleine Prinz 
+(f / fragen-01
+      :ARG0 (p / Prinz
+            :mod (k / kleine))
+      :ARG1 (v / verkaufen-01
+            :ARG0 (d / du)
+            :ARG1 (d2 / das)
+            :ARG1-of (c / cause-01
+                  :ARG0 (a / amr-unknown))))
+
+# ::id llp_de.83 ::annotator CO
+# ::snt Ich wußte gut , daß man ihn nicht fragen durfte .
+(w / wissen-01
+      :ARG0 (i / ich)
+      :ARG1 (d / dürfen-01 
+            :polarity -
+            :ARG1 (f / fragen-01
+                  :ARG0 (m / man)
+                  :ARG1 (e / er)))
+      :mod (g / gut))
+
+# ::id llp_de.84 ::annotator CO
+# ::snt Ich habe die Wüste immer geliebt .
+(l / lieben-01
+      :ARG0 (i / ich)
+      :ARG1 (w / Wüste)
+      :time (i2 / immer))
+
+# ::id llp_de.85 ::annotator CO
+# ::snt Ich war überrascht , dieses geheimnisvolle Leuchten des Sandes plötzlich zu verstehen .
+(ü / überraschen-01
+    :ARG0 (v / verstehen-01
+            :ARG0 (i / ich)
+            :ARG1 (l / leuchten-01
+                    :ARG0 (s / Sand)
+                    :mod (g / geheimnisvolle)
+                    :mod (d / dieses))
+            :manner (p / plötzlich))
+    :ARG1 i)
+
+# ::id llp_de.86 ::annotator CO
+# ::snt Als ich ein kleiner Knabe war , wohnte ich in einem alten Haus, und die Sage erzählte, daß darin ein Schatz versteckt sei .
+(a / and
+    :op1 (l / leben-01
+            :ARG0 (i / ich)
+            :location (h / Haus
+                        :mod (a / alte))
+            :time (k / Knabe
+                    :mod (k / kleine)
+                    :domain i))
+    :op2 (t / erzählen-01
+            :ARG0 (s / Sage)
+            :ARG1 (v / verstecken-01
+                    :ARG1 (s2 / Schatz)
+                    :location h)))
+
+# ::id llp_de.87 ::annotator CO
+# ::snt Aber er verzauberte dieses ganze Haus .
+(c / contrast-01
+  :ARG2 (v / verzaubern-01
+          :ARG0 (e / er)
+          :ARG2 (h / Haus
+                  :mod (d / dieses)
+                  :mod (g / ganze))))
+
+# ::id llp_de.88 ::annotator CO
+# ::snt Mir war , als trüge ich ein zerbrechliches Kleinod .
+(e / scheinen-01
+      :ARG1 (t / tragen-01
+            :ARG0 i
+            :ARG1 (k / Kleinod
+                    :mod (z / zerbrechlich)))
+      :ARG2 (i2 / ich))
+
+# ::id llp_de.89 ::annotator CO
+# ::snt Es schien mir sogar , als gäbe es nichts Zerbrechlicheres auf der Erde .
+(s / scheinen-01
+    :ARG1 (e / existieren-01
+            :ARG1 (d / Ding 
+                    :polarity -
+                    :ARG1-of (h / have-degree-91
+                                :ARG2 (z / zerbrechlich)
+                                :ARG3 (m / mehr))
+                    :location (p / planet :name (n / name :op1 "Erde")))
+    :ARG2 (i / ich)
+    :mod (e / sogar)))
+
+# ::id llp_de.90 ::annotator CO
+# ::snt Und während ich so weiterging , entdeckte ich bei Tagesanbruch den Brunnen . 
+(a / and
+    :op2 (e / entdecken-01
+        :ARG0 (i / ich)
+        :ARG1 (b / Brunnen)
+        :time (a / anbrechen-01
+                    :ARG0 (t / Tag))
+        :time (g / gehen-01
+                :ARG0 i
+                :mod (w / weiter)
+                :manner (s / so))))
+
+# ::id llp_de.91 ::annotator CO
+# ::snt Das ist zu schwer für dich .
+(h / have-degree-91
+      :ARG1 (d / das)
+      :ARG2 (s / schwer)
+      :ARG3 (z / zu)
+      :beneficiary (d2 / du))
+
+# ::id llp_de.92 ::annotator CO
+# ::snt Er trank mit geschlossenen Augen .
+(t / trinken-01
+    :ARG0 (e / er)
+    :manner (s / schließen-01
+               :ARG0 (a / Auge)))
+
+# ::id llp_de.93 ::annotator CO
+# ::snt Sie finden es nicht .
+(f / finden-01
+  :ARG0 (s / sie)
+  :ARG1 (e / es)
+  :polarity -)
+
+# ::id llp_de.94 ::annotator CO
+# ::snt Man muß mit dem Herzen suchen .
+(s / sollen-01
+  :ARG1 (s2 / suchen-01
+          :ARG0 (m / man)
+          :instrument (h / Herz)))
+
+# ::id llp_de.95 ::annotator CO
+# ::snt Der Sand hat bei Tagesanbruch die Farbe des Honigs .
+(ä / ähneln-01
+  :ARG1 (s / Sand)
+  :ARG2 (f / Farbe
+          :poss (h / Honig))
+  :time (a / anbrechen-01
+          :ARG1 (t / Tag)))
+
+# ::id llp_de.96 ::annotator CO
+# ::snt Und er setzte sich , weil er Angst hatte .
+(u / und
+      :op2 (h / hinsetzen-01
+            :ARG0 (e / er)
+            :ARG1-of (c / cause-01
+                        :ARG0 (f / fürchten-01
+                                :ARG0 e))))
+
+# ::id llp_de.97 ::annotator CO
+# ::snt Er blieb einen Augenblick reglos .
+(b / bleiben-01
+    :ARG1 (e / er)
+    :duration (m / moment
+                :quant 1)
+    :manner (m / reagieren-01 
+                :polarity -))
+
+# ::id llp_de.98 ::annotator CO
+# ::snt I was sad , but I told them : " I am tired . "
+(c / contrast-01
+      :ARG1 (s / trauern-01
+            :ARG1 (i / ich))
+      :ARG2 (t / erzählen-01
+            :ARG0 i
+            :ARG1 (t3 / erschöpfen-01
+                  :ARG1 i)
+            :ARG2 (s2 / sie)))
+
+# ::id llp_de.99 ::annotator CO
+# ::snt Aber ich weiß gut , er ist auf seinen Planeten zurückgekehrt , denn bei Tagesanbruch habe ich seinen Körper nicht wiedergefunden .
+(c / contrast-01
+    :ARG2 (w / weiß-01
+            :ARG0 (i / ich)
+            :ARG1 (z / zurückkehren-01
+                    :ARG1 (e / er)
+                    :ARG2 (p / Planet
+                            :poss e))
+            :ARG1-of (c2 / cause-01
+                        :ARG0 (f / finden-01
+                                :ARG0 i
+                                :ARG1 (k / Körper
+                                        :poss h)
+                                :polarity -
+                                :time (a / anbrechen-01
+                                         :ARG0 (t / Tag))))))
+
+# ::id llp_de.100 ::annotator CO
+# ::snt Schaut den Himmel an .
+(s / schauen-01 
+      :mode imperative
+      :ARG0 (i / ihr)
+      :ARG1 (h / Himmel))
