@@ -53,7 +53,7 @@
 
 # ::id lpp_de.7 ::annotator CO
 # ::snt Wo kommst du her , kleiner Kerl ?
-(s / stammen-01
+(s / herkommen-01
     :ARG1 (d / du
               :mod (k / Kerl
                        :degree (k2 / kleine)))
@@ -102,8 +102,7 @@
 # ::id lpp_de.12 ::annotator CO
 # ::snt Nicht jeder hat einen Freund gehabt .
 (h / haben-01
-    :polarity -
-    :ARG0 (j / jeder)
+    :ARG0 (j / jeder :polarity -)
     :ARG1 (p / Person
               :ARG0-of (h / have-rel-role-91
                            :ARG2 (f / Freund))))
@@ -218,7 +217,7 @@
 
 # ::id lpp_de.24 ::annotator CO
 # ::snt Der kleine Prinz sah sich nach einem Sitzplatz um , doch der ganze Planet wurde von dem herrlichen Hermelinmantel bedeckt .
-(s / schauen-01
+(s / umschauen-00
     :ARG0 (p / Prinz
               :mod (k / klein))
     :ARG1 (s2 / Sitzplatz)
@@ -392,7 +391,7 @@
     :ARG0 (d / Diamant
               :ARG0-of (g2 / gehören-01
                            :polarity -
-                           :ARG0 (p / Person)))
+                           :ARG0 (j / jemand)))
     :ARG1 (d2 / du)
     :condition (c1 / finden-01
                    :ARG0 d2
@@ -474,6 +473,7 @@
 # ::snt Gib mir zu trinken .
 (g / geben-01
     :mode imperative
+    :ARG0 (d / du)
     :ARG1 (t / trinken-01)
     :ARG2 (i / ich))
 
@@ -493,7 +493,7 @@
                         :ARG1-of (s4 / schlecht-07)))))
                         
 # ::id llp_de.52 ::annotator CO
-# ::snt Neben dem Brunnen stand die Ruiner einer alten Steinmauer
+# ::snt Neben dem Brunnen stand die Ruiner einer alten Steinmauer .
 (m / Mauer
       :consist-of (s / Stein)
       :mod (a / alte)
@@ -575,8 +575,10 @@
 (ä / ähneln-01
       :mode conclusive
       :ARG1 (i / ich)
+      :mod (w / wohl)
       :ARG2 (e / Ewachsener)
-      :degree (e2 / eher))
+      :degree (e2 / eher)
+             :mod (s / schon))
 
 # ::id llp_de.60 ::annotator CO
 # ::snt Der Boden des Planeten war voll davon .
@@ -713,7 +715,7 @@
       :op2 (s / spitz
             :mod (g2 / ganz)
             :domain i)
-      :op3 (a4 / and
+      :op3 (u2 / und
             :op1 (f / salzig
                   :domain i)))
 
@@ -841,7 +843,7 @@
 
 # ::id llp_de.86 ::annotator CO
 # ::snt Als ich ein kleiner Knabe war , wohnte ich in einem alten Haus, und die Sage erzählte, daß darin ein Schatz versteckt sei .
-(a / and
+(u / und
     :op1 (l / leben-01
             :ARG0 (i / ich)
             :location (h / Haus
@@ -888,7 +890,7 @@
 
 # ::id llp_de.90 ::annotator CO
 # ::snt Und während ich so weiterging , entdeckte ich bei Tagesanbruch den Brunnen . 
-(a / and
+(u / und
     :op2 (e / entdecken-01
         :ARG0 (i / ich)
         :ARG1 (b / Brunnen)
@@ -956,7 +958,7 @@
                 :polarity -))
 
 # ::id llp_de.98 ::annotator CO
-# ::snt I was sad , but I told them : " I am tired . "
+# ::snt Ich war traurig , aber ich erzählte ihnen : " Ich bin erschöpft . "
 (c / contrast-01
       :ARG1 (s / trauern-01
             :ARG1 (i / ich))
@@ -986,7 +988,7 @@
 
 # ::id llp_de.100 ::annotator CO
 # ::snt Schaut den Himmel an .
-(s / schauen-01 
+(s / anschauen-00 
       :mode imperative
       :ARG0 (i / ihr)
       :ARG1 (h / Himmel))
