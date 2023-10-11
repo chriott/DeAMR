@@ -174,8 +174,6 @@ The formal use of `du` and `ìhr` in German is annotated respectively with `:pol
 
 Example:
 ```lisp
-# ::id lpp_de.34 ::annotator CO
-# ::snt Sie haben einen merkwürdigen Hut !
 (h / haben-01 :mode expressive 
     :ARG0 (d / du :polite +)
     :ARG1 (h2 / Hut
