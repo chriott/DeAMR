@@ -1,6 +1,6 @@
 # DeAMR 1.0 (WIP 🚧)
 
-These are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The goals is to extend and specify the existing AMR framework, so that German phenomena can be sufficiently mapped into AMR form.
+These are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The goal is to extend and specify the existing AMR framework, so that German linguistic phenomena can be sufficiently mapped into AMR form.
 
 
 **Table of Contents**
@@ -12,6 +12,7 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
   - [Compounds](#compounds)   
   - [Coordination and Clausal connectives](#coordination-and-clausal-connectives)
   - [Degree](#degree)
+  - [Formal pronouns](#formal-pronouns)
   - [Modality](#modality)
   - [Modal particles](#modal-particles)
   - [Nominative case for nouns, pronouns and adjectives](#nominative-case-for-nouns-pronouns-and-adjectives)
@@ -51,7 +52,7 @@ DeAMR is using the German frame set from the [Universal PropBank](https://univer
 
 The Universal German PropBank is still in development and incomplete. At this point, if a German frame for a concept should be missing, e.g. *zufrieden*, we have to: 
 
-1. Use the German concept without numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* use [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html). A list of the original PropBank frames can be found [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
+1. Use the German concept with -00 as sense numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* translates to `zufrieden-00` and the frame structure of [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html). A list of the original PropBank frames can be found [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
 2. Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame. For example: 
 
@@ -72,8 +73,7 @@ This version of the DeAMR guidelines provides a few important specifications to 
 
 ## Adjectives/Adverbs evoking a verb frame 
 
-
-One "slogan" of AMR is to prefer a verb frame whenever it is possible.
+One "slogan" of AMR is to prefer a verb frame whenever it is possible. When annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame, if there exists one.
 
 ```lisp
 (c0 / entgegnen-01
@@ -88,9 +88,7 @@ One "slogan" of AMR is to prefer a verb frame whenever it is possible.
 ```
 > "Ich kann aber nicht anders", entgegnete der kleine Prinz ganz verwirrt.
 
-Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and thus should be used in the annotation. 
-
-Annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame, if there is one.
+Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and therefore should be used when annotating. 
 
 ## Compounds
 
@@ -100,7 +98,7 @@ In German, there are multiple ways of combining different word classes into new 
 <img src="https://i.ibb.co/tPJnVJ1/Bildschirm-foto-2023-03-14-um-19-05-09.png" width=60% height=60%>
 </p>
 
-I. Look up German PropBank and see if the compound word exists (e.g. `nachgesehen-01`)
+I. Look up German PropBank and see if the compound word in question exists (e.g. `nachgesehen-01`)
 ```
 
 if exists: use this as your annotation
@@ -169,6 +167,21 @@ Example:
               :ARG1 (c5 / andere)))
 ```
 > Es ist viel schwerer, über sich selbst zu richten, als über andere zu urteilen.
+
+## Formal pronouns
+
+The formal use of `du` and `ìhr` in German is annotated respectively with `:polite +`
+
+Example:
+```lisp
+# ::id lpp_de.34 ::annotator CO
+# ::snt Sie haben einen merkwürdigen Hut !
+(h / haben-01 :mode expressive 
+    :ARG0 (d / du :polite +)
+    :ARG1 (h2 / Hut
+              :mod (m / merkwürdige)))
+```
+> Sie haben einen merkwürdigen Hut!
 
 ## Modality 
 
@@ -296,7 +309,7 @@ word they agree with in the sentence.
 DeAMR wants to be consistent with the original guidelines to ensure that it can be easily compared and integrated with each other.
 Therefore, in agreement to other non-English AMR corpora, it maintain the role labels (e.g. `:ARGX`,
 `:location`, `:manner`), AMR-specific framesets (e.g. `be-located-at-91`, `have-degree-91`) and canonical entity types
-(e.g. `government-organization`, `political-party`) in English.
+(e.g. `government-organization`, `political-party`, `person`, `thing`) in English.
 
 For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
