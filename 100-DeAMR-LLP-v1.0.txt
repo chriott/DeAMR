@@ -87,7 +87,8 @@
     :ARG0 (w / wir
               :ARG0-of (v / verstehen-01
                            :ARG1 (l / Leben)))
-    :ARG2 (c3 / lachen-01
+    :ARG2 (c3 / lachen-01 
+              :mode expressive
               :ARG0 w
               :ARG2 (z / Zahl)))
 
@@ -163,6 +164,7 @@
     :ARG2 (s / sagen-01
               :ARG0 (e / er)
               :ARG1 (w / wissen-01
+                        :mode conclusive
                         :polarity -
                         :ARG0 (m / man)
                         :time (j / jemals))
@@ -372,9 +374,9 @@
 
 # ::id lpp_de.39 ::annotator CO
 # ::snt Ich habe so viel Arbeit !
-(v / verpflichten-01
+(h / haben-01 :mode expressive
+    :ARG0 (i / ich)
     :ARG1 (a / arbeiten-01
-              :ARG0 (i / ich)
               :degree (v2 / viel)))
 
 # ::id lpp_de.40 ::annotator CO
