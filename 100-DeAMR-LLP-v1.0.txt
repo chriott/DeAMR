@@ -474,6 +474,7 @@
 # ::snt Gib mir zu trinken .
 (g / geben-01
     :mode imperative
+    :ARG0 (d / du)
     :ARG1 (t / trinken-01)
     :ARG2 (i / ich))
 
