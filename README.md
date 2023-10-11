@@ -305,17 +305,14 @@ word they agree with in the sentence.
 ## Special dashed entities and relations 
 
 DeAMR wants to be consistent with the original guidelines to ensure that it can be easily compared and integrated with each other.
-Therefore, in agreement to other non-English AMR corpora, it maintain the role labels (e.g. `:ARGX`,
+Therefore, in agreement to other non-English AMR corpora, it maintains the role labels (e.g. `:ARGX`,
 `:location`, `:manner`), AMR-specific framesets (e.g. `be-located-at-91`, `have-degree-91`) and canonical entity types
 (e.g. `government-organization`, `political-party`, `person`, `thing`) in English.
 
-For an overview of all functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
+For an overview of functional roles and entity types see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
 # References 
 
 [Abstract Meaning Representation (AMR) 1.2.6 Specification](https://github.com/amrisi/amr-guidelines/blob/master/amr.md)
 
 Nathan Schneider, Tim O'Gorman and Jeffrey Flanigang. [AMR Tutorial](https://github.com/nschneid/amr-tutorial/tree/master/slides) presented at NAACL 2015.
-
-Nianwen Xue, Chuan Wang, Yuchen Zhang, Bin Li, Lijun Bu, Yuan Wen, Li Song, Rubing Dai, Junsheng Zhou and Weiguang Qu. CAMR Guidelines [v1.2](https://www.cs.brandeis.edu/~clp/camr/res/CAMR_GL_v1.2.pdf).
-
