@@ -3,15 +3,15 @@
 (c / cause-01
      :ARG1 (k / können-01
                 :ARG1 (v / vorstellen-01
-                           :ARG0 (s / sie)
+                           :ARG0 (i / ihr)
                            :ARG1 (u / überraschen-01
                                       :ARG0 (w / wecken-01
                                                  :ARG0 (s2 / Stimme
                                                             :mod (l / leise)
                                                             :mod (l2 / lustig)
-                                                            :ARG1 i)
+                                                            :ARG1 i2)
                                                  :time (s3 / Sonnenaufgang))
-                                      :ARG1 (i / ich)))))
+                                      :ARG1 (i2 / ich)))))
 
 # ::id lpp_de.2 ::annotator CO
 # ::snt Er antwortete mir : " Das macht nichts . "
@@ -53,7 +53,7 @@
 
 # ::id lpp_de.7 ::annotator CO
 # ::snt Wo kommst du her , kleiner Kerl ?
-(h / herkommen-01
+(s / herkommen-01
     :ARG1 (d / du
               :mod (k / Kerl
                        :degree (k2 / kleine)))
@@ -87,7 +87,7 @@
     :ARG0 (w / wir
               :ARG0-of (v / verstehen-01
                            :ARG1 (l / Leben)))
-    :ARG2 (l2 / lachen-01
+    :ARG2 (c3 / lachen-01
               :ARG0 w
               :ARG2 (z / Zahl)))
 
@@ -102,15 +102,16 @@
 # ::id lpp_de.12 ::annotator CO
 # ::snt Nicht jeder hat einen Freund gehabt .
 (h / haben-01
-    :ARG0 (j / jeder :polarity -)
+    :polarity -
+    :ARG0 (j / jeder)
     :ARG1 (p / Person
-              :ARG0-of (h / have-rel-role-91
+              :ARG0-of (h2 / have-rel-role-91
                            :ARG2 (f / Freund))))
 
 # ::id lpp_de.13 ::annotator CO
 # ::snt Aber ich bin nicht sicher , ob ich es schaffe .
 (c / contrast-01
-    :ARG2 (s / sicher-00
+    :ARG2 (v / sicherstellen-01
               :polarity -
               :ARG1 (i / ich)
               :ARG2 (s / schaffen-02
@@ -137,7 +138,7 @@
                                  :degree (s3 / sehr)))
               :op2 (c / cause-01
                         :ARG0 (t / Trinkwasser
-                                   :ARG0-of (e2 / zur-neige-gehen-00
+                                   :ARG0-of (e2 / entleeren-01
                                                  :time (b / bald)))
                         :ARG1 (b2 / befürchten-01
                                    :ARG0 i
@@ -217,16 +218,16 @@
 
 # ::id lpp_de.24 ::annotator CO
 # ::snt Der kleine Prinz sah sich nach einem Sitzplatz um , doch der ganze Planet wurde von dem herrlichen Hermelinmantel bedeckt .
-(u / umschauen-00
+(s / schauen-01
     :ARG0 (p / Prinz
               :mod (k / klein))
     :ARG1 (s2 / Sitzplatz)
     :concession (b / bedecken-01
                     :ARG1 (p2 / Planet
-                              :mod (g / ganze))
-                    :ARG2 (m / Mantel
-                              :mod (h / Hermelin)
-                              :mod (h2 / herrliche))))
+                              :mod (c8 / ganze))
+                    :ARG2 (c2 / Mantel
+                              :mod (c3 / Hermelin)
+                              :mod (c6 / herrliche))))
 
 # ::id lpp_de.25 ::annotator CO
 # ::snt " Es ist ein grober Verstoß gegen die Etikette, in der Gegenwart eines Königs zu gähnen" , sagte der Monarch .
@@ -235,8 +236,7 @@
     :ARG1 (v / verstoßen-02
               :ARG1 (e / Etikette
                         :consist-of (g / gähnen-01
-                                        :location (n / neben
-                                                     :op1 m)))
+                                        :location (k / König)))
               :mod (g2 / grobe)))
 
 # ::id lpp_de.26 ::annotator CO
@@ -244,7 +244,7 @@
 (e / entgegnen-01
     :ARG0 (p / Prinz
               :mod (k / klein))
-    :ARG1 (e2 / können-01
+    :ARG1 (e2 / ermöglichen-01
               :polarity -
               :manner (a / anders)
               :ARG0 p)
@@ -256,7 +256,7 @@
 (u / und
     :op1 (r / reisen-01
              :ARG0 (i / ich)
-             :degree (l / lange))
+             :degree (l / lang))
     :op2 (s / schlafen-01
              :polarity -
              :ARG0 i))
@@ -267,7 +267,7 @@
     :polarity -
     :ARG0 (i / ich)
     :ARG1 (g / gähnen-01
-              :ARG0 (n / niemand))
+              :ARG0 (p / Person))
     :time (j / Jahr
               :mod (v / viel)))
 
@@ -286,7 +286,7 @@
               :ARG1 (s / setzen-03
                         :ARG0 p)
               :polarity (a / amr-unknown))
-    :manner (z / zaghaft))
+    :manner (z / zurückhalten-01))
 
 # ::id lpp_de.31 ::annotator CO
 # ::snt Geh nicht .
@@ -298,10 +298,10 @@
 # ::id lpp_de.32 ::annotator CO
 # ::snt Aber es gibt doch niemanden , den man verurteilen könnte !
 (a / contrast-01
-    :ARG2 (e / geben-02
+    :ARG2 (e / existieren-01
               :mode conclusive
               :polarity -
-              :ARG1 (p / person
+              :ARG1 (p / Person
                         :ARG1-of (v / verurteilen-01))))
 
 # ::id lpp_de.33 ::annotator CO
@@ -318,16 +318,16 @@
 # ::id lpp_de.34 ::annotator CO
 # ::snt Sie haben einen merkwürdigen Hut !
 (h / haben-01
-    :ARG0 (s / sie)
-    :ARG1 (h / Hut
-              :mod (m / merkwürdig)))
+    :ARG0 (d / du :polite +)
+    :ARG1 (h2 / Hut
+              :mod (m / merkwürdige)))
 
 # ::id lpp_de.35 ::annotator CO
 # ::snt Eitle Menschen hören nur , wenn sie gelobt werden .
 (h / hören-01
     :ARG0 (m / Mensch
               :mod (e / eitel))
-    :condition (l / loben-01
+    :condition (l / loben
                    :ARG1 m))
 
 # ::id lpp_de.36 ::annotator CO
@@ -368,11 +368,11 @@
     :ARG0 (p / Planet
               :ord (o / ordinal-entity
                        :value 4))
-    :ARG1 (g / Geschäftsmann))
+    :ARG1 (g2 / Geschäftsmann))
 
 # ::id lpp_de.39 ::annotator CO
 # ::snt Ich habe so viel Arbeit !
-(h / haben-01
+(v / verpflichten-01
     :ARG1 (a / arbeiten-01
               :ARG0 (i / ich)
               :degree (v2 / viel)))
@@ -392,7 +392,7 @@
     :ARG0 (d / Diamant
               :ARG0-of (g2 / gehören-01
                            :polarity -
-                           :ARG0 (j / jemand)))
+                           :ARG0 (p / Person)))
     :ARG1 (d2 / du)
     :condition (c1 / finden-01
                    :ARG0 d2
@@ -434,14 +434,13 @@
 
 # ::id lpp_de.45 ::annotator CO
 # ::snt Ich habe einen schrecklichen Beruf . 
-(b / haben-01
+(b / berufen-01
     :ARG1 (i / ich)
-    :ARG2 (b2 / Beruf
-          :mod (s / schrecklich)))
+    :mod (s / schreckliche))
 
 # ::id lpp_de.46 ::annotator CO
 # ::snt Es ist zwecklos .
-(n / bezwecken-00
+(n / nutzen-01
     :ARG1 (e / es)
     :polarity -)
 
@@ -462,7 +461,7 @@
               :mod (k / kleine))
     :ARG1 (b / beeilen-01
               :mode surprised
-              :ARG1 (s2 / sie)))
+              :ARG1 (d / du :polite +)))
 
 # ::id lpp_de.49 ::annotator CO
 # ::snt Experten haben das schon berechnet .
@@ -475,7 +474,6 @@
 # ::snt Gib mir zu trinken .
 (g / geben-01
     :mode imperative
-    :ARG0 (d / du)
     :ARG1 (t / trinken-01)
     :ARG2 (i / ich))
 
@@ -495,12 +493,12 @@
                         :ARG1-of (s4 / schlecht-07)))))
                         
 # ::id llp_de.52 ::annotator CO
-# ::snt Neben dem Brunnen stand die Ruiner einer alten Steinmauer .
+# ::snt Neben dem Brunnen stand die Ruiner einer alten Steinmauer
 (m / Mauer
       :consist-of (s / Stein)
       :mod (a / alte)
       :ARG1-of (r / ruinieren-01)
-      :ARG0-of (s / stehen-01)
+      :ARG0-of (s2 / stehen-01)
       :location (n / neben
             :op1 (b / Brunnen)))
    
@@ -566,7 +564,7 @@
 # ::snt Sie bewundern Zahlen , und das wird ihnen gefallen .
 (u / und 
     :op1 (b / bewundern-01 
-            :ARG0 (s / Sie) 
+            :ARG0 (s / sie) 
             :ARG1 (z / Zahlen)) 
     :op2 (g / gefallen-01 
             :ARG1 s 
@@ -577,17 +575,15 @@
 (ä / ähneln-01
       :mode conclusive
       :ARG1 (i / ich)
-      :mod (w / wohl)
       :ARG2 (e / Ewachsener)
-      :degree (e2 / eher)
-             :mod (s / schon))
+      :degree (e2 / eher))
 
 # ::id llp_de.60 ::annotator CO
 # ::snt Der Boden des Planeten war voll davon .
 (b / bedecken-01
-      :ARG1 (b / Bodem
+      :ARG1 (b2 / Bodem
             :poss (p / planet))
-      :ARG2 (t / davon))
+      :ARG2 (d / davon))
 
 # ::id llp_de.61 ::annotator CO
 # ::snt Wenn man seine Morgentoilette beendet hat , muß man sich ebenso sorgfältig an die Toilette des Planeten machen .
@@ -621,12 +617,12 @@
       :op1 (k / kommen-01 
             :mode imperative
             :ARG1 (d / du))
-      :op2 (s / lassen-01 
+      :op2 (l / lassen-01 
             :mode imperative
             :ARG0 (w / wir)
             :ARG1 (a / anschauen-01
                   :ARG0 w
-                  :ARG1 (u / untergehen-01
+                  :ARG1 (u2 / untergehen-01
                             :ARG0 (s / Sonne)))))
 
 # ::id llp_de.64 ::annotator CO
@@ -717,7 +713,7 @@
       :op2 (s / spitz
             :mod (g2 / ganz)
             :domain i)
-      :op3 (u2 / und
+      :op3 (a4 / and
             :op1 (f / salzig
                   :domain i)))
 
@@ -748,7 +744,7 @@
 # ::snt Aber du darfst sie nicht vergessen .
 (c / contrast-01
       :ARG2 (d / dürfen-01
-            :ARG1 (d / du)
+            :ARG1 (d2 / du)
             :ARG2 (v / vergessen-01 
                   :polarity -
                   :ARG0 d
@@ -767,9 +763,9 @@
 
 # ::id llp_de.79 ::annotator CO
 # ::snt Du bist für deine Rose verantwortlich .
-(r / verantworten-01
+(v / verantworten-01
       :ARG0 (d / du)
-      :ARG1 (r / Rose
+      :ARG1 (r2 / Rose
             :poss d))
 
 # ::id llp_de.80 ::annotator CO
@@ -781,7 +777,7 @@
           :ARG0 s2
           :ARG1 (p / person
                   :ARG0-of (t / reisen-01))
-          :ARG2 (p / Paket
+          :ARG2 (p2 / Paket
                     :mod (t2 / tausender))))
 
 # ::id llp_de.81 ::annotator CO
@@ -851,9 +847,9 @@
             :location (h / Haus
                         :mod (a / alte))
             :time (k / Knabe
-                    :mod (k / kleine)
+                    :mod (k2 / kleine)
                     :domain i))
-    :op2 (t / erzählen-01
+    :op2 (e / erzählen-01
             :ARG0 (s / Sage)
             :ARG1 (v / verstecken-01
                     :ARG1 (s2 / Schatz)
@@ -888,7 +884,7 @@
                                 :ARG3 (m / mehr))
                     :location (p / planet :name (n / name :op1 "Erde")))
     :ARG2 (i / ich)
-    :mod (e / sogar)))
+    :mod (e2 / sogar)))
 
 # ::id llp_de.90 ::annotator CO
 # ::snt Und während ich so weiterging , entdeckte ich bei Tagesanbruch den Brunnen . 
@@ -899,9 +895,9 @@
         :time (a / anbrechen-01
                     :ARG0 (t / Tag))
         :time (g / gehen-01
-                :ARG0 i
-                :mod (w / weiter)
-                :manner (s / so))))
+                  :ARG0 i
+                  :mod (w / weiter)
+                  :manner (s / so))))
 
 # ::id llp_de.91 ::annotator CO
 # ::snt Das ist zu schwer für dich .
@@ -914,16 +910,16 @@
 # ::id llp_de.92 ::annotator CO
 # ::snt Er trank mit geschlossenen Augen .
 (t / trinken-01
-    :ARG0 (e / er)
-    :manner (s / schließen-01
-               :ARG0 (a / Auge)))
+      :ARG0 (e / er)
+      :manner (s / schließen-01
+            :ARG0 (a / Auge)))
 
 # ::id llp_de.93 ::annotator CO
 # ::snt Sie finden es nicht .
 (f / finden-01
-  :ARG0 (s / sie)
-  :ARG1 (e / es)
-  :polarity -)
+      :ARG0 (s / sie)
+      :ARG1 (e / es)
+      :polarity -)
 
 # ::id llp_de.94 ::annotator CO
 # ::snt Man muß mit dem Herzen suchen .
@@ -954,21 +950,10 @@
 # ::snt Er blieb einen Augenblick reglos .
 (b / bleiben-01
     :ARG1 (e / er)
-    :duration (m / moment
+    :duration (m / Augenblick
                 :quant 1)
-    :manner (m / reagieren-01 
+    :manner (m2 / reagieren-01 
                 :polarity -))
-
-# ::id llp_de.98 ::annotator CO
-# ::snt Ich war traurig , aber ich erzählte ihnen : " Ich bin erschöpft . "
-(c / contrast-01
-      :ARG1 (s / trauern-01
-            :ARG1 (i / ich))
-      :ARG2 (t / erzählen-01
-            :ARG0 i
-            :ARG1 (t3 / erschöpfen-01
-                  :ARG1 i)
-            :ARG2 (s2 / sie)))
 
 # ::id llp_de.99 ::annotator CO
 # ::snt Aber ich weiß gut , er ist auf seinen Planeten zurückgekehrt , denn bei Tagesanbruch habe ich seinen Körper nicht wiedergefunden .
@@ -990,7 +975,7 @@
 
 # ::id llp_de.100 ::annotator CO
 # ::snt Schaut den Himmel an .
-(s / anschauen-00 
+(s / schauen-01 
       :mode imperative
       :ARG0 (i / ihr)
       :ARG1 (h / Himmel))
