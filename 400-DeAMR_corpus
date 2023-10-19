@@ -1,0 +1,4810 @@
+# ::id lpp_de.1
+# ::snt So könnt ihr euch vorstellen , wie überrascht ich war , als ich bei Sonnenaufgang von einer leisen , lustigen Stimme geweckt wurde .
+(c / cause-01
+     :ARG1 (k / können-01
+                :ARG1 (v / vorstellen-01
+                           :ARG0 (s / sie)
+                           :ARG1 (u / überraschen-01
+                                      :ARG0 (w / wecken-01
+                                                 :ARG0 (s2 / Stimme
+                                                            :mod (l / leise)
+                                                            :mod (l2 / lustige)
+                                                            :ARG1 i)
+                                                 :time (s3 / Sonnenaufgang))
+                                      :ARG1 (i / ich)))))
+
+# ::id lpp_de.2 
+# ::snt Er antwortete mir : " Das macht nichts . "
+(a / antworten-01
+    :ARG0 (e / er)
+    :ARG1 (i / ich)
+    :ARG2 (m / machen-01
+              :ARG0 (d / das)
+              :ARG1 (n / nichts)))
+
+# ::id lpp_de.3
+# ::snt Zeichne mir ein Schaf .
+(z / zeichnen-01
+    :mode imperative
+    :ARG0 (d / du)
+    :ARG1 (s / Schaf)
+    :ARG2 (i / ich))
+
+# ::id lpp_de.4 
+# ::snt Da , wo ich lebe , ist alles sehr klein .
+(k / klein
+    :domain (a / alles)
+    :degree (s / sehr)
+    :location (l / leben-01
+                  :ARG0 (i / ich)))
+
+# ::id lpp_de.5 
+# ::snt Das ist ja lustig !
+(l / lustig
+    :mode surprised
+    :domain (d / das))
+
+# ::id lpp_de.6 
+# ::snt Von welchem Planeten stammst du ?
+(s / stammen-01
+    :ARG1 (d / du)
+    :ARG2 (P / Planet
+              :location (a / amr-unknown)))
+
+# ::id lpp_de.7 
+# ::snt Wo kommst du her , kleiner Kerl ?
+(s / herkommen-01
+    :ARG1 (d / du
+              :mod (k / Kerl
+                       :degree (k2 / kleine)))
+    :ARG2 (a / amr-unknown))
+
+# ::id lpp_de.8 
+# ::snt Wenn ein Astronom einen von ihnen entdeckt , so gibt er ihm eine Nummer anstelle eines Namens .
+(h / have-condition-91
+     :ARG1 (g / geben-01
+               :ARG0 (a / Astronom)
+               :ARG1 (i / instead-of-91
+                          :ARG1 (n / Nummer)
+                          :ARG2 (n2 / Name)))
+     :ARG2 (e / entdecken-01
+               :ARG0 a
+               :ARG1 (d / Ding
+                          :quant 1
+                          :ARG1-of (i2 / include-91
+                                        :ARG2 (i3 / ihnen)))))
+
+# ::id lpp_de.9 
+# ::snt Kinder müssen mit Erwachsenen nachsichtig sein .
+(v / verpflichten-01
+    :ARG1 (n / nachsichtig-01
+              :ARG0 (k / Kind)
+              :ARG1 (e / Erwachsener)))
+
+# ::id lpp_de.10 
+# ::snt Aber wir , die das Leben verstehen , lachen natürlich über Zahlen !
+(c / contrast-01
+    :ARG0 (w / wir
+              :ARG0-of (v / verstehen-01
+                           :ARG1 (l / Leben)))
+    :ARG2 (c3 / lachen-01 
+              :mode expressive
+              :ARG0 w
+              :ARG2 (z / Zahl)))
+
+# ::id lpp_de.11 
+# ::snt Es ist traurig einen Freund zu vergessen .
+(t / trauern-01
+    :ARG1 (v / vergessen-01
+              :ARG1 (p / person
+                        :ARG0-of (h / have-rel-role-91
+                                      :ARG2 (f / Freund)))))
+
+# ::id lpp_de.12 
+# ::snt Nicht jeder hat einen Freund gehabt .
+(h / haben-01
+    :polarity -
+    :ARG0 (j / jeder)
+    :ARG1 (p / Person
+              :ARG0-of (h2 / have-rel-role-91
+                           :ARG2 (f / Freund))))
+
+# ::id lpp_de.13 
+# ::snt Aber ich bin nicht sicher , ob ich es schaffe .
+(c / contrast-01
+    :ARG2 (v / sicherstellen-01
+              :polarity -
+              :ARG1 (i / ich)
+              :ARG2 (s / schaffen-02
+                        :ARG0 i)))
+
+# ::id lpp_de.14 
+# ::snt Aber der kleine Prinz antwortete nicht .
+(c / contrast-01
+    :ARG2 (a / antworten-01
+              :polarity -
+              :ARG0 (p / Prinz
+                        :mod (k / kleine))))
+
+# ::id lpp_de.15 
+# ::snt Ich war sehr besorgt , denn langsam schien mir meine Panne doch sehr ernst und das zur Neige gehende Trinkwasser ließ mich das Schlimmste befürchten .
+(s / sorgen-01
+    :ARG0 (u / und
+              :op1 (s2 / scheinen-01
+                       :ARG0 (p / Panne
+                                 :poss (i / ich))
+                       :ARG1 i
+                       :mod (l / langsam)
+                       :mod (e / ernst
+                                 :degree (s3 / sehr)))
+              :op2 (c / cause-01
+                        :ARG0 (t / Trinkwasser
+                                   :ARG0-of (e2 / entleeren-01
+                                                 :time (b / bald)))
+                        :ARG1 (b2 / befürchten-01
+                                   :ARG0 i
+                                   :ARG1 (d / Ding
+                                              :ARG1-of (h / have-degree-91
+                                                            :ARG2 (s4 / schlimm)
+                                                            :ARG3 (a / am-meisten)))))))
+
+# ::id lpp_de.16 
+# ::snt " Es ist bald Zeit zum Frühstücken " , fügte sie kurz darauf hinzu . 
+(h / hinzufügen-02
+    :ARG0 (s / sie)
+    :ARG1 (z / Zeit
+              :purpose (f / frühstücken-01)
+              :time (b / bald))
+    :time (d / darauf
+              :degree (k / kurz)))
+
+# ::id lpp_de.17 
+# ::snt Aber er sagte sich : Man weiß ja nie !
+(c / contrast-01
+    :ARG2 (s / sagen-01
+              :ARG0 (e / er)
+              :ARG1 (w / wissen-01
+                        :polarity -
+                        :mode conclusive
+                        :ARG0 (m / man)
+                        :time (j / jemals))
+              :ARG2 e))
+
+# ::id lpp_de.18 
+# ::snt Vulkanische Ausbrüche sind so wie Kaminbrände .
+(a / ähneln-01
+    :ARG1 (a2 / ausbrechen-02
+              :ARG1 (v / Vulkan))
+    :ARG2 (f / Brand
+              :location (k / Kamin)))
+
+# ::id lpp_de.19 
+# ::snt Er dachte , er würde nie wiederkommen .
+(d / denken-01
+    :ARG0 (e / er)
+    :ARG1 (w / wiederkommen-01
+              :polarity -
+              :ARG1 e
+              :time (j / jemals)))
+
+# ::id lpp_de.20 
+# ::snt Bitte verzeih mir .
+(v / verzeihen-01
+    :polite +
+    :ARG1 (i / ich))
+
+# ::id lpp_de.21 
+# ::snt Mach dich auf den Weg !
+(g / gehen-01
+    :mode imperative
+    :ARG0 (d / du)
+    :ARG3 (w / Weg))
+
+# ::id lpp_de.22 
+# ::snt So begann er , ihnen einen Besuch abzustatten, um sich zu beschäftigen und sich schlau zu machen . 
+(b / beginnen-01
+    :ARG0 (e / er)
+    :ARG1 (b2 / besuchen-01
+              :ARG1 (s / sie))
+    :purpose (u / und
+                 :op1 (b3 / beschäftigen-01
+                          :ARG0 e)
+                 :op2 (l / lernen-01
+                          :ARG0 e)))
+
+# ::id lpp_de.23 
+# ::snt Alle Menschen sind Untertanen.
+(c7 / Untertan
+    :domain (c6 / Mensch
+                :mod (c8 / alle)))
+
+# ::id lpp_de.24 
+# ::snt Der kleine Prinz sah sich nach einem Sitzplatz um , doch der ganze Planet wurde von dem herrlichen Hermelinmantel bedeckt .
+(s / schauen-01
+    :ARG0 (p / Prinz
+              :mod (k / klein))
+    :ARG1 (s2 / Sitzplatz)
+    :concession (b / bedecken-01
+                    :ARG1 (p2 / Planet
+                              :mod (c8 / ganze))
+                    :ARG2 (c2 / Mantel
+                              :mod (c3 / Hermelin)
+                              :mod (c6 / herrliche))))
+
+# ::id lpp_de.25 
+# ::snt " Es ist ein grober Verstoß gegen die Etikette, in der Gegenwart eines Königs zu gähnen" , sagte der Monarch .
+(s / sagen-01
+    :ARG0 (m / Monarch)
+    :ARG1 (v / verstoßen-02
+              :ARG1 (e / Etikette
+                        :consist-of (g / gähnen-01
+                                        :location (k / König)))
+              :mod (g2 / grobe)))
+
+# ::id lpp_de.26 
+# ::snt " Ich kann aber nicht anders " , entgegnete der kleine Prinz ganz verwirrt .
+(e / entgegnen-01
+    :ARG0 (p / Prinz
+              :mod (k / klein))
+    :ARG1 (e2 / ermöglichen-01
+              :polarity -
+              :manner (a / anders)
+              :ARG0 p)
+    :manner (v / verwirren-01
+                :mod (g / ganz)))
+
+# ::id lpp_de.27 
+# ::snt Ich hatte eine lange Reise und habe nicht geschlafen .
+(u / und
+    :op1 (r / reisen-01
+             :ARG0 (i / ich)
+             :degree (l / lang))
+    :op2 (s / schlafen-01
+             :polarity -
+             :ARG0 i))
+
+# ::id lpp_de.28 
+# ::snt Seit Jahren habe ich niemanden gähnen gesehen .
+(s / sehen-01
+    :polarity -
+    :ARG0 (i / ich)
+    :ARG1 (g / gähnen-01
+              :ARG0 (p / Person))
+    :time (j / Jahr
+              :mod (v / viel)))
+
+# ::id lpp_de.29 
+# ::snt Er war ein absoluter Monarch .
+(m / Monarch
+    :mod (a / absolut)
+    :domain (e / er))
+
+# ::id lpp_de.30 
+# ::snt " Darf ich mich setzen ? " , fragte der kleine Prinz zaghaft .
+(f / fragen-01
+    :ARG0 (p / Prinz
+              :mod (c3 / klein))
+    :ARG1 (e / erlauben-01
+              :ARG1 (s / setzen-03
+                        :ARG0 p)
+              :polarity (a / amr-unknown))
+    :manner (z / zurückhalten-01))
+
+# ::id lpp_de.31 
+# ::snt Geh nicht .
+(g / gehen-01
+    :polarity -
+    :mode imperative
+    :ARG0 (d / du))
+
+# ::id lpp_de.32 
+# ::snt Aber es gibt doch niemanden , den man verurteilen könnte !
+(a / contrast-01
+    :ARG2 (e / existieren-01
+              :mode conclusive
+              :polarity -
+              :ARG1 (p / Person
+                        :ARG1-of (v / verurteilen-01))))
+
+# ::id lpp_de.33 
+# ::snt Es ist viel schwerer, über sich selbst zu richten , als über andere zu urteilen .
+(h / have-degree-91
+    :ARG1 (r / richten-01
+              :ARG0 (s / sich)
+              :ARG1 s)
+    :ARG2 (s2 / schwer)
+    :ARG3 (v / viel)
+    :ARG4 (u / urteilen-01
+              :ARG1 (a / andere)))
+
+# ::id lpp_de.34 
+# ::snt Sie haben einen merkwürdigen Hut !
+(h / haben-01 :mode expressive
+    :ARG0 (s / sie)
+    :ARG1 (h2 / Hut
+              :mod (m / merkwürdige)))
+
+# ::id lpp_de.35 
+# ::snt Eitle Menschen hören nur , wenn sie gelobt werden .
+(h / hören-01
+    :ARG0 (m / Mensch
+              :mod (e / eitel))
+    :condition (l / loben
+                   :ARG1 m))
+
+# ::id lpp_de.36 
+# ::snt Verehren bedeutet , zuzugeben , dass ich der schönste , am besten gekleidete , reichste und intelligenteste Mensch auf dem Planeten bin .
+(b / bedeuten-01
+    :ARG1 (v / verehren-01)
+    :ARG2 (z / zugeben-01
+              :ARG1 (i / ich
+                        :ARG1-of (h / have-degree-91
+                                     :ARG2 (s / schön)
+                                     :ARG3 (a / am-meisten)
+                                     :ARG5 (m / Mensch
+                                               :location (p / Planet)))
+                        :ARG1-of (h2 / have-degree-91
+                                      :ARG2 (k / kleiden-01)
+                                      :ARG3 (a2 / am-besten)
+                                      :ARG5 m)
+                        :ARG1-of (h3 / have-degree-91
+                                      :ARG2 (r / reich)
+                                      :ARG3 (a3 / am-meisten)
+                                      :ARG5 m)
+                        :ARG1-of (h4 / have-degree-91
+                                      :ARG2 (i2 / intelligent)
+                                      :ARG3 (a4 / am-meisten)
+                                      :ARG5 m))))
+
+# ::id lpp_de.37 
+# ::snt " Ich saufe " , antwortete finster der Säufer .
+(a / antworten-01
+    :ARG0 (s / Säufer)
+    :manner (f / finster)
+    :ARG1 (s2 / saufen-01
+              :ARG0 s))
+
+# ::id lpp_de.38 
+# ::snt Der vierte Planet gehörte einem Geschäftsmann .
+(g / gehören-01
+    :ARG0 (p / Planet
+              :ord (o / ordinal-entity
+                       :value 4))
+    :ARG1 (g2 / Geschäftsmann))
+
+# ::id lpp_de.39 
+# ::snt Ich habe so viel Arbeit !
+(v / verpflichten-01
+    :ARG1 (a / arbeiten-01
+              :ARG0 (i / ich)
+              :degree (v2 / viel)))
+
+# ::id lpp_de.40 
+# ::snt Der Geschäftsmann verstand , dass er nicht darauf hoffen konnte , in Ruhe gelassen zu werden .
+(v / verstehen-01
+    :ARG0 (g / Geschäftsmann)
+    :ARG1 (h / hoffen-01
+              :polarity -
+              :ARG0 g
+              :ARG1 (l / lassen-02)))
+
+# ::id lpp_de.41 
+# ::snt Wenn du einen Diamanten findest , der niemandem gehört , so gehört er dir .
+(g / gehören-01
+    :ARG0 (d / Diamant
+              :ARG0-of (g2 / gehören-01
+                           :polarity -
+                           :ARG0 (p / Person)))
+    :ARG1 (d2 / du)
+    :condition (c1 / finden-01
+                   :ARG0 d2
+                   :ARG1 d))
+
+# ::id lpp_de.42 
+# ::snt Es gab gerade genug Platz für eine Straßenlaterne und einen Laternenanzünder .
+(h / have-quant-91
+    :ARG1 (p / Platz)
+    :ARG3 (g / genug
+              :mod (g2 / gerade))
+    :ARG6 (u / unterbringen-01
+              :ARG0 p
+              :ARG1 (u2 / und
+                        :op1 (s / Straßenlaterne)
+                        :op2 (l / Laternenanzünder))))
+
+# ::id lpp_de.43 
+# ::snt Eine Anordnung ist eine Anordnung .
+(a / Anordnung
+    :domain (a2 / Anordnung))
+
+# ::id lpp_de.44 
+# ::snt Wenn du dich ausruhen willst , läufst du , und der Tag dauert so lange , wie du magst .
+(l / laufen-01
+    :ARG0 (d / du)
+    :time (b / bevorzugen-01
+              :ARG1 (r / ruhen-01
+                        :ARG0 d))
+    :ARG0-of (c / cause-01
+                  :ARG1 (d2 / dauern-01
+                            :ARG0 (t / Tag)
+                            :ARG1 (t2 / temporal-quantity
+                                      :ARG1-of (h / have-quant-91
+                                                   :ARG3 (g / gleich)
+                                                   :ARG4 (t3 / temporal-quantity
+                                                              :ARG1-of (m / möchten-01
+                                                                            :ARG0 d)))))))
+
+# ::id lpp_de.45 
+# ::snt Ich habe einen schrecklichen Beruf . 
+(b / berufen-01
+    :ARG1 (i / ich)
+    :mod (s / schreckliche))
+
+# ::id lpp_de.46 
+# ::snt Es ist zwecklos .
+(n / nutzen-01
+    :ARG1 (e / es)
+    :polarity -)
+
+# ::id lpp_de.47 
+# ::snt " Hier bin ich " , sagte die Stimme , " unter dem Apfelbaum . "
+(s / sagen-01
+    :ARG0 (s2 / Stimme)
+    :ARG1 (i / ich
+              :location (h / hier)
+              :location (u / unter
+                            :op1 (b / Baum 
+                                    :mod (a / Apfel)))))
+
+# ::id lpp_de.48 
+# ::snt " Sie haben es aber eilig " , sagte der kleine Prinz .
+(s / sagen-01
+    :ARG0 (p / Prinz
+              :mod (k / kleine))
+    :ARG1 (b / beeilen-01
+              :mode surprised
+              :ARG1 (s2 / sie)))
+
+# ::id lpp_de.49 
+# ::snt Experten haben das schon berechnet .
+(b / berechnen-01
+    :mode confirmation
+    :ARG0 (e / Experte)
+    :ARG1 (d / Ding))
+
+# ::id lpp_de.50 
+# ::snt Gib mir zu trinken .
+(g / geben-01
+    :mode imperative
+    :ARG0 (d / du)
+    :ARG1 (t / trinken-01)
+    :ARG2 (i / ich))
+
+# ::id llp_de.51 
+# ::snt Infolgedessen auch gute Samenkörner von guten Gewächsen und schlechte Samenkörner von schlechten Gewächsen .
+(i / infolge-01
+      :ARG2 (u / und
+            :op1 (k / Korn
+                  :mod (s / Samen)
+                  :ARG1-of (g / gut-02)
+                  :source (p / Gewaechs
+                        :ARG1-of (g2 / gut-02)))
+            :op2 (k2 / Korn
+                  :mod (s2 / Samen)
+                  :ARG1-of (s3 / schlecht-07)
+                  :source (p2 / Gewaechs
+                        :ARG1-of (s4 / schlecht-07)))))
+                        
+# ::id llp_de.52 
+# ::snt Neben dem Brunnen stand die Ruiner einer alten Steinmauer
+(m / Mauer
+      :consist-of (s / Stein)
+      :mod (a / alte)
+      :ARG1-of (r / ruinieren-01)
+      :ARG0-of (s2 / stehen-01)
+      :location (n / neben
+            :op1 (b / Brunnen)))
+                    
+# ::id llp_de.53 
+# ::snt Sie nehmen sich wichtig wie Affenbrotbäume .
+(n / nehmen-01
+      :ARG0 (s / sie)
+      :ARG1 (h / have-degree-91
+            :ARG1 s
+            :ARG2 (w / wichtig-01
+                    :ARG1 s)
+            :ARG3 (g / gleich)
+            :ARG4 (b / Baum
+                    :mod (a / Affenbrot))))
+
+# ::id llp_de.54 
+# ::snt Du musst zurück zu deiner Maschine .
+(v / verpflichten-01
+  :ARG1 (d / du)
+  :ARG2 (z / zurückkehren-01
+          :ARG1 d
+          :ARG4 (m / Maschine
+                  :poss d)))
+                 
+# ::id llp_de.55 
+# ::snt Ich musste ja älter werden. 
+(v / verpflichten-01
+  :mode (c / conclusive)
+  :ARG1 (i / ich)
+  :ARG2 (a / altern-01
+          :ARG1 i))                   
+                      
+# ::id llp_de.56 
+# ::snt Sie stellen sich vor, dass sie sehr viel Platz einnehmen .
+(v / vorstellen-01 
+    :ARG0 (s / sie) 
+    :ARG1 (e / einnehmen-01 
+             :ARG1 (p / Platz 
+                      :quant (v2 / viel 
+                                :mod (s2 / sehr))) 
+                                :ARG2 s))
+
+# ::id llp_de.57 
+# ::snt " Du lebst hier nicht , " sagte der Fuchs .
+(s / sagen-01 
+    :ARG0 (f / Fuchs) 
+    :ARG1 (l / leben-01 
+              :polarity -
+              :ARG0 (d / du) 
+              :location (h / hier)))
+
+# ::id llp_de.58 
+# ::snt Sie bewundern Zahlen , und das wird ihnen gefallen .
+(u / und 
+    :op1 (b / bewundern-01 
+            :ARG0 (s / Sie) 
+            :ARG1 (z / Zahlen)) 
+    :op2 (g / gefallen-01 
+            :ARG1 s 
+            :ARG2 (d / das)))
+
+# ::id llp_de.59 
+# ::snt Ich gleiche doch wohl schon eher den Erwachsenen .
+(ä / ähneln-01
+      :mode conclusive
+      :ARG1 (i / ich)
+      :ARG2 (e / Ewachsener)
+      :degree (e2 / eher))
+
+# ::id llp_de.60 
+# ::snt Der Boden des Planeten war voll davon .
+(b / bedecken-01
+      :ARG1 (b2 / Bodem
+            :poss (p / planet))
+      :ARG2 (d / davon))
+
+# ::id llp_de.61 
+# ::snt Wenn man seine Morgentoilette beendet hat , muß man sich ebenso sorgfältig an die Toilette des Planeten machen .
+(m / machen-01
+      :ARG0 (m2 / man)
+      :ARG1 (t / Toilette
+            :poss (p / planet
+                  :poss p))
+      :manner (s / sorgfältig
+            :ARG1-of (h / have-degree-91
+                  :ARG3 (g / gleich)))
+      :time (b / beenden-01
+            :ARG0 m2
+            :ARG1 (t2 / Toilette
+                    :time (d / date-entity
+                        :dayperiod (m4 / morgen)
+                    :poss m2))))
+
+# ::id llp_de.62 
+# ::snt Das ist eine zwar langweilige , aber leichte Arbeit .
+(c / contrast-01
+    :ARG1 (d / Ding 
+            :mod (z / zwar)
+            :domain (w / langweilige))
+    :ARG2 (e / arbeiten-01
+            :mod (l / leicht)))
+
+# ::id llp_de.63 
+# ::snt Komm , lass uns einen Sonnenuntergang anschauen . 
+(u / und
+      :op1 (k / kommen-01 
+            :mode imperative
+            :ARG1 (d / du))
+      :op2 (l / lassen-01 
+            :mode imperative
+            :ARG0 (w / wir)
+            :ARG1 (a / anschauen-01
+                  :ARG0 w
+                  :ARG1 (u2 / untergehen-01
+                            :ARG0 (s / Sonne)))))
+
+# ::id llp_de.64 
+# ::snt Die Sprache ist die Quelle der Mißverständnisse .
+(s / Sprache
+      :source (m / missverstehen-01))
+
+# ::id llp_de.65 
+# ::snt Unglücklicherweise ist Frankreich viel zu weit weg.
+(g / glücklich 
+      :polarity -
+      :ARG2 (b / be-located-at-91
+            :ARG1 (c / country :name (n / name :op1 "France"))
+            :ARG2 (a / weg
+                  :ARG1-of (h / have-degree-91
+                        :ARG2 (f2 / weit)
+                        :ARG3 (t / viel)))))
+
+# ::id llp_de.66 
+# ::snt " Aber ich bin mächtiger als der Finger eines Königs " , sagte die Schlange .
+(s / sagen-01
+      :ARG0 (s2 / Schlange)
+      :ARG1 (c / contrast-01
+            :ARG2 (h / have-degree-91
+                  :ARG1 (i / ich)
+                  :ARG2 (p / mächtig
+                        :ARG1 i)
+                  :ARG3 (m / mehr)
+                  :ARG4 (f / Finger
+                        :part-of (k / König)))))
+
+# ::id llp_de.67 
+# ::snt Du hast nicht einmal Füße .
+(h / haben-01 
+      :polarity -
+      :ARG0 (d / du)
+      :ARG1 (f / Fuß)
+      :mod (e / einmal))
+
+# ::id llp_de.68 
+# ::snt " Aber warum sprichst du immer in Rätseln ? "
+(c / contrast-01
+      :ARG2 (s / sprechen-01
+            :ARG0 (d / du)
+            :ARG1 (r / Rästel)
+            :time (i / immer)
+            :purpose (a / amr-unknown)))
+
+# ::id llp_de.69 
+# ::snt Und sie schwiegen .
+(u / und
+  :op1 (s / schweigen-01
+         :domain (s2 / sie)))
+
+# ::id llp_de.70 
+# ::snt Die Blume hatte eines Tages eine Karawane vorüberziehen sehen .
+(s / sehen-01
+      :ARG0 (b / Blume)
+      :ARG1 (v / vorbeizeihen-01
+            :ARG0 (k / Karawane))
+      :time (t / tag
+            :mod (e / ein)))
+
+# ::id llp_de.71 
+# ::snt Es gibt , glaube ich , sechs oder sieben .
+(t / glauben-01
+  :ARG0 (i / ich)
+  :ARG1 (e / geben-02
+           :quant (o / or 
+                    :op1 6 
+                    :op2 7)))
+
+# ::id llp_de.72 
+# ::snt Und den erloschenen Vulkan benutze er als Schemel .
+(u / und 
+  :op1 (b / benutzen-01
+         :ARG0 (e / er)
+         :ARG1 (v / Vulkan
+                 :mod (e2 / erloschene))
+         :ARG2 (s / Schemel)))
+
+# ::id llp_de.73 
+# ::snt Er ist ganz trocken , voller Spitzen und ganz salzig .
+(u / und
+      :op1 (d / trocken
+            :ARG1 (e / es)
+            :mod (g / ganz))
+      :op2 (s / spitz
+            :mod (g2 / ganz)
+            :domain i)
+      :op3 (a4 / and
+            :op1 (f / salzig
+                  :domain i)))
+
+# ::id llp_de.74 
+# ::snt Und den Menschen fehlt es an Phantasie .
+(u / und
+      :op1 (h / fehlen-01
+            :ARG0 (p / person)
+            :ARG1 (p2 / Phantasie 
+                      :polarity -)))
+
+# ::id llp_de.75 
+# ::snt Die Weizenfelder erinnern mich an nichts .
+(s / erinnern-01
+  :ARG0 (f / Feld
+          :mod (w / Weizen))
+  :ARG1 (n / nichts)
+  :ARG2 (i / ich))
+
+# ::id llp_de.76 
+# ::snt Für mich ist der Weizen zwecklos .
+(u / nutzen-01
+  :polarity -
+  :ARG0 (i / ich)
+  :ARG1 (w / Weizen))
+
+# ::id llp_de.77 
+# ::snt Aber du darfst sie nicht vergessen .
+(c / contrast-01
+      :ARG2 (d / dürfen-01
+            :ARG1 (d2 / du)
+            :ARG2 (v / vergessen-01 
+                  :polarity -
+                  :ARG0 d
+                  :ARG1 (s / sie))))
+
+# ::id llp_de.78 
+# ::snt Du bist zeitlebens für das verantwortlich , was du dir vertraut gemacht hast . 
+(v / verantworten-01
+      :ARG1 (d / du)
+      :ARG2 (m / machen-01
+            :ARG0 d
+            :ARG1 (d2 / Ding
+                  :ARG1-of (v2 / vertrauen-01
+                        :ARG0 d))
+            :extent (z / zeitlebens)))
+
+# ::id llp_de.79 
+# ::snt Du bist für deine Rose verantwortlich .
+(v / verantworten-01
+      :ARG0 (d / du)
+      :ARG1 (r2 / Rose
+            :poss d))
+
+# ::id llp_de.80 
+# ::snt " Ich sortiere die Reisenden nach Tausenderpaketen " , sagte der Weichensteller .
+(s / sagen-01
+  :ARG0 (s2 / Steller
+          :mod (w / Weiche))
+  :ARG1 (s3 / sortieren-01
+          :ARG0 s2
+          :ARG1 (p / person
+                  :ARG0-of (t / reisen-01))
+          :ARG2 (p2 / Paket
+                    :mod (t2 / tausender))))
+
+# ::id llp_de.81 
+# ::snt Man schluckt jede Woche eine und spürt überhaupt kein Bedürfnis mehr , zu trinken .
+(c / cause-01
+      :ARG0 (s / schlucken-01
+            :ARG0 (m / man)
+            :ARG1 (p / Pille
+                    :quant 1)
+            :frequency (r / rate-entity-91
+                        :ARG2 (t / temporal-quantity 
+                                :quant 1
+                                :unit (w / Woche))))
+      :ARG1 (s2 / spüren-01 
+            :polarity -
+            :mod (ü / überhaupt)
+            :ARG0 m
+            :ARG1 (b / bedürfen-01
+                  :ARG1 (t2 / trinken-01))))
+
+# ::id llp_de.82 
+# ::snt " Warum verkaufst du das ? " fragte der kleine Prinz 
+(f / fragen-01
+      :ARG0 (p / Prinz
+            :mod (k / kleine))
+      :ARG1 (v / verkaufen-01
+            :ARG0 (d / du)
+            :ARG1 (d2 / das)
+            :ARG1-of (c / cause-01
+                  :ARG0 (a / amr-unknown))))
+
+# ::id llp_de.83 
+# ::snt Ich wußte gut , daß man ihn nicht fragen durfte .
+(w / wissen-01
+      :ARG0 (i / ich)
+      :ARG1 (d / dürfen-01 
+            :polarity -
+            :ARG1 (f / fragen-01
+                  :ARG0 (m / man)
+                  :ARG1 (e / er)))
+      :mod (g / gut))
+
+# ::id llp_de.84 
+# ::snt Ich habe die Wüste immer geliebt .
+(l / lieben-01
+      :ARG0 (i / ich)
+      :ARG1 (w / Wüste)
+      :time (i2 / immer))
+
+# ::id llp_de.85 
+# ::snt Ich war überrascht , dieses geheimnisvolle Leuchten des Sandes plötzlich zu verstehen .
+(ü / überraschen-01
+    :ARG0 (v / verstehen-01
+            :ARG0 (i / ich)
+            :ARG1 (l / leuchten-01
+                    :ARG0 (s / Sand)
+                    :mod (g / geheimnisvolle)
+                    :mod (d / dieses))
+            :manner (p / plötzlich))
+    :ARG1 i)
+
+# ::id llp_de.86 
+# ::snt Als ich ein kleiner Knabe war , wohnte ich in einem alten Haus, und die Sage erzählte, daß darin ein Schatz versteckt sei .
+(u / und
+    :op1 (l / leben-01
+            :ARG0 (i / ich)
+            :location (h / Haus
+                        :mod (a / alte))
+            :time (k / Knabe
+                    :mod (k2 / kleine)
+                    :domain i))
+    :op2 (e / erzählen-01
+            :ARG0 (s / Sage)
+            :ARG1 (v / verstecken-01
+                    :ARG1 (s2 / Schatz)
+                    :location h)))
+
+# ::id llp_de.87 
+# ::snt Aber er verzauberte dieses ganze Haus .
+(c / contrast-01
+  :ARG2 (v / verzaubern-01
+          :ARG0 (e / er)
+          :ARG2 (h / Haus
+                  :mod (d / dieses)
+                  :mod (g / ganze))))
+
+# ::id llp_de.88 
+# ::snt Mir war , als trüge ich ein zerbrechliches Kleinod .
+(e / scheinen-01
+      :ARG1 (t / tragen-01
+            :ARG0 i
+            :ARG1 (k / Kleinod
+                    :mod (z / zerbrechlich)))
+      :ARG2 (i2 / ich))
+
+# ::id llp_de.89 
+# ::snt Es schien mir sogar , als gäbe es nichts Zerbrechlicheres auf der Erde .
+(s / scheinen-01
+    :ARG1 (e / existieren-01
+            :ARG1 (d / Ding 
+                    :polarity -
+                    :ARG1-of (h / have-degree-91
+                                :ARG2 (z / zerbrechlich)
+                                :ARG3 (m / mehr))
+                    :location (p / planet :name (n / name :op1 "Erde")))
+    :ARG2 (i / ich)
+    :mod (e2 / sogar)))
+
+# ::id llp_de.90 
+# ::snt Und während ich so weiterging , entdeckte ich bei Tagesanbruch den Brunnen . 
+(u / und
+    :op2 (e / entdecken-01
+        :ARG0 (i / ich)
+        :ARG1 (b / Brunnen)
+        :time (a / anbrechen-01
+                    :ARG0 (t / Tag))
+        :time (g / gehen-01
+                  :ARG0 i
+                  :mod (w / weiter)
+                  :manner (s / so))))
+
+# ::id llp_de.91 
+# ::snt Das ist zu schwer für dich .
+(h / have-degree-91
+      :ARG1 (d / das)
+      :ARG2 (s / schwer)
+      :ARG3 (z / zu)
+      :beneficiary (d2 / du))
+
+# ::id llp_de.92 
+# ::snt Er trank mit geschlossenen Augen .
+(t / trinken-01
+      :ARG0 (e / er)
+      :manner (s / schließen-01
+            :ARG0 (a / Auge)))
+
+# ::id llp_de.93 
+# ::snt Sie finden es nicht .
+(f / finden-01
+      :ARG0 (s / sie)
+      :ARG1 (e / es)
+      :polarity -)
+
+# ::id llp_de.94 
+# ::snt Man muß mit dem Herzen suchen .
+(e / empfehlen-01
+  :ARG1 (s2 / suchen-01
+          :ARG0 (m / man)
+          :instrument (h / Herz)))
+
+# ::id llp_de.95 
+# ::snt Der Sand hat bei Tagesanbruch die Farbe des Honigs .
+(ä / ähneln-01
+  :ARG1 (s / Sand)
+  :ARG2 (f / Farbe
+          :poss (h / Honig))
+  :time (a / anbrechen-01
+          :ARG1 (t / Tag)))
+
+# ::id llp_de.96 
+# ::snt Und er setzte sich , weil er Angst hatte .
+(u / und
+      :op2 (h / hinsetzen-01
+            :ARG0 (e / er)
+            :ARG1-of (c / cause-01
+                        :ARG0 (f / fürchten-01
+                                :ARG0 e))))
+
+# ::id llp_de.97 
+# ::snt Er blieb einen Augenblick reglos .
+(b / bleiben-01
+    :ARG1 (e / er)
+    :duration (m / Augenblick
+                :quant 1)
+    :manner (m2 / reagieren-01 
+                :polarity -))
+
+# ::id llp_de.99 
+# ::snt Aber ich weiß gut , er ist auf seinen Planeten zurückgekehrt , denn bei Tagesanbruch habe ich seinen Körper nicht wiedergefunden .
+(c / contrast-01
+    :ARG2 (w / weiß-01
+            :ARG0 (i / ich)
+            :ARG1 (z / zurückkehren-01
+                    :ARG1 (e / er)
+                    :ARG2 (p / Planet
+                            :poss e))
+            :ARG1-of (c2 / cause-01
+                        :ARG0 (f / finden-01
+                                :ARG0 i
+                                :ARG1 (k / Körper
+                                        :poss h)
+                                :polarity -
+                                :time (a / anbrechen-01
+                                         :ARG0 (t / Tag))))))
+
+# ::id llp_de.100 
+# ::snt Schaut den Himmel an .
+(s / schauen-01 
+      :mode imperative
+      :ARG0 (i / ihr)
+      :ARG1 (h / Himmel))
+
+# ::id ft_de.1
+# ::snt Wie lange werden wir Japan noch tolerieren ?
+(t / tolerieren-01
+      :ARG0 (w / wir)
+      :ARG1 (c / country :name (n / name :op1 "Japan"))
+      :duration (a / amr-unknown)
+            :mod (n2 / noch))
+
+# ::id ft_de.2
+# ::snt Vor allem China leidet schon seit Jahrzehnten unter den verheerenden Verwüstungen Japans .
+(l / leiden-01
+      :ARG0 (c / country :name (n / name :op1 "China")
+            :mod (v / vor-allem))
+      :ARG1 (v2 / verwüsten-01
+            :ARG0 (c2 / country :name (n2 / name :op1 "Japan"))
+            :ARG1 c)
+      :duration (j / Jahrzehnt))
+
+# ::id ft_de.3
+# ::snt Toleranz ist sicherlich keine Angst, und Aufrichtigkeit muss keine Feigheit sein .
+(u / und
+      :op1 (a2 / Angst :polarity -
+            :manner (s / sicherlich)
+            :domain (t / Toleranz))
+      :op2 (m / müssen-01 :polarity -
+            :ARG2 (f / Feigheit
+                  :domain (a3 / Aufrichtigkeit))))
+
+# ::id ft_de.4
+# ::snt Die feierliche und großartige Haltung stellt eine heilige Friedenserwartung dar .
+(d / darstellen-01
+      :ARG0 (p / Haltung
+            :mod (s / feierlich)
+            :mod (m / großartig))
+      :ARG1 (f / Friedenserwartung
+            :mod (h / heilig)))
+
+# ::id ft_de.5
+# ::snt Doch wo kommt Frieden her, wenn man keine Kraft hat?
+(c / contrast-01
+      :ARG1 (k / kommen-01
+            :ARG1 (f / Frieden)
+            :ARG3 (a / amr-unknown)
+      :ARG2 (k2 / Kraft :polarity -)))
+
+# ::id ft_de.6
+# ::snt Hier habe ich ein Gedicht in klassischer Ci-Form komponiert , um die Sehnsüchte meines Herzens auszudrücken .
+(k / komponieren-01
+      :ARG0 (i / ich)
+      :ARG1 (g / Gedicht)
+      :mod (h / hier)
+      :mod (c / Ci-Form
+            :mod (k2 / klassisch))
+      :purpose (a / ausdrücken-01
+            :ARG0 i
+            :ARG1 (s / Sehnsucht
+                  :poss (h2 / Herz
+                        :poss i))))
+
+# ::id ft_de.7
+# ::snt Die tiefroten Lippen malen
+(m / malen-01
+      :ARG1 (l / Lippe
+            :mod (t / tiefrot)))
+
+# ::id ft_de.8
+# ::snt Einhundert Jahre Unbeständigkeit .
+(t / temporal-quantity :quant 100
+      :unit (j / Jahr)
+      :mod (u / Unbeständigkeit))
+
+# ::id ft_de.9
+# ::snt Rauch und Wolken jagen die fliegenden Wellen .
+(j / jagen-01
+  :ARG0 (u / und
+          :op1 (r / Rauch)
+          :op2 (w / Wolken))
+  :ARG1 (w2 / Wellen
+          :ARG1-of (f / fliegen-01)))
+
+# ::id ft_de.10
+# ::snt Der jüngste Bruder immer noch in zarter Jugend .
+(j / Jugend
+      :mod (z / zart)
+      :time (i / immer-noch)
+      :domain (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (b / Bruder
+                        :ARG1-of (h2 / have-degree-91
+                              :ARG2 (j2 / jung)
+                              :ARG3 (a / am-meisten))))))
+
+# ::id ft_de.11
+# ::snt Den Blick auf die Flagge gerichtet .
+(r / richten-01
+      :ARG1 (b / Blick)
+      :ARG2 (f / Flagge))
+
+# ::id ft_de.12 
+# ::snt Unsere Waffen schwenkend und nach Osten überqueren .
+(u / und
+      :op1 (s / schwenken-01
+            :ARG1 (w / Waffe
+                  :poss (w2 / wir)))
+      :op2 (ü / überqueren-01
+            :ARG1 (o / Osten
+                  :path (n / nach))))
+
+# ::id ft_de.13
+# ::snt Lasst die Pferde aus dem Pazifik trinken .
+(l / lassen-01 :mode imperative
+      :ARG0 (d / du)
+      :ARG1 (t / trinken-01
+            :ARG0 (p / Pferd)
+            :ARG2 (o / ocean
+                  :name (n / name :op1 "Pazifik"))))
+
+# ::id ft_de.14
+# ::snt 26. Juni 2002
+(d / date-entity
+      :month 6
+      :day 26
+      :year 2002)
+
+# ::id ft_de.15
+# ::snt Warum kämpfen wir nicht gegen das kleine Japan ?
+(c / cause-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (k / kämpfen-01 :polarity -
+            :ARG0 (w / wir)
+            :ARG1 (c2 / country :name (n / name :op1 "Japan")
+                  :mod (k2 / kleine))))
+
+# ::id ft_de.16
+# ::snt Sie tanzen uns sogar auf der Nase herum .
+(t / tanzen-01
+      :ARG0 (s / sie)
+      :mod (s2 / sogar)
+      :ARG1 (n / Nase
+            :poss s)
+      :manner (h / herum))
+
+# ::id ft_de.17
+# ::snt Ist dies immer noch das , was mutige Chinesen tun ?
+(t / tun-01
+      :ARG0 (p / person
+            :mod (c / country :name (n / name :op1 "China"))
+            :mod (m / mutig))
+      :ARG1 (d / dies)
+      :polarity (a / amr-unknown)
+      :mod (i / immer
+            :mod (n2 / noch)))
+
+# ::id ft_de.18
+# ::snt Das Leben unserer Bürger ist derzeit viel zu sorglos ! Die Beamten sind zu extravagant .
+(m / multi-sentence
+      :snt1 (s / sorglos
+            :domain (l / Leben
+                  :poss (b / Bürger
+                        :poss (w / wir)))
+            :time (d / derzeit))
+      :snt2 (e / extravagant
+            :mod (z / zu)
+            :domain (p / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG2 (o / official)))))
+
+# ::id ft_de.19
+# ::snt Ich komme nur vorbei .
+(k / kommen-01
+      :ARG1 (i / ich)
+      :mod (n / nur)
+      :ARG4 (v / vorbei))
+
+# ::id ft_de.20
+# ::snt Die ganze Gesellschaft ist so , ganz zu schweigen von den Stars
+(ä / ähneln-01
+      :ARG1 (g / Gesellschaft
+            :mod (g2 / ganze)
+            :mod (s / so)
+            :ARG2-of (s2 / schweigen-01
+                  :ARG1 (s3 / Star))))
+
+# ::id ft_de.21
+# ::snt Ihr Leben sieht herrlich aus .
+(a / aussehen-01
+      :ARG0 (l / Leben
+            :ARG0 (s / sie :polite +))
+      :ARG1 (h / herrlich))
+
+# ::id ft_de.22
+# ::snt Sie wollen Geld , nicht das Gesicht .
+(c / contrast-01
+      :ARG1 (w / wollen-01
+            :ARG0 (s / sie)
+            :ARG1 (g / Geld))
+      :ARG2 (w2 / wollen-01 :polarity -
+            :ARG1 (g2 / Gesicht)))
+
+# ::id ft_de.23
+# ::snt Es ist in Ordnung , solange es etwas zu essen gibt :Lieblichkeit:
+(i / in-Ordnung
+      :domain (e / es)
+      :condition (s / solange
+            :op1 (s2 / geben-02
+                  :ARG1 (d / Ding 
+                        :mod (e2 / essen-01))))
+      :mod (l / Lieblichkeit))
+
+# ::id ft_de.24
+# ::snt Hör auf über andere zu reden und benimm dich .
+(u / und
+      :op1 (a / aufhören-01 :mode imperative
+            :ARG0 (d / du)
+            :ARG1 (r / reden-01
+                  :ARG0 d
+                  :ARG1 (p / Person
+                        :mod (a2 / andere))))
+      :op2 (b / benehmen-01 :mode imperative
+            :ARG0 d))
+
+# ::id ft_de.25
+# ::snt Mehr Leid versteckt hinter einem glamourösen Aussehen , dies ist eine unbestreitbare Tatsache .
+(v / verstecken-01
+      :ARG1 (l / leiden-01
+            :quant (m / more))
+      :location (h / hinter 
+            :op1 (a / aussehen-01
+                  :mod (g / glamourös)))
+      :ARG1-of (b / bestreiten-01 :polarity -
+            :domain (t / Tatsache)))
+
+# ::id ft_de.26
+# ::snt Beide nehmen , was sie brauchen .
+(n / nehmen-01
+      :ARG0 (b / beide)
+      :ARG1 (d / Ding
+            :ARG1-of (b2 / brauchen-01
+                  :ARG0 b)))
+
+# ::id ft_de.27
+# ::snt Sie sind die Menschen der unteren neun Berufe .
+(m / Menschen
+      :domain (s / sie)
+      :source (b / Beruf :quant 9
+            :mod (u / untere)))
+
+# ::id ft_de.28
+# ::snt Diese Stars tun nur so , eigentlich haben sie alle ein verdammt besseres Leben .
+(c / contrast-01
+      :ARG1 (t / tun-01
+            :ARG0 (p / person
+                  :mod (s / Star)
+                  :mod (d / diese))
+            :mod (n / nur)
+            :mod (s2 / so))
+      :ARG2 (h / haben-02
+            :mod (e / eigentlich)
+            :ARG0 p 
+                  :mod (a / alle)
+            :ARG1 (l / Leben
+                  :mod (v / verdammt)
+                  :ARG1-of (h2 / have-degree-91
+                        :ARG2 (g / gut)
+                        :ARG3 (m / mehr)))))
+
+# ::id ft_de.29
+# ::snt Das sehe ich auch so, nur billige Unterhalter . Ihr Ruf im ländlichen China macht irgendwie Sinn .
+(m / multi-sentence
+      :snt1 (s / sehen-01
+            :ARG0 (i / ich)
+            :ARG1 (d / das)
+            :mod (s2 / so
+                  :mod (a / auch))
+            :ARG2 (p / person
+                  :ARG0-of (u / unterhalten-01)
+                  :mod (n / nur)
+                  :mod (b / billig)))
+      :snt2 (m2 / machen-01
+            :ARG0 (r / Ruf
+                  :poss p)
+            :degree (i2 / irgendwie)
+            :ARG1 (s3 / Sinn
+            :location (c2 / country :name (n2 / name :op1 "China")
+                  :mod (l / ländliche)))))
+
+# ::id ft_de.30
+# ::snt Stimme zu !
+(z / zustimmen-01 :mode imperative
+      :ARG0 (d / du))
+
+# ::id ft_de.31
+# ::snt Na ja , es ist nicht einfach , Schauspielerin zu sein .
+(s / sein-01
+      :ARG1 (p / Person
+            :ARG0-of (s2 / schauspielern-01))
+      :mod (n / na-ja)
+      :mod (e / einfach :polarity -))
+
+# ::id ft_de.32 
+# ::snt Sie haben es verdient . Sie sind selbst schuld .
+(m / multi-sentence
+      :snt1 (v / verdienen-01
+            :ARG0 (s / sie)
+            :ARG1 (e / es))
+      :snt2 (s2 / schuldig-00
+            :ARG0 (s3 / sie)
+                 :mod (s4 / selbst)))
+
+# ::id ft_de.33
+# ::snt Es dämmerte mir , nichts ist leicht !
+(d / dämmern-00
+      :ARG1 (l / leicht-00
+            :ARG1 (n / nichts))
+      :ARG2 (i / ich))
+
+# ::id ft_de.34
+# ::snt Braawwkkk !
+(b / brawk :mode expressive)
+
+# ::id ft_de.35
+# ::snt Es hat nicht lange gedauert .
+(d / dauern-01
+      :ARG0 (e / es)
+      :ARG1 (l / lange :polarity -
+            :ARG1 e))
+
+# ::id ft_de.36
+# ::snt Route 288 , die Umgehungsstraße um den südwestlichen Quadranten der New Urban Region von Richmond , wurde Ende 2004 eröffnet .
+(e / eröffnen-01
+      :ARG1 (h / highway
+            :name (n / name :op1 "Route" :op2 288)
+            :mod (s / Straße
+                  :direction (u / umgehen-01
+                        :op1 (q / Quadrant
+                              :part-of (c / country-region
+                                    :name (r2 / name :op1 "Richmond" :op2 "New" :op3 "Urban" :op4 "Region"))
+                              :mod (s2 / südwest)))))
+      :time (e2 / ende
+            :op1 (d / date-entity :year 2004)))
+
+# ::id ft_de.37
+# ::snt Die Anzahl der Geschwindigkeitsüberschreitungen und Unfälle ist ebenfalls stark angestiegen :
+(a / ansteigen-01
+    :ARG1 (a2 / Anzahl
+            :ARG1 (u / und     
+                :op1 (ü / überschreiten-01
+                        :ARG0 (g / Geschwindigkeit))
+                :op2 (u2 / Unfall)))
+    :mod (e / ebenfalls))
+
+# ::id ft_de.38
+# ::snt Wo ist Homer Simpson , wenn man ihn braucht ?
+(b / be-located-at-91
+      :ARG1 (p / person :name (h / name :op1 "Homer" :op2 "Simpson"))
+      :ARG2 (a / amr-unknown)
+      :time (n / brauchen-01
+            :ARG0 (d / du)
+            :ARG1 p))
+
+# ::id ft_de.38
+# ::snt Das ist ein großer " D'oh ! " - Moment .
+(m / moment
+      :mod (g / groß)
+      :domain (d / das)
+      :mod (d2 / doh :mode expressive))
+
+# ::id ft_de.39
+# ::snt Und damit schaffen sie Verkehrsstaus an neuen Orten .
+(u / und
+      :op2 (s / schaffen-01
+            :ARG0 (s2 / sie)
+            :ARG1 (s3 / Stau
+                  :mod (v / Verkehr
+                  :location (o / Ort
+                        :mod (n / neu))))))
+
+# ::id ft_de.40
+# ::snt Was mich daran überrascht , ist , wie schnell das passiert .
+(s / überraschen-01
+      :ARG0 (i / ich)
+      :mod (d / daran)
+      :ARG1 (p / passieren-01
+            :manner (s2 / schnell)))
+
+# ::id ft_de.41
+# ::snt Selbst ich dachte , es würde eine Verzögerung von drei oder vier Jahren geben .
+(d / denken-01
+      :ARG0 (i / ich)
+      :ARG1 (w / würde-00
+            :ARG1 (g / geben-01
+                  :ARG1 (v / Verzögerung
+                        :time (o / oder
+                              :op1 (t / temporal-quantity
+                                    :quant 3
+                                    :unit (j / Jahr))
+                              :op2 (t2 / temporal-quantity
+                                    :quant 4
+                                    :unit (j2 / Jahr))))))
+      :mod (s / selbst))
+
+# ::id ft_de.42
+# ::snt Hier ist eine weitere Prognose :
+(v / vorhersagen-01
+      :location (h / hier)
+      :mod (w / weitere))
+
+# ::id ft_de.43
+# ::snt Danke für gar nichts .
+(d / danken-01
+  :ARG0 (i / ich)
+  :ARG2 (n / nichts)
+        :mod (g / gar))
+
+# ::id ft_de.44
+# ::snt Ich denke , wir hätten die 400 Millionen Dollar anderswo sinnvoller nutzen können .
+(d / denken-01
+      :ARG0 (i / ich)
+      :ARG1 (m / möglich-00
+            :ARG1 (n / nutzen-01
+                  :ARG0 (w / wir)
+                  :ARG1 (a / anderswo)
+                  :ARG3 (m2 / monetary-quantity :quant 400000000
+                        :unit (d2 / dollar))
+                  :ARG1-of (h / have-degree-91
+                        :ARG2 (s / sinnvoll)
+                        :ARG3 (m3 / mehr)))))
+
+# ::id ft_de.45
+# ::snt Ich glaube nicht , dass die Route 288 die Schuld trägt an der Erschaffung dieser Leute .
+(d / denken-01 :polarity -
+      :ARG0 (i / ich)
+      :ARG1 (t / tragen-01
+            :ARG0 (r2 / route :name (n / name :op1 "288"))
+            :ARG1 (s / schuldig-00
+                  :ARG1 (e / erschaffen-01
+                        :ARG1 (l / Leute
+                              :mod (d2 / dieser))))))
+
+# ::id ft_de.46
+# ::snt Wenn es genug von ihnen gibt , um neue Verkehrsstaus an neuen Orten zu schaffen , was ist dann die Alternative?
+(a / Alternative
+      :domain (a2 / amr-unknown)
+      :condition (g / geben-02
+            :mod (g2 / genug)
+            :ARG1 (s / sie)
+            :purpose (e / erschaffen-01
+                  :ARG0 s
+                  :ARG1 (s2 / Stau
+                        :mod (v / Verkehr)
+                        :location (o / Ort
+                              :mod (n2 / neu))))))
+
+# ::id ft_de.47
+# ::snt Zusätzliche Verkehrsstaus an alten Orten ?
+(s / stauen-01
+      :ARG0 (v / Verkehr)
+      :location (o / Orten
+            :mod (a / alte))
+      :mod (z / zusätzliche)
+      :polarity (a2 / amr-unknown))
+
+# ::id ft_de.48
+# ::snt Jetzt verstehen Sie , wie sich Leute wie TMT in Fairfax fühlen .
+(v / verstehen-01
+      :ARG0 (d / du :polite +)
+      :ARG1 (f / fühlen-01
+                  :ARG0 (p2 / person
+                        :example (p / person :name (n / name :op1 "TMT")
+                              :location (c / city :name (n2 / name :op1 "Fairfax")))))
+      :time (j / jetzt))
+
+# ::id ft_de.49
+# ::snt Ich würde normalerweise die Pro-Straßen-Position einnehmen -
+(b / bevorzugen-01
+      :ARG1 (e / einnehmen-01
+                  :ARG0 (i / ich)
+                  :ARG1 (p / Position
+                        :mod (s / Straße)
+                        :mod (p2 / Pro))
+                  :mod (n / normalerweise)))
+
+# ::id ft_de.50
+# ::snt Nehmen wir mal eine Stadt wie Richmond , wo es praktisch keinen Verkehr gibt .
+(n / nehmen-01
+      :mode conclusive
+      :ARG0 (w / wir)
+      :ARG0 (c / city :name (r / name :op1 "Richmond")
+            :location (v / Verkehr :polarity -
+                  :mod (p / praktisch))))
+
+# ::id ft_de.51
+# ::snt Die Hauptverkehrszeit dauert 30 Minuten...
+(d / dauern-01
+      :ARG1 (h / Verkehrszeit
+            :mod (h2 / Haupt))
+      :ARG2 (t / temporal-quantity :quant 30
+            :unit (m / Minuten)))
+
+# ::id ft_de.52
+# ::snt Und sie bekommen eine Umgehungsstraße durch ein weitgehend ländliches Gebiet .
+(u / und
+      :op2 (b / bekommen-01
+            :ARG0 (s / sie)
+            :ARG1 (s2 / Straße
+                  :mod (u2 / umgehen-02)
+                  :path (g / Gebiet
+                        :mod (l / ländlich
+                              :mod (w / weitgehend))))))
+
+# ::id ft_de.53
+# ::snt Eine Straße nach nirgendwo...
+(s / Straße
+      :destination (n / nirgendwo))
+
+# ::id ft_de.54
+# ::snt Vielen Dank, dass Sie alle uns geholfen haben .
+(d / danken-01
+      :degree (v / viele)
+      :ARG1 (h / helfen-01
+            :ARG0 (d2 / du :polite +
+                  :mod (a / alle))))
+
+# ::id ft_de.55
+# ::snt Hat aber leider nicht viel gebracht .
+(h / have-concession-91
+      :mode conclusive
+      :ARG1 (b / bringen-01 :polarity -
+            :degree (v / viel)))
+
+# ::id ft_de.56
+# ::snt Es ist immer das gleiche alte Problem .
+(p / Problem
+      :domain (e / es)
+      :mod (a / alte)
+      :time (i / immer))
+
+# ::id ft_de.57
+# ::snt Wenn man dem Bedarf voraus ist , muss man sich den Vorwurf gefallen lassen , verschwenderisch zu sein .
+(g / gefallenlassen-00
+      :ARG0 (m / man)
+      :ARG1 (v / vorwerfen-01
+            :ARG1 m
+            :ARG2 (v2 / verschwenderisch))
+      :condition (v3 / voraussein-00
+            :ARG1 m
+            :ARG2 (b / Bedarf)))
+
+# ::id ft_de.58
+# ::snt Wenn man dort baut , wo der Bedarf bereits akut ist , bekommt man zu hören , dass man sich keinen Weg aus dem Stau heraus bauen könne .
+(b / bekommen-01
+      :ARG0 (m / man)
+      :ARG1 (h / hören-01
+            :ARG1 (p / können-01 :polarity -
+                  :ARG1 (p2 / bauen-01
+                        :ARG0 m
+                        :ARG1 (w / Weg    
+                              :path (s / Stau
+                                    :mod (h2 / heraus)))
+      :condition (b2 / bauen-01
+            :ARG0 m
+            :location (b3 / Bedarf
+                        :time (a / akut
+                              :mod (b4 / bereits))))))))
+
+# ::id ft_de.59
+# ::snt Das ist ein guter Punkt .
+# ::save-date Fri Oct 13, 2017 ::file wb_eng_0003_45.txt
+(p / Punkt
+      :domain (d / das)
+      :mod (g / gut))
+
+# ::id ft_de.60
+# ::snt 5:26 spricht einen wichtigen Punkt an .
+# ::save-date Fri Oct 13, 2017 ::file wb_eng_0003_46.txt
+(a / ansprechen-01
+      :ARG0 (p / person :name (n / name :op1 "5:26"))
+      :ARG1 (p2 / Punkt 
+            :mod (w / wichtig)))
+
+# ::id ft_de.61
+# ::snt Was ist der Zweck von verkehrsbezogenen Ausgaben ?
+(h / have-purpose-91
+      :ARG1 (d / Ding
+            :ARG1-of (a / ausgeben-01
+                  :mod (v / verkehrsbezogen)))
+      :ARG2 (a2 / amr-unknown))
+
+# ::id ft_de.62
+# ::snt In Virginia sollen davon Privatunternehmen profitieren , aber nicht die Öffentlichkeit .
+(c / contrast-01
+      :ARG1 (e / ermöglichen-01
+            :ARG1 (p / profitieren-01
+                  :ARG0 (u / Unternehmen
+                        :mod (p2 / privat)
+                        :location (s2 / state :name (n / name :op1 "Virginia")))))
+      :ARG2 (ö / Öffentlichkeit :polarity -))
+
+# ::id ft_de.63
+# ::snt Ihr liegt alle komplett daneben .
+(l / legen-01
+      :ARG1 (i / ihr
+            :mod (a / alle))
+      :ARG2 (d / daneben))
+
+# ::id ft_de.64
+# ::snt TMT : Ich verstehe Ihren Standpunkt nicht .
+(s / sagen-01
+      :ARG0 (i / ich)
+      :ARG1 (u / verstehen-01 :polarity -
+            :ARG0 i
+            :ARG1 (s2 / Standpunkt
+                  :poss (i2 / ihr)))
+      :ARG2 (p / person :name (n / name :op1 "TMT")))
+
+# ::id ft_de.65
+# ::snt Alles andere ist nur Geschwätz .
+(g / Geschwätz
+      :domain (a / alles
+            :mod (a2 / andere)))
+
+# ::id ft_de.66
+# ::snt Ich denke , beide sind so eng miteinander verwoben , dass sie praktisch ein und dasselbe sind .
+(d / denken-01
+      :ARG0 (i / ich)
+      :ARG1 (v / verwoben-00
+            :ARG1 (b / beide)
+            :mod (e / eng
+                  :degree (s / so))
+            :ARG0-of (c / cause-01
+                  :ARG1 (d2 / dasselbe
+                        :domain (s2 / sie
+                              :mod (p / praktisch))))))
+
+# ::id ft_de.67
+# ::snt Offensichtlich gibt es lokale Probleme , so wie es eben immer der Fall ist ,
+(g / geben-01
+      :ARG1 (p / Problem
+            :mod (l / lokal))
+      :mod (o / offensichtlich)
+      :manner (f / Fall
+            :mode conclusive
+            :time (i / immer)))
+
+# ::id ft_de.68
+# ::snt Ich stimme zu .
+(z / zustimmen-01
+      :ARG0 (i / ich))
+
+# ::id ft_de.69
+# ::snt In der Tat kann alleine dieser Grund schon ausreichen , um sie zu bauen .
+(k / können-01
+      :mod (i / in-der-Tat)
+      :ARG1 (a / ausreichen-01
+            :ARG0 (g / Grund
+                  :mode (c / conclusive)
+                  :mod (b / bauen-01
+                        :ARG1 (s2 / sie))
+                  :domain (d / dieser))
+            :mod (a2 / alleine)))
+
+# ::id ft_de.70
+# ::snt Ich möchte lediglich sagen , dass dieselbe Logik auch für den Straßenbau gelten soll :
+(m / möchte-01
+      :ARG0 (i / ich)
+      :ARG1 (s / sagen-01
+                  :ARG1 (v / verpflichten-01
+                        :ARG1 (g / gelten-02
+                              :ARG1 (l2 / Logik
+                                    :mod (d / dieselbe)))
+                              :ARG2 (b / bauen-01
+                                    :location (s3 / Straße))))
+      :mod (l / lediglich))
+
+# ::id ft_de.71
+# ::snt Wir brauchen mehr Orte , um näher an das Gleichgewicht heranzukommen , das wir Ihrer Meinung nach benötigen .
+(b / brauchen-01
+      :ARG0 (w / wir)
+      :ARG1 (o / Ort
+            :mod (m / mehr))
+      :purpose (h / herankommen-01
+            :ARG1 w
+            :mod (n / näher)
+            :ARG2 (g / Gleichgewicht
+                  :ARG1-of (b2 / benötigen 
+                        :purpose (m2 / Meinung
+                              :poss (i / ihr))))))
+
+# ::id ft_de.72
+# ::snt Aber betrachten wir doch mal die Realität hier -
+(c / contrast-01
+      :ARG1 (b / betrachten-01
+            :mode conclusive
+            :ARG0 (w / wir)
+            :mod (m / mal)
+            :ARG1 (r / Realität))
+      :location (h / hier))
+
+# ::id ft_de.73
+# ::snt Ich fahre jeden Morgen und Abend an Watkins Landing vorbei .
+(f / fahren-01
+      :ARG0 (i / ich)
+      :path (v / vorbei
+            :op1 (f2 / facility :name (n / name :op1 "Watkins" :op2 "Landing")))
+      :frequency (r / rate-entity-91
+            :ARG4 (u / und
+                  :op1 (d / date-entity
+                        :dayperiod (m / Morgen))
+                  :op2 (d2 / date-entity
+                        :dayperiod (a / Abend)))))
+
+# ::id ft_de.74
+# ::snt Ich pendle hin und her, um auf dem Huguenot Trail zu arbeiten .
+(p / pendeln-01
+      :ARG0 (i / ich)
+      :ARG1 (u / und
+            :op1 (h / hin)
+            :op2 (h2 / her))
+      :purpose (a / arbeiten-01
+                  :location (r / road :name (h3 / name :op1 "Huguenot" :op2 "Trail"))))
+
+# ::id ft_de.75
+# ::snt Sie denken vielleicht, das ist keine rationale Landnutzung darstellt .
+(d / denken-01
+      :ARG0 (d2 / du :polite +)
+      :ARG1 (n / nutzen-01
+            :ARG1 (l / Land)
+            :manner (r / rational :polarity -)
+            :domain (d3 / das))
+      :mod (v / vielleicht))
+
+# ::id ft_de.76
+# ::snt Ich habe keine Lust , in einer Stadt zu leben .
+(l / lust-haben-00 :polarity -
+  :ARG0 (i / ich)
+  :ARG1 (l2 / leben-01
+          :location (s / Stadt))) 
+
+# ::id ft_de.77
+# ::snt ich werde nie in einer Innenstadt arbeiten .
+(a / arbeiten-01 :polarity -
+  :ARG0 (i / ich)
+  :time (n / nie)
+  :location (i2 / Innenstadt))
+
+# ::id ft_de.78
+# ::snt und zufälligerweise MAG ich große Parkplätze .
+(u / und
+      :op1 (m / mögen-01
+            :ARG0 (i / ich)
+            :ARG1 (p / Platz
+                        :mod (p2 / parken-01)
+                        :mod (g / große)))
+            :mod (z / zufälligerweise))
+
+# ::id ft_de.79
+# ::snt Benzinpreise könnten auf bis zu 10 USD pro Gallone steigen
+(k / können-01
+      :ARG1 (s / steigen-02
+            :ARG1 (b / Benzin
+                  :quant (v / volume-quantity :quant 1
+                        :unit (g / gallon)))
+            :mod (b2 / bis-zu)
+            :ARG2 (m / monetary-quantity :quant 10
+                  :unit (u / USD))))
+
+# ::id ft_de.80
+# ::snt und ich würde immer noch dafür zahlen, auf dem Land leben zu können .
+(c / contrast-01
+      :op2 (z / zahlen-01
+            :ARG0 (i / ich)
+            :ARG3 (k / können-01
+                  :ARG1 (l / leben-01
+                        :ARG0 i
+                        :location (l2 / Land))))
+            :mod (i2 / immer
+                  :mod (n / noch)))
+
+# ::id ft_de.81
+# ::snt Diese Verliebtheit in das Stadtleben finde ich wirklich merkwürdig .
+(f / finde-02
+      :ARG0 (i / ich)
+      :ARG1 (v / verlieben-01
+            :ARG1 (l / Leben
+                  :mod (s / Stadt)
+                  :mod (d / dieses)))
+      :ARG2 (m / merkwürdig
+            :mod (w / wirklich)))
+
+# ::id ft_de.82
+# ::snt Anonymous 6:37 , Sie haben natürlich das Recht , auf dem Land zu leben , wenn Sie möchten .
+(s / sagen-01 :polite +
+      :ARG1 (h / haben-01
+            :ARG1 p
+            :ARG2 (r / Recht
+                  :mod (l / leben-01)
+                        :location (l2 / Land))
+            :mod (n / natürlich)
+            :condition (m / möchten-01 :polite +
+                  :ARG0 p))
+      :ARG2 (p / person :name (n2 / name :op1 "Anonymous" :op2 "6:37")))
+
+# ::id ft_de.83
+# ::snt Ich bin 24 Jahre alt und Mutter eines zweieinhalbjährigen Kindes .
+(u / und
+      :op1 (i / ich
+            :age (t / temporal-quantity :quant 24
+                  :unit (j2 / Jahr)))
+      :op2 (h / have-rel-role-91
+            :ARG0 i
+            :ARG1 (k / Kind
+                  :age (t3 / temporal-quantity :quant 2.5
+                              :unit (j / Jahr)))
+            :ARG2 (m / Mutter)))
+
+# ::id ft_de.84
+# ::snt Ich und der Vater meines Sohnes sind seit August getrennt .
+(t / trennen-01
+      :ARG1 (i / ich)
+      :ARG3 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 i
+                              :ARG2 (s3 / Sohn)))
+                  :ARG2 (v / Vater)))
+      :time (s2 / seit
+            :op1 (d / date-entity :month 8)))
+
+# ::id ft_de.85
+# ::snt Ich möchte , dass er auch ohne mich für seinen Sohn da ist .
+(m / möchten-01
+      :ARG0 (i / ich)
+      :ARG1 (e / er
+            :location (d / da
+                  :beneficiary (p / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 e
+                              :ARG2 (s / Sohn)))))
+      :mod i :polarity -
+            :mod (a / auch))
+
+# ::id ft_de.86
+# ::snt Ich möchte nicht , dass er nicht für seinen Sohn da ist , weil er ein guter Vater ist oder es zumindest versucht .
+(m / möchten-01 :polarity -
+      :ARG0 (i / ich) 
+      :ARG1 (e / er
+            :location (d / da :polarity -
+                  :beneficiary (p / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 e
+                              :ARG2 (s / Sohn)))))
+      :ARG1-of (c / cause-01
+            :ARG0 (o / oder
+                  :op1 (h3 / have-rel-role-91
+                        :ARG0 e
+                        :ARG2 (f / Vater
+                              :mod (g / guter)))
+                  :op2 (v / versuchen-01
+                        :mod (z / zumindest)))))
+
+# ::id ft_de.87
+# ::snt Ich glaube , jedes Kind braucht beide Eltern , egal ob sie zusammen sind oder nicht .
+(g / glaube-01
+      :ARG0 (i / ich)
+      :ARG1 (b / brauchen-01
+            :ARG0 (k / Kind
+                  :mod (j / jedes))
+            :ARG1 (p / person
+                  :mod (b2 / beide)
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 k
+                        :ARG2 (e / Eltern)))
+            :concession (o / oder
+                  :op1 (z / zusammen
+                        :domain p)
+                  :op2 (z2 / zusammen :polarity -
+                        :domain p))))
+
+# ::id ft_de.88
+# ::snt Aber er denkt , wenn er mich nicht haben kann , dann soll mich eben keiner haben .
+(c / contrast-01
+      :ARG2 (d / denken-01
+            :ARG0 (e / er)
+            :ARG1 (k / ermöglichen-01
+                  :ARG1 (h / haben-01 :polarity -
+                        :ARG0 (k2 / keiner)
+                        :ARG1 (i / ich))
+                  :condition (e3 / ermöglichen-01 :polarity -
+                        :ARG1 (h2 / haben-01
+                              :ARG0 e
+                              :ARG1 i)))))
+
+# ::id ft_de.89
+# ::snt Was soll ich tun , um mit meinem Leben weiterzumachen ?
+(e / empfehlen-01
+      :ARG0 (i2 / ich)
+      :ARG1 (t / tun-01
+            :ARG1 (a / amr-unkown))
+      :purpose (w / weitermachen-01
+            :ARG1 (l / leben
+                  :poss i2)))
+
+# ::id ft_de.90
+# ::snt Sie dürfen ihm nicht nachgeben , sonst könnte die Situation eskalieren .
+(d / dürfen-01
+      :ARG1 (n / nachgeben-00 :polarity -
+            :ARG0 (s / sie)
+            :ARG1 (e / er))
+      :ARG1-of (c2 / cause-01
+            :ARG0 (e2 / eskalieren-01
+                  :ARG1 (s2 / Situation)
+                  :condition (n2 / nachgeben-00
+                        :ARG0 s
+                        :ARG1 e))))
+
+# ::id ft_de.91
+# ::snt Lernen Sie alle möglichen Leute kennen .
+(k / kennenlernen-01 :mode imperative
+      :ARG0 (d / du)
+      :ARG1 (l / Leute
+            :mod (a / alle)
+                  :mod (m / möglich)))
+
+# ::id ft_de.92
+# ::snt Tun Sie das, was Sie möchten .
+(t / tun-01 
+      :ARG0 (d / du :polite +)
+      :ARG1 (d2 / Ding
+            :ARG1-of (m / möchten-01
+                  :ARG0 d)))
+
+# ::id ft_de.93
+# ::snt Ich würde es ihm nicht sagen .
+(e / empfehlen-01
+      :ARG1 (s / sagen-01 :polarity -
+            :ARG0 (i / ich)
+            :ARG2 (e2 / er)))
+
+# ::id ft_de.94
+# ::snt Nicht wegen seiner Drohung - sondern weil Ihr persönliches Leben ihn nichts angeht .
+(c / contrast-01
+      :ARG1 (c2 / cause-01 :polarity -
+            :ARG0 (d / Drohung
+                  :poss (e / er)))
+      :ARG2 (c3 / cause-01
+            :ARG0 (a / angehen-00 :polarity -
+                  :ARG0 h
+                  :ARG1 (l / Leben
+                        :poss (s / sie)))))
+
+# ::id ft_de.95
+# ::snt Können Sie seine Drohungen dokumentieren ? 
+(k / können-01 :polarity (a / amr-unknown)
+      :ARG1 (d / dokumentieren-01
+            :ARG0 (d2 / du :polite +)
+            :ARG1 (d3 / Drohung
+                  :poss (e / er))))
+
+# ::id ft_de.96
+# ::snt Das sollten Sie unbedingt tun .
+(e / empfehlen-01
+      :ARG0 (d / du :polite +)
+      :ARG1-of (t / tun-01
+            :mod (u / unbedingt)))
+
+# ::id ft_de.97
+# ::snt Beantworten Sie seine Anrufe nicht mehr , sondern lassen Sie ihn auf die Mailbox sprechen .
+(c / contrast-01
+      :ARG1 (b / beantworten-01 :mode imperative :polarity -
+            :ARG0 (d / du :polite +)
+            :ARG1 (a / Anruf
+                  :poss (e / er))
+            :mod (m / mehr))
+      :ARG2 (l / lassen-01 :mode imperative
+            :ARG0 d
+            :ARG1 (s / sprechen-01
+                  :ARG0 e
+                  :ARG2 (m2 / Mailbox))))
+
+# ::id ft_de.98
+# ::snt Lassen Sie ihn E-Mails oder SMS schicken .
+(l / lassen-01 :mode imperative
+      :ARG0 (d / du :polite +)
+      :ARG1 (s / schicken-01
+            :medium (u / und
+                  :op1 (e / E-Mail)
+                  :op2 (s2 / SMS))))
+
+# ::id ft_de.99
+# ::snt Bewahren Sie diese Aufzeichnungen auf .
+(a / aufbewahren-01 :mode imperative
+      :ARG0 (d / du)
+      :ARG1 (d2 / Ding
+            :ARG1-of (a2 / aufzeichnen-01)
+            :mod (d3 / diese)))
+
+# ::id ft_de.100
+# ::snt Holen Sie sich einen Anwalt und lassen Sie sich scheiden .
+(u / und
+      :op1 (h / holen-01
+            :ARG0 (d / du :polite +)
+            :ARG1 (p / person
+                  :ARG0-of (h2 / have-rel-role-91
+                        :ARG2 (a2 / Anwalt))))
+      :op2 (s / scheiden-01
+            :ARG0 d))
+
+# ::id ft_de.101
+# ::snt Wenn Sie sich keinen Anwalt leisten können , versuchen Sie es mit kostenlosem Rechtsbeistand .
+# ::save-date Thu Jul 23, 2015 ::file DF-199-194215-653_0484_31.txt
+(v / versuchen-01 
+      :ARG0 (d / du :polite +)
+      :ARG1 (b / Beistand
+            :mod (r / Recht)
+            :mod (k / kostenlose))
+      :condition (k2 / können-01 :polarity -
+            :ARG1 (l / leisten-01
+                  :ARG0 d
+                  :ARG1 (a / Anwalt))))
+
+# ::id ft_de.102
+# ::snt Busfahrer möchten die passende Summe, Kassierer möchten die passende Summe, Essenslieferanten möchten die passende Summe...
+# ::save-date Sun Sep 1, 2013 ::file DF-200-192392-456_1160_1.txt
+(m / möchten-01
+      :ARG0 (u / und
+            :op1 (p / person
+                  :ARG0-of (f / fahren-01
+                        :ARG1 (b / Bus)))
+            :op1 (p2 / person
+                  :ARG0-of (k / kassieren-01))
+            :op3 (p3 / person
+                  :ARG0-of (l / liefern-01
+                        :ARG1 (e / Essen))))
+      :ARG1 (s / Summe
+            :mod (p4 / passend)))
+
+# ::id ft_de.103
+# ::snt Die Leute werden faul .
+# ::save-date Sun Sep 1, 2013 ::file DF-200-192392-456_1160_4.txt
+(w / werden-01
+      :ARG0 (l / leute)
+      :ARG1 (f / faul))
+
+# ::id ft_de.104
+# ::snt Hallo, ich habe im September mit der Uni angefangen , habe mich aber nicht sofort eingewöhnt , wie die meisten Leute .
+# ::save-date Fri Nov 13, 2015 ::file DF-200-192400-625_6304_1.txt
+(m / multi-sentence
+      :snt1 (h / Hallo)
+      :snt2 (c / contrast-01
+            :ARG1 (s / anfangen-01
+                  :ARG0 (i / ich)
+                  :ARG1 (u / Universität)
+                  :time (d / date-entity :month 9))
+            :ARG2 (g / gewöhnen-01 :polarity -
+                  :ARG1 i
+                  :ARG2 u
+                  :time (s2 / sofort)
+                  :ARG1-of (ä / ähneln-01
+                        :ARG2 (p / person
+                              :mod (m2 / meisten))))))
+
+# ::id ft_de.105
+# ::snt Die Universität ließ es viel besser klingen, als es in Wahrheit ist .
+# ::save-date Sat Oct 7, 2017 ::file DF-200-192400-625_6304_7.txt
+(l / lassen-01      
+      :ARG0 (u / Universität)
+      :ARG1 (k / klingen-01
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (b / besser)
+                  :ARG3 (v / viel)
+                  :ARG4 (w / Wahrheit))))
+
+# ::id ft_de.106
+# ::snt Deshalb sind meine Lehrer wütend auf mich.
+# ::save-date Sat Jan 25, 2014 ::file DF-200-192400-625_6344_8.txt
+(h / have-concession-91
+      :ARG1 (p / person
+            :ARG2 (h2 / have-rel-role-91
+                  :ARG1 i2
+                  :ARG2 (l / lehren-01)))
+      :ARG2 (w / wütend-00
+            :ARG2 (i2 / ich)))
+
+# ::id ft_de.107
+# ::snt Aber dann denke ich, dass ich einfach nur selbstsüchtig bin.
+# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_6344_13.txt
+(c / contrast-01
+      :ARG2 (d / denken-01
+            :ARG0 (i / ich)
+            :ARG1 (s / selbstsüchtig
+                  :mode (c2 / conclusive)
+                  :domain i)
+            :mod (d2 / dann)))
+
+# ::id ft_de.108
+# ::snt Aber bestimmt sollte das Leben nicht so schwer sein, oder?
+# ::save-date Fri Jan 8, 2016 ::file DF-200-192400-625_6344_14.txt
+(c / contrast-01
+      :ARG2 (v / verpflichten-01 :polarity -
+            :ARG1 (ä / ähneln-01
+                  :ARG1 (l / leben-01)
+                  :ARG2 (s2 / schwer)
+                        :mod (s3 / so))
+            :mod (b / bestimmt)
+            :polarity (a / amr-unkown)))
+
+# ::id ft_de.109
+# ::snt Es sollte so viel besser sein . 
+# ::save-date Fri Dec 22, 2017 ::file DF-200-192400-625_6344_15.txt
+(e / empfehlen-01
+      :mod (s2 / so)
+      :ARG1 (h / have-degree-91
+            :ARG1 (e2 / es)
+            :ARG2 (b / bessern-01
+                  :ARG1 e2)
+            :ARG3 (v / viel)))
+
+# ::id ft_de.110
+# ::snt Aber ich fühle mich , als hätte ich keine Kontrolle über diese Abwärtsspirale .
+# ::save-date Mon Jan 20, 2014 ::file DF-200-192400-625_6344_16.txt
+(c / contrast-01
+      :ARG2 (f / fühlen-01
+            :ARG0 (i / ich)
+            :ARG1 (ä / ähnlen-01
+                  :ARG2 (k / kontrollieren-01 :polarity -
+                        :ARG0 i
+                        :ARG1 (s / Spirale
+                              :direction (a / abwärts)
+                              :mod (d / diese))))))
+
+# ::id ft_de.111
+# ::snt Und ich weiß nicht mehr , was ich tun soll .
+# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_6344_17.txt
+(u / und
+      :op2 (w / wissen-01 :polarity -
+            :ARG0 (i / ich)
+            :mod (m / mehr)
+            :ARG1 (e / empfehlen-01
+                  :ARG1 (t / tun-01
+                        :ARG0 i))))
+
+# ::id ft_de.112
+# ::snt Danke fürs Lesen !
+# ::save-date Sun Sep 8, 2013 ::file DF-200-192400-625_6344_18.txt
+(d / danken-01
+      :ARG2 (l / lesen-01))
+
+# ::id ft_de.113
+# ::snt Es ist schön, sich mal Luft machen zu können .
+# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_6344_19.txt
+(s / schön
+      :ARG1 (k / können-01
+            :ARG1 (m / machen-01)
+                    :ARG1 (l / Luft)))
+
+# ::id ft_de.114
+# ::snt Du kannst Sie deshalb nicht einweisen lassen .
+# ::save-date Tue Jul 21, 2015 ::file DF-200-192400-625_6344_20.txt
+(k / können-01 :polarity -
+      :ARG1 (l / lassen-01
+            :ARG0 (d / du)
+            :ARG1 (e / einweisen-01
+                  :ARG1 (s / sie)
+                  :ARG1-of (c / cause-01
+                        :ARG0 (d2 / deshalb)))))
+
+# ::id ft_de.115
+# ::snt Hat sie überhaupt eine psychische Krankheitsgeschichte oder eine Diagnose ?
+# ::save-date Sat Sep 23, 2017 ::file DF-200-192400-625_6344_21.txt
+(h / haben-01
+      :ARG0 (s / sie)
+      :ARG1 (o / oder
+            :op1 (g / Geschichte
+                  :mod (k / Krankheit)
+                  :mod (p / psychische))
+            :op2 (d / Diagnose)
+      :mod (ü / überhaupt)
+      :polarity (a / amr-unknown)))
+
+# ::id ft_de.116
+# ::snt Das Leben versucht ständig, Dir Steine in den Weg zu legen .
+# ::save-date Mon Sep 16, 2013 ::file DF-200-192400-625_6344_23.txt
+(v / versuchen-01 
+      :time (s / ständig)
+      :ARG0 (l / leben)
+      :ARG1 (l2 / legen-01
+            :ARG1 (s2 / stein)
+            :location (w / Weg
+                  :poss (d / du))))
+
+# ::id ft_de.117
+# ::snt Wenn es nicht jemand aus der Familie ist, dann ist es ein Außenstehender .
+# ::save-date Wed May 7, 2014 ::file DF-200-192400-625_6344_24.txt
+(h / have-condition-91
+      :ARG1 (a / Außenstender)
+      :ARG2 (j / jemand :polarity -
+            :part-of (f / Familie)))
+
+# ::id ft_de.118
+# ::snt Arbeite hart, wenn Du Dich wirklich befreien willst .
+# ::save-date Thu Oct 8, 2015 ::file DF-200-192400-625_6344_26.txt
+(a / arbeiten
+      :ARG0 (d / du)
+      :mod (h / hart)
+      :condition-of (w / wollen-01
+            :ARG1 (b / befreien-01
+                  :ARG0 d
+                  :mod (w2 / wirklich))))
+
+# ::id ft_de.119
+# ::snt Ich empfehle dringend, mit dem Rauchen anzufangen .
+# ::save-date Fri Dec 15, 2017 ::file DF-200-192400-625_6344_34.txt
+(e / empfehlen-01
+      :ARG0 (i / ich)
+      :ARG1 (a / anfangen-01
+            :ARG1 (r / rauchen-01))
+      :degree (d / dringend))
+
+# ::id ft_de.120
+# ::snt Sie zeigen absolut keinen Respekt .
+# ::save-date Fri Sep 6, 2013 ::file DF-200-192400-625_6677_3.txt
+(z / zeigen-01
+      :ARG0 (s / sie)
+      :ARG1 (r / Respekt :polarity -
+            :mod (a / absolut)))
+
+# ::id ft_de.121
+# ::snt Sag einfach nein .
+# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_6677_7.txt
+(s / sagen-01
+      :ARG0 (d / du)
+      :ARG1 (n / nein)
+      :mod (e / einfach))
+
+# ::id ft_de.122
+# ::snt Fange langsam damit an, wenn Die das anfangs unangenehm ist.
+# ::save-date Sun Jul 26, 2015 ::file DF-200-192400-625_6677_8.txt
+(h / have-condition-91
+      :ARG1 (a / anfangen-01
+            :ARG0 (d / du)
+            :ARG1 (d2 / damit)
+            :manner (l / langsam))
+      :ARG2 (u / unangenehm-00
+            :ARG0 d
+            :mod (d3 / das)
+            :time (a2 / anfangs)))
+
+# ::id ft_de.123
+# ::snt Ich hoffe, das hilft
+# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_7046_18.txt
+(h / hoffen-01
+      :ARG0 (i / ich)
+      :ARG1 (h2 / helfen-01
+            :ARG0 (d / das)))
+
+# ::id ft_de.124
+# ::snt Es ist bequemer für mich .
+# ::save-date Sat Oct 7, 2017 ::file DF-200-192400-625_7200_2.txt
+(b / bequem
+      :domain (e / es)
+      :ARG2-of (h / have-degree-91
+            :ARG1 e
+            :ARG3 (m / mehr))
+      :beneficiary (i / ich))
+
+# ::id ft_de.125
+# ::snt Nun, ich könnte vielleicht Anzeichen für eine Erkrankung im Autismusspektrum haben , aber wer hat nicht ein oder zwei solcher Anzeichen ?
+# ::save-date Sun Sep 15, 2013 ::file DF-200-192400-625_7200_4.txt
+(c / contrast-01
+      :ARG1 (k / können-01
+            :ARG1 (h / haben-01
+                  :ARG0 (i / ich)
+                  :ARG1 (a / Anzeichen
+                        :source (e / Erkrankung
+                              :location (s / Spektrum
+                                          :mod (a2 / Autismus)))))
+                  :mod (v / vielleicht))
+      :ARG2 (h2 / haben-01 :polarity -
+            :ARG0 (a3 / amr-unknown)
+            :ARG1 (o / oder
+                  :op1 (a4 / Anzeichen :quant 1)
+                  :op2 (a5 / Anzeichen :quant 2
+                        :mod (s2 / solcher))))
+      :mod (n / nun))
+
+# ::id ft_de.126
+# ::snt Ihr wisst, was ich meine .
+# ::save-date Tue Mar 10, 2015 ::file DF-200-192400-625_7200_5.txt
+(w / wissen-01
+      :ARG0 (i / ihr)
+      :ARG1 (d / Ding
+            :ARG1-of (m / meinen-01
+                  :ARG0 (i2 / ich))))
+
+# ::id ft_de.127
+# ::snt Kopfschmerzen können ein Symptom eines Hirntumors sein .
+# ::save-date Mon Sep 21, 2015 ::file DF-200-192400-625_7200_7.txt
+(p / können-01
+      :ARG1 (s / Symptom
+            :mod (t / Tumor
+                  :location (h / Hirn))
+            :domain (k / Kopfschmerzen)))
+
+# ::id ft_de.128
+# ::snt Müdigkeit kann auf Leukämie hindeuten .
+# ::save-date Tue Jan 16, 2018 ::file DF-200-192400-625_7200_8.txt
+(k / können-01
+      :ARG1 (h / hindeuten-00
+            :ARG1 (m2 / Müdigkeit))
+            :ARG2 (l / Leukämie))
+
+# ::id ft_de.129
+# ::snt Ich habe Dyspraxie .
+# ::save-date Fri Sep 6, 2013 ::file DF-200-192400-625_7200_14.txt
+(h / habe-01
+      :ARG0 (i / ich)
+      :ARG1 (d / Dyspraxie))
+
+# ::id ft_de.130
+# ::snt Vielleicht leidest Du auch unter Dyspraxie oder hast verkürzte Sehnen .
+# ::save-date Mon Nov 2, 2015 ::file DF-200-192400-625_7200_15.txt
+(m / möglich-00
+      :ARG1 (o / oder
+            :op1 (l / leiden-01
+                  :ARG0 (d / du)
+                  :ARG1 (d2 / Dyspraxie)
+                  :mod (a / auch))
+            :op2 (h / haben-01
+                  :ARG0 (d3 / du)
+                  :ARG1 (s / Sehne
+                        :mod (v / verkürzt)))))
+
+# ::id ft_de.131
+# ::snt Ich würde nicht zu viel in solche zufälligen "Symptome" hineininterpretieren
+# ::save-date Sat Oct 7, 2017 ::file DF-200-192400-625_7200_17.txt
+(h / interpretieren-01 :polarity -
+      :location (h2 / hinein)
+      :ARG0 (i / ich)
+      :ARG2 (s / Symptom
+            :mod (z / zufällige)
+            :mod (s2 / solche))
+      :ARG1-of (h3 / have-quant-91
+            :ARG3 (v / viel
+                  :mod (z2 / zu))))
+
+# ::id ft_de.132
+# ::snt Ich denke jeden Tag darüber nach .
+# ::save-date Fri May 2, 2014 ::file DF-200-192400-625_7557_9.txt
+(d / denken-01
+      :ARG0 (i / ich)
+      :ARG1 (d2 / darüber)
+      :frequency (r / rate-entity-91
+            :ARG 1
+            :ARG2 (t / temporal-quantity :quant 1
+                  :unit (t2 / tag))))
+
+# ::id ft_de.133
+# ::snt Er kümmert sich nur um seine neue Tochter und seine neue Frau, und ich habe keinen Platz in seinem neuen Leben .
+# ::save-date Wed Nov 4, 2015 ::file DF-200-192400-625_7557_12.txt
+(c / contrast-01      
+      :ARG1 (k / kümmern-01
+            :ARG0 (e / er)
+            :mod (n / nur)
+            :ARG1 (u / und
+                  :op1 (p / person
+                        :mod (k2 / kleine)
+                        :mod (n2 / neu)
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 e
+                              :ARG2 (t / Tochter)))
+                  :op2 (p2 / person
+                        :mod (n3 / neu)
+                        :ARG0-of (h3 / have-rel-role-91
+                              :ARG1 h
+                              :ARG2 (f / Frau)))))
+      :ARG2 (h4 / haben-02
+            :ARG0 (i / ich)
+            :ARG2 (p3 / Platz)
+            :location (l / Leben
+                  :poss e
+                  :mod (n4 / neu))))
+
+# ::id ft_de.134
+# ::snt Mein bester Freund starb, als ich 10 war
+# ::save-date Sat Oct 7, 2017 ::file DF-200-192400-625_7557_13.txt
+(s / sterben-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (i / ich)
+                  :ARG2 (f / Freund
+                        :ARG1-of (h2 / have-degree-91
+                              :ARG2 (g / gut)
+                              :ARG3 (a / am-besten))))
+      :time (t / temporal-quantity :quant 10
+            :unit (j / Jahr)
+            :domain i)))
+
+# ::id ft_de.135
+# ::snt Auch meine Mutter ist bipolar, und ich bin depressiv .
+# ::save-date Tue Apr 29, 2014 ::file DF-200-192400-625_7557_15.txt
+(u / und
+      :op1 (b / bipolar
+            :domain (p / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 (i / ich)
+                        :ARG2 (m / Mutter)))
+            :mod (a / auch))
+      :op2 (d / depressiv
+            :domain i))
+
+# ::id ft_de.136
+# ::snt Ich möchte nicht aufhören ,
+# ::save-date Fri May 2, 2014 ::file DF-200-192400-625_7557_16.txt
+(m / möchten-01 :polarity -
+      :ARG0 (i / ich)
+      :ARG1 (a / aufhören-01
+            :ARG0 i))
+
+# ::id ft_de.137
+# ::snt Ich sage es ihm nicht, aber er findet es heraus ,
+# ::save-date Fri May 2, 2014 ::file DF-200-192400-625_7557_19.txt
+(c / contrast-01
+      :ARG1 (s / sagen-01 :polarity -
+            :ARG0 (i / ich)
+            :ARG1 (e / es)
+            :ARG2 (e2 / er))
+      :ARG2 (h / herausfinden-00
+            :ARG0 e2
+            :ARG1 e))
+
+# ::id ft_de.138
+# ::snt ich will ihn nicht verletzen, ich will nicht, dass er sich verletzt
+# ::save-date Wed Dec 3, 2014 ::file DF-200-192400-625_7557_20.txt
+(u / und
+      :op1 (w / wollen-01
+            :ARG0 (i / ich)
+            :ARG1 (h / verletzen-02 :polarity -
+                  :ARG1 (e / er)))
+      :op2 (w2 / wollen-01 :polarity -
+            :ARG0 i
+            :ARG1 (v2 / verletzen-02
+                  :ARG0 e
+                  :ARG1 e)))
+
+# ::id ft_de.139
+# ::snt Was soll ich machen?
+# ::save-date Mon Jan 20, 2014 ::file DF-200-192400-625_7557_21.txt
+(e / empfehlen-01
+      :ARG0 (i / ich)
+      :ARG1 (a / amr-unknown))
+
+# ::id ft_de.140
+# ::snt Danke fürs Lesen
+# ::save-date Mon Jan 20, 2014 ::file DF-200-192400-625_7557_22.txt
+(d / danken-01
+      :ARG0 (i / ich)
+      :ARG1 (l / lesen-01))
+
+# ::id ft_de.141
+# ::snt Nimmst Du Medikamente oder bist Du in Behandlung?
+# ::save-date Sat Sep 23, 2017 ::file DF-200-192400-625_7557_23.txt
+(o / oder 
+      :op1 (n / nehmen-01
+            :ARG0 (d / du)
+            :ARG1 (m / Medikamente))
+      :op2 (g / sein-01
+            :ARG0 d
+            :ARG1 (t / Behandlung))
+      :polarity (a / amr-unknown))
+
+# ::id ft_de.142
+# ::snt Wenn Du mit Leuten sprichst , dann können sie Dir helfen ,
+# ::save-date Sat Sep 7, 2013 ::file DF-200-192400-625_7557_26.txt
+(k / können-01
+      :ARG1 (h / helfen-01
+            :ARG0 (p / Person)
+            :ARG1 (d / du))
+      :condition (t / sprechen-01
+            :ARG0 d
+            :ARG2 p))
+
+# ::id ft_de.143
+# ::snt wenn Du alles in Dich hineinfrisst, wird es wahrscheinlich nur schlimmer werden .
+# ::save-date Tue Jan 23, 2018 ::file DF-200-192400-625_7557_27.txt
+(v / verschlimmern-01
+      :ARG1 a
+      :mod (w / wahrscheinlich)
+      :condition (h / hineinfressen-00
+            :ARG0 (d / du)
+            :ARG1 (a / alles)))
+
+# ::id ft_de.144
+# ::snt Bitte mach das nicht ,
+# ::save-date Wed Sep 18, 2013 ::file DF-200-192400-625_7557_29.txt
+(m / machen-01 :polarity - :mode imperative :polite +
+      :ARG0 (d / du)
+      :ARG1 (d2 / das))
+
+# ::id ft_de.145
+# ::snt es ist schwierig , aber Du schaffst das .
+# ::save-date Sat Jul 25, 2015 ::file DF-200-192400-625_7557_31.txt
+(c / contrast-01
+      :ARG1 (s / schwierig-00
+            :ARG1 (e / es))
+      :ARG2 (s2 / schaffen-01
+            :ARG0 (d / du)
+            :ARG1 e))
+
+# ::id ft_de.146
+# ::snt Und sie erinnern mich auch an meine Stärke . Du kannst es schaffen , meine Rettung bestand darin , Gedichte zu schreiben und ein Tagebuch zu führen .
+(m / multi-sentence
+      :snt1 (u / und
+            :op1 (e / erinnern-01
+                  :ARG0 (i / ich))
+                  :ARG1 (s / sie)
+                  :mod (a / auch)
+                  :ARG2 (s2 / Stärke
+                        :poss i))
+      :snt2 (u2 / und 
+            :op1 (k / können-01
+                  :ARG1 (s3 / schaffen-01
+                        :ARG0 (d / du)
+                        :ARG1 (e2 / es)))
+            :op2 (b / bestehen-01
+                  :ARG1 (r / Rettung
+                        :poss i)
+                  :ARG2 (u3 / und
+                        :op1 (s4 / schreiben-01
+                              :ARG1 (g / Gedicht))
+                        :op2 (f / führen-00
+                              :ARG1 (t / Tagebuch))))))
+
+# ::id ft_de.147
+# ::snt Erinnere dich daran , dass deine Selbstverletzungen nicht definieren , wer du bist .
+(e / erinnern-01 :mode imperative
+      :ARG0 (d / du)
+      :mod (d2 / daran)
+      :ARG1 (d3 / definieren-01 :polarity -
+            :ARG0 (v / Verletzung
+                  :mod (s / selbst)
+                  :poss d)
+            :ARG1 (s2 / sein-01
+                  :domain d)))
+
+# ::id ft_de.148
+# ::snt Du kannst es überwinden .
+(k / können-01
+      :ARG1 (ü / überwinden-01
+            :ARG0 (d / du)
+            :ARG1 (e / es)))
+
+# ::id ft_de.149
+# ::snt Warum bin ich so ?
+(c / cause-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (s / sein-01)
+            :ARG0 (i / ich)
+            :mod (s2 / so))
+
+# ::id ft_de.150
+# ::snt Werde ich verrückt oder so ?
+(o / oder
+      :op1 (v / verrücktwerden-00
+            :ARG1 (i / ich))
+      :op2 (s / so)
+      :polarity (a / amr-unknown))
+
+# ::id ft_de.151
+# ::snt Was kann ich dagegen tun ? 
+(k / können-01
+      :AR1 (t / tun-01
+            :ARG0 (i / ich)
+            :ARG1 (a / amr-unkown)
+            :mod (d / dagegen)))
+
+# ::id ft_de.152
+# ::snt Ich habe das Gefühl , dass ich verloren wäre , wenn ich mein Portemonnaie oder mein Handy verlieren würde .
+(h / haben-01
+      :ARG0 (i / ich)
+      :ARG1 (g / Gefühl)
+      :ARG1-of (h2 / have-condition-91
+            :ARG1 (s / sein-01
+                  :ARG0 i
+                  :ARG1 (v / verloren))
+            :ARG2 (v2 / verlieren-01
+                  :ARG0 i
+                  :ARG1 (o2 / oder
+                        :op1 (p / Portemonnaie
+                              :poss i)
+                        :op2 (h3 / Handy
+                              :poss i)))))
+
+# ::id ft_de.153
+# ::snt Ich wünschte nur , ich könnte aus dem Haus gehen , ohne mir alle zwei Minuten Sorgen zu machen , ob ich etwas vergessen oder verloren habe . 
+(w / wünschen-01
+      :ARG0 (i / ich)
+      :mod (n / nur)
+      :ARG1 (k / können-01
+            :ARG1 (g / gehen-01
+                  :ARG0 i
+                  :location (a / aus
+                        :op1 (h / Haus
+                              :mod (d / dem)))
+                  :manner (s / sorgen-01 :polarity -
+                        :ARG0 i
+                        :ARG1 (o / oder
+                              :op1 (v / vergessen-01
+                                    :ARG0 i
+                                    :ARG1 (e / etwas))
+                              :op2 (v2 / verlieren-01
+                                          :ARG0 i
+                                          :ARG1 e))
+                        :frequency (r / rate-entity-91
+                              :ARG3 (t / temporal-quantity :quant 2
+                                    :unit (m / minute)))))))
+
+# ::id ft_de.154
+# ::snt Ich weiß wirklich nicht , was ich tun soll , und habe Angst , zum Hausarzt zu gehen .
+(u / und
+      :op1 (w / wissen-01 :polarity -
+            :ARG0 (i / ich)
+            :mod (w2 / wirklich)
+            :ARG1 (e / empfehlen-01
+                  :ARG1 (t / tun-01
+                        :ARG0 i)))
+      :op2 (h / haben-01
+            :ARG0 i
+            :ARG1 (a / Angst)
+            :ARG1-of (c / cause-01
+                  :ARG0 (g / gehen-01
+                        :ARG0 i
+                        :ARG1 (h2 / Hausarzt)))))
+
+# ::id ft_de.155
+# ::snt Die haben wahrscheinlich noch nie etwas von einem solchen Zwang gehört und ich weiß einfach nicht , was ich tun soll .
+(u / und
+      :op1 (h / hören-01 :polarity -
+            :mode conclusive
+            :ARG0 (s / sie)
+            :ARG1 (z / Zwang
+                  :mod (s2 / solchen))
+            :time (n / nie)
+            :mod (w / wahrscheinlich))
+      :op2 (w2 / wissen-01 :polarity -
+            :ARG0 (i / ich)
+            :ARG1 (e / empfehlen-01
+                  :ARG1 (t / tun-01
+                        :ARG0 i))
+            :mod (e2 / einfach)))
+
+# ::id ft_de.156
+# ::snt Hat jemand von euch ein ähnliches " Ritual " ?
+(h / haben-01 
+      :polarity (a2 / amr-unknown)
+      :ARG0 (j / jemand
+            :ARG1-of (i / include-91
+                  :ARG2 (i2 / ihr)))
+      :ARG1 (r / Ritual
+            :ARG1-of (ä / ähneln-01)))
+
+# ::id ft_de.157
+# ::snt Welchen Rat könnt Ihr mir geben ?
+(g / können-01
+      :ARG1 (g2 / geben-01
+            :ARG0 (d / du)
+            :ARG1 (i / ich)
+            :ARG2 (r / Rat :mod (a2 / amr-unknown))))
+
+# ::id ft_de.158
+# ::snt Ärzte haben schon viel schlimmere Fälle gesehen , also mache Dir darüber keine Sorgen !
+(s / sehen-01
+      :mode confirming
+      :ARG0 (a / Arzt)
+      :ARG1 (f / Fall
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (s2 / schlimm)
+                  :ARG3 (v / viel))
+            :mod (s3 / schon))
+      :concession (s4 / sorgen-01 :polarity - :mode imperative
+            :ARG0 (d / du)
+            :ARG1 (d2 / darüber)))
+
+# ::id ft_de.159
+# ::snt Manchmal bin ich überzeugt , dass sie nicht abgeschlossen sind , obwohl ich weiß , dass sie es doch sind .
+(c / überzeugen-01
+      :ARG1 (i / i)
+      :ARG2 (a / abschließen-02 :polarity -
+            :ARG1 (s / sie))
+      :time (m / manchmal)
+      :concession (w / wissen-01
+            :ARG0 i
+            :mod (d / doch)
+            :ARG1 a :polarity -))
+
+# ::id ft_de.160
+# ::snt Ich denke , es wird dann ein echtes Problem , wenn die Besessenheit beginnt , Deinen Alltag zu stören .
+(d / denken-01
+      :ARG0 (i / ich)
+      :ARG1 (w / werden-01
+            :ARG1 (e / es)
+            :ARG2 (p / Problem
+                  :mod (e2 / echt)))
+      :condition (b / beginnen-01
+            :ARG0 (b2 / Besessenheit
+            :ARG1 (s / stören-01
+                  :ARG1 (a / Alltag
+                        :poss (d2 / du))))))
+
+# ::id ft_de.161
+# ::snt Du bist aber definitiv nicht verrückt , mach dir keine Sorgen , und dein Hausarzt wird das Problem verstehen , da bin ich mir sicher .
+(u / und
+      :op1 (c / cause-01
+            :ARG0 (m / machen-01 :mode imperative
+                  :ARG0 (d / du)
+                  :ARG1 (s / Sorgen :polarity -))
+            :ARG1 (v / verrückt :polarity -
+                  :domain d
+                        :mod (d2 / definitiv))
+      :op2 (s2 / sicher-sein-00
+            :ARG0 (i / ich)
+            :ARG1 (v2 / verstehen-01
+                  :ARG0 (p / person
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG1 d
+                              :ARG2 (h2 / Hausarzt)))
+                  :ARG1 (p2 / Problem)))))
+
+# ::id ft_de.162
+# ::snt Normalerweise bin ich ziemlich ruhig und nehme die Dinge so , wie sie kommen , und mache mir keine Sorgen .
+(u / und
+      :op1 (r / ruhig
+            :domain (i / ich)
+            :mod (n / normalerweise)
+            :degree (z / ziemlich))
+      :op2 (n2 / nehmen-01
+            :ARG0 i
+            :ARG1 (d / Ding)
+            :manner (k / kommen-01
+                  :ARG0 d)
+      :op3 (w / machen-01
+            :ARG0 i
+            :ARG1 (s / Sorgen :polarity -))))
+
+# ::id ft_de.163
+# ::snt Ich frage mich also, was ich am Besten tun sollte ?
+(f / fragen-01
+      :ARG0 (i / ich)
+      :mod (a / also)
+      :ARG1 (e / empfehlen-01
+            :ARG1 (t / tun-01)
+                  :ARG0 i
+                  :ARG1 (a3 / amr-unkown)
+                  :ARG1-of (h / have-degree-91
+                        :ARG2 (b / besser)
+                        :ARG3 (a2 / am-meisten))))
+
+# ::id ft_de.164
+# ::snt Sollte ich mit einem Arzt darüber sprechen und schauen , ob angstlösende Medikamente dem Problem den Garaus machen können ?
+(e / empfehlen-01
+      :ARG1 (u / und
+            :op1 (s2 / sprechen-01
+                  :ARG0 (i / ich)
+                  :ARG1 (d / darüber)
+                  :ARG2 (a / Arzt))
+            :op2 (s3 / schauen-01
+                  :ARG1 (k / können-01
+                        :ARG0 (m / Medikament
+                              :mod (a2 / angstlösend))
+                        :ARG1 (p / Problem
+                              :mod (d2 / dem)
+                              :ARG1-of (m2 / machen-01
+                                    :ARG1 (g / Garaus))))))
+      :polarity (a3 / amr-unkown))
+
+# ::id ft_de.165
+# ::snt Sollte ich vielleicht mit einem Therapeuten sprechen ?
+(e / empfehlen-01
+      :ARG0 (i / ich)
+      :ARG1 (s2 / sprechen-01
+            :ARG0 i 
+            :ARG1 (p / person
+                        :ARG0-of (t / therapieren-01)))
+      :polarity (a / amr-unknown))
+
+# ::id ft_de.166
+# ::snt Was ich hilfreich finde ist , mit jemandem darüber zu sprechen , was Dich ängstlich macht .
+(h / hilfreich
+      :ARG1-of (f / finden-01
+            :ARG0 (i2 / ich))
+      :mod (s / sprechen-01
+            :ARG0 (j / jemand
+                  :mod (d / darüber))
+            :ARG1 (m / machen-01
+                  :ARG0 (d2 / du)
+                  :ARG1 (ä / ängstlich))))
+
+# ::id ft_de.167
+# ::snt Wenn es jedoch schlimmer wird, dann gehe unbedingt zum Arzt .
+(g / gehen-01 :mode imperative
+      :mod (u / unbedingt)
+      :ARG0 (d / du)
+      :ARG1 (a / Arzt)
+      :condition (v / verschlimmern-01
+            :ARG1 (e / es)))
+
+# ::id ft_de.168
+# ::snt Sie bekam Medikamente und nun geht es ihr viel besser .
+(u / und
+      :op1 (b / bekommen-01
+            :ARG1 (m / Medikament)
+            :ARG2 (s / sie))
+      :op2 (b2 / bessergehen-00
+            :time (n / nun)
+            :ARG0 s
+            :degree (v / viel)))
+
+# ::id ft_de.169
+# ::snt Die Probleme sind seit 4 Jahren ungelöst .
+(l / lösen-01 :polarity -
+      :ARG1 (p / Problem)
+      :duration (t / temporal-quantity :quant 4
+            :unit (j / Jahr)))
+
+# ::id ft_de.170
+# ::snt Vertreter der Agentur erklärten, dass der Plan ein Durchbruch sei .
+(e / erklären-01
+      :ARG0 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (a / Agentur)
+                  :ARG2 (o / official)))
+      :ARG1 (d / Durchbruch
+            :domain (p / Plan)))
+
+# ::id ft_de.171
+# ::snt Georgien ist gebirgig .
+(g / gebirgig
+      :domain (c / country :name (n / name :op1 "Georgien")))
+
+# ::id ft_de.172
+# ::snt Georgien ist eine Rebellenprovinz .
+(p / Provinz
+      :ARG0-of (r / rebellieren-01)
+      :domain (c / country :name (n / name :op1 "Georgia")))
+
+# ::id ft_de.173
+# ::snt Alle entsprechenden Papiere wurden validiert .
+(v / validieren-00
+      :ARG1 (p / Papier
+            :mod (e / entsprechende)
+            :mod (a / alle)))
+
+# ::id ft_de.174
+# ::snt Der Artikel basiert auf dem Abschlussbericht der Generalstaatsanwaltschaft .
+(b / basieren-01
+      :ARG1 (a / Artikel)
+      :ARG2 (b2 / Bericht
+            :mod (a2 / Abschluss)
+            :mod (o / organization :name (n / name :op1 "Attorney" :op2 "General's" :op3 "Office"))))
+
+# ::id ft_de.175
+# ::snt Soldat bei Bombenentschärfung in Kathmandu nach Ablauf des Ausnahmezustands verletzt .
+(v / verletzen-02
+      :ARG0 (b / Bombenentschärfung
+            :location (c / city :name (n / name :op1 "Kathmandu")))
+      :ARG1 (s / Soldat)
+      :time (n2 / nach
+            :op1 (a / Ablauf
+                  :ARG1 (z / Zustand
+                        :mod (a2 / Ausnahme)))))
+
+# ::id ft_de.176
+# ::snt Die getöteten und verwundeten Polizisten befanden sich alle im ersten Fahrzeug .
+(b / befinden-01
+      :ARG1 (u / und
+            :op1 (p / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (p2 / police))
+                  :ARG1-of (t / töten-01))
+            :op2 (p3 / person
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG1 (p4 / police))
+                  :ARG1-of (v / verwunden-01))
+            :mod (a2 / alle))
+      :ARG2 (f / Fahrzeug
+            :ord (o / ordinal-entity :value 1)))
+
+# ::id ft_de.177
+# ::snt Der Fahrer des Fahrzeugs wurde bei dem Hinterhalt ebenfalls getötet .
+(t / töten-01
+      :ARG1 (p / person
+            :ARG0-of (f / fahren-01
+                  :ARG1 (f2 / Fahrzeug)))
+      :ARG2 (h / Hinterhalt)
+      :mod (e / ebenfalls))
+
+# ::id ft_de.178
+# ::snt 5 Polizisten werden noch vermisst .
+(v / vermissen-01
+      :ARG1 (p / person :quant 5
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (p2 / police)))
+      :mod (n / noch))
+
+# ::id ft_de.179
+# ::snt Diese Behauptung hat die iranische Regierung bestritten .
+(b / bestreiten-01
+      :ARG0 (g / government-organization
+            :ARG0-of (r / regieren-01
+                  :ARG1 (c / country :name (n / name :op1 "Iran"))))
+      :ARG1 (b2 / Behauptung
+            :mod (d / diese)))
+
+# ::id ft_de.180
+# ::snt Frankreich ist führend in der Europäischen Weltraumorganisation .
+(f / führen-01
+      :ARG1 (o / organization :name (n / name :op1 "Europäische" :op2 "Weltraumorganisation"))
+      :domain (c2 / country :name (n2 / name :op1 "Frankreich")))
+
+# ::id ft_de.181
+# ::snt Hambali wurde im Februar 2004 und im Jahr 2007 in Thailand festgenommen .
+(f / festnehmen-01
+      :ARG1 (p / person :name (n / name :op1 "Hambali"))
+      :location (c / country :name (n2 / name :op1 "Thailand"))
+      :time (u / und
+            :op1 (d3 / date-entity :year 2004 :month 2)
+            :op2 (d4 / date-entity :year 2007)))
+
+# ::id ft_de.182
+# ::snt Der Nachrichtensender ABS-CBN ist ein lokaler Fernsehsender in Manila .
+(s / Sender
+      :medium (f / Fernsehen
+            :mod (l / lokal)
+            :location (c2 / city :name (n3 / name :op1 "Manila")))
+      :domain (s2 / Sender
+            :mod (n2 / Nachrichten :name (n4 / name :op1 "ABS-CBN"))))
+
+# ::id ft_de.183
+# ::snt China betrachtet Deutschland als wichtigsten Handelspartner in Europa .
+(b / betrachten-01
+      :ARG0 (c2 / country :name (n / name :op1 "China"))
+      :ARG1 (h / have-degree-91
+            :ARG1 (c4 /country :name (n2 / name :op1 "Deutschland"))
+            :ARG2 (w / wichtig
+                  :ARG1 c4)
+            :ARG3 (a / am-meisten)
+            :ARG5 (p / Partner
+                  :mod (h2 / handeln-01)
+                  :location (c3 / continent :name (n3 / name :op1 "Europa")))))
+
+# ::id ft_de.184
+# ::snt Wen erklärte, das Waffenembargo sei ein veraltetes Ergebnis des Kalten Krieges .
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (w / Waffenembargo
+            :ARG0-of (c / cause-01
+                  :ARG1 (e2 / Ergebnis
+                        :mod (v / veraltetes)
+                        :source (w2 / war :name (n2 / name :op1 "Cold" :op2 "War"))))))
+
+# ::id ft_de.185
+# ::snt Wen erklärte , dass China bereit sei , am Wiederaufbauprozess des Iraks teilzunehmen .
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (b / bereit-01
+            :ARG0 (c / country :name (n2 / name :op1 "China"))
+            :ARG1 (t / teilnehmen-01
+                  :ARG0 c
+                  :ARG1 (p2 / Prozess
+                        :ARG1 (w / wiederaufbauen-01
+                              :ARG1 (c2 / country :name (n3 / name :op1 "Iraq")))))))
+
+# ::id ft_de.186
+# ::snt Bundeskanzler Gerhard Schröder nahm am 8. und 9. Oktober 2004 am 5. Asien-Europa-Gipfel in Hanoi teil .
+(t / teilnehmen-01
+      :ARG0 (p / person :name (n / name :op1 "Gerhard" :op2 "Schröder")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :name (n2 / name :op1 "Deutschland"))
+                  :ARG2 (c2 / chancellor)))
+      :ARG1 (a / Asien-Europa-Gipfel
+            :ord (o / ordinal-entity :value 5)
+            :location (c3 / city :name (n4 / name :op1 "Hanoi"))
+            :time (u / und
+                  :op1 (d / date-entity :year 2004 :month 10 :day 8)
+                  :op2 (d2 / date-entity :year 2004 :month 10 :day 9))))
+
+# ::id ft_de.187
+# ::snt Chavalit sagte , er freue sich sehr , den stellvertretenden Vorsitzenden Liu zu treffen .
+(s / sagen-01
+      :ARG0 (p / person :name (n / name :op1 "Chavalit"))
+      :ARG1 (f / freuen-01
+            :ARG0 (t / treffen-01
+                  :ARG0 p
+                  :ARG1 (p2 / person :name (n2 / name :op1 "Liu")
+                        :ARG0-of (h / have-org-role-91
+                              :ARG2 (c / chairman
+                                    :mod (v2 / stellvertretende)))))
+            :ARG1 p
+            :degree (s2 / sehr)))
+
+# ::id ft_de.188
+# ::snt Nach der Unterzeichnungszeremonie beantworteten Kirgisiens Präsident Akajew und Premier Peng Li jeweils Fragen von Reportern .
+(b / beantworten-01
+      :ARG0 (u / und
+            :op1 (p / person :name (n / name :op1 "Akayev")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (c / country :name (n2 / name :op1 "Kirghizia"))
+                        :ARG2 (p2 / Präsident)))
+            :op2 (p3 / person :name (n3 / name :op1 "Peng" :op2 "Li")
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG2 (p4 / premier)))
+            :mod (j / jeweils))
+      :ARG1 (f / Frage
+            :poss (r / Reporter))
+      :time (n4 / nach
+            :op1 (z / Zeremonie
+                  :mod (u2 / unterzeichnen-01))))
+
+# ::id ft_de.189
+# ::snt Akayev lobte die Ergebnisse der Konferenz mit Peng Li deutlich .
+(l / loben-01
+      :ARG0 (p / person :name (n / name :op1 "Akayev"))
+      :ARG1 (e / Ergebnis
+            :source (k / Konferenz
+                        :prep-mit (p2 / person :name (n2 / name :op1 "Peng" :op2 "Li"))))
+      :mod (d / deutlich))
+
+# ::id ft_de.190
+# ::snt Eine japanische Flagge hing an der Bühne des Vorsitzenden .
+(h / hängen-01
+      :ARG1 (f / Flagge
+            :mod (c2 / country :name (n / name :op1 "Japan")))
+      :ARG2 (b / Bühne
+            :poss (p / person
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG2 (c / chairman)))))
+
+# ::id ft_de.191
+# ::snt Sportler , Trainer , Ärzte, Krankenschwestern und Beamte der Delegation saßen dicht unterhalb der Bühne .
+(s / sitzen-01
+      :ARG1 (u / und
+            :op1 (s2 / Sportler)
+            :op2 (p / person
+                  :ARG0-of (t / trainieren-01))
+            :op3 (a / Arzt)
+            :op4 (k / Krankenschwester)
+            :op5 (p2 / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (d2 / delegation)
+                        :ARG2 (b / official))))
+      :location (u2 / unterhalb
+            :op1 (b2 / Bühne))
+      :manner (d / dicht))
+
+# ::id ft_de.192
+# ::snt Eine Atmosphäre des Vertrauens und des Strebens nach Fortschritt erfüllte die Zeremonie .
+(e / erfüllen-01
+      :ARG0 (a / Atmosphäre
+            :mod (u / und
+                  :op1 (v / Vertrauen)
+                  :op2 (s / streben-01
+                        :ARG1 (f / Fortschritt))))
+      :ARG1 (z / Zeremonie))
+
+# ::id ft_de.193
+# ::snt Der stellvertretende Minister des japanischen Sozialministeriums , Souyasen , hielt der Delegation eine " ermutigende Abschiedsrede " .
+(h / halten-01
+      :ARG0 (p / person :name (n / name :op1 "Souyasen")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (g / government-organization
+                        :name (n2 / name :op1 "Sozialministerium")
+                        :mod (c / country :name (n3 / name :op1 "Japan")))
+                  :ARG2 (m / minister
+                        :mod (v / stellvertretende))))
+      :ARG1 (r / Rede
+            :mod (a / Abschied)
+            :mod (e / ermutigen-01))
+      :ARG2 (d3 / Delegation))
+
+# ::id ft_de.194
+# ::snt Die japanische Delegation wird am 2. Februar nach Peking fliegen .
+(f / fliegen-01
+      :ARG1 (d2 / Delegation
+            :mod (c3 / country :name (n / name :op1 "Japan")))
+      :destination (c4 / city :name (n2 / name :op1 "Beijing"))
+      :time (d3 / date-entity :day 2))
+
+# ::id ft_de.195
+# ::snt Der erste Go-Wettbewerb " Le Tian Cup " zwischen China und Korea begann heute in Fushan , der zweitgrößten Stadt Koreas .
+(b / beginnen-01
+      :ARG1 (g / Go-Wettbewerb :name (n / name :op1 "Le" :op2 "Tian" :op3 "Cup")
+            :mod (e / erste)
+            :mod (z / zwischen
+                  :op1 (c / country :name (n2 / name :op1 "China"))
+                  :op2 (c2 / country :name (n3 / name :op1 "Korea")))
+      :location (c3 / city :name (n4 / name :op1 "Fushan")
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (g2 / groß
+                        :ord (o / ordinal-entity :value 2))
+                  :ARG3 (m / mehr)
+                  :ARG5 (c4 / city
+                        :location (c5 / country :name (n5 / name :op1 "Korea")))))
+      :time (h2 / heute)))
+
+# ::id ft_de.196
+# ::snt In der ersten Runde besiegte das chinesische Team das relativ starke koreanische Team mit 4:3 .
+(b / besiegen-01
+      :ARG0 (t / Team
+            :mod (c4 / country :name (n / name :op1 "China")))
+      :ARG1 (t2 / Team
+            :mod (c5 / country :name (n2 / name :op1 "Korea"))
+            :mod (s / stark
+                  :mod (r2 / relativ)))
+      :time (r / Runde
+            :ord (o / ordinal-entity :value 1))
+      :quant (s2 / score-entity :op1 4 :op2 3))
+
+# ::id ft_de.197
+# ::snt Im heutigen Wettbewerb haben beide Seiten jeweils 7 Go-Spieler .
+(h / haben-01
+      :ARG0 (s / Seiten
+            :mod (b / beide)
+            :mod (j / jeweils))
+      :ARG1 (p2 / person :quant 7
+            :ARG0-of (s2 / spielen-01
+                  :ARG1 (g / game :name (n / name :op1 "Go")))))
+
+# ::id ft_de.198
+# ::snt Aus dieser Gruppe erzielten Weiping Nie, Xiaoguang Liu und Hao Chang beide Siege in den mittleren Spielen .
+(e / erzielen-01
+      :ARG0 (u / und
+            :op1 (p / person :name (n / name :op1 "Xiaoguang" :op2 "Liu"))
+            :op2 (p2 / person :name (n2 / name :op1 "Hao" :op2 "Chang"))
+            :op3 (p3 / person :name (n3 / name :op1 "Weiping" :op2 "Nie"))
+            :source (g / Gruppe
+                  :mod (d / dieser)))
+      :ARG2 (s / Sieg
+            :mod (b / beide)
+            :mod (m / mittleren)))
+
+# ::id ft_de.199
+# ::snt Dayuan Cao gewann mit einem Vorsprung von siebeneinhalb „ mu ” .
+(g / gewinnen-01
+      :ARG0 (p / person :name (n / name :op1 "Dayuan" :op2 "Cao"))
+      :manner (v / Vorsprung
+            :mod (m / mu :quant 7.5)))
+
+# ::id ft_de.200
+# ::snt Unter anderem erzielte Xunxuan Cao im mittleren Spiel einen Sieg .
+(e / erzielen-01
+      :ARG1 (p / person :name (n / name :op1 "XunXuan" :op2 "Cao"))
+      :ARG2 (s / Sieg)
+      :ARG3 (s2 / Spiel
+            :mod (m / mittlere))
+      :mod (u / unter-anderem))
+
+# ::id ft_de.201
+# ::snt Changhao Li und Changhe Liu errangen Siege mit einer Führung von sechseinhalb " mu " bzw. siebeneinhalb " mu " .
+(e / erringen-01
+      :ARG0 (u / und
+            :op1 (p / person :name (n / name :op1 "Changhao" :op2 "Li"))
+            :op2 (p2 / person :name (n2 / name :op1 "Changhe" :op2 "Liu")))
+      :ARG1 (s / Sieg
+            :manner (f / Führung
+                  :mod (b / beziehungsweise
+                        :op1 (m / mu :quant 6.5)
+                        :op2 (m2 / mu :quant 7.5)))))
+
+# ::id ft_de.202
+# ::snt Bei einem Telefoninterview mit Reportern stellte Runan Wang , Leiter der chinesischen Delegation , fest , dass die koreanische Mannschaft insgesamt stärker sei als das chinesische Team .
+(f / festellen-01
+      :ARG0 (p / person :name (n / name :op1 "Runan" :op2 "Wang")
+            :mod (l / Leiter
+                  :mod (d / Delegation
+                  :mod (c / country :name (n2 / name :op1 "China")))))
+      :ARG1 (h / have-degree-91
+            :ARG1 (m / Mannschaft
+                  :mod (c2 / country :name (n3 / name :op1 "Korea"))))
+            :ARG2 (s / stark)
+            :ARG3 (m2 / mehr)
+            :ARG4 (t / Team
+                  :mod (c3 / country :name (n4 / name :op1 "China"))
+            :mod (i / insgesamt))
+      :time (i2 / Interview
+            :mod (t2 / telefonieren-01
+                  :ARG1 (r / Reporter))))
+
+# ::id ft_de.203
+# ::snt Das chinesische Team hat sich heute jedoch besser entwickelt und damit den Sieg errungen .
+(u / und
+      :op1 (e / entwickeln-02
+            :ARG0 (t / Team
+                  :mod (c / country :name (n / name :op1 "China")))
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (g / gut)
+                  :ARG3 (m / mehr))
+            :time (h2 / heute))
+      :op2 (e2 / erringen-01
+            :ARG0 t
+            :ARG1 (s / Sieg)
+            :mod (d / damit)))
+
+# ::id ft_de.204
+# ::snt Die Leistung unseres jungen Teilnehmers, Hao Chang, war heute besonders herausragend und er besiegte Fengzhu Xu vom koreanischen Team im mittleren Spiel .
+(u / und
+      :op1 (h / herausragend
+            :mod (b / besonders)
+            :domain (l / Leistung
+                  :mod (p / person 
+                        :name (n / name :op1 "Hao" :op2 "Chang")
+                        :mod (t / teilnehmen-01
+                        :mod (j / jung
+                        :poss (w / wir))))
+            :time (h2 / heute)))
+      :op2 (b2 / besiegen-01
+            :ARG0 p
+            :ARG1 (p2 / person 
+                  :name (n2 / name :op1 "Fenzhu" :op2 "Xu")
+                        :part-of (t2 / Team
+                              :mod (c3 / country :name (n3 / name :op1 "Korea"))))
+            :time (s / Spiel
+                  :mod (m / mittleren))))
+
+# ::id ft_de.205
+# ::snt Fengzhu Xu hat schon viele Meisterschaften bei internationalen Wettbewerben gewonnen.
+# ::save-date Sat Jul 25, 2015 ::file nw_chtb_0322_14.txt
+(g / gewinnen-01
+      :ARG0 (p / person :name (n / name :op1 "Fengzhu" :op2 "Xu"))
+      :ARG1 (m / Meisterschaft
+            :quant (v / viel))
+      :time (s / schon)
+      :part-of (w / Wettbewerb
+            :mod (i / international)))
+
+# ::id ft_de.206
+# ::snt In neun Spielen mit chinesischen Go-Spielern hatte er zuvor den vollständigen Sieg errungen .
+# ::save-date Tue Jul 28, 2015 ::file nw_chtb_0322_15.txt
+(e / erringen-01
+      :ARG0 (e2 / er)
+      :ARG2 (s / Spiel :quant 9)
+      :ARG4 (p / person :mod (c / country :name (n / name :op1 "China"))
+                  :ARG0-of (s2 / spielen-01
+                        :ARG1 (g2 / game :name (n2 / name :op1 "Go"))))
+      :mod (v / vollständig)
+      :time (z / zuvor))
+
+# ::id ft_de.207
+# ::snt Zu Hause trainieren sie meistens in der Halle .
+# ::save-date Mon Oct 23, 2017 ::file nw_chtb_0324_10.txt
+(t / trainieren-01
+      :ARG2 (s / sie)
+      :location (h / Halle)
+      :mod (m / meistens)
+      :location (z / zuhause))
+
+# ::id ft_de.208
+# ::snt Es scheint, als müssten wir häufiger im Freien trainieren . "
+# ::save-date Tue Dec 17, 2013 ::file nw_chtb_0324_11.txt
+(s / scheinen-01
+      :ARG0 (e / es)
+      :ARG1 (m / müssen-01
+            :ARG1 (t / trainieren-01
+                  :ARG0 (w / wir)
+                  :frequency (h / häufiger)
+                  :location (f / Freien))))
+
+# ::id ft_de.209
+# ::snt Er hatte das Gefühl, dass mehr neue Sportler aus unserem Land an diesem Wettbewerb teilnahmen .
+# ::save-date Fri Feb 5, 2016 ::file nw_chtb_0324_12.txt
+(h / haben-01
+      :ARG0 (e / er)
+      :ARG1 (f / fühlen-01
+            :ARG1 (t / teilnehmen-01
+                  :ARG0 (s / Sportler
+                        :quant (m / mehr)
+                        :mod (n / neue)
+                        :source (l / Land
+                              :poss (w / wir)))
+                  :ARG1 (w2 / Wettbewerb
+                        :mod (d / diesem)))))
+
+# ::id ft_de.210
+# ::snt Sie haben noch wenig Erfahrung bei internationalen Wettkämpfen .
+# ::save-date Tue Dec 17, 2013 ::file nw_chtb_0324_13.txt
+(h / haben-01
+      :ARG0 (s / sie)
+      :ARG1 (e / erfahren-02
+            :ARG0 s
+            :ARG1 (w / Wettkampf
+                  :mod (i / international)))
+      :time (n / noch))
+
+# ::id ft_de.211
+# ::snt Der Vorentscheid im Turmspringen vom 10-Meter-Turm der Frauen findet heute Nachmittag statt .
+# ::save-date Tue Dec 17, 2013 ::file nw_chtb_0324_14.txt
+(s / stattfinden-01
+      :ARG1 (v / Vorentscheid
+            :mod (t / Turmspringen)
+                  :mod (d / distance-quantity :quant 10
+                        :unit (m2 / meter))
+                  :mod (f / Frau))
+      :time (d2 / date-entity :dayperiod (n / Nachmittag) :mod (h / heute)))
+
+# ::id ft_de.212
+# ::snt Wenn keine Unfälle auftreten , stehen Ihre Chancen gut , den Hauptwettkampf zu erreichen .
+(s2 / stehen-01
+      :ARG1 (c / Chancen
+            :ARG0 (s / sie)
+            :ARG1 (e / erreichen-01
+                  :ARG0 s
+                  :ARG1 (h2 / Hauptwettkampf)))
+      :mod (g / gut)
+      :condition (a2 / auftreten-01 :polarity -
+                        :ARG0 (u / Unfall)))
+
+# ::id ft_de.213
+# ::snt Den zweiten Platz belegt die Konkurrentin aus den USA , Richard .
+(b / belegen-01
+      :ARG0 (p2 / person :name (n / name :op1 "Richard")
+            :mod (k / Konkurent)
+            :location (c2 / country :name (n2 / name :op1 "United" :op2 "States")))
+      :ARG1 (p3 / position
+            :ord (o2 / ordinal-entity :value 2)))
+
+# ::id ft_de.214
+# ::snt Sie erzielte 303,00 Punkte .
+(e / erzielen-01
+    :ARG1 (s / sie)
+    :ARG2 (p / Punkt :quant 303.00))
+
+# ::id ft_de.215
+# ::snt Insgesamt nahmen 12 Teams am Wettbewerb teil . 
+(t / teilnehmen-01
+      :mod (i / insgesamt)
+      :ARG0 (t2 / Team :quant 12)
+      :ARG1 (w / Wettbewerb))
+
+# ::id ft_de.216
+# ::snt 17 Unfälle wurden bisher in diesem Jahr in der Nähe der Kreuzung der Winterfield Road gemeldet , im Jahr 2004 waren es 12 .
+(c / contrast-01
+      :ARG1 (m / melden-01
+            :ARG1 (u / Unfall :quant 17
+                  :location (n / nähe
+                        :op1 (k / Kreuzung
+                              :location (r2 / road :name (w / name :op1 "Winterfield" :op2 "Road")))))
+            :time (b / bisher
+                  :mod (j / Jahr
+                        :mod (d / dieses))))
+      :ARG2 (u2 / Unfall :quant 12
+            :time (d2 / date-entity :year 2004)))
+
+# ::id ft_de.217
+# ::snt Dale Totten , Resident Engineer beim Virginia Department of Transportation (VDOT), stellte fest , dass VDOT die Straße für etwa 13 Millionen Dollar vierspurig ausbauen würde , wenn sie mehr Geld hätte .
+(f / feststellen-01
+      :ARG0 (p / person :name (n / name :op1 "Dale" :op2 "Totten")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (g / government-organization :name (n2 / name :op1 "Virginia" :op2 "Department" :op3 "of" :op4 "Transportation"))
+                  :ARG2 (e / engineer
+                        :mod (r / resident))))
+      :ARG1 (a / ausbauen-01
+            :ARG0 g
+            :ARG1 (s / Straße
+                  :ARG1-of (k / kosten-01
+                        :ARG2 (e2 / etwa
+                              :op1 (m / monetary-quantity :quant 13000000
+                                    :unit (d2 / Dollar)))))
+            :ARG2 (s2 / Spur :quant 4)
+            :condition (h / haben-01
+                  :ARG0 g
+                  :ARG1 (g2 / Geld
+                        :mod (m2 / mehr)))))
+
+# ::id ft_de.218
+# ::snt Natürlich hat VDOT kein Geld mehr für den Straßenbau in der Region Richmond .
+(h / haben-01 :polarity -
+      :ARG0 (g / government-organization :name (v / name :op1 "VDOT"))
+      :ARG1 (g2 / Geld
+            :purpose (b / bauen-01
+                  :ARG1 (s / Straße
+                        :location (r3 / region :name (r / name :op1 "Richmond")))))
+      :mod (n / natürlich))
+
+# ::id ft_de.219
+# ::snt Ein Grund dafür ist , dass VDOT auf Geheiß lokaler Politiker und Lobbyisten sein verdammtes Geld für 288 ausgegeben hat !
+(c / cause-01
+      :ARG0 (a / ausgeben-01 :mode expressive
+            :ARG0 (g / government-organization :name (v / name :op1 "VDOT"))
+            :ARG1 (r / road :name (n / name :op1 "288"))
+            :ARG3 (g2 / Geld
+                  :poss g
+                  :mod (v2 / verdammte))
+            :ARG1-of (c2 / cause-01
+                  :ARG0 (u / und
+                        :op1 (p / Politiker)
+                        :op2 (l / Lobbyist)
+                        :mod (l2 / lokal)))))
+
+# ::id ft_de.220
+# ::snt Wie wir vorhergesagt haben , führt die Route 288 in den dünn besiedelten Gebieten rund um ihre Ausfahrten zu neuen Wohngebieten , die die lokalen Landstraßen überfordern .
+(f / führen-01
+      :ARG0 (r2 / road :name (r / name :op1 "Route" :op2 288))
+      :ARG1 (b / besiedeln-01
+            :ARG1 (g / Gebiet)
+            :degree (d / dünn)
+            :direction (r3 / rund
+                  :op1 (a / Ausfahrt
+                        :poss r2
+                        :direction (w / Wohngebiet
+                              :mod (n / neu)
+                              :ARG0-of (ü / überfordern-01
+                                    :ARG1 (l / Landstraße
+                                          :mod (l2 / lokal)))))))
+      :manner (v / vorhersagen-01
+            :ARG0 (w2 / wir)))
+
+# ::id ft_de.221
+# ::snt Während der Highway mit begrenztem Zugang für Menschen , die zwischen den Landkreisen Chesterfield und Goochland pendeln , eine begrenzte Verkehrsentlastung bieten mag, treffen andere Menschen Entscheidungen darüber , wo sie leben und arbeiten .
+(c / contrast-01
+      :ARG1 (c2 / entscheiden-01
+            :ARG0 (m / Mensch
+                  :mod (a / andere))
+            :ARG1 (u / und
+                  :op1 (w / wo
+                        :location-of (l / leben-01
+                              :ARG0 p))
+                  :op2 (w2 / wo
+                        :location-of (l2 / arbeiten-01
+                              :ARG0 p))))
+      :ARG2 (e / ermöglichen-01
+            :ARG1 (b / bieten-01
+                  :ARG0 (h / Highway)
+                  :ARG1 (v / Verkehrsentlastung
+                        :mod (b2 / begrenzt))
+                  :ARG2 (p2 / person
+                        :ARG0-of (p3 / pendeln-01
+                              :ARG1 (z / zwischen
+                                    :op1 (c3 / county :name (c6 / name :op1 "Chesterfield"))
+                                    :op2 (c4 / county :name (g3 / name :op1 "Goochland"))))))))
+
+# ::id ft_de.222
+# ::snt Für die Superschlauen, die die Route 288 für eine großartige Idee hielten :
+(h / have-purpose-91
+      :ARG1 (s / Superschlau) 
+      :ARG2 (h2 / halten-03
+            :ARG0 s
+            :ARG1 (i / Idee
+                  :mod (g / großartige)
+                  :domain (r2 / road :name (r / name :op1 "Route" :op2 288)))))
+
+# ::id ft_de.223
+# ::snt aber bei dem eklatanten Bedarf in anderen Teilen des Staates , war die Route 288 definitiv zu viel...
+(c / contrast-01
+      :ARG2 (e / Bedarf
+            :mod (e2 / eklatante)
+            :location (t / Teil
+                  :mod (a / andere)
+                  :part-of (s / Staat))
+            :ARG0-of (c2 / cause-01
+                  :ARG1 (h / have-quant-91
+                        :ARG2 (v / viel)
+                        :ARG3 (z / zu)
+                        :degree (d / definitiv))
+                        :domain (r / road :name (n2 / name :op1 288)))))
+
+# ::id ft_de.224
+# ::snt Kein Geringerer als Walter Stoch erklärte , daß das Geld für 288 aus dem Topf für wirtschaftliche Entwicklung bezahlt werden sollte .
+(e / erklären-01
+      :ARG0 (p / person :name (w / name :op1 "Walter" :op2 "Stoch")
+            :mod (g / geringerer :polarity -))
+      :ARG1 (e2 / empfehlen-01
+            :ARG1 (p2 / bezahlen-01
+                  :ARG1 (g2 / Geld
+                        :location (t / Topf
+                              :purpose (e3 / Entwicklung
+                                    :mod (w2 / wirtschaftliche))))
+                  :ARG3 (r / road :name (n / name :op1 288)))))
+
+# ::id ft_de.225
+# ::snt Kommt schon , Leute !!
+(k / kommen-01
+      :mode confirmation-seeking
+      :ARG0 (i / ihr)
+      :ARG1 (l / Leute))
+
+# ::id ft_de.226
+# ::snt Wann haben Sie das letzte Mal im Verkehr festgesteckt , als Sie nicht auf dem Weg zu oder von einem Geschäftstermin waren ?
+(f / feststecken-00
+      :ARG1 (d / du :polite +)
+      :ARG2 (v / Verkehr)
+      :time (a / amr-unknown
+            :mod (l / letzte
+                  :mod (m / mal))
+            :time-of (o / oder 
+                  :op1 (g / gehen-01 :polarity -
+                        :ARG0 d
+                        :ARG4 (t / Termin
+                              :mod (g2 / Geschäft)))
+                  :op2 (g3 / gehen-01 :polarity -
+                        :ARG0 d
+                        :ARG3 t))))
+
+# ::id ft_de.227
+# ::snt Ich habe den Eindruck , dass der Sinn von Straßen darin besteht , private Unternehmen einfacher zu erreichen .
+(h / haben-01
+      :ARG0 (i / ich)
+      :ARG1 (e / Eindruck
+            :purpose (s2 / Straße
+                  :ARG0-of (e2 / erreichen-02
+                        :ARG2 (u / Unternehmen
+                              :mod (p / private))
+                        :mod (e3 / einfacher)))))
+
+# ::id ft_de.228
+# ::snt Dann gibt es natürlich den Sonntagsausflug , die Fahrt zur Oma und zu Fußballspielen , aber der Hauptgrund besteht darin , Unternehmen zu fördern .
+(c / contrast-01
+      :ARG1 (g / geben-01
+            :ARG1 (u / und
+                  :op1 (a / Ausflug
+                        :mod (s / Sonntag)))
+                  :op2 (f / Fahrt
+                        :destination (p2 / person
+                              :ARG0-of (h / have-rel-role-91
+                                    :ARG2 (g2 / Oma))))
+                  :op3 (p / person
+                        :ARG0-of (s2 / spielen-01
+                              :ARG1 (f2 / Fußball))))
+      :ARG2 (h2 / Hauptgrund
+            :ARG1-of (b / bestehen-01
+                  :ARG2 (f3 / fördern-01
+                        :ARG1 (u2 / Unternehmen)))))
+
+# ::id ft_de.229
+# ::snt Da unsere Ausgaben für den Straßenverkehr nicht annähernd mit dem Anstieg des Geschäftsvolumens oder des staatlichen Inlandsprodukts mithalten , ist es kein Wunder , dass wir Engpässe erleben .
+(e / erleben-01
+      :ARG0 (w / wir)
+      :ARG1 (e2 / Engpass)
+      :domain (w2 / Wunder :polarity -)
+      :ARG1-of (c / cause-01
+            :ARG0 (m / mithalten-00
+                  :ARG1 (a / Ausgaben
+                        :purpose (s / Straßenverkehr))
+                  :ARG2 (o / oder
+                        :op1 (a2 / Anstieg
+                              :source (g / Geschäftsvolumen)))
+                        :op2 (i / Inlandsprodukt
+                              :mod (s2 / staatliche))
+                  :mod (a3 / annähernd :polarity -))))
+
+# ::id ft_de.230
+# ::snt Wenn wir erkennen , dass Straßen primär Unternehmen zugute kommen , sollten wir zwei Dinge tun :
+(e / empfehlen-01
+      :ARG1 (t / tun-01
+            :ARG0 (w / wir)
+            :ARG1 (t2 / thing
+                  :quant 2))
+      :condition (e2 / erkennen-01
+                  :ARG0 w
+                  :ARG1 (n / nützen-01
+                        :ARG0 (s / Straße)
+                        :ARG1 (u / Unternehmen)
+                        :mod (p / primäre))))
+
+# ::id ft_de.231
+# ::snt Warum ist das so schwer zu verstehen ?
+(v / verstehen-01
+      :ARG1 (e / es)
+      :manner (s / schwer
+            :degree (s2 / so))
+      :ARG1-of (c / cause-01
+            :ARG0 (a / amr-unknown)))
+
+# ::id ft_de.232
+# ::snt Die Lösung sind funktionale menschliche Siedlungsmuster und ein Gleichgewicht zwischen Verkehrskapazität und Verkehrsanforderungen durch Landnutzung .
+(u / und
+      :op1 (p / Muster
+            :mod (s2 / siedeln-01
+            :mod (m / menschliche)
+            :mod (f / funktionale)))
+      :op2 (g / Gleichgewicht
+            :consist-of (z / zwischen
+                  :op1 (k / Kapazität
+                        :mod (v / Verkehr))
+                  :op2 (a / Anforderung
+                        :mod (v2 / Verkehr)
+                        :source (l / Landnutzung))))
+      :domain (l2 / Lösung))
+
+# ::id ft_de.233
+# ::snt Meiner Meinung nach ist dies eine schändliche Situation , die nicht toleriert werden sollte .
+(m / Meinung
+  :poss (i / ich)
+  :topic (n / nach
+      :example (s / Situation
+            :domain (d / dies)
+            :mod (s2 / schändlich))
+            :ARG1-of (t / tolerieren-01 :polarity -
+                  :ARG1-of (e / empfehlen-01))))
+
+# ::id ft_de.234
+# ::snt Ich verstehe den Sinn dieser Aussage nicht , weil sie private Unternehmen zu verteufeln scheint und das öffentliche Interesse über alles andere stellt .
+(v / verstehen-01 :polarity -
+      :ARG0 (i / ich)
+      :ARG1 (a / Aussage
+            :mod (d / dieser))
+      :ARG0-of (c / cause-01
+            :ARG1 (u / und
+                  :op1 (s / scheinen-01
+                        :ARG1 (u2 / Unternehmen
+                              :mod (p / private)
+                              :ARG1-of (v2 / verteufeln-00
+                                    :ARG0 (s2 / sie)))))
+                  :op2 (s3 / stellen-01
+                        :ARG0 s
+                        :ARG1 (i2 / Interesse
+                              :mod (ö / öffentliche))
+                        :ARG2 (ü / über
+                              :op1 (a2 / alles
+                                    :mod (a3 / andere))))))
+
+# ::id ft_de.235
+# ::snt Aber wenn wir die Unternehmen lange genug verteufeln , werden wir irgendwann merken , dass wir alle für den Teufel arbeiten .
+(h / have-condition-91
+      :ARG1 (v / verteufeln-00
+            :ARG0 (w / wir)
+            :ARG1 (u / Unternehmen)
+            :duration (l / lange
+                  :mod (g / genug))
+            :ARG0-of (c / cause-01))
+      :ARG2 (m / merken-01
+            :ARG0 w
+            :ARG1 (a / arbeiten-01
+                  :ARG0 w
+                  :ARG2 (t / Teufel))
+            :time (i / irgendwann)))
+
+# ::id ft_de.236
+# ::snt Selbst Sie finden die Bahnverbindung nach Dulles positiv , weil Dulles ein Jobcenter ist , das die bidirektionale Nachfrage auf der Schiene fördert .
+(f / finden-02
+      :ARG0 (d / du :polite +)
+      :ARG1 (b2 / Bahnverbindung
+            :destination (a / airport :name (d2 / name :op1 "Dulles")))
+      :ARG2 (p / positiv)
+      :ARG1-of (c / cause-01
+            :ARG0 (j / Jobcenter
+                  :domain a
+                  :ARG0-of (f2 / fördern-01
+                        :ARG1 (n / nachfragen-01
+                              :ARG1 (n2 / Nachfrage)
+                                    :mod (b / bidirektionale))
+                        :location (a2 / auf
+                              :op1 (s / Schiene))))))
+
+# ::id ft_de.237
+# ::snt Ich habe noch nie irgendetwas gesehen , was auch nur im Entferntesten einer " Verkehrsflut " nahe gekommen wäre .
+(s / sehen-01 :polarity -
+      :ARG0 (i / ich)
+      :ARG1 (i2 / irgendetwas 
+            :ARG1-of (ä / ähneln-01
+                  :ARG2 (f / Flut
+                        :ARG2 (v / Verkehr))
+                  :degree (i3 / im-Entferntesten
+                        :mod (n2 / nur))))
+      :time (n / nie))
+
+# ::id ft_de.238
+# ::snt Route 288 ist super für diejenigen von uns , die sie tatsächlich nutzen - anstatt durch Straßenmangel an den Engstellen Powhatan und Western Chesterfield festzustecken .
+(c / constrast-01
+      :ARG0 (s / super
+            :domain (r / road :name (x / name :op1 288))
+            :beneficiary (d / diejenigen
+                  :part-of (w / wir)
+                  :ARG0-of (n / nutzen-01
+                        :ARG1 r)))
+      :ARG1 (s2 / stecken-01
+            :ARG0 (s3 / Straßenmangel)
+            :ARG2 (e / Engstelle
+                  :location (u / und
+                        :op1 (c3 / county :name (p / name :op1 "Powhatan"))
+                        :op2 (w4 / west :part-of (c2 / county :name (c4 / name :op1 "Chesterfield")))))
+            :mod (f / fest)))
+
+# ::id ft_de.239
+# ::snt Wir können tatsächlich eine kommerzielle Entwicklung erhalten und trotzdem in der Lage sein , näher an unserem Wohnort zu arbeiten .
+(u / und
+      :op1 (k / können-01
+            :ARG1 (e / erhalten-02 
+                  :ARG0 (w2 / wir)
+                  :ARG1 (e2 / Entwicklung
+                        :mod (k2 / kommerzielle))
+                  :mod (t / tatsächlich)))
+      :op2 (e3 / ermöglichen-01
+            :concession (h / have-degree-91
+                  :ARG1 (a / arbeiten-01
+                        :ARG0 w2)
+                  :ARG2 (c2 / näher
+                        :location (w3 / Wohnort
+                              :poss w2)
+                  :ARG3 (m / mehr)))))
+
+# ::id ft_de.240
+# ::snt Sie sollten Ziele an beiden Enden haben , damit wir aus unserer Investition maximalen Nutzen ziehen können :
+(e / empfehlen-01
+      :ARG1 (h / haben-01
+            :ARG0 s
+            :ARG1 (z / Ziel
+                  :location (e2 / Ende
+                        :mod (b / beide))))
+      :ARG2 (s / sie)
+      :purpose (e3 / ermöglichen-01
+            :ARG1 (n / nutzen-01)
+                  :ARG0 (w / wir)
+                  :ARG1 (i / Investition
+                        :poss w)
+                  :degree (m / maximal)))
+
+# ::id ft_de.241
+# ::snt Viele Menschen haben legitime Vorlieben - Pferde , Jagd , Gartenarbeit , bestimmte Arten von Kleinunternehmen - weshalb sie NICHT in einem städtischen Kern leben möchten .
+(h / haben-03
+      :ARG0 (p2 / Mensch
+            :mod (v / viele))
+      :ARG1 (v2 / Vorliebe
+            :consist-of (u / und
+                  :op1 (p / Pferd)
+                  :op2 (j / jagen-01)
+                  :op3 (a / arbeiten-01
+                        :location (g / Garten))
+                  :op4 (k / Kleinunternehmen
+                        :mod (a2 / Art
+                              :mod (b / bestimmte)))))
+      :ARG0-of (c / cause-01
+            :ARG1 (m / möchten-01 :polarity -
+                  :ARG0 p2
+                  :ARG1 (l / leben-01
+                        :ARG0 p2
+                        :location (c3 / Kern
+                              :mod (s / städtische))))))
+
+# ::id ft_de.242
+# ::snt Außerdem würden Senator Chichester und seine Lemminge dies noch verschlimmern , indem sie noch mehr Geld in diese fehlerhafte Institution stecken würden .
+(v / verschlimmern-01
+      :ARG0 (u / und
+            :op1 (p / person :name (n / name :op1 "Chichester")
+                        :ARG0-of (h / have-org-role-91
+                              :ARG2 (s / senator)))
+            :op2 (l / Lemming
+                  :poss p))
+      :ARG1 (d / dies)
+      :ARG2 (e / ermöglichen-01
+            :ARG1 (s2 / stecken-01
+                  :ARG0 u
+                  :ARG1 (g / Geld
+                        :mod (m / mehr)))
+                  :ARG2 (i / Institution
+                        :mod (f / fehlerhafte
+                              :mod (d2 / diese))))
+      :mod (a / außerdem
+            :mod (n2 / noch)))
+
+# ::id ft_de.243
+# ::snt 19.12.2004
+(d / date-entity :day 19 :month 12 :year 2004)
+
+# ::id ft_de.244
+# ::snt Hong Kong (HK) ; China (CN)
+(u / und
+      :op1 (c / city :name (n / name :op1 "Hong" :op2 "Kong"))
+      :op2 (c2 / country :name (n2 / name :op1 "China")))
+
+# ::id ft_de.245
+# ::snt technology ; international
+(u / und
+      :op1 (t / Technologie)
+      :op2 (i / International))
+
+# ::id ft_de.246
+# ::snt Die Universitäten Hongkongs arbeiten mit Universitäten , Unternehmen und Regierungssektoren auf dem chinesischen Festland zusammen , um Ausbildungsprogramme und Forschungszentren zu koordinieren sowie um Hightech-Forschung , Kommerzialisierung und Technologietransfer zu fördern .
+(z / zusammenarbeiten-01
+      :ARG0 (u / Universität
+            :mod (c2 / city :name (n / name :op1 "Hong" :op2 "Kong")))
+      :ARG1 (u2 / und
+            :op1 (u3 / Universität
+                  :mod (f / Festland
+                        :part-of (c3 / country :name (n2 / name :op1 "China"))))
+            :op2 (u4 / Unternehmen
+                  :mod f)
+            :op3 (s / Sektor
+                  :mod (g / government-organization
+                        :ARG0-of (r / regieren-01))
+                  :mod f))
+      :purpose (k / koordinieren-01
+            :ARG1 (u5 / und
+                  :op1 (p / Programm
+                        :mod (a / Ausbildung))
+                  :op2 (c5 / Zentrum
+                        :mod (f2 / Forschung)))
+                  :op3 (f3 / fördern-01
+                        :ARG1 (u6 / und
+                              :op1 (f4 / Forschung
+                                    :mod (h / Hightech))
+                              :op2 (k2 / Kommerzialisierung)
+                              :op2 (t2 / Transfer
+                                    :mod (t3 / Technologie))))))
+
+# ::id ft_de.247
+# ::snt Im Jahr 2004 trugen die tertiären Institute in Hongkong aktiv zur Verbesserung der Beziehungen zwischen Hongkong und Festlandchina bei der Erforschung und Entwicklung von Hochtechnologie bei .
+(b / beitragen-01
+      :ARG0 (i / Institut 
+            :mod (t / tertiäre)
+            :location (c2 / city :name (n / name :op1 "Hong" :op2 "Kong")))
+      :ARG2 (v / verbessern-01
+            :ARG1 (b2 / Beziehung
+                  :mod (z / zwischen
+                        :op1 c2
+                        :op2 (f / Festland
+                              :part-of (c3 / country :name (n2 / name :op1 "China"))))
+                  :topic (u / und
+                        :op1 (e / erforschen-01
+                              :ARG1 (h / Hochtechnologie))
+                        :op2 (d2 / entwickeln-01
+                              :ARG1 h))))
+      :time (d / date-entity :year 2004)
+      :manner (a / aktiv))
+
+# ::id ft_de.248
+# ::snt Die Universitäten in Hongkong haben mit tertiären Bildungseinrichtunge , Unternehmen und Regierungssektoren auf dem chinesischen Festland zusammengearbeitet , um Ausbildungsprogramme und Forschungszentren zur Förderung der Kommerzialisierung von Forschung und des Technologietransfers zu leiten .
+(z / zusammenarbeiten-01
+      :ARG0 (u / Universität
+            :mod (c5 / city :name (n2 / name :op1 "Hong" :op2 "Kong")))
+      :ARG1 (u2 / und
+            :op1 (e / Einrichtung
+                  :mod (b / bilden-01
+                        :mod (t / tertiäre)))
+            :op2 (u3 / Unternehmen)
+            :op3 (s3 / Sektor
+                  :mod (g / government-organization
+                        :ARG0-of (r / regieren-01)))
+            :location (f / Festland
+                  :part-of (c2 / country :name (n / name :op1 "China"))))
+      :purpose (l / leiten-01
+            :ARG0 u
+            :ARG1 (u4 / und
+                  :op1 (p / Programm
+                        :mod (a / ausbilden-01))
+                  :op2 (z2 / Zentrum
+                        :mod (f2 / forschen-01)))
+            :ARG2 (f3 / fördern-01
+                  :ARG0 u4
+                  :ARG1 (u5 / und
+                        :op1 (k / Kommerzialisierung
+                              :source (f4 / forschen-01))
+                        :op3 (t3 / Transfer
+                              :mod (t4 / Technologie))))))
+
+# ::id ft_de.249
+# ::snt Im Juni 2004 schloss sich die Polytechnische Universität Hongkong (PolyU) dem nationalen Universitätspark für Wissenschaft und Technologie des Virtuellen Universitätsparks in Shenzhen , China , an und wurde somit die erste Hochschule in Hongkong, die Forschungszentren und Ausbildungseinrichtungen auf dem chinesischen Festland einrichtet .
+(a / anschließen-01
+      :ARG0 (u / university :name (n / name :op1 "Hong" :op2 "Kong" :op3 "Polytechnische" :op4 "Universität"))
+      :ARG1 (p / Park
+            :mod (u2 / Universität)
+            :poss (f2 / facility :name (n3 / name :op1 "Virtuellen" :op2 "Universitätspark")
+                  :location (c / city :name (n4 / name :op1 "Shenzhen")
+                        :location (c2 / country :name (n5 / name :op1 "China"))))
+            :mod (s / Wissenschaft)
+            :mod (n2 / national)
+            :mod (t / Technologie))
+      :time (d / date-entity :year 2004 :month 6)
+      :mod (w / werden-01
+            :ARG1 u
+            :ARG2 (h / Hochschule
+                  :location (c4 / city :name (n6 / name :op1 "Hong" :op2 "Kong"))
+                  :ord (o / ordinal-entity :value 1)
+                  :ARG0-of (e2 / einrichten-01
+                        :ARG1 (u3 / und
+                              :op1 (z / Zentrum
+                                    :mod (f / forschen-01))
+                              :op2 (e / Einrichtung
+                                    :mod (a2 / ausbilden-01)))
+                        :location (f4  / Festland
+                              :part-of c2)))))
+
+# ::id ft_de.250
+# ::snt Der Präsident der PolyU , Poon Chung-Kwong , erklärte , dass sowohl der öffentliche als auch der private Sektor in Hongkong die Beziehungen zu Festlandchina in verschiedenen Bereichen stärken .
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Poon" :op2 "Chung-kwong")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (u / university :name (n2 / name :op1 "PolyU"))
+                  :ARG2 (p2 / president)))
+      :ARG1 (s2 / stärken
+            :instrument (u2 / und
+                  :op1 (s3 / Sektor
+                        :mod (ö / öffentliche))
+                  :op2 (s4 / Sektor
+                        :mod (p3 / private))
+            :location (c / city :name (n3 / name :op1 "Hong" :op2 "Kong")))
+            :beneficiary (b / Beziehung
+                  :mod (z / zu
+                        :op1 (f / Festland
+                              :part-of (c3 / country :name (n4 / name :op1 "China")))
+                        :op2 (b2 / Bereich
+                              :mod (v / verschiedene))))))
+
+# ::id ft_de.251
+# ::snt Poon erläuterte, dass die Zusammenarbeit zwischen Hongkong und Festlandchina die Universitäten in die Lage versetzen werde, den Technologietransfer und die Entwicklung der Humanressourcen auf dem chinesischen Festland effektiver zu fördern und sowohl für Hongkong als auch für China positive Ergebnisse zu erzielen .
+# ::save-date Tue Oct 17, 2017 ::file PROXY_XIN_ENG_20041219_0059_9.txt
+(e / erläutern-01
+      :ARG0 (p / person :name (n / name :op1 "Poon"))
+      :ARG1 (s / stärken-01
+            :ARG0 (z / zusammenarbeiten-01
+                  :ARG0 (c2 / city :name (n2 / name :op1 "Hong" :op2 "Kong"))
+                  :ARG1 (f / Festland :part-of (c3 / country :name (n3 / name :op1 "China")))
+            :beneficiary (u / Universität
+                  :topic (u2 / und
+                        :op1 (f2 / fördern-01
+                              :ARG1 (u4 / und
+                                    :op1 (t / Transfer
+                                          :mod (t2 / Technolgie))
+                                    :op2 (e6 / Entwicklung
+                                          :mod (h / Humanressource))
+                              :mod (e2 / effektiv)
+                              :location f))
+                        :op2 (e3 / erzielen-00
+                              :ARG1 (u3 / und
+                                    :op1 (e4 / Ergebnis
+                                          :mod (p2 / positive)
+                                          :beneficiary c2)
+                                    :op2 (e5 / Ergebnis
+                                          :mod (p3 / positive
+                                          :beneficiary f)))))))))
+
+# ::id ft_de.252
+# ::snt Die City University of Hongkong (CityU) und die Universität für Wissenschaft und Technologie Chinas (USTC) in der Provinz Anhui haben im Juni eine Vereinbarung unterzeichnet, um gemeinsam ein hochrangiges gemeinsames Forschungszentrum in Suzhou zu errichten .
+# ::save-date Sun Jul 26, 2015 ::file PROXY_XIN_ENG_20041219_0059_10.txt
+(u3 / unterzeichnen-01
+      :ARG0 (u / university :name (n / name :op1 "City" :op2 "University" :op3 "of" :op4 "Hong" :op5 "Kong"))
+      :ARG1 (v / Vereinabrung)
+      :ARG2 (u2 / university :name (n2 / name :op1 "Universität" :op2 "für" :op3 "Wissenschaft" :op4 "und" :op5 "Technologie" :op6 "Chinas")
+            :location (p / province :name (n4 / name :op1 "Anhui")))
+      :time (d / date-entity :month 6)
+      :purpose (e / errichten-01
+            :ARG0 (u4 / und
+                  :op1 u
+                  :op2 u2)
+            :ARG1 (z / Zentrum
+                  :purpose (f / forschen-01
+                  :degree (h / hochranginge))
+            :location (c2 / city :name (n3 / name :op1 "Suzhou")))))
+
+# ::id ft_de.253
+# ::snt Die Universität für Wissenschaft und Technologie von China wurde von der Chinesischen Akademie der Wissenschaften (CAS) gegründet .
+# ::save-date Sun Aug 11, 2013 ::file PROXY_XIN_ENG_20041219_0059_11.txt
+(g / gründen-01
+      :ARG0 (u / university :name (n / name :op1 "Chinesische" :op2 "Akademie" :op3 "der" :op4 "Wissenschaften"))
+      :ARG1 (o / organization :name (n2 / name :op1 "Universität" :op2 "für" :op3 "Wissenschaft" :op4 "und" :op5 "Technologie" :op6 "von" :op7 "China")))
+
+# ::id ft_de.254
+# ::snt Die Vereinbarung basiert auf dem Prinzip der für beide Seiten vorteilhaften Zusammenarbeit, bei der beide Hochschulen sich im Rahmen gemeinsamer Forschungsprojekte, bei der Betreuung und Lehre von Forschungsstudenten und bei der Verwaltung von Berufsausbildungsmöglichkeiten gegenseitig ergänzen .
+# ::save-date Mon Nov 2, 2015 ::file PROXY_XIN_ENG_20041219_0059_12.txt
+(b / basieren-01
+      :ARG1 (v / Vereinbarung)
+      :ARG2 (p / Prinzip
+            :mod (z / zusammenarbeiten-01
+                  :mod (v2 / vorteilhafte
+                        :beneficiary (s / Seite
+                              :mod (b2 / beide)))
+                  :topic (e / ergänzen-01
+                        :ARG1 (h / Hochschule
+                              :mod (b3 / beide))
+                        :ARG2 (u2 / und
+                              :op1 (p2 / Projekt
+                                    :purpose (f / forschen-01)
+                                    :mod (g / gemeinsam))
+                              :op2 (u3 / und
+                                    :op1 (b4 / Betreuung
+                                          :beneficiary (f2 / Student
+                                                :mod (f3 / forschen-01)))
+                                    :op2 (l / Lehre
+                                          :beneficiary f2))
+                              :op3 (v3 / verwalten-01
+                                    :ARG1 (m / Möglichkeiten
+                                          :mod (b5 / Berufsausbildung)))))
+                        :mod (g2 / gegenseitig))))
+
+# ::id ft_de.255
+# ::snt Neben der Zusammenarbeit mit Bildungseinrichtungen haben Universitäten in Hongkong sich auch an großangelegten Hochtechnologie-Austauschprogrammen auf dem chinesischen Festland beteiligt, um die Kommunikation zwischen dem Festland und Hongkong in diesem Bereich zu verbessern .
+# ::save-date Fri Jan 5, 2018 ::file PROXY_XIN_ENG_20041219_0059_13.txt
+(b / beteiligen-01
+      :ARG0 (u / university :mod (c / city :name (n / name :op1 "Hong" :op2 "Kong")))
+      :ARG1 (p2 / Programm
+            :mod (a / austauschen-01
+                  :ARG1 (h / Hochtechnologie)
+                  :mod (g / großangelegte))
+            :location (f / Festland
+                  :part-of (c2 / country :name (n2 / name :op1 "China"))))
+      :manner (n3 / neben
+            :op1 (z / Zusammenarbeit
+                  :mod (e / Einrichtung
+                        :mod (b2 / bilden-02))))
+      :purpose (v / verbessern-01
+            :ARG1 (c3 / Kommunikation
+                  :mod (z2 / zwischen
+                        :op1 c
+                        :op2 f)
+                  :location (b3 / Bereich
+                        :mod (d / diesen)))))
+
+# ::id ft_de.256
+# ::snt Die Hongkonger Universität für Wissenschaft und Technologie (HKUST) demonstrierte ihre neuesten Errungenschaften in Bezug auf Forschung und Entwicklung auf der 6. jährlichen China Hi-Tech Fair (CHTF), die im Oktober 2004 in Shenzhen stattfand .
+# ::save-date Thu Oct 19, 2017 ::file PROXY_XIN_ENG_20041219_0059_14.txt
+(d / demonstrieren-01
+      :ARG0 (u / university :name (n / name :op1 "Hongkonger" :op2 "Universität" :op3 "für" :op4 "Wissenschaft" :op5 "und" :op7 "Technologie"))
+      :ARG1 (e / Errungenschaft
+            :poss u
+            :topic (u2 / und
+                  :op1 (f / forschen-01)
+                  :op2 (d2 / bilden-02))
+            :mod (n4 / neuste))
+      :time (e2 / event :name (n2 / name :op1 "China" :op2 "Hi-Tech" :op3 "Fair")
+            :ARG1-of (s / stattfinden-01
+                  :location (c / city :name (n3 / name :op1 "Shenzhen"))
+                  :time (d3 / date-entity :year 2004 :month 10))
+            :ord (o / ordinal-entity :value 6)
+            :frequency (r2 / rate-entity-91
+                  :ARG3 (t2 / temporal-quantity :quant 1
+                        :unit (y / year)))))
+
+# ::id ft_de.257
+# ::snt HKUST zeigte mehr als 30 neue Technologien und Produkte, die eine breite Palette von Technologien abdecken, darunter Nanotechnologie, Multimedia, Logistik und RFID-Technologie, fortschrittliche Fertigung und Biotechnologie .
+# ::save-date Fri Feb 5, 2016 ::file PROXY_XIN_ENG_20041219_0059_15.txt
+(z / zeigen-01
+      :ARG0 (u / university :name (n / name :op1 "HKUST"))
+      :ARG1 (u2 / und
+            :op1 (t / Technologie)
+            :op2 (p / Produkte)
+            :mod (n2 / neu)
+            :quant (m / mehr-als :op1 30)
+            :ARG0-of (a / abdecken-01
+                  :ARG1 (r / Palette
+                        :mod (b / breite)
+                        :source (t2 / Technologie)
+                        :ARG2-of (i / include-91
+                              :ARG1 (u3 / und
+                                    :op1 (n3 / Nanotechnologie)
+                                    :op2 (m2 / Multimedia)
+                                    :op3 (l / Logistik)
+                                    :op4 (t3 / Technologie
+                                          :mod (r4 / RFID)))
+                                    :op5 (f / Fertigung
+                                          :mod (f2 / fortschrittliche))
+                                    :op6 (b2 / Biotechnologie))))))
+
+# ::id ft_de.258
+# ::snt HKUST arbeitete auch mit einem führenden Hersteller auf dem chinesischen Festland zusammen an der Entwicklung einer Hochleistungs-Lithiumbatterie auf Basis von Nanomaterialien .
+# ::save-date Sun Jul 26, 2015 ::file PROXY_XIN_ENG_20041219_0059_16.txt
+(z / zusammenarbeiten-01
+      :ARG0 (u / university :name (n / name :op1 "HKUST"))
+      :ARG1 (c2 / company
+            :ARG0-of (h / herstellen-01)
+            :mod (f / führende)
+            :location (f2 / Festland :part-of (c3 / country :name (n2 / name :op1 "China")))
+      :ARG2 (e / entwickeln-01
+            :ARG1 (b / Batterie
+                  :consist-of (l / Lithium)
+                  :mod (h2 / Hochleistung)
+                  :ARG1-of (b2 / basieren-01
+                        :ARG2 (n3 / Nanomaterial))))
+      :mod (a / auch)))
+
+# ::id ft_de.259
+# ::snt Diese Zusammenarbeit ist die jüngste in einer Reihe erfolgreicher Technologietransfer-Vereinbarungen von HKUST . 
+# ::save-date Thu Oct 19, 2017 ::file PROXY_XIN_ENG_20041219_0059_17.txt
+(z / zusammenarbeiten-01
+      :mod (d / diese)
+      :part-of (r / Reihe
+            :mod (v / Vereinbarung
+                  :mod (t2 / Transfer
+                        :mod (t3 / Technologie))
+                  :manner (e / erfolgreich)
+                  :source (u / university :name (n / name :op1 "HKUST"))))
+      :time (j / jüngste))
+
+# ::id ft_de.260
+# ::snt HKUST-Präsident Paul Ching - Wu Chu erklärte --
+# ::save-date Sun Aug 11, 2013 ::file PROXY_XIN_ENG_20041219_0059_18.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Paul" :op2 "Ching-Wu" :op3 "Chu")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (u / university :name (n2 / name :op1 "HKUST"))
+                  :ARG2 (p2 / president))))
+
+# ::id ft_de.261
+# ::snt Die HKUST erhöhe die Mittel für die Erforschung neuer Technologien, die von der Industrie im Pearl River Delta benötigt werden .
+# ::save-date Fri Feb 5, 2016 ::file PROXY_XIN_ENG_20041219_0059_19.txt
+(e / erhöhen-01
+      :ARG0 (u / university :name (n / name :op1 "HKUST"))
+      :ARG1 (m / Mittel
+            :purpose (e2 / erforschen-01
+                  :ARG1 (t / Technologie
+                        :mod (n3 / neue)
+                        :ARG1-of (b / benötigen-01
+                              :ARG0 (i2 / Industrie :location (c / country-region :name (n2 / name :op1 "Pearl" :op2 "River" :op3 "Delta"))))))))
+
+# ::id ft_de.262
+# ::snt Die Universität wird weiterhin ihre umfassenden Beziehungen zu internationalen Forschungseinrichtungen und multinationalen Konzernen nutzen, um die Entwicklung fortschrittlicher Technologien zu fördern, die in China unmittelbar praktische Anwendung finden können .
+# ::save-date Thu Nov 2, 2017 ::file PROXY_XIN_ENG_20041219_0059_20.txt
+(n / nutzen-01
+      :ARG0 (u / Universität)
+      :ARG1 (b / Beziehung
+            :poss u
+            :topic (z / zu
+                  :op1 (u2 / und
+                        :op1 (e / Einrichtung
+                              :mod (f / forschen-01)
+                              :mod (i / internationale)
+                        :op2 (c / Konzern
+                              :mod (m / multinationale)))))
+            :mod (u3 / umfassend))
+      :mod (w / weiterhin)
+      :purpose (f2 / fördern-01
+            :ARG1 (d / entwickeln-01
+                  :ARG1 (t / Technolgie
+                        :mod (f3 / fortschrittlich)
+                        :ARG1-of (a3 / anwenden-01
+                              :mod (i4 / unmittelbar)
+                              :mod (p2 / prakatische)
+                              :location (c3 / country :name (n2 / name :op1 "China"))
+                              :ARG1-of (e2 / ermöglichen-01))))))
+
+# ::id ft_de.263
+# ::snt 29.04.2004
+# ::save-date Fri Aug 9, 2013 ::file PROXY_XIN_ENG_20040429_0189_1.txt
+(d / date-entity :day 29 :month 4 :year 2004)
+
+# ::id ft_de.264
+# ::snt China (CN); Deutschland (DE)
+# ::save-date Fri Aug 9, 2013 ::file PROXY_XIN_ENG_20040429_0189_2.txt
+(u / und
+      :op1 (c / country
+            :name (n / name :op1 "China"))
+      :op2 (c2 / country
+            :name (n2 / name :op1 "Deutschland")))
+
+# ::id ft_de.265
+# ::snt International; Regierung; Technologie; Politik; Wirtschaft
+# ::save-date Fri Aug 9, 2013 ::file PROXY_XIN_ENG_20040429_0189_3.txt
+(u / und
+      :op1 (i / international)
+      :op2 (g / government-organization
+            :ARG0-of (r / regieren-01))
+      :op3 (t / Technologie)
+      :op4 (p / Politik)
+      :op5 (w / Wirtschaft))
+
+# ::id ft_de.266
+# ::snt Der chinesische Ministerpräsident erörtert Pläne für eine breite Zusammenarbeit mit dem wichtigen Handelspartner Deutschland im Vorfeld des Besuchs in Europa .
+# ::save-date Sat Jul 25, 2015 ::file PROXY_XIN_ENG_20040429_0189_4.txt
+(e / erörtern-01
+      :ARG0 (p4 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :name (n / name :op1 "China"))
+                  :ARG2 (p / premier)))
+      :ARG1 (p2 / Plan
+            :topic (c2 / zusammenarbeiten-01
+                  :ARG0 (c3 / country :name (n2 / name :op1 "Deutschland")
+                        :mod (p3 / Partner
+                              :mod (t / handeln-01)
+                              :mod (w / wichtig)))
+                  :mod (b / breite)))
+      :time (i / im-Vorfeld
+            :op1 (b2 / besuchen-01
+                  :ARG1 (c4 / continent :name (n3 / name :op1 "Europa")))))
+
+# ::id ft_de.267
+# ::snt Wen erklärt, dass der Hauptzweck des Deutschlandbesuchs darin bestehe, den Handel sowie den wirtschaftlichen und technologischen Austausch voranzutreiben .
+# ::save-date Wed Jul 1, 2015 ::file PROXY_XIN_ENG_20040429_0189_5.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (h / Hauptzweck
+            :mod (b / besuchen-01
+                  :ARG1 (c / country :name (n2 / name :op1 "Deutschland")))
+            :ARG0-of (v2 / vorantreiben-01
+                  :ARG1 (u / und
+                        :op1 (a / handeln-01)
+                        :op2 (a2 / austauschen-01
+                              :mod (w / wirtschaftliche))
+                        :op3 (a3 / austauschen-01
+                              :mod (t / technologische))))))
+
+# ::id ft_de.268
+# ::snt In einem Interview mit Dieter Stolte am 29. April 2004 erklärte der chinesische Premierminister Wen Jiabao, dass die Regierungen von China und Deutschland eine solide Zusammenarbeit aufbauen, die Konsultationen zu wichtigen internationalen Fragen verbessern und den Handel und den technologischen Austausch weiter stärken sollten .
+# ::save-date Wed Jul 29, 2015 ::file PROXY_XIN_ENG_20040429_0189_6.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen" :op2 "Jiabao")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :name (n2 / name :op1 "China"))
+                  :ARG2 (p2 / premier)))
+      :ARG1 (e3 / empfehlen-01
+            :ARG1 (u / und
+                  :op1 (a / aufbauen-01
+                        :ARG0 (u2 / und
+                              :op1 (g / government-organization
+                                    :ARG0-of (r / regieren-01
+                                          :ARG1 c))
+                              :op2 (g3 / government-organization
+                                    :ARG0-of (r2 / regieren-01
+                                          :ARG1 (c2 / country :name (n4 / name :op1 "Deutschland")))))
+                        :ARG1 (z / zusammenarbeiten-01
+                              :mod (s2 / solide)))
+                  :op2 (v / verbessern-01
+                        :ARG0 u2
+                        :ARG1 (c4 / konsultieren-01
+                              :ARG2 (i2 / Frage
+                                    :mod (i3 / internationale)
+                                    :mod (w / wichtige))))
+                  :op3 (s3 / stärken-01
+                        :ARG0 u2
+                        :ARG1 (a2 / austauschen-01
+                              :ARG1 (u4 / und
+                                    :op1 (h2 / handeln-01)
+                                    :op2 (t2 / Technolgie)))
+                        :mod (w2 / weiter))))
+      :time (d / date-entity :day 29 :month 4 :year 2004)
+      :medium (i / interviewen-01
+            :ARG0 (p3 / person :name (n3 / name :op1 "Dieter" :op2 "Stolte"))
+            :ARG1 p))
+
+# ::id ft_de.269
+# ::snt Wen wurde vor seinem bevorstehenden Besuch in Europa vom Herausgeber der Welt interviewt .
+# ::save-date Wed Jul 1, 2015 ::file PROXY_XIN_ENG_20040429_0189_7.txt
+(i / interviewen-01
+      :ARG0 (p / person
+            :ARG0-of (h / herausgeben-01
+                  :ARG1 (p3 / publication :name (n2 / name :op1 "Die" :op2 "Welt"))))
+      :ARG1 (p2 / person :name (n3 / name :op1 "Wen"))
+      :time (v / vor
+            :op1 (b / besuchen-01
+                  :ARG0 p2
+                  :ARG1 (c / continent :name (n4 / name :op1 "Europa"))
+                  :mod (b2 / bevorstehend))))
+
+# ::id ft_de.270
+# ::snt Wen plant einen Besuch in fünf europäischen Nationen, beginnend am 2. Mai 2004 in Deutschland .
+# ::save-date Thu Sep 19, 2013 ::file PROXY_XIN_ENG_20040429_0189_8.txt
+(p2 / planen-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (b / besuchen-01
+            :ARG0 p
+            :ARG1 (n2 / Nation :quant 5
+                  :mod (c / continent :name (n3 / name :op1 "Europa"))))
+      :ARG1-of (s2 / beginnen-01
+            :time (d / date-entity :day 2 :month 5 :year 2004)
+            :location (c2 / country :name (n4 / name :op1 "Deutschland"))))
+
+# ::id ft_de.271
+# ::snt Wen erklärte, dass das chinesische Volk mit Deutschland vertraut sei, insbesondere aufgrund des tiefgreifenden Einflusses von Karl Marx auf Chinas Revolution und Wirtschaftsaufbau .
+# ::save-date Tue Jun 9, 2015 ::file PROXY_XIN_ENG_20040429_0189_9.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (k / kennen-01
+            :ARG1 (p2 / people
+                  :mod (c / country :name (n2 / name :op1 "China")))
+            :ARG2 (c2 / country :name (n3 / name :op1 "Deutschland"))
+            :ARG1-of (c3 / cause-01
+                  :ARG0 (b / beeinflussen-01
+                        :ARG0 (p5 / person :name (n4 / name :op1 "Karl" :op2 "Marx"))
+                        :ARG1 (u / und
+                              :op1 (r / Revolution
+                                    :poss c)
+                              :op2 (a / aufbauen-01
+                                    :mod (w / Wirtschaft)
+                                    :poss c))
+                        :mod (t / tiefgreifend))
+                  :mod (i / insbesondere))))
+
+# ::id ft_de.272
+# ::snt Wen führte weiter aus, dass viele weltbekannte Denker, Schriftsteller, Philosophen und Künstler Deutsche seien .
+# ::save-date Thu Dec 14, 2017 ::file PROXY_XIN_ENG_20040429_0189_10.txt
+(a / ausführen-00
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (c / country :name (n2 / name :op1 "Deutschland")
+            :domain (u / und
+                  :op1 (p4 / person
+                        :mod (w / weltbekannte)
+                        :mod (v / viele)
+                        :ARG0-of (d / denken-01))
+                  :op2 (p3 / person
+                        :ARG0-of (s / schreiben-01))
+                  :op3 (p2 / Philosoph)
+                  :op4 (a2 / Künstler))))
+
+# ::id ft_de.273
+# ::snt Desweiteren erläuterte Wen, dass einer der Pioniere der deutschen klassischen Philosophie, Gottfried Leibnitz, Chinas konfuzianisches Denken einen Einfluss auf die Aufklärungsbewegung im Deutschland des 18. Jahrhunderts genannt habe .
+# ::save-date Sun Jun 21, 2015 ::file PROXY_XIN_ENG_20040429_0189_11.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (b / beeinflussen-01
+            :ARG0 (p2 / person :name (n2 / name :op1 "Gottfried" :op2 "Leibnitz")
+                  :mod (p4 / Pionier)
+                        :topic (p3 / Philosophie
+                              :mod (c2 / klassische)
+                              :mod (c3 / country :name (n3 / name :op1 "Deutschland"))))
+            :ARG1 (d / denken-01
+                  :mod (k / konfuzianische)
+                  :mod (c5 / country :name (n4 / name :op1 "China"))
+            :ARG2 (b2 / Bewegungung
+                  :mod (a / Aufklärung)
+                  :location c3
+                        :time (d2 / date-entity :century 18)))))
+
+# ::id ft_de.274
+# ::snt Wen erklärte, dass der Zweck seines Deutschlandbesuchs darin bestehe, den Handel sowie den wirtschaftlichen und technologischen Austausch voranzutreiben .
+# ::save-date Wed Jul 1, 2015 ::file PROXY_XIN_ENG_20040429_0189_5.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (z / Zweck
+            :mod (b / besuchen-01
+                  :ARG1 (c / country :name (n2 / name :op1 "Deutschland"))
+                  :poss p)
+            :ARG0-of (v2 / vorantreiben-01
+                  :ARG1 (u / und
+                        :op1 (a / handeln-01)
+                        :op2 (a2 / austauschen-01
+                              :mod (w / wirtschaftliche))
+                        :op3 (a3 / austauschen-01
+                              :mod (t / technologische))))))
+
+# ::id ft_de.275
+# ::snt Es wird erwartet, dass die Regierungen von China und Deutschland die Zusammenarbeit in dieser Hinsicht weiter verstärken werden .
+# ::save-date Mon Aug 19, 2013 ::file PROXY_XIN_ENG_20040429_0189_13.txt
+(e / erwarten-01
+      :ARG1 (v / verstärken-01
+            :ARG0 (u / und
+                  :op1 (g / government-organization
+                        :ARG0-of (r / regieren-01
+                              :ARG1 (c / country :name (n / name :op1 "China"))))
+                  :op2 (g3 / government-organization
+                        :ARG0-of (r2 / regieren-01
+                              :ARG1 (c2 / country :name (n2 / name :op1 "Deutschland")))))
+            :ARG1 (c3 / zusammenarbeiten-01
+                  :ARG2 (h / Hinsicht
+                        :mod (d / dieser)))
+            :mod (w / weiter)))
+
+# ::id ft_de.276
+# ::snt Wen sprach von seinem kurzen Besuch in Frankfurt während seiner Reise durch die skandinavischen Länder im Jahr 1988 und erklärte, die Freundschaft zwischen China und Deutschland sei aufrichtig, aktiv und fruchtbar .
+# ::save-date Mon Jul 20, 2015 ::file PROXY_XIN_ENG_20040429_0189_14.txt
+(u / und
+      :op1 (s / sprechen-01
+            :ARG0 (p / person :name (n / name :op1 "Wen"))
+            :ARG1 (b / besuchen-01
+                  :ARG0 p
+                  :ARG1 (c / city :name (n2 / name :op1 "Frankfurt"))
+                  :mod (k / kurze)
+                  :time (r / reisen-01
+                        :ARG0 p
+                        :ARG1 (n3 / nation
+                              :location (w / world-region :name (n4 / name :op1 "skandinavischen" :op2 "Länder")))
+                        :time (d / date-entity :year 1988))))
+      :op2 (e / erklären-01
+            :ARG0 p
+            :ARG1 (u2 / und
+                  :op1 (u3 / und
+                        :op1 (s3 / aufrichtig)
+                        :op2 (f / aktiv)
+                        :op3 (f2 / fruchtbar)
+                        :domain (f3 / Freunschaft
+                              :mod (z / zwischen
+                                    :op1 (c2 / country :name (n5 / name :op1 "China"))
+                                    :op2 (c3 / country :name (n6 / name :op1 "Deutschland"))))))))
+
+# ::id ft_de.277
+# ::snt Wen versprach, ein Entwicklungsziel für die deutsch-chinesischen Beziehungen zu etablieren, das besagt, dass gegenseitiges Vertrauen die Grundlage der bilateralen Beziehungen bilden soll .
+# ::save-date Wed May 6, 2015 ::file PROXY_XIN_ENG_20040429_0189_15.txt
+(u / und
+      :op1 (v / versprechen-01
+            :ARG0 (p2 / person :name (n / name :op1 "Wen"))
+            :ARG2 (e / etablieren-01
+                  :ARG0 p2
+                  :ARG1 (z / Ziel
+                        :mod (e2 / entwickeln-01)
+                        :beneficiary (b / Beziehung
+                              :topic (z2 / zwischen
+                                    :ARG0 (c / country :name (n2 / name :op1 "China"))
+                                    :ARG2 (c2 / country :name (n3 / name :op1 "Deutschland"))))))
+                        :ARG0-of (b2 / besagen-01
+                              :ARG1 (b3 / bilden-01
+                                    :ARG2 (v2 / vertrauen-01
+                                          :mod (g / gegenseitig))
+                                    :ARG3 (g2 / Grundlage
+                                          :ARG1 (b4 / Beziehung
+                                                :mod (b5 / bilaterale)
+                                                :ARG1 (s / empfehlen-01)))))))
+
+# ::id ft_de.278
+# ::snt Wen gab an, dass sich der Handel zwischen China und Deutschland auf 41,8 Milliarden US - Dollar belaufe, was einem Drittel des Handelsvolumens zwischen China und Europa entspreche .
+# ::save-date Thu Sep 19, 2013 ::file PROXY_XIN_ENG_20040429_0189_16.txt
+(a / angeben-02
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (u / und
+            :op1 (h / handeln-01
+                  :ARG1 (z / zwischen
+                        :op1 (c / country :name (n2 / name :op1 "China"))
+                        :op2 (c2 / country :name (n3 / name :op1 "Deutschland")))
+                  :ARG3 (m / monetary-quantity :quant 41800000000
+                        :unit (u2 / US-Dollar))))
+                  :ARG1-of (e / entsprechen-01
+                        :ARG2 (v2 / Volumen
+                              :mod (h2 / handeln-01)
+                              :quant-of (h3 / handeln-01
+                                    :ARG0 (z2 / zwischen
+                                          :op1 c
+                                          :op2 (c4 / continent :name (n5 / name :op1 "Europa")))))))
+
+# ::id ft_de.279
+# ::snt Wen erklärte, dass der Handel sowohl zwischen China und Deutschland als auch zwischen China und Europa sich bis 2010 verdoppeln dürfte .
+# ::save-date Sat Aug 10, 2013 ::file PROXY_XIN_ENG_20040429_0189_17.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (e2 / erwarten-01
+            :ARG1 (v / verdoppeln-01
+                  :ARG1 (h / handeln-01
+                        :ARG0 (u / und
+                              :op1 (c / country :name (n2 / name :op1 "China"))
+                              :op2 (c2 / country :name (n3 / name :op1 "Deutschland")))
+                        :ARG2 (u2 / und
+                              :op1 c
+                              :op2 (c3 / continent :name (n4 / name :op1 "Europa"))))
+                  :time (d2 / date-entity :year 2010))))
+
+# ::id ft_de.280
+# ::snt Wen erklärte, dass die Regierungen von China und Deutschland eine enge Zusammenarbeit in der Hightech-Forschung und -Entwicklung sowie bei mittleren und kleinen Unternehmen planten .
+# ::save-date Mon Nov 9, 2015 ::file PROXY_XIN_ENG_20040429_0189_18.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (p2 / planen-01
+            :ARG0 (u / und
+                  :op1 (g / government-organization
+                        :ARG0-of (r / regieren-01
+                              :ARG1 (c / country :name (n2 / name :op1 "China"))))
+                  :op2 (g3 / government-organization
+                        :ARG0-of (r2 / regieren-01
+                              :ARG1 (c2 / country :name (n3 / name :op1 "Deutschland"))))))
+            :ARG1 (z / zusammenarbeiten-01
+                  :ARG0 g
+                  :ARG1 g3
+                  :ARG2 (u2 / und
+                        :op1 (u3 / und
+                              :op1 (e2 / entwickeln-01
+                                    :ARG1 (h / Hightech))
+                              :op2 (e3 / entwickeln-01
+                                    :ARG1 h)))
+                        :op2 (u4 / und
+                              :op1 (u6 / Unternehmen
+                                    :mod (m / mittlere))
+                              :op2 (u5 / Unternehmen
+                                    :mod (k / kleine)))
+                  :mod (e4 / enge)))
+
+# ::id ft_de.281
+# ::snt Wen erklärte, dass es wichtig sei, Kanäle für die Beilegung von Handelsstreitigkeiten zwischen den beiden Ländern zu schaffen, und dass China und Deutschland ihre gegenseitigen Bedenken ansprechen sollten .
+# ::save-date Mon Nov 2, 2015 ::file PROXY_XIN_ENG_20040429_0189_19.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (u / und
+            :op1 (w / wichtig
+                  :domain (e2 / es)
+                  :topic (s / schaffen-01
+                        :ARG1 (k / Kanal
+                              :purpose (b / beilegen-01
+                                    :ARG1 (s2 / Streitigkeit
+                                          :mod (h / handeln-01)
+                                          :source (z / zwischen
+                                                :op1 c4
+                                                :op2 c5))))))
+            :op2 (e3 / empfehlen-01
+                  :ARG1 (a2 / ansprechen-01
+                        :ARG0 (u2 / and
+                              :op1 (c4 / country :name (n2 / name :op1 "China"))
+                              :op2 (c5 / country :name (n3 / name :op1 "Deutschland")))
+                        :ARG1 (c6 / Bedenken
+                              :mod (g / gegenseitige))))))
+
+# ::id ft_de.282
+# ::snt Um diese Aussage zu unterstützen, führte Wen an, dass 600 der 7.000 chinesischen Unternehmen, die international investieren, in Deutschland zu finden sind .
+# ::save-date Sun Aug 11, 2013 ::file PROXY_XIN_ENG_20040429_0189_21.txt
+(a / anführen-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :purpose (u / unterstützen-01
+            :ARG1 (s2 / Aussage
+                  :mod (d / diese)))
+      :location (c2 / country :name (n2 / name :op1 "Deutschland"
+            :ARG1-of (f / finden
+                  :domain (e / Unternehmen :quant 600
+                        :ARG1-of (i / include-91
+                              :ARG2 (e2 / Unternehmen :quant 7000
+                                    :mod (c3 / country :name (n3 / name :op1 "China"))
+                                    :ARG0-of (i2 / investieren-01
+                                          :manner (i3 / international)))))))))
+
+# ::id ft_de.283
+# ::snt Wen erklärte, dass die chinesische Regierung Unternehmen unterstützen werde, die in Deutschland in Form von Krediten, Versicherungen, Devisen, Finanzen und Investitionen investieren .
+# ::save-date Tue Apr 15, 2014 ::file PROXY_XIN_ENG_20040429_0189_22.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (u / unterstützen-01
+            :ARG0 (g / government-organization
+                  :ARG0-of (r / regieren-01
+                        :ARG1 (c / country :name (n2 / name :op1 "China"))))
+            :ARG1 (u2 / Unternehmen
+                  :ARG0-of (i / investieren-01
+                        :ARG2 (c2 / country :name (n3 / name :op1 "Deutschland"))))
+            :instrument (u3 / und
+                  :op1 (k / Kredit)
+                  :op2 (v / Versicherung)
+                  :op3 (d / Devise)
+                  :op4 (f2 / Finanzen)
+                  :op5 (i3 / Investition))))
+
+# ::id ft_de.284
+# ::snt Chinesische Investitionen in Deutschland sind weit weniger als deutsche Investitionen in China, da China erst seit kurzem in diese Richtung investiert .
+# ::save-date Tue Oct 17, 2017 ::file PROXY_XIN_ENG_20040429_0189_23.txt
+(h / have-quant-91
+      :ARG1 (i / investieren-01
+            :ARG0 (c2 / country :name (n2 / name :op1 "China"))
+            :ARG2 (c / country :name (n / name :op1 "Deutschland")))
+      :ARG3 (w / weniger
+            :mod (w2 / weit))
+      :ARG4 (i2 / investieren-01
+            :ARG0 c
+            :ARG2 c2)
+      :ARG1-of (c3 / cause-01
+            :ARG0 (s / investieren-01
+                  :ARG0 c2
+                  :time (k / kurz
+                        :mod (e / erst))
+                  :mod (r / Richtung
+                        :direction (i3 / in-diese)))))
+
+# ::id ft_de.285
+# ::snt Wen erklärte, dass es über 3.500 deutsche Investitionsprojekte in China mit einer Gesamtinvestition in der Nähe von 10 Milliarden US-Dollar gebe .
+# ::save-date Thu Sep 5, 2013 ::file PROXY_XIN_ENG_20040429_0189_24.txt
+(e / erklären-01
+      :ARG0 (p / person "Wen_Jiabao" :name (n / name :op1 "Wen"))
+      :ARG1 (g / geben-02
+                  :ARG0 (p2 / Projekt
+                        :mod (i / investieren-01
+                              :ARG0 (c / country :name (n2 / name :op1 "Deutschland"))
+                              :location (c2 / country :name (n3 / name :op1 "China"))
+                              :topic (g2 / Gesamtinvestition
+                                    :location (n4 / Nähe
+                                          :op1 (m / monetary-quantity :quant 10000000000
+                                                :unit (u2 / US-Dollar))))))))
+
+# ::id ft_de.286
+# ::snt Einige deutsche Firmen wie Volkswagen, Siemens und Daimler-Chrysler stünden für hohe Qualität und Effizienz .
+# ::save-date Sun Jul 26, 2015 ::file PROXY_XIN_ENG_20040429_0189_25.txt
+(s / stehen-00
+      :ARG1 (f / Firma
+            :mod (c / country :name (n / name :op1 "Deutschland"))
+            :mod (e / einige)
+            :example (u / und
+                  :op1 (c2 / company :name (n2 / name :op1 "Volkswagen"))
+                  :op2 (c3 / company :name (n3 / name :op1 "Siemens"))
+                  :op3 (c4 / company :name (n4 / name :op1 "Daimler-Chrysler"))))
+      :ARG2 (u2 / und
+            :op1 (q / Qualität
+                  :mod (h / hohe))
+            :op2 (e2 / Effizienz
+                  :mod (h2 / hohe))))
+
+# ::id ft_de.287
+# ::snt Wen erklärte, dass chinesische Unternehmen durch die Zusammenarbeit mit deutschen Partnern Fortschritte machen und modernes Management erlernen könnten .
+# ::save-date Fri Jul 24, 2015 ::file PROXY_XIN_ENG_20040429_0189_26.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (e2 / ermöglichen-01
+            :ARG1 (u2 / und
+                  :op1 (c3 / cause-01                  
+                        :ARG0-of (z / zusammenarbeiten-01
+                              :ARG0 (u / Unternehmen
+                                    :mod (c / country :name (n2 / name :op1 "China")))
+                              :ARG1 (p2 / Partner
+                                    :mod (c2 / country :name (n3 / name :op1 "Deutschland"))
+                              :beneficiary u
+                                    :ARG0-of (m / machen-01
+                                          :ARG1 (f / Fortschritt)))))
+                  :op2 (l / lernen-01
+                        :ARG0 u
+                        :ARG1 (m2 / Management
+                              :mod (m3 / modern))))))
+      
+# ::id ft_de.288
+# ::snt Er betonte, Deutschland sei Chinas engster europäischer Partner im Bereich Technologietransfer .
+# ::save-date Tue Oct 17, 2017 ::file PROXY_XIN_ENG_20040429_0189_27.txt
+(b / betonen-01
+      :ARG0 (e / er)
+      :ARG1 (h / have-degree-91
+            :ARG1 (c4 / country :name (n / name :op1 "Deutschland"))
+            :ARG2 (e2 / eng)
+            :ARG3 (a / am-meisten)
+            :ARG5 (p / Partner
+                  :poss (c3 / country :name (n3 / name :op1 "China"))
+                  :mod (c / continent :name (n2 / name :op1 "Europa"))
+                  :source (t / Transfer
+                        :topic (t2 / Technologie)))))
+
+# ::id ft_de.289
+# ::snt Wen erläuterte, dass China die Beziehungen zwischen China und der EU als entscheidenden Teil der diplomatischen Strategie Chinas ansehe, und dass China und Europa 2003 eine umfassende strategische Partnerschaft entwickelten .
+# ::save-date Wed May 6, 2015 ::file PROXY_XIN_ENG_20040429_0189_28.txt
+(e / erläutern-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (u / und
+            :op1 (e2 / erwägen-01
+                  :ARG0 (c2 / country :name (n2 / name :op1 "China"))
+                  :ARG1 (b / Beziehung
+                        :mod (z / zwischen
+                              :op1 c2
+                              :op2 (o / organization :name (n3 / name :op1 "EU")))
+                  :ARG2 (t / Teil
+                        :mod (e3 / entscheidende)
+                        :poss (s3 / Strategie
+                              :mod (d / diplomatische)
+                              :poss c2))))
+            :op2 (e4 / entwickeln-01
+                  :ARG0 (u2 / und
+                        :op1 c2
+                        :op2 (c3 / continent :name (n4 / name :op1 "Europa")))
+                  :ARG1 (p3 / Partnerschaft
+                        :mod (s4 / strategische)
+                        :mod (u3 / umfassende))
+                  :time (d3 / date-entity :year 2003))))
+
+# ::id ft_de.290
+# ::snt Wen äußerte sich optimistisch, dass die EU das Waffenembargo gegen China bald aufheben würde und China den Status einer Marktwirtschaft verleihen würde .
+# ::save-date Thu Sep 5, 2013 ::file PROXY_XIN_ENG_20040429_0189_29.txt
+(ä / äußern-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :manner (o / optimistisch)
+      :ARG1 (u / und
+            :op1 (a / aufheben-02
+                  :ARG0 (o2 / organization :name (n2 / name :op1 "EU"))
+                  :ARG1 (w / Waffenembargo
+                        :beneficiary (c / country :name (n3 / name :op1 "China")))
+                  :time (b / bald))
+            :op2 (v / verleihen-01
+                  :ARG0 o2
+                  :ARG1 (s3 / Status
+                        :mod (e2 / Wirtschaft
+                              :mod (m / Markt))
+                  :ARG2 c))))
+
+# ::id ft_de.291
+# ::snt Wen erwähnte, China sei zutiefst besorgt über die aktuelle Situation im Irak und habe Verständnis für das irakische Volk .
+# ::save-date Sun Jul 26, 2015 ::file PROXY_XIN_ENG_20040429_0189_31.txt
+(e / erwähnen-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (u / und
+            :op1 (s / sorgen-01
+                  :ARG0 (s2 / Situation
+                        :mod (a / aktuelle)
+                        :location (c4 / country :name (n3 / name :op1 "Irak")))
+                  :ARG1 (c2 / country :name (n2 / name :op1 "China"))
+                  :mod (z / zutiefst))
+            :op2 (h / haben-01
+                  :ARG1 (v / Verständnis
+                        :beneficiary (p2 / people
+                              :mod c4)))))
+
+# ::id ft_de.292
+# ::snt Wen erklärte, China und Europa hätten ähnliche Positionen in der Frage des Wiederaufbaus des Irak .
+# ::save-date Fri Jul 24, 2015 ::file PROXY_XIN_ENG_20040429_0189_32.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (h / haben-01
+            :ARG0 (u / und
+                  :op1 (c / country :name (n2 / name :op1 "China"))
+                  :op2 (c2 / continent :name (n3 / name :op1 "Europa")))
+            :ARG1 (p2 / Position
+                  :mod (ä / ähnliche)
+                  :topic (f / Frage
+                        :mod (w / Wiederaufbau
+                              :beneficiary (c3 / country :name (n4 / name :op1 "Irak")))))))
+
+# ::id ft_de.293
+# ::snt Er sagte, dass die Vereinten Nationen eine dominante Rolle im Prozess des Wiederaufbaus des Iraks spielen sollten und dass jedes Land daran teilnehmen sollte .
+# ::save-date Mon Jul 13, 2015 ::file PROXY_XIN_ENG_20040429_0189_33.txt
+(s / sagen-01
+      :ARG0 (e / er)
+      :ARG1 (u / und
+            :op1 (e2 / empfehlen-01
+                  :ARG1 (p2 / spielen-02
+                        :ARG0 (o / organization :name (n2 / name :op1 "Vereinten" :op2 "Nationen"))
+                        :ARG1 (r / Rolle
+                              :mod (d / dominante)
+                              :topic (w / Wiederaufbau
+                                    :beneficiary (c / country :name (n3 / name :op1 "Irak"))))
+            :op2 (e3 / empfehlen-01
+                  :ARG1 (p3 / teilnehmen-01
+                        :ARG0 (l / Land
+                              :mod (j / jedes))))))))
+
+# ::id ft_de.294
+# ::snt Wen erklärte, dass China bereit sei, am Wiederaufbauprozess des Iraks teilzunehmen .
+# ::save-date Mon Jul 13, 2015 ::file PROXY_XIN_ENG_20040429_0189_34.txt
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (b / bereit-01
+            :ARG0 (c / country :name (n2 / name :op1 "China"))
+            :ARG1 (t / teilnehmen-01
+                  :ARG0 c
+                  :ARG1 (p2 / Prozess
+                        :ARG1 (w / wiederaufbauen-01
+                              :ARG1 (c2 / country :name (n3 / name :op1 "Irak")))))))
+
+# ::id ft_de.295
+# ::snt Er führte aus, dass es leicht sei, einen Krieg zu gewinnen, aber viel schwieriger, Frieden zu gewinnen .
+# ::save-date Tue Oct 17, 2017 ::file PROXY_XIN_ENG_20040429_0189_35.txt
+(a / ausführen-00
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (c / contrast-01
+            :ARG1 (l / leicht 
+                  :domain (g / gewinnen-01
+                        :ARG1 (k / Krieg)))
+            :ARG2 (h / have-degree-91
+                  :ARG1 (g2 / gewinnen-01
+                        :ARG1 (f / Frieden))
+                  :ARG2 (s / schwierig)
+                  :ARG3 (v / viel)
+                  :ARG4 g)))
+
+# ::id ft_de.296
+# ::snt Er sei tief besorgt über die zunehmenden Spannungen zwischen Palästina und Israel , und die chinesische Regierung hoffe , dass die Streitigkeiten zwischen den beiden Ländern durch politische Verhandlungen gelöst werden können , so dass die Länder friedlich Land teilen können .
+(u / und
+      :op1 (s / sorgen-01
+            :mod (t / tief)
+            :domain (e / er)
+            :ARG1-of (c4 / cause-01
+                  :ARG0 (s2 / Spannung
+                        :mod (z / zunehmende)
+                        :mod (z2 / zwischen
+                              :op1 (c / country :name (n2 / name :op1 "Palästina"))
+                              :op2 (c2 / country :name (n3 / name :op1 "Israel"))))))
+      :op2 (h / hoffen-01
+            :ARG0 (g / government-organization
+                  :ARG0-of (g2 / regieren-01
+                        :ARG1 (c3 / country :name (n4 / name :op1 "China"))))
+            :ARG1 (e2 / ermöglichen-01
+                  :ARG1 (l / lösen-01
+                        :ARG1 (s3 / Streitigkeit
+                              :mod (z3 / zwischen
+                                    :op1 c
+                                    :op2 c2)
+                        :manner (v / verhandeln-01
+                              :mod (p3 / politische))
+                        :purpose (e3 / ermöglichen-01
+                              :ARG1 (t2 / teilen-01
+                                    :ARG1 (l2 / Land)
+                                    :mod (f / friedlich))))))))
+
+# ::id ft_de.297
+# ::snt In Bezug auf die Situation in Palästina und Israel erklärte Wen , dass einschlägige UN-Resolutionen umgesetzt werden müssten .
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (v / verpflichten-01
+            :ARG1 (u / umsetzen-01
+                  :ARG1 (r / Resolution
+                        :mod (o2 / organization :name (n4 / name :op1 "UN"))
+                        :mod (e2 / einschlägige))))
+      :manner (b / bezüglich
+            :topic (s2 / Situation
+                  :location (u2 / und
+                        :op1 (c / country :name (n2 / name :op1 "Palästina"))
+                        :op2 (c2 / country :name (n3 / name :op1 "Israel"))))))
+
+# ::id ft_de.298
+# ::snt Die chinesische Regierung unterstütze Friedenspläne im Nahen Osten und wehre sich weiterhin vehement gegen gewaltsame Vergeltungsmaßnahmen .
+(u / und
+      :op1 (u2 / unterstützen-01
+            :ARG0 (g / government-organization
+                  :ARG0-of (g2 / regieren-01
+                        :ARG1 (c / country :name (n2 / name :op1 "China"))))
+            :ARG1 (p2 / Plan
+                  :mod (p3 / Frieden
+                        :location (w / world-region :name (n3 / name :op1 "Naher" :op2 "Osten")))))
+      :op2 (w3 / wehren-01
+            :ARG0 g
+            :ARG1 (m / Maßnahme
+                  :mod (v / Vergeltung)))
+            :mod (w2 / weiterhin))
+
+# ::id ft_de.299
+# ::snt Auf die Frage , wie das rasante Wirtschaftswachstum Chinas kontrolliert und ein ausgeglichenes Wachstum erreicht werden könnte , erklärte Wen , dass die chinesische Wirtschaft generell sehr gesund sei mit schnellem Wachstum , steigenden Unternehmensgewinnen , verbesserter Agrarproduktion , wachsendem Außenhandelsvolumen , steigenden Steuereinnahmen und steigenden individuellen Einkommen .
+(e / erklären-01
+      :ARG0 (p / person :name (n / name :op1 "Wen"))
+      :ARG1 (u / und
+            :op1 (g / gesund
+                  :degree (s / sehr)
+                  :mod (g3 / generell)
+                  :domain (e2 / Wirtschaft
+                        :mod (c2 / country :name (n2 / name :op1 "China")))
+                  :manner (w / Wachstum
+                        :mod (s2 / schnelle)))
+            :op2 (u2 / Unternehmensgewinne
+                  :mod (s3 / steigende))
+            :op3 (p2 / Produkt
+                  :mod (a / Agrar)
+                  :ARG0-of (v / verbessern-01))
+            :op4 (w2 / wachsen-01
+                  :ARG1 (v2 / Volumen
+                        :mod (a2 / Außenhandel)))
+            :op5 (s4 / steigen-02
+                  :ARG1 (u3 / und
+                        :op1 (e3 / Einnahmen
+                              :mod (s5 / Steuer))
+                        :op2 (e4 / Einkommen
+                              :mod (i4 / individuell)))))
+      :time (f / fragen-01
+            :ARG0 p
+            :ARG1 (u4 / und
+                  :op1 (k / kontrollieren-01
+                        :ARG1 (w5 / Wirtschaft
+                              :mod (w3 / wachsen-01
+                                    :manner (r / rasant))
+                              :poss c2)
+                        :manner (a5 / amr-unkown)))
+                  :op2 (e5 / erreichen-01
+                        :ARG1 (w6 / Wachstum
+                              :mod (a3 / ausgeglichene))
+                        :manner (a4 / amr-unkown))))
+
+# ::id ft_de.300
+# ::snt Eine Gruppe von Menschen mit neun unterschiedlichen Berufen .
+(g / Gruppe
+      :consist-of (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p / profession :quant 9))))
