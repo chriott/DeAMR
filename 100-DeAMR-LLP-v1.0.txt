@@ -8,7 +8,7 @@
                                       :ARG0 (w / wecken-01
                                                  :ARG0 (s2 / Stimme
                                                             :mod (l / leise)
-                                                            :mod (l2 / lustig)
+                                                            :mod (l2 / lustige)
                                                             :ARG1 i2)
                                                  :time (s3 / Sonnenaufgang))
                                       :ARG1 (i2 / ich)))))
