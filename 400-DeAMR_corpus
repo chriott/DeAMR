@@ -3875,8 +3875,7 @@
                               :mod (v / verschiedene))))))
 
 # ::id ft_de.251
-# ::snt Poon erläuterte, dass die Zusammenarbeit zwischen Hongkong und Festlandchina die Universitäten in die Lage versetzen werde, den Technologietransfer und die Entwicklung der Humanressourcen auf dem chinesischen Festland effektiver zu fördern und sowohl für Hongkong als auch für China positive Ergebnisse zu erzielen .
-# ::save-date Tue Oct 17, 2017 ::file PROXY_XIN_ENG_20041219_0059_9.txt
+# ::snt Poon erläuterte , dass die Zusammenarbeit zwischen Hongkong und Festlandchina die Universitäten in die Lage versetzen werde , den Technologietransfer und die Entwicklung der Humanressourcen auf dem chinesischen Festland effektiver zu fördern und sowohl für Hongkong als auch für China positive Ergebnisse zu erzielen .
 (e / erläutern-01
       :ARG0 (p / person :name (n / name :op1 "Poon"))
       :ARG1 (s / stärken-01
@@ -3903,8 +3902,7 @@
                                           :beneficiary f)))))))))
 
 # ::id ft_de.252
-# ::snt Die City University of Hongkong (CityU) und die Universität für Wissenschaft und Technologie Chinas (USTC) in der Provinz Anhui haben im Juni eine Vereinbarung unterzeichnet, um gemeinsam ein hochrangiges gemeinsames Forschungszentrum in Suzhou zu errichten .
-# ::save-date Sun Jul 26, 2015 ::file PROXY_XIN_ENG_20041219_0059_10.txt
+# ::snt Die City University of Hongkong (CityU) und die Universität für Wissenschaft und Technologie Chinas (USTC) in der Provinz Anhui haben im Juni eine Vereinbarung unterzeichnet , um gemeinsam ein hochrangiges gemeinsames Forschungszentrum in Suzhou zu errichten .
 (u3 / unterzeichnen-01
       :ARG0 (u / university :name (n / name :op1 "City" :op2 "University" :op3 "of" :op4 "Hong" :op5 "Kong"))
       :ARG1 (v / Vereinabrung)
@@ -3922,14 +3920,12 @@
 
 # ::id ft_de.253
 # ::snt Die Universität für Wissenschaft und Technologie von China wurde von der Chinesischen Akademie der Wissenschaften (CAS) gegründet .
-# ::save-date Sun Aug 11, 2013 ::file PROXY_XIN_ENG_20041219_0059_11.txt
 (g / gründen-01
       :ARG0 (u / university :name (n / name :op1 "Chinesische" :op2 "Akademie" :op3 "der" :op4 "Wissenschaften"))
       :ARG1 (o / organization :name (n2 / name :op1 "Universität" :op2 "für" :op3 "Wissenschaft" :op4 "und" :op5 "Technologie" :op6 "von" :op7 "China")))
 
 # ::id ft_de.254
-# ::snt Die Vereinbarung basiert auf dem Prinzip der für beide Seiten vorteilhaften Zusammenarbeit, bei der beide Hochschulen sich im Rahmen gemeinsamer Forschungsprojekte, bei der Betreuung und Lehre von Forschungsstudenten und bei der Verwaltung von Berufsausbildungsmöglichkeiten gegenseitig ergänzen .
-# ::save-date Mon Nov 2, 2015 ::file PROXY_XIN_ENG_20041219_0059_12.txt
+# ::snt Die Vereinbarung basiert auf dem Prinzip der für beide Seiten vorteilhaften Zusammenarbeit , bei der beide Hochschulen sich im Rahmen gemeinsamer Forschungsprojekte , bei der Betreuung und Lehre von Forschungsstudenten und bei der Verwaltung von Berufsausbildungsmöglichkeiten gegenseitig ergänzen .
 (b / basieren-01
       :ARG1 (v / Vereinbarung)
       :ARG2 (p / Prinzip
@@ -3956,8 +3952,7 @@
                         :mod (g2 / gegenseitig))))
 
 # ::id ft_de.255
-# ::snt Neben der Zusammenarbeit mit Bildungseinrichtungen haben Universitäten in Hongkong sich auch an großangelegten Hochtechnologie-Austauschprogrammen auf dem chinesischen Festland beteiligt, um die Kommunikation zwischen dem Festland und Hongkong in diesem Bereich zu verbessern .
-# ::save-date Fri Jan 5, 2018 ::file PROXY_XIN_ENG_20041219_0059_13.txt
+# ::snt Neben der Zusammenarbeit mit Bildungseinrichtungen haben Universitäten in Hongkong sich auch an großangelegten Hochtechnologie-Austauschprogrammen auf dem chinesischen Festland beteiligt , um die Kommunikation zwischen dem Festland und Hongkong in diesem Bereich zu verbessern .
 (b / beteiligen-01
       :ARG0 (u / university :mod (c / city :name (n / name :op1 "Hong" :op2 "Kong")))
       :ARG1 (p2 / Programm
@@ -3979,8 +3974,7 @@
                         :mod (d / diesen)))))
 
 # ::id ft_de.256
-# ::snt Die Hongkonger Universität für Wissenschaft und Technologie (HKUST) demonstrierte ihre neuesten Errungenschaften in Bezug auf Forschung und Entwicklung auf der 6. jährlichen China Hi-Tech Fair (CHTF), die im Oktober 2004 in Shenzhen stattfand .
-# ::save-date Thu Oct 19, 2017 ::file PROXY_XIN_ENG_20041219_0059_14.txt
+# ::snt Die Hongkonger Universität für Wissenschaft und Technologie (HKUST) demonstrierte ihre neuesten Errungenschaften in Bezug auf Forschung und Entwicklung auf der 6. jährlichen China Hi-Tech Fair (CHTF) , die im Oktober 2004 in Shenzhen stattfand .
 (d / demonstrieren-01
       :ARG0 (u / university :name (n / name :op1 "Hongkonger" :op2 "Universität" :op3 "für" :op4 "Wissenschaft" :op5 "und" :op7 "Technologie"))
       :ARG1 (e / Errungenschaft
@@ -3999,8 +3993,7 @@
                         :unit (y / year)))))
 
 # ::id ft_de.257
-# ::snt HKUST zeigte mehr als 30 neue Technologien und Produkte, die eine breite Palette von Technologien abdecken, darunter Nanotechnologie, Multimedia, Logistik und RFID-Technologie, fortschrittliche Fertigung und Biotechnologie .
-# ::save-date Fri Feb 5, 2016 ::file PROXY_XIN_ENG_20041219_0059_15.txt
+# ::snt HKUST zeigte mehr als 30 neue Technologien und Produkte , die eine breite Palette von Technologien abdecken , darunter Nanotechnologie , Multimedia , Logistik und RFID-Technologie , fortschrittliche Fertigung und Biotechnologie .
 (z / zeigen-01
       :ARG0 (u / university :name (n / name :op1 "HKUST"))
       :ARG1 (u2 / und
@@ -4025,7 +4018,6 @@
 
 # ::id ft_de.258
 # ::snt HKUST arbeitete auch mit einem führenden Hersteller auf dem chinesischen Festland zusammen an der Entwicklung einer Hochleistungs-Lithiumbatterie auf Basis von Nanomaterialien .
-# ::save-date Sun Jul 26, 2015 ::file PROXY_XIN_ENG_20041219_0059_16.txt
 (z / zusammenarbeiten-01
       :ARG0 (u / university :name (n / name :op1 "HKUST"))
       :ARG1 (c2 / company
@@ -4042,7 +4034,6 @@
 
 # ::id ft_de.259
 # ::snt Diese Zusammenarbeit ist die jüngste in einer Reihe erfolgreicher Technologietransfer-Vereinbarungen von HKUST . 
-# ::save-date Thu Oct 19, 2017 ::file PROXY_XIN_ENG_20041219_0059_17.txt
 (z / zusammenarbeiten-01
       :mod (d / diese)
       :part-of (r / Reihe
@@ -4055,7 +4046,6 @@
 
 # ::id ft_de.260
 # ::snt HKUST-Präsident Paul Ching - Wu Chu erklärte --
-# ::save-date Sun Aug 11, 2013 ::file PROXY_XIN_ENG_20041219_0059_18.txt
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Paul" :op2 "Ching-Wu" :op3 "Chu")
             :ARG0-of (h / have-org-role-91
@@ -4063,8 +4053,7 @@
                   :ARG2 (p2 / president))))
 
 # ::id ft_de.261
-# ::snt Die HKUST erhöhe die Mittel für die Erforschung neuer Technologien, die von der Industrie im Pearl River Delta benötigt werden .
-# ::save-date Fri Feb 5, 2016 ::file PROXY_XIN_ENG_20041219_0059_19.txt
+# ::snt Die HKUST erhöhe die Mittel für die Erforschung neuer Technologien , die von der Industrie im Pearl River Delta benötigt werden .
 (e / erhöhen-01
       :ARG0 (u / university :name (n / name :op1 "HKUST"))
       :ARG1 (m / Mittel
@@ -4075,8 +4064,7 @@
                               :ARG0 (i2 / Industrie :location (c / country-region :name (n2 / name :op1 "Pearl" :op2 "River" :op3 "Delta"))))))))
 
 # ::id ft_de.262
-# ::snt Die Universität wird weiterhin ihre umfassenden Beziehungen zu internationalen Forschungseinrichtungen und multinationalen Konzernen nutzen, um die Entwicklung fortschrittlicher Technologien zu fördern, die in China unmittelbar praktische Anwendung finden können .
-# ::save-date Thu Nov 2, 2017 ::file PROXY_XIN_ENG_20041219_0059_20.txt
+# ::snt Die Universität wird weiterhin ihre umfassenden Beziehungen zu internationalen Forschungseinrichtungen und multinationalen Konzernen nutzen , um die Entwicklung fortschrittlicher Technologien zu fördern, die in China unmittelbar praktische Anwendung finden können .
 (n / nutzen-01
       :ARG0 (u / Universität)
       :ARG1 (b / Beziehung
@@ -4102,12 +4090,10 @@
 
 # ::id ft_de.263
 # ::snt 29.04.2004
-# ::save-date Fri Aug 9, 2013 ::file PROXY_XIN_ENG_20040429_0189_1.txt
 (d / date-entity :day 29 :month 4 :year 2004)
 
 # ::id ft_de.264
-# ::snt China (CN); Deutschland (DE)
-# ::save-date Fri Aug 9, 2013 ::file PROXY_XIN_ENG_20040429_0189_2.txt
+# ::snt China (CN) ; Deutschland (DE)
 (u / und
       :op1 (c / country
             :name (n / name :op1 "China"))
@@ -4115,8 +4101,7 @@
             :name (n2 / name :op1 "Deutschland")))
 
 # ::id ft_de.265
-# ::snt International; Regierung; Technologie; Politik; Wirtschaft
-# ::save-date Fri Aug 9, 2013 ::file PROXY_XIN_ENG_20040429_0189_3.txt
+# ::snt International ; Regierung ; Technologie ; Politik ; Wirtschaft
 (u / und
       :op1 (i / international)
       :op2 (g / government-organization
@@ -4127,7 +4112,6 @@
 
 # ::id ft_de.266
 # ::snt Der chinesische Ministerpräsident erörtert Pläne für eine breite Zusammenarbeit mit dem wichtigen Handelspartner Deutschland im Vorfeld des Besuchs in Europa .
-# ::save-date Sat Jul 25, 2015 ::file PROXY_XIN_ENG_20040429_0189_4.txt
 (e / erörtern-01
       :ARG0 (p4 / person
             :ARG0-of (h / have-org-role-91
@@ -4145,8 +4129,7 @@
                   :ARG1 (c4 / continent :name (n3 / name :op1 "Europa")))))
 
 # ::id ft_de.267
-# ::snt Wen erklärt, dass der Hauptzweck des Deutschlandbesuchs darin bestehe, den Handel sowie den wirtschaftlichen und technologischen Austausch voranzutreiben .
-# ::save-date Wed Jul 1, 2015 ::file PROXY_XIN_ENG_20040429_0189_5.txt
+# ::snt Wen erklärt , dass der Hauptzweck des Deutschlandbesuchs darin bestehe , den Handel sowie den wirtschaftlichen und technologischen Austausch voranzutreiben .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (h / Hauptzweck
@@ -4161,8 +4144,7 @@
                               :mod (t / technologische))))))
 
 # ::id ft_de.268
-# ::snt In einem Interview mit Dieter Stolte am 29. April 2004 erklärte der chinesische Premierminister Wen Jiabao, dass die Regierungen von China und Deutschland eine solide Zusammenarbeit aufbauen, die Konsultationen zu wichtigen internationalen Fragen verbessern und den Handel und den technologischen Austausch weiter stärken sollten .
-# ::save-date Wed Jul 29, 2015 ::file PROXY_XIN_ENG_20040429_0189_6.txt
+# ::snt In einem Interview mit Dieter Stolte am 29. April 2004 erklärte der chinesische Premierminister Wen Jiabao , dass die Regierungen von China und Deutschland eine solide Zusammenarbeit aufbauen , die Konsultationen zu wichtigen internationalen Fragen verbessern und den Handel und den technologischen Austausch weiter stärken sollten .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen" :op2 "Jiabao")
             :ARG0-of (h / have-org-role-91
@@ -4200,7 +4182,6 @@
 
 # ::id ft_de.269
 # ::snt Wen wurde vor seinem bevorstehenden Besuch in Europa vom Herausgeber der Welt interviewt .
-# ::save-date Wed Jul 1, 2015 ::file PROXY_XIN_ENG_20040429_0189_7.txt
 (i / interviewen-01
       :ARG0 (p / person
             :ARG0-of (h / herausgeben-01
@@ -4213,8 +4194,7 @@
                   :mod (b2 / bevorstehend))))
 
 # ::id ft_de.270
-# ::snt Wen plant einen Besuch in fünf europäischen Nationen, beginnend am 2. Mai 2004 in Deutschland .
-# ::save-date Thu Sep 19, 2013 ::file PROXY_XIN_ENG_20040429_0189_8.txt
+# ::snt Wen plant einen Besuch in fünf europäischen Nationen , beginnend am 2. Mai 2004 in Deutschland .
 (p2 / planen-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (b / besuchen-01
@@ -4226,8 +4206,7 @@
             :location (c2 / country :name (n4 / name :op1 "Deutschland"))))
 
 # ::id ft_de.271
-# ::snt Wen erklärte, dass das chinesische Volk mit Deutschland vertraut sei, insbesondere aufgrund des tiefgreifenden Einflusses von Karl Marx auf Chinas Revolution und Wirtschaftsaufbau .
-# ::save-date Tue Jun 9, 2015 ::file PROXY_XIN_ENG_20040429_0189_9.txt
+# ::snt Wen erklärte , dass das chinesische Volk mit Deutschland vertraut sei , insbesondere aufgrund des tiefgreifenden Einflusses von Karl Marx auf Chinas Revolution und Wirtschaftsaufbau .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (k / kennen-01
@@ -4247,8 +4226,7 @@
                   :mod (i / insbesondere))))
 
 # ::id ft_de.272
-# ::snt Wen führte weiter aus, dass viele weltbekannte Denker, Schriftsteller, Philosophen und Künstler Deutsche seien .
-# ::save-date Thu Dec 14, 2017 ::file PROXY_XIN_ENG_20040429_0189_10.txt
+# ::snt Wen führte weiter aus , dass viele weltbekannte Denker , Schriftsteller , Philosophen und Künstler Deutsche seien .
 (a / ausführen-00
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (c / country :name (n2 / name :op1 "Deutschland")
@@ -4263,8 +4241,7 @@
                   :op4 (a2 / Künstler))))
 
 # ::id ft_de.273
-# ::snt Desweiteren erläuterte Wen, dass einer der Pioniere der deutschen klassischen Philosophie, Gottfried Leibnitz, Chinas konfuzianisches Denken einen Einfluss auf die Aufklärungsbewegung im Deutschland des 18. Jahrhunderts genannt habe .
-# ::save-date Sun Jun 21, 2015 ::file PROXY_XIN_ENG_20040429_0189_11.txt
+# ::snt Desweiteren erläuterte Wen , dass einer der Pioniere der deutschen klassischen Philosophie , Gottfried Leibnitz , Chinas konfuzianisches Denken einen Einfluss auf die Aufklärungsbewegung im Deutschland des 18. Jahrhunderts genannt habe .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (b / beeinflussen-01
@@ -4282,8 +4259,7 @@
                         :time (d2 / date-entity :century 18)))))
 
 # ::id ft_de.274
-# ::snt Wen erklärte, dass der Zweck seines Deutschlandbesuchs darin bestehe, den Handel sowie den wirtschaftlichen und technologischen Austausch voranzutreiben .
-# ::save-date Wed Jul 1, 2015 ::file PROXY_XIN_ENG_20040429_0189_5.txt
+# ::snt Wen erklärte , dass der Zweck seines Deutschlandbesuchs darin bestehe , den Handel sowie den wirtschaftlichen und technologischen Austausch voranzutreiben .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (z / Zweck
@@ -4299,8 +4275,7 @@
                               :mod (t / technologische))))))
 
 # ::id ft_de.275
-# ::snt Es wird erwartet, dass die Regierungen von China und Deutschland die Zusammenarbeit in dieser Hinsicht weiter verstärken werden .
-# ::save-date Mon Aug 19, 2013 ::file PROXY_XIN_ENG_20040429_0189_13.txt
+# ::snt Es wird erwartet , dass die Regierungen von China und Deutschland die Zusammenarbeit in dieser Hinsicht weiter verstärken werden .
 (e / erwarten-01
       :ARG1 (v / verstärken-01
             :ARG0 (u / und
@@ -4316,8 +4291,7 @@
             :mod (w / weiter)))
 
 # ::id ft_de.276
-# ::snt Wen sprach von seinem kurzen Besuch in Frankfurt während seiner Reise durch die skandinavischen Länder im Jahr 1988 und erklärte, die Freundschaft zwischen China und Deutschland sei aufrichtig, aktiv und fruchtbar .
-# ::save-date Mon Jul 20, 2015 ::file PROXY_XIN_ENG_20040429_0189_14.txt
+# ::snt Wen sprach von seinem kurzen Besuch in Frankfurt während seiner Reise durch die skandinavischen Länder im Jahr 1988 und erklärte , die Freundschaft zwischen China und Deutschland sei aufrichtig, aktiv und fruchtbar .
 (u / und
       :op1 (s / sprechen-01
             :ARG0 (p / person :name (n / name :op1 "Wen"))
@@ -4343,8 +4317,7 @@
                                     :op2 (c3 / country :name (n6 / name :op1 "Deutschland"))))))))
 
 # ::id ft_de.277
-# ::snt Wen versprach, ein Entwicklungsziel für die deutsch-chinesischen Beziehungen zu etablieren, das besagt, dass gegenseitiges Vertrauen die Grundlage der bilateralen Beziehungen bilden soll .
-# ::save-date Wed May 6, 2015 ::file PROXY_XIN_ENG_20040429_0189_15.txt
+# ::snt Wen versprach , ein Entwicklungsziel für die deutsch-chinesischen Beziehungen zu etablieren , das besagt , dass gegenseitiges Vertrauen die Grundlage der bilateralen Beziehungen bilden soll .
 (u / und
       :op1 (v / versprechen-01
             :ARG0 (p2 / person :name (n / name :op1 "Wen"))
@@ -4366,8 +4339,7 @@
                                                 :ARG1 (s / empfehlen-01)))))))
 
 # ::id ft_de.278
-# ::snt Wen gab an, dass sich der Handel zwischen China und Deutschland auf 41,8 Milliarden US - Dollar belaufe, was einem Drittel des Handelsvolumens zwischen China und Europa entspreche .
-# ::save-date Thu Sep 19, 2013 ::file PROXY_XIN_ENG_20040429_0189_16.txt
+# ::snt Wen gab an , dass sich der Handel zwischen China und Deutschland auf 41,8 Milliarden US - Dollar belaufe , was einem Drittel des Handelsvolumens zwischen China und Europa entspreche .
 (a / angeben-02
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (u / und
@@ -4386,8 +4358,7 @@
                                           :op2 (c4 / continent :name (n5 / name :op1 "Europa")))))))
 
 # ::id ft_de.279
-# ::snt Wen erklärte, dass der Handel sowohl zwischen China und Deutschland als auch zwischen China und Europa sich bis 2010 verdoppeln dürfte .
-# ::save-date Sat Aug 10, 2013 ::file PROXY_XIN_ENG_20040429_0189_17.txt
+# ::snt Wen erklärte , dass der Handel sowohl zwischen China und Deutschland als auch zwischen China und Europa sich bis 2010 verdoppeln dürfte .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (e2 / erwarten-01
@@ -4402,8 +4373,7 @@
                   :time (d2 / date-entity :year 2010))))
 
 # ::id ft_de.280
-# ::snt Wen erklärte, dass die Regierungen von China und Deutschland eine enge Zusammenarbeit in der Hightech-Forschung und -Entwicklung sowie bei mittleren und kleinen Unternehmen planten .
-# ::save-date Mon Nov 9, 2015 ::file PROXY_XIN_ENG_20040429_0189_18.txt
+# ::snt Wen erklärte , dass die Regierungen von China und Deutschland eine enge Zusammenarbeit in der Hightech-Forschung und -Entwicklung sowie bei mittleren und kleinen Unternehmen planten .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (p2 / planen-01
@@ -4431,8 +4401,7 @@
                   :mod (e4 / enge)))
 
 # ::id ft_de.281
-# ::snt Wen erklärte, dass es wichtig sei, Kanäle für die Beilegung von Handelsstreitigkeiten zwischen den beiden Ländern zu schaffen, und dass China und Deutschland ihre gegenseitigen Bedenken ansprechen sollten .
-# ::save-date Mon Nov 2, 2015 ::file PROXY_XIN_ENG_20040429_0189_19.txt
+# ::snt Wen erklärte , dass es wichtig sei , Kanäle für die Beilegung von Handelsstreitigkeiten zwischen den beiden Ländern zu schaffen , und dass China und Deutschland ihre gegenseitigen Bedenken ansprechen sollten .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (u / und
@@ -4455,8 +4424,7 @@
                               :mod (g / gegenseitige))))))
 
 # ::id ft_de.282
-# ::snt Um diese Aussage zu unterstützen, führte Wen an, dass 600 der 7.000 chinesischen Unternehmen, die international investieren, in Deutschland zu finden sind .
-# ::save-date Sun Aug 11, 2013 ::file PROXY_XIN_ENG_20040429_0189_21.txt
+# ::snt Um diese Aussage zu unterstützen , führte Wen an , dass 600 der 7.000 chinesischen Unternehmen , die international investieren , in Deutschland zu finden sind .
 (a / anführen-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :purpose (u / unterstützen-01
@@ -4472,8 +4440,7 @@
                                           :manner (i3 / international)))))))))
 
 # ::id ft_de.283
-# ::snt Wen erklärte, dass die chinesische Regierung Unternehmen unterstützen werde, die in Deutschland in Form von Krediten, Versicherungen, Devisen, Finanzen und Investitionen investieren .
-# ::save-date Tue Apr 15, 2014 ::file PROXY_XIN_ENG_20040429_0189_22.txt
+# ::snt Wen erklärte , dass die chinesische Regierung Unternehmen unterstützen werde , die in Deutschland in Form von Krediten , Versicherungen , Devisen , Finanzen und Investitionen investieren .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (u / unterstützen-01
@@ -4491,8 +4458,7 @@
                   :op5 (i3 / Investition))))
 
 # ::id ft_de.284
-# ::snt Chinesische Investitionen in Deutschland sind weit weniger als deutsche Investitionen in China, da China erst seit kurzem in diese Richtung investiert .
-# ::save-date Tue Oct 17, 2017 ::file PROXY_XIN_ENG_20040429_0189_23.txt
+# ::snt Chinesische Investitionen in Deutschland sind weit weniger als deutsche Investitionen in China , da China erst seit kurzem in diese Richtung investiert .
 (h / have-quant-91
       :ARG1 (i / investieren-01
             :ARG0 (c2 / country :name (n2 / name :op1 "China"))
@@ -4511,8 +4477,7 @@
                         :direction (i3 / in-diese)))))
 
 # ::id ft_de.285
-# ::snt Wen erklärte, dass es über 3.500 deutsche Investitionsprojekte in China mit einer Gesamtinvestition in der Nähe von 10 Milliarden US-Dollar gebe .
-# ::save-date Thu Sep 5, 2013 ::file PROXY_XIN_ENG_20040429_0189_24.txt
+# ::snt Wen erklärte , dass es über 3.500 deutsche Investitionsprojekte in China mit einer Gesamtinvestition in der Nähe von 10 Milliarden US-Dollar gebe .
 (e / erklären-01
       :ARG0 (p / person "Wen_Jiabao" :name (n / name :op1 "Wen"))
       :ARG1 (g / geben-02
@@ -4526,8 +4491,7 @@
                                                 :unit (u2 / US-Dollar))))))))
 
 # ::id ft_de.286
-# ::snt Einige deutsche Firmen wie Volkswagen, Siemens und Daimler-Chrysler stünden für hohe Qualität und Effizienz .
-# ::save-date Sun Jul 26, 2015 ::file PROXY_XIN_ENG_20040429_0189_25.txt
+# ::snt Einige deutsche Firmen wie Volkswagen , Siemens und Daimler-Chrysler stünden für hohe Qualität und Effizienz .
 (s / stehen-00
       :ARG1 (f / Firma
             :mod (c / country :name (n / name :op1 "Deutschland"))
@@ -4543,8 +4507,7 @@
                   :mod (h2 / hohe))))
 
 # ::id ft_de.287
-# ::snt Wen erklärte, dass chinesische Unternehmen durch die Zusammenarbeit mit deutschen Partnern Fortschritte machen und modernes Management erlernen könnten .
-# ::save-date Fri Jul 24, 2015 ::file PROXY_XIN_ENG_20040429_0189_26.txt
+# ::snt Wen erklärte , dass chinesische Unternehmen durch die Zusammenarbeit mit deutschen Partnern Fortschritte machen und modernes Management erlernen könnten .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (e2 / ermöglichen-01
@@ -4565,7 +4528,6 @@
       
 # ::id ft_de.288
 # ::snt Er betonte, Deutschland sei Chinas engster europäischer Partner im Bereich Technologietransfer .
-# ::save-date Tue Oct 17, 2017 ::file PROXY_XIN_ENG_20040429_0189_27.txt
 (b / betonen-01
       :ARG0 (e / er)
       :ARG1 (h / have-degree-91
@@ -4579,8 +4541,7 @@
                         :topic (t2 / Technologie)))))
 
 # ::id ft_de.289
-# ::snt Wen erläuterte, dass China die Beziehungen zwischen China und der EU als entscheidenden Teil der diplomatischen Strategie Chinas ansehe, und dass China und Europa 2003 eine umfassende strategische Partnerschaft entwickelten .
-# ::save-date Wed May 6, 2015 ::file PROXY_XIN_ENG_20040429_0189_28.txt
+# ::snt Wen erläuterte , dass China die Beziehungen zwischen China und der EU als entscheidenden Teil der diplomatischen Strategie Chinas ansehe , und dass China und Europa 2003 eine umfassende strategische Partnerschaft entwickelten .
 (e / erläutern-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (u / und
@@ -4605,8 +4566,7 @@
                   :time (d3 / date-entity :year 2003))))
 
 # ::id ft_de.290
-# ::snt Wen äußerte sich optimistisch, dass die EU das Waffenembargo gegen China bald aufheben würde und China den Status einer Marktwirtschaft verleihen würde .
-# ::save-date Thu Sep 5, 2013 ::file PROXY_XIN_ENG_20040429_0189_29.txt
+# ::snt Wen äußerte sich optimistisch , dass die EU das Waffenembargo gegen China bald aufheben würde und China den Status einer Marktwirtschaft verleihen würde .
 (ä / äußern-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :manner (o / optimistisch)
@@ -4624,8 +4584,7 @@
                   :ARG2 c))))
 
 # ::id ft_de.291
-# ::snt Wen erwähnte, China sei zutiefst besorgt über die aktuelle Situation im Irak und habe Verständnis für das irakische Volk .
-# ::save-date Sun Jul 26, 2015 ::file PROXY_XIN_ENG_20040429_0189_31.txt
+# ::snt Wen erwähnte , China sei zutiefst besorgt über die aktuelle Situation im Irak und habe Verständnis für das irakische Volk .
 (e / erwähnen-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (u / und
@@ -4641,8 +4600,7 @@
                               :mod c4)))))
 
 # ::id ft_de.292
-# ::snt Wen erklärte, China und Europa hätten ähnliche Positionen in der Frage des Wiederaufbaus des Irak .
-# ::save-date Fri Jul 24, 2015 ::file PROXY_XIN_ENG_20040429_0189_32.txt
+# ::snt Wen erklärte , China und Europa hätten ähnliche Positionen in der Frage des Wiederaufbaus des Irak .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (h / haben-01
@@ -4656,8 +4614,7 @@
                               :beneficiary (c3 / country :name (n4 / name :op1 "Irak")))))))
 
 # ::id ft_de.293
-# ::snt Er sagte, dass die Vereinten Nationen eine dominante Rolle im Prozess des Wiederaufbaus des Iraks spielen sollten und dass jedes Land daran teilnehmen sollte .
-# ::save-date Mon Jul 13, 2015 ::file PROXY_XIN_ENG_20040429_0189_33.txt
+# ::snt Er sagte , dass die Vereinten Nationen eine dominante Rolle im Prozess des Wiederaufbaus des Iraks spielen sollten und dass jedes Land daran teilnehmen sollte .
 (s / sagen-01
       :ARG0 (e / er)
       :ARG1 (u / und
@@ -4674,8 +4631,7 @@
                               :mod (j / jedes))))))))
 
 # ::id ft_de.294
-# ::snt Wen erklärte, dass China bereit sei, am Wiederaufbauprozess des Iraks teilzunehmen .
-# ::save-date Mon Jul 13, 2015 ::file PROXY_XIN_ENG_20040429_0189_34.txt
+# ::snt Wen erklärte , dass China bereit sei , am Wiederaufbauprozess des Iraks teilzunehmen .
 (e / erklären-01
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (b / bereit-01
@@ -4687,8 +4643,7 @@
                               :ARG1 (c2 / country :name (n3 / name :op1 "Irak")))))))
 
 # ::id ft_de.295
-# ::snt Er führte aus, dass es leicht sei, einen Krieg zu gewinnen, aber viel schwieriger, Frieden zu gewinnen .
-# ::save-date Tue Oct 17, 2017 ::file PROXY_XIN_ENG_20040429_0189_35.txt
+# ::snt Er führte aus , dass es leicht sei , einen Krieg zu gewinnen , aber viel schwieriger , Frieden zu gewinnen .
 (a / ausführen-00
       :ARG0 (p / person :name (n / name :op1 "Wen"))
       :ARG1 (c / contrast-01
