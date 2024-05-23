@@ -1,6 +1,6 @@
-# DeAMR 1.0 (WIP 🚧)
+# DeAMR 1.0
 
-These are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The goal is to extend and specify the existing AMR framework, so that German linguistic phenomena can be sufficiently mapped into AMR form.
+These are the annotation guidelines for DeAMR (German AMR), which are build in alignment with the official [AMR guidelines](https://github.com/amrisi/amr-guidelines/blob/master/amr.md). The goal is to extend and specify the existing AMR framework to sufficiently map German linguistic phenomena into AMR form.
 
 
 **Table of Contents**
@@ -26,7 +26,7 @@ These are the annotation guidelines for DeAMR (German AMR), which are build in a
 ## Abstract Meaning Representation 
 
 
-AMR is a semantic formalism that captures information on "who is doing what to whom" in a sentence. DeAMR is its German adaptation. AMR (and hence DeAMR) can be visualized as a rooted, directed, acyclic graph. The edges are relations. Each node in the graph has a variable, and they are labeled with concepts:
+AMR is a semantic formalism that captures information on "who is doing what to whom" in a sentence. DeAMR is its German adaptation. AMR (and hence DeAMR) can be visualized as a rooted, directed, acyclic graph. The edges are relations and each node in the graph has a variable labeled with concepts:
 
 <p align="center">
 <img src="https://i.ibb.co/djVMtR8/Bildschirmfoto-2022-10-20-um-21-30-43.png" width=50% height=50%>
@@ -48,43 +48,41 @@ Both of the above notations can be rendered into the German sentence:
 
 ## Verb Senses 
 
-DeAMR is using the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
+DeAMR uses the German frame set from the [Universal PropBank](https://universalpropositions.github.io) project and their searchable [German PropBank catalogue](http://alanakbik.github.io/UniversalPropositions_German/index.html).
 
-The Universal German PropBank is still in development and incomplete. At this point, if a German frame for a concept should be missing, e.g. *zufrieden*, we have to: 
+The Universal German PropBank is still in development. If a German frame for a concept is    missing, e.g. *zufrieden*, we have to: 
 
 1. Use the German concept with -00 as sense numbers and find a fitting original PropBank frame to align the argument structure, e.g. for *zufrieden* translates to `zufrieden-00` and the frame structure of [content-01](https://verbs.colorado.edu/propbank/framesets-english-aliases/content.html). A list of the original PropBank frames can be found [here](https://propbank.github.io/v3.4.0/frames/). For functional roles see [here](https://www.isi.edu/~ulf/amr/lib/roles.html).
 
 2. Sometimes, a missing German frame can be replaced with a similar existing German frame. If so, this variant should always be preferred to creating a new frame. For example: 
 
 ```lisp
-(c2 / stammen-01
-    :ARG1 (c3 / du
-              :mod (c5 / Mann
-                       :degree (c6 / kleine)))
-    :ARG2 (c4 / amr-unknown))
+(s / stammen-01
+    :ARG1 (d / du
+              :mod (m / Mann
+                       :degree (k / kleine)))
+    :ARG2 (a / amr-unknown))
 ```
 > Wo kommst du her, kleiner Mann?
 
-"Herkommen" does not exist in the German PropBank. `stammen-01` holds a compatible semantic meaning and argument structure, so it represents a good alterantive at the moment.
+"Herkommen" does not exist in the German PropBank. `stammen-01`, "to originate from" holds a compatible semantic meaning, so it is used as an alterantive.
 
 # Annotation Guidelines 
-
-This version of the DeAMR guidelines provides a few important specifications to eventually cover the full range of linguistic phenomena of German.
 
 ## Adjectives/Adverbs evoking a verb frame 
 
 One "slogan" of AMR is to prefer a verb frame whenever it is possible. When annotating adjectives/adverbs in DeAMR, always try to find a fitting verb frame, if there exists one.
 
 ```lisp
-(c0 / entgegnen-01
-    :ARG0 (c1 / Prinz
-              :mod (c2 / kleine))
-    :ARG1 (c4 / ermöglichen-01
-              :polarity (a5 / -)
-              :manner (c6 / anders)
-              :ARG0 c1)
-    :manner (c7 / verwirren-01
-                :mod (c8 / ganz)))
+(e / entgegnen-01
+    :ARG0 (p / Prinz
+              :mod (k / kleine))
+    :ARG1 (e2 / ermöglichen-01
+              :polarity -
+              :manner (a / anders)
+              :ARG0 p)
+    :manner (v / verwirren-01
+                :mod (g / ganz)))
 ```
 > "Ich kann aber nicht anders", entgegnete der kleine Prinz ganz verwirrt.
 
@@ -92,26 +90,28 @@ Here, the adverb *verwirrt* evokes the verb frame `verwirren-01` and therefore s
 
 ## Compounds
 
-In German, there are multiple ways of combining different word classes into new words. In order to reach a consensus on how to annotate compounds (and prevent too much individual variations), follow this "algorithm":
+German is very productive in creating compound words by combining different word classes. To ensure consistent annotation of compounds, follow this heuristic:
 
 <p align="center">
 <img src="https://i.ibb.co/tPJnVJ1/Bildschirm-foto-2023-03-14-um-19-05-09.png" width=60% height=60%>
 </p>
 
-I. Look up German PropBank and see if the compound word in question exists (e.g. `nachgesehen-01`)
+I. Look up the compound word in the German PropBank.
 ```
 
-if exists: use this as your annotation
-else: continue below
-
-```
-
-II. Evaluate if the respective compound is lexicalized or not. It might be better to use intuition rather than fixed rules to determine whether a word combination is productive or nonproductive.
+1. If it exists, use it.
+2. If it does not, continue below.
 
 ```
 
-if word combination productive: lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component; if there is no adequate semantic role, use :mod.
-else: use the word as it is in your annotation (without numbers).
+II. Evaluate if the compound is lexicalized or productive.
+
+```
+
+If productive, lift the semantic head to the top node and find a fitting semantic role for the modifier component
+
+1. If productive, lift the semantic head up to the top node of the compound subgraph and try to find a fitting semantic role for the modifier component (if there is no adequate semantic role use :mod)
+2. If not productive, use the word as it is (without numbers).
 
 
 ```
@@ -119,15 +119,15 @@ else: use the word as it is in your annotation (without numbers).
 The following examples should provide an intuition:
 
 ```lisp
-(c3 / ähneln-01
-   :ARG1 (c0 / ausbrechen-02
-             :ARG1 (c1 / Vulkan))
-   :ARG2 (c2 / Feuer
-             :location (c4 / Kamin)))
+(ä / ähneln-01
+   :ARG1 (a / ausbrechen-02
+             :ARG1 (v / Vulkan))
+   :ARG2 (f / Feuer
+             :location (k / Kamin)))
 ```
-> Vulkanische Ausbrüche sind wie Kaminfeuer
+> Vulkanausbrüche sind wie Kaminfeuer
 
-`Feuer` occurs in a set of different compounds (Artilleriefeuer, Lagerfeuer, Martinsfeuer, Fegefeuer, Grillfeuer, etc.) and therefore seems to be productive. According to the guidelines, we lift the semantic head `Feuer` up and match it with a fitting semantic role `:location` for the modifier `Kamin`.
+`Kaminfeuer` is not lexicalized. `Feuer` occurs in a set of different compounds (e.g. Artilleriefeuer, Lagerfeuer, Grillfeuer) and therefore seems to be productive. According to the guidelines, we lift the semantic head `Feuer` up and match it with a fitting semantic role `:location` for the modifier `Kamin`.
 
 ## Coordination and Clausal connectives 
 
@@ -236,7 +236,7 @@ AMR represents syntactic modals with concepts like `possible-01`, `likely-01`, `
 
 ## Modal particles 
 
-German has a large set of different particles. The subset of modal particles are annotated in a way that captures the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents a range of different possible examples and their corresponding annotation:
+German has a large set of different particles. The subset of modal particles is annotated to capture the semantics of the - sometimes convoluted - interaction between the particle itself and the grammatical mood. Here is a table that presents various examples and their corresponding annotations:
 
 
 | Modal particle                                                                    | Context                                                 | Annotation                     |
@@ -290,8 +290,7 @@ German has a large set of different particles. The subset of modal particles are
 ## Nominative case for nouns, pronouns and adjectives
 
 To ensure consistency, DeAMR uses a labeling convention for pronouns, adverbs, and adjectives.
-Specifically, DeAMR demands the nominative case for labeling these elements with respect to the
-word they agree with in the sentence. 
+Specifically, DeAMR demands the nominative case for labeling these elements concerning the word they agree with in the sentence. 
 
 ```lisp
 (u / überwinden-01
@@ -304,8 +303,7 @@ word they agree with in the sentence.
 
 ## Special dashed entities and relations 
 
-DeAMR wants to be consistent with the original guidelines to ensure that it can be easily compared and integrated with each other.
-Therefore, in agreement to other non-English AMR corpora, it maintains the role labels (e.g. `:ARGX`,
+DeAMR aims to be consistent with the original AMR guidelines to ensure easy comparison and integration. Therefore, in agreement to other non-English AMR corpora, it maintains the role labels (e.g. `:ARGX`,
 `:location`, `:manner`), AMR-specific framesets (e.g. `be-located-at-91`, `have-degree-91`) and canonical entity types
 (e.g. `government-organization`, `political-party`, `person`, `thing`) in English.
 

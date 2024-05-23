@@ -53,7 +53,7 @@
 
 # ::id lpp_de.7 
 # ::snt Wo kommst du her , kleiner Kerl ?
-(s / herkommen-01
+(s / stammen-01
     :ARG1 (d / du
               :mod (k / Kerl
                        :degree (k2 / kleine)))
@@ -1540,14 +1540,12 @@
 
 # ::id ft_de.59
 # ::snt Das ist ein guter Punkt .
-# ::save-date Fri Oct 13, 2017 ::file wb_eng_0003_45.txt
 (p / Punkt
       :domain (d / das)
       :mod (g / gut))
 
 # ::id ft_de.60
 # ::snt 5:26 spricht einen wichtigen Punkt an .
-# ::save-date Fri Oct 13, 2017 ::file wb_eng_0003_46.txt
 (a / ansprechen-01
       :ARG0 (p / person :name (n / name :op1 "5:26"))
       :ARG1 (p2 / Punkt 
@@ -1983,7 +1981,6 @@
 
 # ::id ft_de.101
 # ::snt Wenn Sie sich keinen Anwalt leisten können , versuchen Sie es mit kostenlosem Rechtsbeistand .
-# ::save-date Thu Jul 23, 2015 ::file DF-199-194215-653_0484_31.txt
 (v / versuchen-01 
       :ARG0 (d / du :polite +)
       :ARG1 (b / Beistand
@@ -1996,7 +1993,6 @@
 
 # ::id ft_de.102
 # ::snt Busfahrer möchten die passende Summe, Kassierer möchten die passende Summe, Essenslieferanten möchten die passende Summe...
-# ::save-date Sun Sep 1, 2013 ::file DF-200-192392-456_1160_1.txt
 (m / möchten-01
       :ARG0 (u / und
             :op1 (p / person
@@ -2012,14 +2008,12 @@
 
 # ::id ft_de.103
 # ::snt Die Leute werden faul .
-# ::save-date Sun Sep 1, 2013 ::file DF-200-192392-456_1160_4.txt
 (w / werden-01
       :ARG0 (l / leute)
       :ARG1 (f / faul))
 
 # ::id ft_de.104
 # ::snt Hallo, ich habe im September mit der Uni angefangen , habe mich aber nicht sofort eingewöhnt , wie die meisten Leute .
-# ::save-date Fri Nov 13, 2015 ::file DF-200-192400-625_6304_1.txt
 (m / multi-sentence
       :snt1 (h / Hallo)
       :snt2 (c / contrast-01
@@ -2037,7 +2031,6 @@
 
 # ::id ft_de.105
 # ::snt Die Universität ließ es viel besser klingen, als es in Wahrheit ist .
-# ::save-date Sat Oct 7, 2017 ::file DF-200-192400-625_6304_7.txt
 (l / lassen-01      
       :ARG0 (u / Universität)
       :ARG1 (k / klingen-01
@@ -2048,7 +2041,6 @@
 
 # ::id ft_de.106
 # ::snt Deshalb sind meine Lehrer wütend auf mich.
-# ::save-date Sat Jan 25, 2014 ::file DF-200-192400-625_6344_8.txt
 (h / have-concession-91
       :ARG1 (p / person
             :ARG2 (h2 / have-rel-role-91
@@ -2059,7 +2051,6 @@
 
 # ::id ft_de.107
 # ::snt Aber dann denke ich, dass ich einfach nur selbstsüchtig bin.
-# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_6344_13.txt
 (c / contrast-01
       :ARG2 (d / denken-01
             :ARG0 (i / ich)
@@ -2070,7 +2061,6 @@
 
 # ::id ft_de.108
 # ::snt Aber bestimmt sollte das Leben nicht so schwer sein, oder?
-# ::save-date Fri Jan 8, 2016 ::file DF-200-192400-625_6344_14.txt
 (c / contrast-01
       :ARG2 (v / verpflichten-01 :polarity -
             :ARG1 (ä / ähneln-01
@@ -2082,7 +2072,6 @@
 
 # ::id ft_de.109
 # ::snt Es sollte so viel besser sein . 
-# ::save-date Fri Dec 22, 2017 ::file DF-200-192400-625_6344_15.txt
 (e / empfehlen-01
       :mod (s2 / so)
       :ARG1 (h / have-degree-91
@@ -2093,7 +2082,6 @@
 
 # ::id ft_de.110
 # ::snt Aber ich fühle mich , als hätte ich keine Kontrolle über diese Abwärtsspirale .
-# ::save-date Mon Jan 20, 2014 ::file DF-200-192400-625_6344_16.txt
 (c / contrast-01
       :ARG2 (f / fühlen-01
             :ARG0 (i / ich)
@@ -2106,7 +2094,6 @@
 
 # ::id ft_de.111
 # ::snt Und ich weiß nicht mehr , was ich tun soll .
-# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_6344_17.txt
 (u / und
       :op2 (w / wissen-01 :polarity -
             :ARG0 (i / ich)
@@ -2117,13 +2104,11 @@
 
 # ::id ft_de.112
 # ::snt Danke fürs Lesen !
-# ::save-date Sun Sep 8, 2013 ::file DF-200-192400-625_6344_18.txt
 (d / danken-01
       :ARG2 (l / lesen-01))
 
 # ::id ft_de.113
 # ::snt Es ist schön, sich mal Luft machen zu können .
-# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_6344_19.txt
 (s / schön
       :ARG1 (k / können-01
             :ARG1 (m / machen-01)
@@ -2131,7 +2116,6 @@
 
 # ::id ft_de.114
 # ::snt Du kannst Sie deshalb nicht einweisen lassen .
-# ::save-date Tue Jul 21, 2015 ::file DF-200-192400-625_6344_20.txt
 (k / können-01 :polarity -
       :ARG1 (l / lassen-01
             :ARG0 (d / du)
@@ -2142,7 +2126,6 @@
 
 # ::id ft_de.115
 # ::snt Hat sie überhaupt eine psychische Krankheitsgeschichte oder eine Diagnose ?
-# ::save-date Sat Sep 23, 2017 ::file DF-200-192400-625_6344_21.txt
 (h / haben-01
       :ARG0 (s / sie)
       :ARG1 (o / oder
@@ -2155,7 +2138,6 @@
 
 # ::id ft_de.116
 # ::snt Das Leben versucht ständig, Dir Steine in den Weg zu legen .
-# ::save-date Mon Sep 16, 2013 ::file DF-200-192400-625_6344_23.txt
 (v / versuchen-01 
       :time (s / ständig)
       :ARG0 (l / leben)
@@ -2166,7 +2148,6 @@
 
 # ::id ft_de.117
 # ::snt Wenn es nicht jemand aus der Familie ist, dann ist es ein Außenstehender .
-# ::save-date Wed May 7, 2014 ::file DF-200-192400-625_6344_24.txt
 (h / have-condition-91
       :ARG1 (a / Außenstender)
       :ARG2 (j / jemand :polarity -
@@ -2174,7 +2155,6 @@
 
 # ::id ft_de.118
 # ::snt Arbeite hart, wenn Du Dich wirklich befreien willst .
-# ::save-date Thu Oct 8, 2015 ::file DF-200-192400-625_6344_26.txt
 (a / arbeiten
       :ARG0 (d / du)
       :mod (h / hart)
@@ -2185,7 +2165,6 @@
 
 # ::id ft_de.119
 # ::snt Ich empfehle dringend, mit dem Rauchen anzufangen .
-# ::save-date Fri Dec 15, 2017 ::file DF-200-192400-625_6344_34.txt
 (e / empfehlen-01
       :ARG0 (i / ich)
       :ARG1 (a / anfangen-01
@@ -2194,7 +2173,6 @@
 
 # ::id ft_de.120
 # ::snt Sie zeigen absolut keinen Respekt .
-# ::save-date Fri Sep 6, 2013 ::file DF-200-192400-625_6677_3.txt
 (z / zeigen-01
       :ARG0 (s / sie)
       :ARG1 (r / Respekt :polarity -
@@ -2202,7 +2180,6 @@
 
 # ::id ft_de.121
 # ::snt Sag einfach nein .
-# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_6677_7.txt
 (s / sagen-01
       :ARG0 (d / du)
       :ARG1 (n / nein)
@@ -2210,7 +2187,6 @@
 
 # ::id ft_de.122
 # ::snt Fange langsam damit an, wenn Die das anfangs unangenehm ist.
-# ::save-date Sun Jul 26, 2015 ::file DF-200-192400-625_6677_8.txt
 (h / have-condition-91
       :ARG1 (a / anfangen-01
             :ARG0 (d / du)
@@ -2223,7 +2199,6 @@
 
 # ::id ft_de.123
 # ::snt Ich hoffe, das hilft
-# ::save-date Thu Sep 5, 2013 ::file DF-200-192400-625_7046_18.txt
 (h / hoffen-01
       :ARG0 (i / ich)
       :ARG1 (h2 / helfen-01
@@ -2231,7 +2206,6 @@
 
 # ::id ft_de.124
 # ::snt Es ist bequemer für mich .
-# ::save-date Sat Oct 7, 2017 ::file DF-200-192400-625_7200_2.txt
 (b / bequem
       :domain (e / es)
       :ARG2-of (h / have-degree-91
@@ -2241,7 +2215,6 @@
 
 # ::id ft_de.125
 # ::snt Nun, ich könnte vielleicht Anzeichen für eine Erkrankung im Autismusspektrum haben , aber wer hat nicht ein oder zwei solcher Anzeichen ?
-# ::save-date Sun Sep 15, 2013 ::file DF-200-192400-625_7200_4.txt
 (c / contrast-01
       :ARG1 (k / können-01
             :ARG1 (h / haben-01
@@ -2261,7 +2234,6 @@
 
 # ::id ft_de.126
 # ::snt Ihr wisst, was ich meine .
-# ::save-date Tue Mar 10, 2015 ::file DF-200-192400-625_7200_5.txt
 (w / wissen-01
       :ARG0 (i / ihr)
       :ARG1 (d / Ding
@@ -2270,7 +2242,6 @@
 
 # ::id ft_de.127
 # ::snt Kopfschmerzen können ein Symptom eines Hirntumors sein .
-# ::save-date Mon Sep 21, 2015 ::file DF-200-192400-625_7200_7.txt
 (p / können-01
       :ARG1 (s / Symptom
             :mod (t / Tumor
@@ -2279,7 +2250,6 @@
 
 # ::id ft_de.128
 # ::snt Müdigkeit kann auf Leukämie hindeuten .
-# ::save-date Tue Jan 16, 2018 ::file DF-200-192400-625_7200_8.txt
 (k / können-01
       :ARG1 (h / hindeuten-00
             :ARG1 (m2 / Müdigkeit))
@@ -2287,14 +2257,12 @@
 
 # ::id ft_de.129
 # ::snt Ich habe Dyspraxie .
-# ::save-date Fri Sep 6, 2013 ::file DF-200-192400-625_7200_14.txt
 (h / habe-01
       :ARG0 (i / ich)
       :ARG1 (d / Dyspraxie))
 
 # ::id ft_de.130
 # ::snt Vielleicht leidest Du auch unter Dyspraxie oder hast verkürzte Sehnen .
-# ::save-date Mon Nov 2, 2015 ::file DF-200-192400-625_7200_15.txt
 (m / möglich-00
       :ARG1 (o / oder
             :op1 (l / leiden-01
@@ -2307,8 +2275,7 @@
                         :mod (v / verkürzt)))))
 
 # ::id ft_de.131
-# ::snt Ich würde nicht zu viel in solche zufälligen "Symptome" hineininterpretieren
-# ::save-date Sat Oct 7, 2017 ::file DF-200-192400-625_7200_17.txt
+# ::snt Ich würde nicht zu viel in solche zufälligen " Symptome " hineininterpretieren
 (h / interpretieren-01 :polarity -
       :location (h2 / hinein)
       :ARG0 (i / ich)
@@ -2321,7 +2288,6 @@
 
 # ::id ft_de.132
 # ::snt Ich denke jeden Tag darüber nach .
-# ::save-date Fri May 2, 2014 ::file DF-200-192400-625_7557_9.txt
 (d / denken-01
       :ARG0 (i / ich)
       :ARG1 (d2 / darüber)
@@ -2332,7 +2298,6 @@
 
 # ::id ft_de.133
 # ::snt Er kümmert sich nur um seine neue Tochter und seine neue Frau, und ich habe keinen Platz in seinem neuen Leben .
-# ::save-date Wed Nov 4, 2015 ::file DF-200-192400-625_7557_12.txt
 (c / contrast-01      
       :ARG1 (k / kümmern-01
             :ARG0 (e / er)
@@ -2358,7 +2323,6 @@
 
 # ::id ft_de.134
 # ::snt Mein bester Freund starb, als ich 10 war
-# ::save-date Sat Oct 7, 2017 ::file DF-200-192400-625_7557_13.txt
 (s / sterben-01
       :ARG1 (p / person
             :ARG0-of (h / have-rel-role-91
@@ -2373,7 +2337,6 @@
 
 # ::id ft_de.135
 # ::snt Auch meine Mutter ist bipolar, und ich bin depressiv .
-# ::save-date Tue Apr 29, 2014 ::file DF-200-192400-625_7557_15.txt
 (u / und
       :op1 (b / bipolar
             :domain (p / person
@@ -2386,7 +2349,6 @@
 
 # ::id ft_de.136
 # ::snt Ich möchte nicht aufhören ,
-# ::save-date Fri May 2, 2014 ::file DF-200-192400-625_7557_16.txt
 (m / möchten-01 :polarity -
       :ARG0 (i / ich)
       :ARG1 (a / aufhören-01
@@ -2394,7 +2356,6 @@
 
 # ::id ft_de.137
 # ::snt Ich sage es ihm nicht, aber er findet es heraus ,
-# ::save-date Fri May 2, 2014 ::file DF-200-192400-625_7557_19.txt
 (c / contrast-01
       :ARG1 (s / sagen-01 :polarity -
             :ARG0 (i / ich)
@@ -2406,7 +2367,6 @@
 
 # ::id ft_de.138
 # ::snt ich will ihn nicht verletzen, ich will nicht, dass er sich verletzt
-# ::save-date Wed Dec 3, 2014 ::file DF-200-192400-625_7557_20.txt
 (u / und
       :op1 (w / wollen-01
             :ARG0 (i / ich)
@@ -2420,21 +2380,18 @@
 
 # ::id ft_de.139
 # ::snt Was soll ich machen?
-# ::save-date Mon Jan 20, 2014 ::file DF-200-192400-625_7557_21.txt
 (e / empfehlen-01
       :ARG0 (i / ich)
       :ARG1 (a / amr-unknown))
 
 # ::id ft_de.140
 # ::snt Danke fürs Lesen
-# ::save-date Mon Jan 20, 2014 ::file DF-200-192400-625_7557_22.txt
 (d / danken-01
       :ARG0 (i / ich)
       :ARG1 (l / lesen-01))
 
 # ::id ft_de.141
 # ::snt Nimmst Du Medikamente oder bist Du in Behandlung?
-# ::save-date Sat Sep 23, 2017 ::file DF-200-192400-625_7557_23.txt
 (o / oder 
       :op1 (n / nehmen-01
             :ARG0 (d / du)
@@ -2446,7 +2403,6 @@
 
 # ::id ft_de.142
 # ::snt Wenn Du mit Leuten sprichst , dann können sie Dir helfen ,
-# ::save-date Sat Sep 7, 2013 ::file DF-200-192400-625_7557_26.txt
 (k / können-01
       :ARG1 (h / helfen-01
             :ARG0 (p / Person)
@@ -2457,7 +2413,6 @@
 
 # ::id ft_de.143
 # ::snt wenn Du alles in Dich hineinfrisst, wird es wahrscheinlich nur schlimmer werden .
-# ::save-date Tue Jan 23, 2018 ::file DF-200-192400-625_7557_27.txt
 (v / verschlimmern-01
       :ARG1 a
       :mod (w / wahrscheinlich)
@@ -2467,14 +2422,15 @@
 
 # ::id ft_de.144
 # ::snt Bitte mach das nicht ,
-# ::save-date Wed Sep 18, 2013 ::file DF-200-192400-625_7557_29.txt
-(m / machen-01 :polarity - :mode imperative :polite +
+(m / machen-01 
+      :polarity - 
+      :mode imperative 
+      :polite +
       :ARG0 (d / du)
       :ARG1 (d2 / das))
 
 # ::id ft_de.145
 # ::snt es ist schwierig , aber Du schaffst das .
-# ::save-date Sat Jul 25, 2015 ::file DF-200-192400-625_7557_31.txt
 (c / contrast-01
       :ARG1 (s / schwierig-00
             :ARG1 (e / es))
@@ -2636,8 +2592,8 @@
 
 # ::id ft_de.157
 # ::snt Welchen Rat könnt Ihr mir geben ?
-(g / können-01
-      :ARG1 (g2 / geben-01
+(k / können-01
+      :ARG1 (g / geben-01
             :ARG0 (d / du)
             :ARG1 (i / ich)
             :ARG2 (r / Rat :mod (a2 / amr-unknown))))
@@ -3198,7 +3154,6 @@
 
 # ::id ft_de.205
 # ::snt Fengzhu Xu hat schon viele Meisterschaften bei internationalen Wettbewerben gewonnen.
-# ::save-date Sat Jul 25, 2015 ::file nw_chtb_0322_14.txt
 (g / gewinnen-01
       :ARG0 (p / person :name (n / name :op1 "Fengzhu" :op2 "Xu"))
       :ARG1 (m / Meisterschaft
@@ -3209,7 +3164,6 @@
 
 # ::id ft_de.206
 # ::snt In neun Spielen mit chinesischen Go-Spielern hatte er zuvor den vollständigen Sieg errungen .
-# ::save-date Tue Jul 28, 2015 ::file nw_chtb_0322_15.txt
 (e / erringen-01
       :ARG0 (e2 / er)
       :ARG2 (s / Spiel :quant 9)
@@ -3221,7 +3175,6 @@
 
 # ::id ft_de.207
 # ::snt Zu Hause trainieren sie meistens in der Halle .
-# ::save-date Mon Oct 23, 2017 ::file nw_chtb_0324_10.txt
 (t / trainieren-01
       :ARG2 (s / sie)
       :location (h / Halle)
@@ -3230,7 +3183,6 @@
 
 # ::id ft_de.208
 # ::snt Es scheint, als müssten wir häufiger im Freien trainieren . "
-# ::save-date Tue Dec 17, 2013 ::file nw_chtb_0324_11.txt
 (s / scheinen-01
       :ARG0 (e / es)
       :ARG1 (m / müssen-01
@@ -3241,7 +3193,6 @@
 
 # ::id ft_de.209
 # ::snt Er hatte das Gefühl, dass mehr neue Sportler aus unserem Land an diesem Wettbewerb teilnahmen .
-# ::save-date Fri Feb 5, 2016 ::file nw_chtb_0324_12.txt
 (h / haben-01
       :ARG0 (e / er)
       :ARG1 (f / fühlen-01
@@ -3256,7 +3207,6 @@
 
 # ::id ft_de.210
 # ::snt Sie haben noch wenig Erfahrung bei internationalen Wettkämpfen .
-# ::save-date Tue Dec 17, 2013 ::file nw_chtb_0324_13.txt
 (h / haben-01
       :ARG0 (s / sie)
       :ARG1 (e / erfahren-02
@@ -3267,7 +3217,6 @@
 
 # ::id ft_de.211
 # ::snt Der Vorentscheid im Turmspringen vom 10-Meter-Turm der Frauen findet heute Nachmittag statt .
-# ::save-date Tue Dec 17, 2013 ::file nw_chtb_0324_14.txt
 (s / stattfinden-01
       :ARG1 (v / Vorentscheid
             :mod (t / Turmspringen)
